@@ -212,7 +212,7 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
 #renewMain .mainVisual .visualItem li a.vItem04::before { background-image: url(../../images/main_2024/main/icon_item04.png); } 
 #renewMain .mainVisual .visualItem li a.vItem05::before { background-image: url(../../images/main_2024/main/icon_item05.png); } 
 #renewMain .mainVisual .visualItem li a:hover::before { border: 1px solid #dadada; box-shadow: 0px 3px 5px 0px rgba(7, 7, 7, 0.08); } 
-#renewMain .mainVisual .searchWrap .tit { margin-bottom: 20px; margin-left: 20px; color: #343434; font-size: 24px; font-weight: 200; } 
+#renewMain .mainVisual .searchWrap .tit { margin-bottom: 20px; margin-left: 20px; color: #343434; font-size: 24px; font-weight: 300; } 
 #renewMain .mainVisual .searchWrap .tit span { font-weight: 500; } 
 #renewMain .mainVisual .searchWrap .searchCont { position: relative; display: flex; align-items: center; justify-content: space-between; max-width: 660px; padding: 14px 20px; margin-bottom: 20px; background: #fff; border-radius: 10px; } 
 #renewMain .mainVisual .searchWrap .searchCont button { display: block; flex-shrink: 0; background: url(../../images/main_2024/main/icon_search.png) no-repeat; width: 27px; height: 27px; border: 0; text-indent: -9999px; cursor: pointer; } 
@@ -254,8 +254,7 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
 #renewMain .mainVisual .counselingWrap .chatLive p::before { content: ''; width: 21px; height: 18px; position: absolute; top: 5px; left: 16px; background: url(../../images/main_2024/main/chat_icon01.png) no-repeat; } 
 
 /* employ company */
-#renewMain .companyWrap .companyList { display: flex; justify-content: space-between; } 
-#renewMain .companyWrap .companyList > li { width: calc(100% / 4 - 15px); margin-top: 20px; background: #fff; border-radius: 10px; border: 1px solid #dadada; overflow: hidden; } 
+#renewMain .companyWrap .companyList > li {height: 100%; background: #fff; border-radius: 10px; border: 1px solid #dadada; overflow: hidden; }
 #renewMain .companyWrap .companyList > li a { display: block; width: 100%; height: 100%; } 
 #renewMain .companyWrap .companyList .imgWrap img { width: 100%; height: 179px; overflow: hidden; } 
 #renewMain .companyWrap .companyList .txtWrap { padding: 20px 25px; display: flex; flex-direction: column; } 
@@ -264,7 +263,7 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
 #renewMain .companyWrap .companyList .txtWrap .prog.st2 { color: #adadad; } 
 #renewMain .companyWrap .companyList .txtWrap p { display: -webkit-box; width: 100%; height: 52px; margin: 15px 0; font-size: 18px; line-height: 1.6rem; -webkit-line-clamp: 2; -webkit-box-orient: vertical; text-overflow: ellipsis; word-break: break-all; overflow: hidden; } 
 #renewMain .companyWrap .companyList .txtWrap ul { padding-top: 15px; border-top: 1px solid #e6e6e6; } 
-#renewMain .companyWrap .companyList .txtWrap ul li { color: #787878; font-size: 14px; } 
+#renewMain .companyWrap .companyList .txtWrap ul li {display: -webkit-box; color: #787878; font-size: 14px;-webkit-line-clamp: 1; -webkit-box-orient: vertical; text-overflow: ellipsis;word-break: break-all; overflow: hidden;} 
 
 /* employ info */
 #renewMain .infoWrap { position: relative; margin-top: 40px; } 
@@ -590,10 +589,6 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
 #renewMain .policyFind .cateWrap > div { flex: 50%; } 
 #renewMain .policyFind .findBtn { width: 100%; } 
 
-/* employ companyWrap */
-#renewMain .companyWrap .companyList { flex-wrap: wrap; justify-content: space-between; } 
-#renewMain .companyWrap .companyList > li { width: calc(50% - 5px); margin-right: 0; } 
-
 /* employ infoWrap */
 #renewMain .infoWrap .infoBox { flex-direction: column; } 
 #renewMain .infoWrap .infoBox .infoItem { width: 100%; } 
@@ -703,10 +698,11 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
 
 
 /* employ infoWrap */
-#renewMain .companyWrap .companyList > li { width: 100%; } 
-#renewMain .companyWrap .companyList > li .imgWrap { display: none; } 
+#renewMain .companyWrap .companyList {height:  auto !important;}
+#renewMain .companyWrap .companyList > li {height: auto;}
 #renewMain .companyWrap .companyList .txtWrap { padding: 15px 15px; } 
 #renewMain .companyWrap .companyList .txtWrap p { height: auto; margin: 8px 0; font-size: 14px; } 
+#renewMain .infoWrap {margin-top: 10px;}
 #renewMain .infoWrap .infoCont { flex-direction: column; } 
 #renewMain .infoWrap .infoCont > a { width: 100%; height: auto; } 
 #renewMain .infoWrap .infoCont > a + a { margin-top: 10px; } 
@@ -717,7 +713,9 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
 #renewMain .infoWrap .infoTit { flex-direction: column; } 
 #renewMain .infoWrap .infoTit ul { margin-top: 10px; } 
  }
-@media screen and (max-width: 480px) { /* header */
+@media screen and (max-width: 480px) { 
+
+   /* header */
  #renewHeader .nheader_bottom .innerSection { padding: 0; } 
  /* footer */
  #renewFooter .f_nav { white-space: nowrap; overflow-x: scroll; } 
@@ -729,4 +727,5 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
 
  /* policy jobRecomend */
  #renewMain .policyFind .selectWrap .contBox { width: 100%; } 
+
  }
