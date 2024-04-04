@@ -32,7 +32,9 @@
 .themaWrap .cont01 .itemBox01 .txtWrap ul li:nth-child(3)::before { background: url(../images/20240403/cont01_icon03.png) no-repeat; } 
 
 .themaWrap .cont01 .itemBox02 { margin-top: 100px; } 
-.themaWrap .cont01 .itemBox02 .titWrap { margin-bottom: 30px; text-align: center; } 
+.themaWrap .cont01 .itemBox02 .titWrap { margin-bottom: 30px; position: relative; text-align: center; } 
+.themaWrap .cont01 .itemBox02 .titWrap::before { content: ''; width: 315px; height: 148px; position: absolute; top: 50%; left: -374px; transform: translateY(-50%); background: url(../images/20240403/graph_icon01.png); } 
+.themaWrap .cont01 .itemBox02 .titWrap::after { content: ''; width: 288px; height: 136px; top: 50%; right: -358px; transform: translateY(-50%); position: absolute; background: url(../images/20240403/graph_icon02.png);}
 .themaWrap .cont01 .itemBox02 .titWrap p { margin-bottom: 20px; color: #00b475; font-size: 36px; letter-spacing: -1px; } 
 .themaWrap .cont01 .itemBox02 .titWrap p span { color: #000; } 
 .themaWrap .cont01 .itemBox02 .titWrap strong { display: inline-block; padding: 16px 32px 12px; background: #b9eedb; color: #000; font-size: 22px; border-radius: 30px; text-align: center; } 
@@ -183,5 +185,5 @@
 .themaWrap .cont05 .titWrap .txt span { position: relative; color: #00b080; } 
 .themaWrap .cont05 .titWrap .txt span::after { content: ''; width: 100%; height: 100%; position: absolute; bottom: -100%; left: 0; background: url(../images/20240403/cont05_tit_icon03.png) no-repeat; } 
 .themaWrap .cont05 ul { display: flex; padding: 50px 50px; background: #fff; box-shadow: 0px 65px 68px 0px rgba(130, 130, 130, 0.25); border: 1px solid #d8d8d8; border-radius: 40px; flex-wrap: wrap; justify-content: space-between; gap: 50px; } 
-.themaWrap .cont05 ul li { width: calc(100% / 2 - 25px); text-align: center; }
+.themaWrap .cont05 ul li { width: calc(100% / 2 - 25px); text-align: center; } 
 .themaWrap .cont05 ul li .txt { margin-top: 16px; color: #000000; font-size: 30px; letter-spacing: -1px; } 
