@@ -1,0 +1,591 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>확! 바뀐 AI역량검사</title>
+	<!-- 잡아바 default-->
+	<!-- core CSS -->
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net//resource/css/new/import.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net//resource/css/swiper.min.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net//resource/css/main/kgoon.reset.min.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net//resource/main2024/etc/css/fonts.css">
+	<!-- 추가 css -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.scrollbar/0.2.11/jquery.scrollbar.css">
+
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net//resource/bxslider/slick.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net//resource/main2024/css/main_2024/style.css">
+
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net//resource/css/new/allnew_ia.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net//resource/css/main/layout.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net//resource/css/main/style.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net//resource/css/new/style.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net//resource/css/main/mobile.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net//resource/css/new/mobile.css">
+
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net//resource/css/font-awesome.min.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net//resource/css/pe-icon-7-stroke.css">
+	<link type="text/css" rel="stylesheet" href="../etc/css/fonts.css" />
+
+	<!-- core JS -->
+	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net//resource/js/jquery-2.2.4.js"></script>
+	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net//resource/js/jquery-ui-1.11.4.js"></script>
+	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net//resource/js/jquery.validate-1.14.0.js"></script>
+
+	<!-- common References -->
+	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net//resource/js/common.js"></script>
+	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net//resource/js/mobile.common.js?v=20190418"></script>
+	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net//resource/js/jquery.common.js"></script>
+	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net//resource/upload/js/upload.common.js"></script>
+	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net//resource/js/main.js"></script>
+	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net//resource/js/default_menu.js"></script>
+	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net//resource/js/swiper.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net//resource/bxslider/slick.js"></script>
+	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net//resource/js/bootstrap.min.js"></script>
+
+	<!-- ai면접 -->
+	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net//resource/js/jquery.leanModal.min.js"></script>
+
+	<!-- 신규 2020 JS -->
+	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net//resource/js/main/imgLiquid-min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net//resource/js/main/script.js"></script>
+	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net//resource/js/main/jquery.vticker-min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.scrollbar/0.2.11/jquery.scrollbar.js"></script>
+	<!-- 잡아바 default-->
+
+	<!-- 추가 css -->
+	<link rel="stylesheet" href="./css/event02.css">
+
+	
+</head>
+<body>
+<div id="page-content">
+	<section class="eventWrap">
+		<style>
+			.eventWrap .eventMain {
+				background: url(./images/eventImg/event02/main_bg.png) bottom center no-repeat;
+			}
+			.eventWrap .eventMain .innerSection {
+				padding-top: 160px;
+			}
+			.eventWrap .eventMain .mainVisual {
+				padding-bottom: 55px;
+				position: relative;
+				background: #fff;
+				border-radius: 30px 30px 0 0;
+			}
+			.eventWrap .eventMain .mainVisual::before {
+				content: '';
+				width: 160px;
+				height: 146px;
+				position: absolute;
+				top: -120px;
+				left: 226px;
+				background: url(./images/eventImg/event02/main_item01.png) no-repeat;
+				background-size: contain;
+			}
+			.eventWrap .eventMain .mainVisual::after {
+				content: '';
+				width: 135px;
+				height: 131px;
+				position: absolute;
+				bottom: 0;
+				right: -64px;
+				background: url(./images/eventImg/event02/main_item04.png) no-repeat;
+				background-size: contain;
+			}
+			.eventWrap .eventMain .mainVisual .bgRing::before {
+				content: '';
+				width: 143px;
+				height: 42px;
+				position: absolute;
+				top: -18px;
+				left: 40px;
+				background: url(./images/eventImg/event02/main_icon_ring.png);
+			}
+			.eventWrap .eventMain .mainVisual .bgRing::after {
+				content: '';
+				width: 143px;
+				height: 42px;
+				position: absolute;
+				top: -18px;
+				right: 40px;
+				background: url(./images/eventImg/event02/main_icon_ring.png);
+			}
+			.eventWrap .eventMain .mainVisual h2 {
+				position: relative;
+				text-align: center;
+			}
+			.eventWrap .eventMain .mainVisual h2::before {
+				content: '';
+				width: 141px;
+				height: 186px;
+				position: absolute;
+				bottom: 36px;
+    			left: -38px;
+				background: url(./images/eventImg/event02/main_item02.png) no-repeat;
+				background-size: contain;
+			}
+			.eventWrap .eventMain .mainVisual h2::after {
+				content: '';
+				width: 100px;
+				height: 158px;
+				position: absolute;
+				bottom: 145px;
+    			right: 74px;
+				background: url(./images/eventImg/event02/main_item03.png) no-repeat;
+				background-size: contain;
+			}
+			.eventWrap .eventMain .mainVisual h2 img {
+				margin-top: -130px;
+			}			
+		</style>
+		<article class="eventMain">
+			<div class="innerSection">
+				<div class="mainVisual">
+					<span class="bgRing"></span>
+					<h2><img src="./images/eventImg/event02/main_tit.png" alt="확! 바뀐 AI역량검사"></h2>
+				</div>			
+			</div>	 
+		</article>
+		<style>
+			.eventWrap .event01 {
+				background: url(./images/eventImg/event02/event01_bg.png) 25% 45% #f3f3f3 no-repeat;
+			}			
+			.eventWrap .event01 .innerSection {
+				max-width: 900px;
+				padding-bottom: 90px;
+				position: relative;
+			}
+			.eventWrap .event01 .innerSection::before {
+				content: '';
+				width: 146px;
+				height: 154px;
+				position: absolute;
+				top: -90px;
+				left: -460px;
+				background: url(./images/eventImg/event02/event01_item01.png) no-repeat;
+			}
+			.eventWrap .event01 .innerSection::after {
+				content: '';
+				width: 299px;
+				height: 356px;
+				position: absolute;
+				top: -152px;
+				right: -410px;
+				background: url(./images/eventImg/event02/event01_item02.png) no-repeat;
+			}
+			
+			.eventWrap .event01 .ev_list {				
+				display: flex;
+				max-width: 850px;
+				margin: 0 auto 30px;
+				justify-content: space-between;
+			}
+			.eventWrap .event01 .ev_list .imgWrap {
+				width: 142px;
+				height: 142px;
+				margin-bottom: 20px;
+				position: relative;
+				background-color: #fff; 
+				background-repeat: no-repeat;
+				background-position: center;
+				border: 2px solid #687aff;
+				outline: 6px solid #aacef3;
+				border-radius: 50%;
+			}
+			.eventWrap .event01 .ev_list li:nth-child(1) .imgWrap {
+				background-image: url(./images/eventImg/event02/ev_list_item01.png);
+				background-position: center bottom -5px;
+			}
+			.eventWrap .event01 .ev_list li:nth-child(2) .imgWrap {
+				background-image: url(./images/eventImg/event02/ev_list_item02.png);
+			}
+			.eventWrap .event01 .ev_list li:nth-child(3) .imgWrap {
+				background-image: url(./images/eventImg/event02/ev_list_item03.png);
+			}
+			.eventWrap .event01 .ev_list li:nth-child(4) .imgWrap {
+				background-image: url(./images/eventImg/event02/ev_list_item04.png);
+			}
+			.eventWrap .event01 .ev_list li:nth-child(5) .imgWrap {
+				background-image: url(./images/eventImg/event02/ev_list_item05.png);
+			}
+			.eventWrap .event01 .ev_list li:nth-child(6) .imgWrap {
+				background-image: url(./images/eventImg/event02/ev_list_item06.png);
+			}
+			.eventWrap .event01 .ev_list .imgWrap span {
+				display: flex;
+				width: 50px;
+				height: 50px;
+				padding-top: 4px;
+				position: absolute;
+				top: -20px;
+				right: 0;
+				background: #000000;
+				color: #fff;
+				font-size: 14px;
+				border-radius: 50%;
+				align-items: center;
+				justify-content: center;
+			}
+			.eventWrap .event01 .ev_list .txt {
+				color: #000000;
+				font-size: 22px;
+				text-align: center;
+			}
+			.eventWrap .event01 .cont01 .titWrap {
+				padding-bottom: 76px;
+				position: relative;
+			}
+			.eventWrap .event01 .cont01 .titWrap p {
+				display: inline-flex;
+				width: 224px;
+				height: 47px;				
+				padding-top: 4px;
+				position: absolute;
+				left: 50%;
+				top: -24px;
+				transform: translateX(-50%);
+				background: #000000;
+				color: #fff;
+				font-size: 26px;
+				align-items: center;
+				justify-content: center;
+				border-radius: 30px;
+			}
+
+		</style>
+		<article class="event01">
+			<div class="innerSection">
+				<div class="cont01">
+					<div class="titWrap">
+						<p>이벤트 경품</p>
+					</div>
+					<ul class="ev_list">
+						<li>
+							<div class="imgWrap">
+								<span>5명</span>
+							</div>
+							<p class="txt">BHC<br> 치킨세트</p>
+						</li>
+						<li>
+							<div class="imgWrap">
+								<span>25명</span>
+							</div>
+							<p class="txt">네이버페이<br> 10,000원권</p>
+						</li>
+						<li>
+							<div class="imgWrap">
+								<span>50명</span>
+							</div>
+							<p class="txt">스타벅스<br> 아메리카노</p>
+						</li>
+						<li>
+							<div class="imgWrap">
+								<span>120명</span>
+							</div>
+							<p class="txt">베스킨라빈스<br> 싱글레귤러 콘</p>
+						</li>
+						<li>
+							<div class="imgWrap">
+								<span>300명</span>
+							</div>
+							<p class="txt">바나나 우유</p>
+						</li>
+					</ul>
+				</div>
+				<style>
+					.eventWrap .event01 .cont02 .titWrap {
+						margin-bottom: 35px;
+						text-align: center;
+					}
+					.eventWrap .event01 .ev_box {
+						max-width: 800px;
+						margin: 0 auto;
+						padding: 40px 10px 40px 60px;
+						background: #fff;
+						border: 1px solid #687aff;
+						border-radius: 20px;
+					}
+					.eventWrap .event01 .ev_info li {
+						display: flex;
+						align-items: center;
+					}
+					.eventWrap .event01 .ev_info li + li {
+						margin-top: 20px;
+					}
+					.eventWrap .event01 .ev_info .e_tit {
+						display: flex;
+						width: 142px;
+						height: 42px;
+						padding-top: 4px;
+						margin-right: 15px;
+						background: #687aff;
+						color: #fff;
+						font-size: 20px;
+						border-radius: 30px;
+						align-items: center;
+						justify-content: center;
+						flex-shrink: 0;
+					}
+					.eventWrap .event01 .ev_info .e_txt {
+						color: #000;
+						font-size: 24px;
+						letter-spacing: -1px;
+					}
+					.eventWrap .event01 .ev_info .e_txt span {
+						margin-right: 4px;
+						position: relative;
+						color: #fffd78;
+						font-size: 30px;
+						-webkit-text-stroke: 0.5px #000;
+						text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+						letter-spacing: -2px;
+					}
+					.eventWrap .event01 .ev_info .e_txt span::after {
+						content: '';
+						width: 18px;
+						height: 19px;
+						position: absolute;
+						top: -16px;
+						right: -12px;
+						background: url(./images/eventImg/event02/ev_cont02_icon01.png) no-repeat;
+						background-size: contain;
+					}
+					.eventWrap .event01 .ev_box02 {
+						max-width: 800px;
+						margin: 55px auto 0;
+						padding: 40px 10px 26px 60px;
+						position: relative;
+						background: #fff;
+						border: 1px solid #687aff;
+						border-radius: 20px;
+					}
+					.eventWrap .event01 .ev_box02 .tit p {
+						display: inline-flex;
+						width: 270px;
+						height: 40px;
+						padding-top: 4px;
+						position: absolute;
+						left: 50%;
+						top: -20px;
+						transform: translateX(-50%);
+						background: #ff77f2;
+						color: #000;
+						font-size: 20px;
+						align-items: center;
+						justify-content: center;
+						border: 1px solid #687aff;
+						border-radius: 30px;
+					}
+					.eventWrap .event01 .ev_box02 .ev_etc li + li {
+						margin-top: 10px;
+					}
+					.eventWrap .event01 .ev_box02 .ev_etc p {
+						padding-left: 30px;
+						position: relative;
+						color: #000;
+						font-size: 18px;
+						letter-spacing: -0.5px;
+					}
+					.eventWrap .event01 .ev_box02 .ev_etc p::before {
+						content: '';
+						width: 20px;
+						height: 20px;
+						position: absolute;						
+						left: 0;
+						bottom: 4px;
+						background: url(./images/eventImg/event02/ev_cont02_icon02.png) no-repeat;
+						background-size: contain;
+
+					}
+					.eventWrap .event01 .ev_box02 .ev_etc p span {
+						color: #ff44ed;
+						font-size: 24px;
+					}
+				</style>
+				<div class="cont02">
+					<div class="titWrap">
+						<img src="./images/eventImg/event02/ev_cont02_tit.png" alt="선착순 500분에게 잡아바가 쏩니다">
+					</div>
+					<div class="ev_box">
+						<ul class="ev_info">
+							<li>
+								<span class="e_tit">이벤트 기간</span>
+								<p class="e_txt">2024년 4월 8일(월) ~ 4월 28일(일) / 21일간 진행</p>
+							</li>
+							<li>
+								<span class="e_tit">당첨자 발표</span>
+								<p class="e_txt">2024년 4월 30일(화)</p>
+							</li>
+							<li>
+								<span class="e_tit">참여대상</span>
+								<p class="e_txt">AI 역량 검사 <span class="gBold">완료</span> 회원</p>
+							</li>
+						</ul>
+					</div>
+					<div class="ev_box02">
+						<div class="tit">
+							<p>이벤트 참여 주의사항</p>
+						</div>
+						<ul class="ev_etc">
+							<li>
+								<p>이벤트 기간 내 검사를 신청 및 끝까지 <span>완료</span>한 경우에 이벤트 당첨 대상으로 선정됩니다.</p>
+							</li>
+							<li>
+								<p>준비된 경품이 소진될 경우 이벤트가 조기 마감될 수 있습니다.</p>
+							</li>
+						</ul>
+					</div>					
+				</div>
+				<style>
+					.eventWrap .event01 .linkWrap {
+						margin-top: 80px;
+						text-align: center;
+					}
+					.eventWrap .event01 .linkWrap a {
+						display: inline-flex;
+						width: 598px;
+						height: 119px;
+						background: #687aff;
+						color: #fff;
+						font-size: 48px;
+						border: 2px solid #000000;
+						border-radius: 60px;
+						box-shadow: 0 8px 0 #000000;
+						align-items: center;
+						justify-content: center;
+						transition: all 0.35s;
+					}
+					.eventWrap .event01 .linkWrap a span {
+						display: inline-block;
+						padding-top: 10px;
+						margin-right: 16px;
+					}
+					.eventWrap .event01 .linkWrap a::after {
+						content: '';
+						width: 58px;
+						height: 41px;
+						display: inline-block;
+						background: url(./images/eventImg/event02/ev_cont02_icon03.png) no-repeat;
+						background-size: contain;
+					}
+					.eventWrap .event01 .linkWrap a:hover {
+						transform: scale(1.05);
+					}
+				</style>
+				<div class="linkWrap">
+					<a href=""><span>AI역량검사 바로가기</span></a>
+				</div>
+			</div>
+		</article>
+		<style>
+			.eventWrap .event02 {
+				background: #f3f3f3;
+			}
+			.eventWrap .event02 .titWrap {				
+				padding: 64px 0 50px;
+				position: relative;
+				background: #00a6cc;
+				text-align: center;
+				border-radius: 85px 85px 0 0;
+			}
+			.eventWrap .event02 .titWrap p {
+				display: inline-block;
+				padding-left: 40px;
+			}
+			.eventWrap .event02 .titWrap::after {
+				content: '';
+				width: 130px;
+				height: 60px;
+				position: absolute;
+				left: 50%;
+				bottom: -60px;
+				transform: translateX(-50%);
+				background: url(./images/eventImg/event02/ev02_icon01.png) no-repeat;
+			}
+			.eventWrap .event02 .ev_cont {
+				background: url(./images/eventImg/event02/ev02_bg.png) center bottom #fff no-repeat;
+				height: 1000px;
+			}
+		</style>
+		<article class="event02">
+			<div class="titWrap">
+				<p><img src="./images/eventImg/event02/ev02_tit.png" alt="ai역량검사 이렇게 바뀌었습니다."></p>
+			</div>
+			<div class="ev_cont">
+				<div class="innerSection">
+				
+			
+				</div>
+			</div>
+			
+		</article>
+
+
+		
+		<article class="evFooter">
+			<div class="innerSection">
+				<h3>이벤트 참여 유의사항</h3>
+				<ul>
+					<li>본 이벤트는 중복 당첨이 불가합니다.</li>
+					<li>이벤트 응모 과정에서 부정한 방법을 사용한 것이 확인되는 경우 당첨이 취소될 수 있습니다.</li>
+					<li>경품은 사전공지 없이 유사 품목·가격대의 경품으로 대체될 수 있습니다.</li>
+					<li>개인정보 오기입으로 인한 경품 미수령 시 재발송되지 않습니다.</li>
+					<li>사은품 배송을 위해 당사 경품 대행사에 배송 정보가 제공되며 행사 종료 후 파기됩니다.</li>
+					<li>경품 지급시기는 사정에 따라 변경될 수 있으며, 이 경우 잡아바 홈페이지를 통해 공고합니다.</li>
+					<li>이벤트에 응모하는 경우 상기 내용에 모두 동의하는 것으로 간주합니다.</li>
+					<li>본 사이트의 이벤트는 경기도일자리재단의 위탁을 받아 ㈜인키움 에서 이벤트 운영, 관리합니다.</li>
+					<li>잡아바에서 진행하는 경품이벤트는 경기도일자리재단에서 주관 · 주최하는 이벤트로서 Apple의 경우 경품이벤트와 무관하며,<br> 어떠한 식으로든 관여하지 않습니다.</li>
+				</ul>
+			</div>
+		</article>
+	</section>
+
+
+</div>
+
+<!--잡아바 js-->
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery-1.11.3.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery-ui-1.11.4.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery.validate-1.14.0.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/common.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/mobile.common.js?v=20190418"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery.common.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/upload/js/upload.common.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/default_menu.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/swiper.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/bxslider/slick.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/bootstrap.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery.leanModal.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main/imgLiquid-min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main/jquery.vticker-min.js"></script>
+
+
+<script>	
+	$(document).ready(function() {
+		var swiper = new Swiper(".event_slide", {
+            slidesPerView: 1,
+            loop: true,
+			autoHeight : true,
+			autoplay: {
+				delay: 7000,
+				disableOnInteraction: false,
+			},
+            navigation: {
+                nextEl: ".slideWrap .swiper-button-next",
+                prevEl: ".slideWrap .swiper-button-prev",
+            },
+			pagination: {
+				clickable : true,
+				el: '.slideWrap .swiper-pagination',
+				type: 'bullets',
+			},
+        });
+		
+	});
+</script>
+</body></html>
