@@ -174,24 +174,24 @@
 .eventWrap .event01 .ev_list li:nth-child(2) .imgWrap { background-size: 60% auto; } 
 .eventWrap .event01 .ev_list .imgWrap span { width: 40px; height: 40px; top: -15px; font-size: 12px; } 
 .eventWrap .event01 .ev_list .txt { font-size: 16px; } 
-.eventWrap .event01 .cont01 .titWrap p { width: 160px; height: 40px; font-size: 18px; } 
+.eventWrap .event01 .cont01 .titWrap p { width: 160px; height: 40px; padding-top: 0; font-size: 18px; } 
 .eventWrap .event01 .cont02 .titWrap { margin-bottom: 20px; } 
 .eventWrap .event01 .ev_box { padding: 20px; } 
 .eventWrap .event01 .ev_info li { flex-direction: column; } 
-.eventWrap .event01 .ev_info .e_tit { width: 142px; height: 30px; padding-top: 4px; margin-right: 0; margin-bottom: 10px; font-size: 16px; } 
+.eventWrap .event01 .ev_info .e_tit { width: 142px; height: 30px; padding-top: 0; margin-right: 0; margin-bottom: 10px; font-size: 16px; } 
 .eventWrap .event01 .ev_info .e_txt { font-size: 16px; text-align: center; } 
 .eventWrap .event01 .ev_info .e_txt span { font-size: 20px; } 
 .eventWrap .event01 .ev_info .e_txt span::after { width: 12px; height: 13px; top: -10px; right: -8px; } 
-.eventWrap .event01 .ev_box02 .tit p { width: 80%; height: 30px; font-size: 18px; } 
+.eventWrap .event01 .ev_box02 .tit p { width: 80%; height: 30px; padding-top: 0; font-size: 18px; } 
 .eventWrap .event01 .ev_box02 { margin: 40px auto 0; padding: 30px 10px 20px; } 
 .eventWrap .event01 .ev_box02 .ev_etc p::before { width: 12px; height: 12px; } 
 .eventWrap .event01 .ev_box02 .ev_etc p span { font-size: 16px; } 
 .eventWrap .event01 .ev_box02 .ev_etc p { padding-left: 18px; font-size: 14px; } 
 
 .eventWrap .event01 .linkWrap { margin-top: 20px; } 
-.eventWrap .event01 .linkWrap a { width: 100%; height: auto; padding: 6px 0; font-size: 16px; border: 1px solid #000000; box-shadow: 0 2px 0 #000000; } 
+.eventWrap .event01 .linkWrap a { width: 90%; height: auto; padding: 6px 0; font-size: 16px; border: 1px solid #000000; box-shadow: 0 2px 0 #000000; } 
 .eventWrap .event01 .linkWrap a::after { width: 30px; height: 21px; } 
-.eventWrap .event01 .linkWrap a span { padding-top: 6px; margin-right: 10px; } 
+.eventWrap .event01 .linkWrap a span { padding-top: 2px; margin-right: 10px; } 
 
 .eventWrap .event02 .ev_cont .innerSection { padding: 60px 0 60px; } 
 .eventWrap .event02 .titWrap { padding: 30px 0 30px; border-radius: 0; } 
@@ -238,7 +238,7 @@
 .eventWrap .event03 li:nth-child(6) a::before { width: 60px; height: 73px; } 
 .eventWrap .event03 li a strong { font-size: 18px; } 
 .eventWrap .event03 li a p { margin-bottom: 10px; font-size: 16px; word-break: keep-all; } 
-.eventWrap .event03 li a .linkBtn { height: 30px; margin: auto auto 0; font-size: 14px; } 
+.eventWrap .event03 li a .linkBtn { height: 30px; margin: auto auto 0; padding-top: 0; font-size: 14px; } 
 .eventWrap .event03 li a { padding: 20px 30px; } 
 .eventWrap .event03 li:not(:nth-child(2)) a { padding: 20px 30px; } 
 .eventWrap .event03 .innerSection { padding: 30px 0; } 
