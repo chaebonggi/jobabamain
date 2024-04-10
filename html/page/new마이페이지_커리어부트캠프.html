@@ -136,16 +136,7 @@
 		<!-- //마이페이지 상단 -->
 
 		<article class="myContents">
-			<div class="innerSection">
-				<dd class="picker_wrap">
-					<div class="input-group">
-						<span class="input-group-addon">
-							<i class="fa fa-calendar"></i>
-						</span>
-						<input type="text" id="" name="" class="comm_input datepicker_cnts" data-date-format="dd-mm-yyyy" value="" title="입사가능일">
-					</div>
-					일 이후
-				</dd>
+			<div class="innerSection">				
 				<div class="contentsWrap">
 					<!-- left menu -->
 					<div class="leftMenu">
@@ -238,37 +229,204 @@
 								<div class="container">
 									<!-- 24.02.19 AI 역량검사 테이블 변경 -->
 									<div data-tab="tab4" class="infoCont active">
+										<div>
+											<!-- <dd class="picker_wrap">
+												<div class="input-group">
+													<span class="input-group-addon">
+														<i class="fa fa-calendar"></i>
+													</span>
+													<input type="text" id="" name="" class="comm_input datepicker_cnts" data-date-format="dd-mm-yyyy" value="" title="입사가능일">
+												</div>
+											</dd> -->
+											<style>
+												.mypage_datepicker {
+													
+												}
+												.check_wrap {
+													margin-bottom: 20px;
+												}
+												.check_wrap ul {
+													display: flex;
+													flex-wrap: wrap;
+													gap: 10px;
+												}
+												.check_wrap li {
+													display: flex;
+													align-items: center;
+												}
+												.check_wrap li .tit {
+													margin-right: 10px;
+													font-size: 16px;
+													flex-shrink: 0;
+												}
+												.check_wrap .datepicker_wrap {
+													display: flex;
+													margin-left: 10px;
+													align-items: center;
+												}
+												.check_wrap .datepicker_wrap .item {
+													position: relative;
+													font-size: 0;
+												}
+												.check_wrap .datepicker_wrap .item i {
+													position: absolute;
+													top: 50%;
+													left: 10px;
+													transform: translateY(-50%);
+													font-size: 14px;
+												}
+												.check_wrap .datepicker_wrap .comm_input {
+													width: 120px;
+													margin: 0;
+													padding-left: 30px;
+												}
+												@media all and (max-width:768px){
+													.check_wrap {
+														margin: 10px 0;
+													} 
+													.check_wrap ul {
+														flex-direction: column;
+													}
+													.check_wrap li {
+														flex-direction: column;
+														gap: 10px 0;
+													}
+													.check_wrap li > div {
+														width: 100%;
+													}
+													.check_wrap li .tit {
+														margin-right: 0;
+														font-size: 14px;
+													}
+													.check_wrap .comm_select {
+														min-width: 100%;
+													}
+													.check_wrap .datepicker_wrap {
+														margin-left: 0;
+													}
+													.check_wrap .datepicker_wrap .item {
+														width: 100%;
+													}
+													.check_wrap .datepicker_wrap .comm_input {
+														width: 100%;
+													}
+													.check_wrap button {
+														width: 100%;
+													}
+												}
+												
+											</style>
+											<div class="check_wrap">
+												<ul>
+													<li>
+														<p class="tit">조회기간</p>
+														<div>
+															<select id="" name="" title="조회기간" class="comm_select">
+																<option value="" selected>전체</option>
+																<option value="">신청일</option>
+																<option value="">답변일</option>
+															</select>
+														</div>
+														<div class="datepicker_wrap">
+															<div class="item">
+																<i class="fa fa-calendar"></i>
+																<input type="text" id="" name="" class="comm_input mypage_datepicker" data-date-format="dd-mm-yyyy" value="" title="조회기간">
+															</div>
+															<span class="mgr5 mgl5">~</span>
+															<div class="item">
+																<i class="fa fa-calendar"></i>
+																<input type="text" id="" name="" class="comm_input mypage_datepicker" data-date-format="dd-mm-yyyy" value="" title="조회기간">
+															</div>
+														</div>
+													</li>
+													<li>
+														<p class="tit">구분</p>
+														<div>
+															<select id="" name="" title="구분" class="comm_select">
+																<option value="" selected>전체</option>
+																<option value="">멘토링</option>
+																<option value="">궁금해요</option>
+															</select>
+														</div>
+													</li>
+													<li>
+														<p class="tit">답변상태</p>
+														<div>
+															<select id="" name="" title="답변상태" class="comm_select">
+																<option value="" selected>전체</option>
+																<option value="">답변대기</option>
+																<option value="">답변완료</option>
+																<option value="">임시저장</option>
+																<option value="">기간종료</option>
+															</select>
+														</div>
+													</li>
+													<li>
+														<button type="button" class="btn_nomal btn_puertoRico">검색</button>
+													</li>
+												</ul>
+												
+												
+											</div>
+										</div>
+										<div class="myTotal ar">
+											<select id="recordCountPerPage" name="recordCountPerPage" title="보기갯수선택" onchange="onSubmit();" class="comm_select">
+												<option value="10" selected>10개씩 보기</option>
+												<option value="25">25개씩 보기</option>
+												<option value="50">50개씩 보기</option>
+												<option value="100">100개씩 보기</option>
+											</select>
+										</div>
+										<div>
+											<ul class="untactList mgb10 mgt10">
+												<li>전체 <span class="txtGray">0건</span></li>
+												<li>답변대기 <span class="txtOrangeRed">0건</span></li>
+												<li>답변완료 <span class="txtBlue">0건</span></li>
+												<li>반려 <span class="txtRed">0건</span></li>
+												<li>궁금해요 답변 <span class="txtMint">0건</span></li>
+											</ul>
+										</div>										
 										<div class="mytb2-type">
 											<table class="table table-list">
 												<caption>커리어부트캠프 목록</caption>
-												<colgroup>
-													<col width="150px" class="mw35">
-													<col class="t_hide">
-													<col class="t_hide">
-													<col>
-													<col width="250px" class="mw30">
+												<colgroup class="m_hide">
+													<col width="60px">
+													<col width="80px">
+													<col width="100px">
+													<col width="100px">
+													<col width="*">
+													<col width="100px">
+													<col width="100px">
+													<col width="100px">
 												</colgroup>
-												<thead>
+												<thead class="m_hide">
 													<tr>
-														<th>응시일</th>
-														<th class="t_hide">기업유형</th>
-														<th class="t_hide">희망직종</th>
+														<th>연번</th>
+														<th>구분</th>
+														<th>신청일</th>
+														<th>답변일</th>
+														<th>제목</th>
+														<th>멘티</th>
 														<th>상태</th>
-														<th>결과</th>
+														<th>결과보기</th>
 													</tr>
 												</thead>
 												<tbody>
 													<tr>
-														<td class="center">2024-02-04</td>
-														<td class="center t_hide">대기업</td>
-														<td class="center t_hide">IT 인터넷</td>
-														<td class="center">진행중</td>
+														<td class="center m_hide">39</td>
+														<td class="center m_hide">멘토링</td>
+														<td class="center m_line"><span class="moTitle">신청일 :</span> 2024-02-26</td>
+														<td class="center m_hide">2024-02-26</td>
+														<td class="t_ellips m_hide"><a href="#">멘토링 신청합니다 멘토링 신청합니다 멘토링 신청합니다 멘토링 신청합니다 멘토링 신청합니다</a></td>
+														<td class="center m_hide">홍길동</td>
+														<td class="center">답변대기</td>
 														<td class="center"><a href="javascript:void(0);" class="btn_small btnPuertoRico" onclick="openModal('modal2');">보기</a></td>
 													</tr>												
 													<!-- 데이터가 없을 경우
 													<tr>
-														<td class="no_data" colspan="5">데이터가 없습니다.</td>
-													</tr>  -->
+														<td class="noData center">데이터가 없습니다.</td>
+													</tr>  
+													 -->
 													
 												</tbody>
 											</table>
@@ -491,7 +649,7 @@
 		,immediateUpdates: false
 	};
 
-	$(".datepicker_cnts").datepicker(datepicker_option);
+	$(".mypage_datepicker").datepicker(datepicker_option);
 	//$("#datepicker2").datepicker(datepicker_option);
 });
 	// 팝업

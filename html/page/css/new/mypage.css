@@ -17,6 +17,7 @@
 .txtRed { color: #ff0000 !important; } 
 .txtDoveGray { color: #666 !important; } 
 .txtBlack { color: #000 !important; } 
+.txtMint { color: #38bab2 !important; } 
 
 .bdr { border-radius: 4px; } 
 .bdGray { border: 1px solid #666666; border-radius: 4px; } 
@@ -198,11 +199,11 @@
 .mytbl-type .online_list tbody tr td:nth-child(1) { width: 100%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; } 
 
 /* 비대면취업지원 */
-.myContents ul.untactList { display: flex; } 
+.myContents ul.untactList { display: flex; flex-wrap: wrap;} 
 .myContents ul.untactList li { font-size: 14px; color: #222; } 
 .myContents ul.untactList li span { font-weight: 500; } 
 .myContents ul.untactList:nth-child(1) li + li { position: relative; margin-left: 6px; padding-left: 6px; } 
-.myContents ul.untactList:nth-child(1) li + li::before { position: absolute; content: "|"; margin-right: 10px; top: 2px; left: 0; color: #222; font-size: 4px; } 
+.myContents ul.untactList:nth-child(1) li + li::before {content: ''; width: 1px; height: 10px; position: absolute; top: 50%; left: 0; transform: translateY(-50%); background: #222; } 
 
 /* 1:1 상담 상세 */
 .myContents .askWrap .askTitle { display: flex; justify-content: space-between; align-items: center; padding-bottom: 15px; border-bottom: 1px solid #000; } 
@@ -234,7 +235,7 @@
 .myContents .confirmWrap { display: flex; flex-wrap: wrap; gap: 0 10px; } 
 .myContents .confirmWrap>p { width: 100%; } 
 .myContents .confirmWrap>p+div { margin-left: auto; } 
-.myContents .table > tbody > tr > td a { display: inline-block; } 
+.myContents .table > tbody > tr > td a { display: inline-block; text-align: center;} 
 .myContents .table > tbody > tr > td a + a { margin-top: 4px; } 
 
 
@@ -251,7 +252,7 @@
 .mytb2-type .table > thead > tr > th { padding: 10px 10px; background: #ececec; font-weight: 500; border-left: 1px solid #ccc; } 
 .mytb2-type .table > tbody > tr > td:first-child { border-left: none; } 
 .mytb2-type .table > tbody > tr > td { padding: 15px 5px; border-top: 1px solid #ddd; border-left: 1px solid #ccc; vertical-align: middle; line-height: 1.5; } 
-
+.t_ellips { overflow: hidden; white-space: nowrap; text-overflow: ellipsis;} 
 
 
 /* 팝업 */
@@ -287,7 +288,7 @@
  .m_ar { text-align: right !important; } 
  .m_wd100 { width: 100px !important; } 
  .m_wd140 { width: 140px !important; } 
- .m_ellips { display: block; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; text-align: left !important; } 
+ .m_ellips { display: block; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;} 
 
  /* 테이블 모바일 */
  .table .moTitle { display: inline-block; margin-right: 4px; vertical-align: initial; } 
@@ -362,6 +363,11 @@
  .mytb2-type .enter_list tbody tr td:nth-child(2) { width: calc(100% - 50px) } 
  .mytb2-type .enter_list tbody tr td:nth-child(3) { margin-left: 50px; } 
  .mytb2-type .enter_list tbody tr td:last-child { margin-left: auto; } 
+
+ /* 기타 */
+ .mytb2-type .table > tbody > tr > td.m_line {border-left: 0;}
+ .myContents .myTotal {display: none;}
+
  }
 
 @media all and (max-width:640px){
@@ -369,6 +375,9 @@
  .mw30 { width: 30%; } 
  .mytb2-type .table > thead > tr > th { padding: 6px 10px; font-size: 12px; } 
  .mytb2-type .table > tbody > tr > td { padding: 12px 5px; font-size: 12px; } 
+ 
+ 
+
 
  .aiPopup { width: calc(100% - 20px); padding: 20px 20px; } 
  .aiPopup .pop_cont li { flex-direction: column; } 
