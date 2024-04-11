@@ -25,8 +25,10 @@
 	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/mobile.css">
 	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/mobile.css">
 
+	<!-- 2024.04.11 기존 사용하고있는 css 추가 했습니다 -->
 	<link type="text/css" rel="stylesheet" href="../../resource/css/font-awesome.min.css">
 	<link type="text/css" rel="stylesheet" href="../../resource/css/pe-icon-7-stroke.css">
+	<!-- //2024.04.11 기존 사용하고있는 css 추가 했습니다 -->
 
 	<style type="text/css">.imgLiquid img {visibility:hidden}</style>
 
@@ -59,8 +61,9 @@
 	<!-- default css/js -->
 	
 
-	<!--  -->
+	<!-- 2024.04.11 css 추가 및 변경 했습니다 -->
 	<link rel="stylesheet" href="./css/new/mypage.css">
+	<!-- //2024.04.11 css 추가 및 변경 했습니다 -->
 
 </head>
 <body>
@@ -207,6 +210,7 @@
 						<div class="myTitle mgb30">
 							<h3 class="tit">비대면 취업지원</h3>
 						</div>
+						<!-- 2024.04.11 커리어부트캠프 테이블 수정 및 메뉴 추가 했습니다 -->
 						<!-- 모바일 카테고리 메뉴 -->
 						<div class="categoryMobile">
 							<select name="" id="tabMobile" class="comm_select">
@@ -214,7 +218,6 @@
 								<option value="" data-tab="tab2">자기소개서 첨삭(<span>0</span>)</option>
 								<option value="" data-tab="tab3">AI 역량검사(<span>0</span>)</option>
 								<option value="" data-tab="tab4">커리어부트캠프(<span>4</span>)</option>
-								<!-- 2024.02.21 취업멘토링 메뉴 삭제 -->
 							</select>
 						</div>
 						<!-- PC 카테고리 메뉴 -->
@@ -225,382 +228,169 @@
 							<li data-tab="tab4" class="active"><a href="javascript:void(0);">커리어부트캠프(<span>0</span>)</a></li>
 						</ul>
 						<!-- 컨텐츠 -->
-
-								<div class="container">
-									<!-- 24.02.19 AI 역량검사 테이블 변경 -->
-									<div data-tab="tab4" class="infoCont active">
-										<div>
-											<!-- <dd class="picker_wrap">
-												<div class="input-group">
-													<span class="input-group-addon">
-														<i class="fa fa-calendar"></i>
-													</span>
-													<input type="text" id="" name="" class="comm_input datepicker_cnts" data-date-format="dd-mm-yyyy" value="" title="입사가능일">
+						<div class="container">
+							<div data-tab="tab4" class="infoCont active">
+								<div>
+									<div class="check_wrap">
+										<ul>
+											<li>
+												<p class="tit">조회기간</p>
+												<div>
+													<select id="" name="" title="조회기간" class="comm_select">
+														<option value="" selected>전체</option>
+														<option value="">신청일</option>
+														<option value="">답변일</option>
+													</select>
 												</div>
-											</dd> -->
-											<style>
-												.check_wrap {
-													margin-bottom: 20px;
-												}
-												.check_wrap ul {
-													display: flex;
-													flex-wrap: wrap;
-													gap: 10px;
-												}
-												.check_wrap li {
-													display: flex;
-													align-items: center;
-												}
-												.check_wrap li .tit {
-													margin-right: 10px;
-													font-size: 16px;
-													flex-shrink: 0;
-												}
-												.check_wrap .datepicker_wrap {
-													display: flex;
-													margin-left: 10px;
-													align-items: center;
-												}
-												.check_wrap .datepicker_wrap .item {
-													position: relative;
-													font-size: 0;
-												}
-												.check_wrap .datepicker_wrap .item i {
-													position: absolute;
-													top: 50%;
-													left: 10px;
-													transform: translateY(-50%);
-													font-size: 14px;
-												}
-												.check_wrap .datepicker_wrap .comm_input {
-													width: 120px;
-													margin: 0;
-													padding-left: 30px;
-												}
-												@media all and (max-width:768px){
-													.check_wrap {
-														margin: 10px 0;
-													} 
-													.check_wrap ul {
-														flex-direction: column;
-													}
-													.check_wrap li {
-														flex-direction: column;
-														gap: 10px 0;
-													}
-													.check_wrap li > div {
-														width: 100%;
-													}
-													.check_wrap li .tit {
-														margin-right: 0;
-														font-size: 14px;
-													}
-													.check_wrap .comm_select {
-														min-width: 100%;
-													}
-													.check_wrap .datepicker_wrap {
-														margin-left: 0;
-													}
-													.check_wrap .datepicker_wrap .item {
-														width: 100%;
-													}
-													.check_wrap .datepicker_wrap .comm_input {
-														width: 100%;
-													}
-													.check_wrap button {
-														width: 100%;
-													}
-												}
-												
-											</style>
-											<div class="check_wrap">
-												<ul>
-													<li>
-														<p class="tit">조회기간</p>
-														<div>
-															<select id="" name="" title="조회기간" class="comm_select">
-																<option value="" selected>전체</option>
-																<option value="">신청일</option>
-																<option value="">답변일</option>
-															</select>
-														</div>
-														<div class="datepicker_wrap">
-															<div class="item">
-																<i class="fa fa-calendar"></i>
-																<input type="text" id="" name="" class="comm_input mypage_datepicker" data-date-format="dd-mm-yyyy" value="" title="조회기간">
-															</div>
-															<span class="mgr5 mgl5">~</span>
-															<div class="item">
-																<i class="fa fa-calendar"></i>
-																<input type="text" id="" name="" class="comm_input mypage_datepicker" data-date-format="dd-mm-yyyy" value="" title="조회기간">
-															</div>
-														</div>
-													</li>
-													<li>
-														<p class="tit">구분</p>
-														<div>
-															<select id="" name="" title="구분" class="comm_select">
-																<option value="" selected>전체</option>
-																<option value="">멘토링</option>
-																<option value="">궁금해요</option>
-															</select>
-														</div>
-													</li>
-													<li>
-														<p class="tit">답변상태</p>
-														<div>
-															<select id="" name="" title="답변상태" class="comm_select">
-																<option value="" selected>전체</option>
-																<option value="">답변대기</option>
-																<option value="">답변완료</option>
-																<option value="">임시저장</option>
-																<option value="">기간종료</option>
-															</select>
-														</div>
-													</li>
-													<li>
-														<button type="button" class="btn_nomal btn_puertoRico">검색</button>
-													</li>
-												</ul>
-												
-												
-											</div>
-										</div>
-										<div class="myTotal ar">
-											<select id="recordCountPerPage" name="recordCountPerPage" title="보기갯수선택" onchange="onSubmit();" class="comm_select">
-												<option value="10" selected>10개씩 보기</option>
-												<option value="25">25개씩 보기</option>
-												<option value="50">50개씩 보기</option>
-												<option value="100">100개씩 보기</option>
-											</select>
-										</div>
-										<div>
-											<ul class="untactList mgb10 mgt10">
-												<li>전체 <span class="txtGray">0건</span></li>
-												<li>답변대기 <span class="txtOrangeRed">0건</span></li>
-												<li>답변완료 <span class="txtBlue">0건</span></li>
-												<li>반려 <span class="txtRed">0건</span></li>
-												<li>궁금해요 답변 <span class="txtMint">0건</span></li>
-											</ul>
-										</div>										
-										<div class="mytb2-type">
-											<table class="table table-list">
-												<caption>커리어부트캠프 목록</caption>
-												<colgroup class="m_hide">
-													<col width="60px">
-													<col width="80px">
-													<col width="100px">
-													<col width="100px">
-													<col width="*">
-													<col width="100px">
-													<col width="100px">
-													<col width="100px">
-												</colgroup>
-												<thead class="m_hide">
-													<tr>
-														<th>연번</th>
-														<th>구분</th>
-														<th>신청일</th>
-														<th>답변일</th>
-														<th>제목</th>
-														<th>멘티</th>
-														<th>상태</th>
-														<th>결과보기</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td class="center m_hide">39</td>
-														<td class="center m_hide">멘토링</td>
-														<td class="center m_line"><span class="moTitle">신청일 :</span> 2024-02-26</td>
-														<td class="center m_hide">-</td>
-														<td class="m_hide"><a href="#" class="t_ellips">멘토링 신청합니다 멘토링 신청합니다 멘토링 신청합니다 멘토링 신청합니다 멘토링 신청합니다</a></td>
-														<td class="center m_hide">홍길동</td>
-														<td class="center">답변대기</td>
-														<td class="center"><a href="javascript:void(0);" class="btn_small btnPuertoRico">보기</a></td>
-													</tr>
-													<tr>
-														<td class="center m_hide">38</td>
-														<td class="center m_hide">멘토링</td>
-														<td class="center m_line"><span class="moTitle">신청일 :</span> 2024-02-24</td>
-														<td class="center m_hide">-</td>
-														<td class="m_hide"><a href="#" class="t_ellips">서비스기획과 운영 쪽으로 진로</a></td>
-														<td class="center m_hide">임꺽정</td>
-														<td class="center">임시저장</td>
-														<td class="center"><a href="javascript:void(0);" class="btn_small btnPuertoRico">보기</a></td>
-													</tr>		
-													<tr>
-														<td class="center m_hide">37</td>
-														<td class="center m_hide">멘토링</td>
-														<td class="center m_line"><span class="moTitle">신청일 :</span> 2024-02-24</td>
-														<td class="center m_hide">2024-02-23</td>
-														<td class="m_hide"><a href="#" class="t_ellips">IT웹 개발 관련 직무 개발</a></td>
-														<td class="center m_hide">장보고</td>
-														<td class="center">반려</td>
-														<td class="center"><a href="javascript:void(0);" class="btn_small btnPuertoRico">보기</a></td>
-													</tr>	
-													<tr>
-														<td class="center m_hide">36</td>
-														<td class="center m_hide">궁금해요</td>
-														<td class="center m_line"><span class="moTitle">신청일 :</span> 2024-01-24</td>
-														<td class="center m_hide">2024-01-28</td>
-														<td class="m_hide"><a href="#" class="t_ellips">면접 관련 멘토링 질문</a></td>
-														<td class="center m_hide">이순신</td>
-														<td class="center">답변완료</td>
-														<td class="center"><a href="javascript:void(0);" class="btn_small btnPuertoRico">보기</a></td>
-													</tr>										
-													<!-- 데이터가 없을 경우 
-													<tr>
-														<td colspan="8" class="noData center">데이터가 없습니다.</td>
-													</tr>  
-													-->
-													 
-													
-												</tbody>
-											</table>
-										</div>
-										<!-- begin: paging -->
-										<div class="pagination_wrap">
-											<div class="mo_paging">
-												<p class="active_txt"><span class="cut">1</span> / <span>1</span></p>
-											</div>
-											<ul class="pagination list-paging">
-												<li class="paginate_button active list"><a href="#none">1</a></li>
-											</ul>
-										</div>
+												<div class="datepicker_wrap">
+													<div class="item">
+														<i class="fa fa-calendar"></i>
+														<input type="text" id="" name="" class="comm_input mypage_datepicker" data-date-format="dd-mm-yyyy" value="" title="조회기간">
+													</div>
+													<span class="mgr5 mgl5">~</span>
+													<div class="item">
+														<i class="fa fa-calendar"></i>
+														<input type="text" id="" name="" class="comm_input mypage_datepicker" data-date-format="dd-mm-yyyy" value="" title="조회기간">
+													</div>
+												</div>
+											</li>
+											<li>
+												<p class="tit">구분</p>
+												<div>
+													<select id="" name="" title="구분" class="comm_select">
+														<option value="" selected>전체</option>
+														<option value="">멘토링</option>
+														<option value="">궁금해요</option>
+													</select>
+												</div>
+											</li>
+											<li>
+												<p class="tit">답변상태</p>
+												<div>
+													<select id="" name="" title="답변상태" class="comm_select">
+														<option value="" selected>전체</option>
+														<option value="">답변대기</option>
+														<option value="">답변완료</option>
+														<option value="">임시저장</option>
+														<option value="">기간종료</option>
+													</select>
+												</div>
+											</li>
+											<li>
+												<button type="button" class="btn_nomal btn_puertoRico">검색</button>
+											</li>
+										</ul>
 									</div>
 								</div>
+								<div class="myTotal ar">
+									<select id="recordCountPerPage" name="recordCountPerPage" title="보기갯수선택" onchange="onSubmit();" class="comm_select">
+										<option value="10" selected>10개씩 보기</option>
+										<option value="25">25개씩 보기</option>
+										<option value="50">50개씩 보기</option>
+										<option value="100">100개씩 보기</option>
+									</select>
+								</div>
+								<div>
+									<ul class="untactList mgb10 mgt10">
+										<li>전체 <span class="txtGray">0건</span></li>
+										<li>답변대기 <span class="txtOrangeRed">0건</span></li>
+										<li>답변완료 <span class="txtBlue">0건</span></li>
+										<li>반려 <span class="txtRed">0건</span></li>
+										<li>궁금해요 답변 <span class="txtMint">0건</span></li>
+									</ul>
+								</div>										
+								<div class="mytb2-type">
+									<table class="table table-list">
+										<caption>커리어부트캠프 목록</caption>
+										<colgroup class="m_hide">
+											<col width="60px">
+											<col width="80px">
+											<col width="100px">
+											<col width="100px">
+											<col width="*">
+											<col width="100px">
+											<col width="100px">
+											<col width="100px">
+										</colgroup>
+										<thead class="m_hide">
+											<tr>
+												<th>연번</th>
+												<th>구분</th>
+												<th>신청일</th>
+												<th>답변일</th>
+												<th>제목</th>
+												<th>멘티</th>
+												<th>상태</th>
+												<th>결과보기</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td class="center m_hide">39</td>
+												<td class="center m_hide">멘토링</td>
+												<td class="center m_line"><span class="moTitle">신청일 :</span> 2024-02-26</td>
+												<td class="center m_hide">-</td>
+												<td class="m_hide"><a href="#" class="t_ellips">멘토링 신청합니다 멘토링 신청합니다 멘토링 신청합니다 멘토링 신청합니다 멘토링 신청합니다</a></td>
+												<td class="center m_hide">홍길동</td>
+												<td class="center">답변대기</td>
+												<td class="center"><a href="javascript:void(0);" class="btn_small btnPuertoRico">보기</a></td>
+											</tr>
+											<tr>
+												<td class="center m_hide">38</td>
+												<td class="center m_hide">멘토링</td>
+												<td class="center m_line"><span class="moTitle">신청일 :</span> 2024-02-24</td>
+												<td class="center m_hide">-</td>
+												<td class="m_hide"><a href="#" class="t_ellips">서비스기획과 운영 쪽으로 진로</a></td>
+												<td class="center m_hide">임꺽정</td>
+												<td class="center">임시저장</td>
+												<td class="center"><a href="javascript:void(0);" class="btn_small btnPuertoRico">보기</a></td>
+											</tr>		
+											<tr>
+												<td class="center m_hide">37</td>
+												<td class="center m_hide">멘토링</td>
+												<td class="center m_line"><span class="moTitle">신청일 :</span> 2024-02-24</td>
+												<td class="center m_hide">2024-02-23</td>
+												<td class="m_hide"><a href="#" class="t_ellips">IT웹 개발 관련 직무 개발</a></td>
+												<td class="center m_hide">장보고</td>
+												<td class="center">반려</td>
+												<td class="center"><a href="javascript:void(0);" class="btn_small btnPuertoRico">보기</a></td>
+											</tr>	
+											<tr>
+												<td class="center m_hide">36</td>
+												<td class="center m_hide">궁금해요</td>
+												<td class="center m_line"><span class="moTitle">신청일 :</span> 2024-01-24</td>
+												<td class="center m_hide">2024-01-28</td>
+												<td class="m_hide"><a href="#" class="t_ellips">면접 관련 멘토링 질문</a></td>
+												<td class="center m_hide">이순신</td>
+												<td class="center">답변완료</td>
+												<td class="center"><a href="javascript:void(0);" class="btn_small btnPuertoRico">보기</a></td>
+											</tr>										
+											<!-- 데이터가 없을 경우 
+											<tr>
+												<td colspan="8" class="noData center">데이터가 없습니다.</td>
+											</tr>  
+											-->			
+										</tbody>
+									</table>
+								</div>
+								<!-- begin: paging -->
+								<div class="pagination_wrap">
+									<div class="mo_paging">
+										<p class="active_txt"><span class="cut">1</span> / <span>1</span></p>
+									</div>
+									<ul class="pagination list-paging">
+										<li class="paginate_button active list"><a href="#none">1</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
 						<!-- //컨텐츠 -->
+						<!-- //2024.04.11 커리어부트캠프 테이블 수정 및 메뉴 추가 했습니다 -->
 					</div>
 				</div>
-			</div>
-			
+			</div>			
 		</article>
 
-		<div class="shadow"></div>
-		<!--AI역량검사 팝업1 -->
-		<div class="aiPopup modal1" style="display: none;">
-			<div class="pop_head">
-				<p>AI역량검사 응시하기</p>
-				<a href="#" class="pop_close" onclick="pop_close()">닫기</a>
-			</div>
-			<div class="pop_cont">
-				<ul>
-					<li>
-						<strong class="p_tit">신청인</strong>
-						<p class="p_txt">홍길동</p>
-					</li>
-					<li>
-						<strong class="p_tit">기업유형</strong>
-						<p class="p_txt">
-							<select class="select_style">
-								<option>선택</option>
-								<option>대기업</option>
-								<option>중견·강소기업</option>
-								<option>외국계 기업</option>
-								<option>공기업·공사</option>
-								<option>상장기업</option>
-								<option>공무원·공직</option>
-							</select>
-							<!-- 필수 선택
-								<span class="error_text">※ 기업유형을 선택해주세요</span> 
-							-->
-						</p>
-					</li>
-					<li>
-						<strong class="p_tit">희망직종</strong>
-						<p class="p_txt">
-							<select class="select_style">
-								<option>선택</option>                        
-								<option>선택</option>
-								<option>경영·사무</option>
-								<option>IT·인터넷</option>
-								<option>연구·개발·설계</option>
-								<option>영업·고객상담</option>
-								<option>전문·특수직</option>
-								<option>생산·제조</option>
-								<option>의료</option>
-								<option>마케팅·광고·홍보</option>
-								<option>교육</option>
-								<option>디자인</option>
-								<option>무역·유통</option>
-								<option>건설</option>
-								<option>미디어</option>
-								<option>서비스</option>
-							</select>
-							<!-- 필수 선택
-								<span class="error_text">※ 기업유형을 선택해주세요</span> 
-							-->
-						</p>
-					</li>
-					<li>
-						<strong class="p_tit">인증코드</strong>
-						<div class="p_code_wrap">
-							<p class="p_code"></p>
-							<a href="#" class="code_btn">인증코드발급</a>
-							<!-- <a href="#" class="code_btn p_blue">복사하기</a> -->
-							<span>※ 인증코드는 AI역량검사 응시를 위해서 필요합니다.</span> 
-						</div>                               
-					</li>
-				</ul>
-			</div>
-			<div class="pop_btn">
-				<a href="#" onclick="pop_close()">취소</a>
-				<a href="#">응시</a>
-				<!-- <a href="#" class="p_blue">응시</a> -->
-			</div>
-		</div>
-		<!--AI역량검사 팝업2 -->
-		<div class="aiPopup modal2" style="display: none;">
-			<div class="pop_head">
-				<p>AI역량검사 이어하기</p>
-				<a href="#" class="pop_close" onclick="pop_close()">닫기</a>
-			</div>
-			<div class="pop_cont">
-				<p class="cont_txt">
-					기존 신청한 검사가 아직 진행 중입니다.<br>
-					<span>검사 종료 후 새로운 검사를 응시</span>하실 수 있습니다.<br>
-					이어서 진행하시겠습니까? 
-				</p>
-				<ul>            
-					<li class="code_confirm">
-						<a href="#">인증코드 확인></a>                             
-					</li>
-				</ul>
-			</div>
-			<div class="pop_btn">
-				<a href="#" onclick="pop_close()">취소</a>
-				<a href="#" class="p_blue">AI역량검사 이어하기</a>
-			</div>
-		</div>
-		<!--AI역량검사 팝업3 -->
-		<div class="aiPopup modal3" style="display: none;">
-			<div class="pop_head">
-				<p>AI역량검사 이어하기</p>
-				<a href="#" class="pop_close" onclick="pop_close()">닫기</a>
-			</div>
-			<div class="pop_cont">
-				<p class="cont_txt">
-					기존 신청한 검사가 아직 진행 중입니다.<br>
-					<span>검사 종료 후 새로운 검사를 응시</span>하실 수 있습니다.<br>
-					이어서 진행하시겠습니까? 
-				</p>
-				<ul>            
-					<li>
-						<strong class="p_tit">인증코드</strong>
-						<div class="p_code_wrap">
-							<p class="p_code">abcdxxx</p>
-							<a href="#" class="code_btn p_blue">복사하기</a>
-							<span>※ 인증코드는 AI역량검사 응시를 위해서 필요합니다.</span> 
-						</div>                               
-					</li>
-				</ul>
-			</div>
-			<div class="pop_btn">
-				<a href="#" onclick="pop_close()">취소</a>
-				<a href="#" class="p_blue">AI역량검사 이어하기</a>
-			</div>
-		</div>
 	
 		
 	<!--잡아바 js-->
@@ -608,7 +398,9 @@
 	<style>
 		
 	</style>
+	<!-- 2024.04.11 기존에 사용하고 있던 datepicker 스크립트 추가 했습니다 -->
 	<script src="https://www.jobaba.net/resource/js/lib/datepicker/bootstrap-datepicker.js"></script>
+	<!-- 2024.04.11 기존에 사용하고 있던 datepicker 스크립트 추가 했습니다 -->
 	<script>
 		// 스크롤 js
 	$(document).ready(function(){
@@ -648,6 +440,7 @@
 			$('.contentsBox .infoCont[data-tab='+select_data+']').addClass('active');
 		});	
 	});
+	// 2024.04.11 기존에 사용하고 있던 datepicker 추가 했습니다
 	$(function() {
 	var datepicker_option = {
 		autoclose: true
@@ -678,7 +471,6 @@
 	};
 
 	$(".mypage_datepicker").datepicker(datepicker_option);
-	//$("#datepicker2").datepicker(datepicker_option);
 });
 	// 팝업
 	function openModal(modalname) {
