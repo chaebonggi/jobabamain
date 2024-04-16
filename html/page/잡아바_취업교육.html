@@ -1118,11 +1118,16 @@
     </header>
 	<style>
 		.contents-wrap .innerSection {			
-			background: url(../);
+			padding: 50px 20px;
 		}
+        .contents-wrap .job_info_wrap {
+            display: flex;
+        }
 		.contents-wrap .job_info_wrap .category_wrap {
 			width: 260px;
 			height: auto;
+            margin-right: 40px;
+            flex-shrink: 0;
 		}
 		.contents-wrap .job_info_wrap .category_wrap .srch_box {
 			position: relative;
@@ -1144,6 +1149,28 @@
 			border: 1px solid #e5e5e5;
 			border-radius: 10px;
 		}
+        .contents-wrap .job_info_wrap .category_wrap .cate_search .srch_title {
+            position: relative;
+            padding-left: 26px;
+            margin-bottom: 20px;
+            color: #000000;
+            font-size: 18px;
+        }
+        .contents-wrap .job_info_wrap .category_wrap .cate_search .srch_title::before {
+            content: '';
+            width: 18px;
+            height: 18px;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            background: url(./images/main_2024/sub/ico_srch_tit.png) no-repeat;
+        }
+        .contents-wrap .job_info_wrap .category_wrap .cate_search .srch_wrap_item:first-child  {
+            padding-bottom: 25px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #efefef;
+        }
 		.contents-wrap .job_info_wrap .category_wrap .check_item {
 			padding: 10px 6px;
 			border-bottom: 1px solid #eaeaea;			
@@ -1173,11 +1200,16 @@
 			background-position: center;
 			background-repeat: no-repeat;
 		}
+        .contents-wrap .job_info_wrap .category_wrap .check_item input:checked + .check_txt {
+            color: #000;
+        }
 		.contents-wrap .job_info_wrap .category_wrap .check_item .check_txt {
 			display: flex;
 			color: #777777;
-			font-size: 13px;
+			font-size: 14px;
 			align-items: center;
+            word-break: keep-all;
+            letter-spacing: -1px;
 		}
 		.contents-wrap .job_info_wrap .category_wrap .srch_wrap .scrollbar-outer { max-height:280px; overflow-y:scroll; } 
 		.contents-wrap .job_info_wrap .category_wrap .srch_wrap .scrollbar-outer > .scroll-content.scroll-scrolly_visible { margin: 0; left: 0;} 
@@ -1200,7 +1232,7 @@
 			position: relative;
 			background: #fff;
 			color: #777777;
-			font-size: 13px;
+			font-size: 14px;
 			border: 1px solid #e5e5e5;
 			border-radius: 5px;
 			text-align: left;
@@ -1219,10 +1251,89 @@
 		.contents-wrap .job_info_wrap .category_wrap .cate_search .srch_btn.active::after {
 			transform: translateY(-50%) rotate(180deg);
 		}
-
 		.contents-wrap .job_info_wrap .category_wrap .cate_search .srch_btn.active + .srch_item {
 			display: block;
 		}
+        .contents-wrap .job_info_wrap .category_wrap .cate_result {            
+            padding: 16px 20px;
+            margin: 20px 0;
+            border: 1px solid #e5e5e5;
+            border-radius: 10px;           
+        }
+        .contents-wrap .job_info_wrap .category_wrap .cate_result .result_btn {
+            display: flex;            
+            justify-content: space-between;
+            align-items: center;
+        }
+        .contents-wrap .job_info_wrap .category_wrap .cate_result button:focus {
+            border: 1px solid transparent;
+        }
+        .contents-wrap .job_info_wrap .category_wrap .cate_result .reset_btn {
+            padding-left: 16px;
+            position: relative;
+            color: #555555;
+            font-size: 12px;
+        }
+        .contents-wrap .job_info_wrap .category_wrap .cate_result .reset_btn::before {
+            content: '';
+            width: 13px;
+            height: 13px;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            background: url(./images/main_2024/sub/ico_reset.png) no-repeat;
+        }
+        .contents-wrap .job_info_wrap .category_wrap .cate_result .submit_btn {
+            padding: 8px 12px;
+            background: #008ae0;
+            color: #fff;
+            font-size: 12px;
+            border-radius: 5px;
+        }
+        .contents-wrap .job_info_wrap .category_wrap .cate_result .keywords_wrap {
+            padding-top: 16px;
+            margin-top: 20px;
+            border-top: 1px solid #efefef;
+        }
+        .contents-wrap .job_info_wrap .category_wrap .cate_result .cate_keywords {
+            display: inline-flex;
+            flex-wrap: wrap;
+            gap: 4px 10px;
+        }
+        .contents-wrap .job_info_wrap .category_wrap .cate_result .cate_keywords .selected_keyword {        
+            display: flex;                
+            padding: 2px 10px;
+            color: #6e6e6e;
+            font-size: 12px;
+            font-weight: 300;
+            align-items: center;
+            border: 1px solid #cfcfcf;
+            border-radius: 20px;
+            box-sizing: border-box;
+            align-items: center;
+        }
+        .contents-wrap .job_info_wrap .category_wrap .cate_result .cate_keywords .selected_keyword .btn_del {
+            width: 8px;
+            height: 8px;
+            margin-left: 4px;
+            background: url(./images/main_2024/sub/ico_del.png) no-repeat;
+            border: none;
+        }
+        /* content_wrap */
+        .contents-wrap .job_info_wrap .content_wrap {
+            width: 100%;
+        }
+        .contents-wrap .job_info_wrap .content_wrap p.tit {
+            color: #000;
+            font-size: 24px;
+            font-weight: 500;
+        }
+        .contents-wrap .job_info_wrap .content_wrap .fc_blue {
+            color: #008ae0;
+            font-weight: 500;
+        }
+        
 	</style>
 	<div class="contents-wrap">
 		<div class="innerSection">
@@ -1435,11 +1546,149 @@
 										<ul class="scrollbar-outer">
 											<li class="check_item">
 												<label>
-													<input type="checkbox" id="srchArea0" name="srchArea">
-													<span class="check_txt">가평군</span>											
+													<input type="checkbox" id="srchJob0" name="srchJob">
+													<span class="check_txt">사업관리</span>											
 												</label>
 											</li>
-											
+											<li class="check_item">
+												<label>
+													<input type="checkbox" id="srchJob1" name="srchJob">
+													<span class="check_txt">경영・회계・사무</span>											
+												</label>
+											</li>
+                                            <li class="check_item">
+												<label>
+													<input type="checkbox" id="srchJob2" name="srchJob">
+													<span class="check_txt">금융・보험</span>											
+												</label>
+											</li>
+                                            <li class="check_item">
+												<label>
+													<input type="checkbox" id="srchJob3" name="srchJob">
+													<span class="check_txt">교육・자연・사회과학</span>											
+												</label>
+											</li>
+                                            <li class="check_item">
+												<label>
+													<input type="checkbox" id="srchJob4" name="srchJob">
+													<span class="check_txt">법률・경찰・소방・교도・국방</span>											
+												</label>
+											</li>
+                                            <li class="check_item">
+												<label>
+													<input type="checkbox" id="srchJob5" name="srchJob">
+													<span class="check_txt">보건・의료</span>											
+												</label>
+											</li>
+                                            <li class="check_item">
+												<label>
+													<input type="checkbox" id="srchJob6" name="srchJob">
+													<span class="check_txt">사회복지・종교</span>											
+												</label>
+											</li>
+                                            <li class="check_item">
+												<label>
+													<input type="checkbox" id="srchJob7" name="srchJob">
+													<span class="check_txt">문화・예술・디자인・방송</span>											
+												</label>
+											</li>
+                                            <li class="check_item">
+												<label>
+													<input type="checkbox" id="srchJob8" name="srchJob">
+													<span class="check_txt">운전・운송</span>											
+												</label>
+											</li>
+                                            <li class="check_item">
+												<label>
+													<input type="checkbox" id="srchJob9" name="srchJob">
+													<span class="check_txt">영업판매</span>											
+												</label>
+											</li>
+                                            <li class="check_item">
+												<label>
+													<input type="checkbox" id="srchJob10" name="srchJob">
+													<span class="check_txt">경비・청소</span>											
+												</label>
+											</li>
+                                            <li class="check_item">
+												<label>
+													<input type="checkbox" id="srchJob11" name="srchJob">
+													<span class="check_txt">이용・숙박・여행・오락・스포츠</span>											
+												</label>
+											</li>
+                                            <li class="check_item">
+												<label>
+													<input type="checkbox" id="srchJob12" name="srchJob">
+													<span class="check_txt">음식서비스</span>											
+												</label>
+											</li>
+                                            <li class="check_item">
+												<label>
+													<input type="checkbox" id="srchJob13" name="srchJob">
+													<span class="check_txt">건설</span>											
+												</label>
+											</li>
+                                            <li class="check_item">
+												<label>
+													<input type="checkbox" id="srchJob14" name="srchJob">
+													<span class="check_txt">기계</span>											
+												</label>
+											</li>
+                                            <li class="check_item">
+												<label>
+													<input type="checkbox" id="srchJob15" name="srchJob">
+													<span class="check_txt">재료</span>											
+												</label>
+											</li>
+                                            <li class="check_item">
+												<label>
+													<input type="checkbox" id="srchJob16" name="srchJob">
+													<span class="check_txt">화학・바이오</span>											
+												</label>
+											</li>
+                                            <li class="check_item">
+												<label>
+													<input type="checkbox" id="srchJob17" name="srchJob">
+													<span class="check_txt">섬유・의복</span>											
+												</label>
+											</li>
+                                            <li class="check_item">
+												<label>
+													<input type="checkbox" id="srchJob18" name="srchJob">
+													<span class="check_txt">전기・전자</span>											
+												</label>
+											</li>
+                                            <li class="check_item">
+												<label>
+													<input type="checkbox" id="srchJob19" name="srchJob">
+													<span class="check_txt">정보통신</span>											
+												</label>
+											</li>
+                                            <li class="check_item">
+												<label>
+													<input type="checkbox" id="srchJob20" name="srchJob">
+													<span class="check_txt">식품가공</span>											
+												</label>
+											</li>
+                                            <li class="check_item">
+												<label>
+													<input type="checkbox" id="srchJob21" name="srchJob">
+													<span class="check_txt">인쇄・목재・가구・공예</span>											
+												</label>
+											</li>
+                                            <li class="check_item">
+												<label>
+													<input type="checkbox" id="srchJob22" name="srchJob">
+													<span class="check_txt">환경・에너지・안전</span>											
+												</label>
+											</li>
+                                            <li class="check_item">
+												<label>
+													<input type="checkbox" id="srchJob23" name="srchJob">
+													<span class="check_txt">농림어업</span>											
+												</label>
+											</li>
+
 										</ul>
 									</div>
 								</div>
@@ -1447,10 +1696,613 @@
 						</div>
 					</div>
 					<div class="cate_result">
-						<p>나를 위한 맞춤 검색</p>
-
+                        <div class="result_btn">
+                            <button type="button" class="reset_btn"><span>선택 초기화</span></button>
+                            <button type="button" class="submit_btn"><span>맞춤선택 검색하기</span></button>
+                        </div>
+                        <div class="keywords_wrap">
+                            <div class="cate_keywords">
+                                <span class="selected_keyword">서울<button type="button" class="btn_del"><span class="ir-text">삭제</span></button></span>
+                                <span class="selected_keyword">고양시<button type="button" class="btn_del"><span class="ir-text">삭제</span></button></span>
+                                <span class="selected_keyword">경영 · 회계 · 사무<button type="button" class="btn_del"><span class="ir-text">삭제</span></button></span>
+                                <span class="selected_keyword">서울<button type="button" class="btn_del"><span class="ir-text">삭제</span></button></span>
+                                <span class="selected_keyword">고양시<button type="button" class="btn_del"><span class="ir-text">삭제</span></button></span>
+                                <span class="selected_keyword">안산시<button type="button" class="btn_del"><span class="ir-text">삭제</span></button></span>
+                            </div>
+                        </div>
 					</div>
+                    <div class="cate_banner">
+                        <ul>
+                            <li><a href="">
+                                <img src="./images/main_2024/sub/cate_banner01.png" alt="자시소개서 첨삭 바로가기">
+                            </a></li>
+                        </ul>
+                    </div>
 				</div>
+                <style>
+                    /* recommend_list */
+                    .contents-wrap .job_info_wrap .content_wrap .recommend_list ul {
+                        display: flex;
+                        margin-top: 16px;
+                        justify-content: space-between;
+                        gap: 5px;
+                    }
+                    .contents-wrap .job_info_wrap .content_wrap .recommend_list ul li {
+                        max-width: 220px;
+                    }
+                    .contents-wrap .job_info_wrap .content_wrap .recommend_list .img_wrap {
+                        max-width: 220px;
+                        width: 100%;
+                        height: 176px;
+                        margin-bottom: 16px;
+                        border-radius: 10px;
+                        overflow: hidden;
+                    }
+                    .contents-wrap .job_info_wrap .content_wrap .recommend_list .img_wrap img {
+                        height: 100%;
+                        background-size: cover;
+                    }
+                    .contents-wrap .job_info_wrap .content_wrap .recommend_list .txt_wrap .s_tit {
+                        margin: 4px 0;
+                        color: #000000;
+                        font-size: 16px;
+                        display: -webkit-box;   
+                        -webkit-box-orient: vertical;
+                        overflow: hidden;
+                        -webkit-line-clamp: 2;
+                        text-overflow: ellipsis;
+                        letter-spacing: -1px;
+                    }
+                    .contents-wrap .job_info_wrap .content_wrap .recommend_list .txt_wrap .s_date {
+                        color: #888888;
+                        font-size: 14px;
+                    }
+                </style>
+                <div class="content_wrap">
+                    <div class="recommend_list">
+                        <p class="tit">추천 콘텐츠</p>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <div class="img_wrap">
+                                        <img src="./images/main_2024/sub/recommend_img01.jpg" alt="전기자동차 정비인력 양성">
+                                    </div>
+                                    <div class="txt_wrap">
+                                        <span class="best_label">BEST</span>
+                                        <p class="s_tit">전기자동차 정비인력 양성</p>
+                                        <p class="s_date">2월 26일(월) ~ 3월 21일(목)</p>
+                                    </div>
+                                </a>                                
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="img_wrap">
+                                        <img src="./images/main_2024/sub/recommend_img02.jpg" alt="슬기로운 워킹맘 대디 교실">
+                                    </div>
+                                    <div class="txt_wrap">
+                                        <span class="best_label">BEST</span>
+                                        <p class="s_tit">슬기로운 워킹맘 대디 교실</p>
+                                        <p class="s_date">2월 26일(월) ~ 3월 21일(목)</p>
+                                    </div>
+                                </a>                                
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="img_wrap">
+                                        <img src="./images/main_2024/sub/recommend_img03.jpg" alt="여성가족부지원 국비직업교육훈련">
+                                    </div>
+                                    <div class="txt_wrap">
+                                        <span class="best_label">BEST</span>
+                                        <p class="s_tit">여성가족부지원 국비직업교육훈련</p>
+                                        <p class="s_date">2월 26일(월) ~ 3월 21일(목)</p>
+                                    </div>
+                                </a>                                
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="img_wrap">
+                                        <img src="./images/main_2024/sub/recommend_img04.jpg" alt="사회복지 실무자 양성과정">
+                                    </div>
+                                    <div class="txt_wrap">
+                                        <span class="best_label">BEST</span>
+                                        <p class="s_tit">사회복지 실무자 양성과정</p>
+                                        <p class="s_date">2월 26일(월) ~ 3월 21일(목)</p>
+                                    </div>
+                                </a>                                
+                            </li>
+                        </ul>
+                    </div>
+                    <style>
+                        /* tag list */
+                        .contents-wrap .job_info_wrap .content_wrap .tag_area {
+                            display: flex;
+                            margin: 50px 0;
+                            padding: 20px 30px;
+                            border: 1px solid #eaeaea;
+                            border-left: 0;
+                            border-right: 0;
+                            align-items: center;
+                        }
+                        .contents-wrap .job_info_wrap .content_wrap .tag_area .s_tit {
+                            margin-right: 60px;
+                            color: #696a6a;
+                            font-size: 16px;
+                            font-weight: 500;
+                            flex-shrink: 0;
+                        }
+                        .contents-wrap .job_info_wrap .content_wrap .tag_area ul {
+                            display: inline-flex;
+                            align-items: center;
+                            flex-wrap: wrap;
+                            gap: 10px;
+                        }
+                        .contents-wrap .job_info_wrap .content_wrap .tag_area li a {
+                            display: block;
+                            padding: 2px 18px;
+                            color: #777777;
+                            font-size: 14px;
+                            text-align: center;
+                            border: 1px solid #cfcfcf;
+                            border-radius: 20px;
+                        }
+                    </style>
+                    <div class="tag_area">
+                        <p class="s_tit">인기태그</p>
+                        <ul>
+                            <li><a href="#"><span>#교육</span></a></li>
+                            <li><a href="#"><span>#여성취업</span></a></li>
+                            <li><a href="#"><span>#이력서</span></a></li>
+                        </ul>
+                    </div>
+                    <style>
+                        /* cont_list */                        
+                        .contents-wrap .job_info_wrap .select_style01 {
+                            width: 120px;
+                            height: 34px;
+                            padding: 0 8px;
+                            background: #fff url(./images/main_2024/sub/ico_btn_style01.png) center right 10px no-repeat;
+                            color: #777777;
+                            font-size: 14px;
+                            border: solid 1px #e2e2e2;
+                            border-radius: 5px;
+                            cursor: pointer;
+                        }
+                        .contents-wrap .job_info_wrap .select_style01.sw100 {
+                            width: 100px;
+                        }
+                        .contents-wrap .job_info_wrap .content_wrap .cont_list .tit_wrap {
+                            display: flex;
+                            padding-bottom: 10px;
+                            align-items: center;
+                            border-bottom: 1px solid #bbbbbb;
+                        }
+                        .contents-wrap .job_info_wrap .content_wrap .cont_list .tit_wrap ul {
+                            margin-left: auto;
+                        }
+                        .contents-wrap .job_info_wrap .content_wrap .cont_list .tit_wrap ul li {
+                            display: inline-flex;
+                        }
+                        .contents-wrap .job_info_wrap .content_wrap .cont_list .tit_wrap ul li + li {
+                            margin-left: 10px;
+                        }
+                    </style>
+                    <div class="cont_list">
+                        <div class="tit_wrap">
+                            <p class="tit">취업교육 <span class="fc_blue">74</span>건</p>
+                            <ul>
+                                <li>
+                                    <select class="select_style01" title="정렬순 선택">
+                                        <option value="01">최근등록순</option>
+                                        <option value="02">인기순</option>
+                                        <option value="03" selected="selected">마감임박순</option>
+                                        <option value="04">추천순</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <select class="select_style01 sw100" title="목록 갯수 선택">
+                                        <option value="20" selected="selected">20개씩</option>
+                                        <option value="30">30개씩</option>
+                                        <option value="50">50개씩</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                        <style>
+                            /* cont_list_area */
+                            .contents-wrap .job_info_wrap .content_wrap .cont_list_area > li {
+                                display: flex;
+                                padding: 30px 0;
+                                align-items: center;
+                                border-bottom: 1px solid #eaeaea;
+                            }
+                            .contents-wrap .job_info_wrap .content_wrap .cont_list_area .cont_area {
+                                display: flex;
+                                width: calc(100% - 80px);
+                                align-items: center;
+                                z-index: 90;
+                            }
+                            .contents-wrap .job_info_wrap .content_wrap .cont_list_area .img_wrap {
+                                width: 225px;
+                                height: 170px;
+                                margin-right: 30px;
+                                border-radius: 10px;
+                                overflow: hidden;
+                                flex-shrink: 0;
+                            }
+                            .contents-wrap .job_info_wrap .content_wrap .cont_list_area .img_wrap img {
+                                height: 100%;
+                                background-size: cover;
+                            }
+                            .contents-wrap .job_info_wrap .content_wrap .cont_list_area .txt_wrap .c_tit {
+                                color: #008ae0;
+                                font-size: 14px;
+                            }
+                            .contents-wrap .job_info_wrap .content_wrap .cont_list_area .txt_wrap .s_tit_area {
+                                display: flex;
+                                margin-bottom: 10px;
+                                align-items: center;
+                            }
+                            .contents-wrap .job_info_wrap .content_wrap .cont_list_area .txt_wrap .s_tit {                                
+                                color: #000000;
+                                font-size: 16px;
+                                display: -webkit-box;   
+                                -webkit-box-orient: vertical;
+                                overflow: hidden;
+                                -webkit-line-clamp: 1;
+                                text-overflow: ellipsis;
+                            }
+                            .contents-wrap .job_info_wrap .content_wrap .cont_list_area .txt_wrap .d_day {
+                                padding: 0 12px;
+                                margin-left: 12px;
+                                background: #f4f4f4;
+                                color: #ff0101;
+                                font-size: 10px;
+                                font-weight: 900;
+                                border: 1px solid #cecece;
+                                border-radius: 20px;
+                                flex-shrink: 0;
+                            }
+                            .contents-wrap .job_info_wrap .content_wrap .cont_list_area .info_list > li {
+                                display: flex;
+                                align-items: flex-start;
+                            }
+                            .contents-wrap .job_info_wrap .content_wrap .cont_list_area .info_list .d_tit {
+                                margin-right: 4px;
+                                color: #888888;
+                                font-size: 14px;
+                                flex-shrink: 0;
+                            }
+                            .contents-wrap .job_info_wrap .content_wrap .cont_list_area .info_list .d_txt_area {
+                                display: inline-flex;
+                                align-items: center;
+                            }
+                            .contents-wrap .job_info_wrap .content_wrap .cont_list_area .info_list .d_txt_area .edu_link {
+                                position: relative;                                
+                                flex-shrink: 0;
+                            }
+                            .contents-wrap .job_info_wrap .content_wrap .cont_list_area .info_list .d_txt_area .edu_btn {
+                                display: flex;
+                                padding: 2px 12px;
+                                margin-left: 12px;
+                                background: #fff;
+                                color: #777777;
+                                font-size: 12px;
+                                border: 1px solid #cecece;
+                                border-radius: 20px;
+                                align-items: center;
+                            }
+                            .contents-wrap .job_info_wrap .content_wrap .cont_list_area .info_list .d_txt_area .edu_btn::after {
+                                content: '';
+                                display: inline-block;
+                                width: 8px;
+                                height: 6px;
+                                margin-left: 4px;
+                                background: url(./images/main_2024/sub/ico_btn_style01.png) no-repeat;
+                                background-size: contain;
+                            }
+                            .contents-wrap .job_info_wrap .content_wrap .cont_list_area .info_list .d_txt_area .edu_btn.active::after {
+                                transform: rotate(180deg);
+                            }
+                            .contents-wrap .job_info_wrap .content_wrap .cont_list_area .info_list .d_txt_area .edu_btn.active + .edu_link_list {
+                                display: block;
+                            }
+                            .contents-wrap .job_info_wrap .content_wrap .cont_list_area .info_list .d_txt_area .edu_link .edu_link_list {
+                                display: none;
+                                width: 280px;
+                                padding: 10px 0;
+                                position: absolute;
+                                top: 30px;
+                                right: 0;
+                                background: #fff;
+                                border: 1px solid #cecece;
+                                border-radius: 10px;
+                                box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
+                            }
+                            .contents-wrap .job_info_wrap .content_wrap .cont_list_area .info_list .d_txt_area .edu_link li a {
+                                display: block;
+                                padding: 4px 0;
+                                color: #777777;
+                                font-size: 12px;
+                                text-align: center;
+                            }
+                            .contents-wrap .job_info_wrap .content_wrap .cont_list_area .info_list .d_txt_area .edu_link li a span {
+                                margin-left: 16px;
+                            }
+                            .contents-wrap .job_info_wrap .content_wrap .cont_list_area .info_list .d_txt_area .edu_link .scrollbar-outer { max-height:100px; overflow-y:scroll; } 
+                            .contents-wrap .job_info_wrap .content_wrap .cont_list_area .info_list .d_txt_area .edu_link .scrollbar-outer > .scroll-content.scroll-scrolly_visible { margin: 0; left: 0;} 
+                            .contents-wrap .job_info_wrap .content_wrap .cont_list_area .info_list .d_txt_area .edu_link .scrollbar-outer > .scroll-element .scroll-element_track { background: transparent; } 
+                            .contents-wrap .job_info_wrap .content_wrap .cont_list_area .info_list .d_txt_area .edu_link .scrollbar-outer > .scroll-element .scroll-bar { background:#c9c9c9; } 
+                            .contents-wrap .job_info_wrap .content_wrap .cont_list_area .info_list .d_txt_area .edu_link .scrollbar-outer > .scroll-element.scroll-y { width: 3px; background: transparent; } 
+                            .contents-wrap .job_info_wrap .content_wrap .cont_list_area .info_list .d_txt_area .edu_link .scrollbar-outer > .scroll-element.scroll-y .scroll-element_outer { width: 3px; left: -4px; top: 4px;} 
+                            .contents-wrap .job_info_wrap .content_wrap .cont_list_area .info_list .d_txt {
+                                color: #888888;
+                                font-size: 14px;
+                            }
+                            .contents-wrap .job_info_wrap .content_wrap .cont_list_area .info_list .d_tag {                                
+                                margin-top: 10px;
+                                color: #afafaf;
+                                font-size: 12px;
+                                display: -webkit-box;   
+                                -webkit-box-orient: vertical;
+                                overflow: hidden;
+                                -webkit-line-clamp: 1;
+                            }
+                            .contents-wrap .job_info_wrap .content_wrap .cont_list_area .info_list .d_tag span + span {
+                                margin-left: 20px;
+                            }
+                            .contents-wrap .job_info_wrap .content_wrap .cont_list_area .btn_area {
+                                        margin-left: auto;
+                                    }
+                                    .contents-wrap .job_info_wrap .content_wrap .cont_list_area .btn_area button {
+                                        width: 30px;
+                                        height: 30px;
+                                        background-repeat: no-repeat;
+                                        background-position: center;
+                                        border: 1px solid #e5e5e5;
+                                        border-radius: 50%;
+                                    }
+                                    .contents-wrap .job_info_wrap .content_wrap .cont_list_area .btn_area button + button {
+                                        margin-left: 6px;
+                                    }
+                                    .contents-wrap .job_info_wrap .content_wrap .cont_list_area .btn_area .btn_like {
+                                        background-image: url(./images/main_2024/sub/ico_heart.png);
+                                    }
+                                    .contents-wrap .job_info_wrap .content_wrap .cont_list_area .btn_area .btn_alarm {
+                                        background-image: url(./images/main_2024/sub/ico_alarm.png);
+                                    }
+                                    .contents-wrap .job_info_wrap .content_wrap .cont_list_area .btn_area .btn_like.on {
+                                        background-image: url(./images/main_2024/sub/ico_heart_on.png);
+                                    }
+                                    .contents-wrap .job_info_wrap .content_wrap .cont_list_area .btn_area .btn_alarm.on {
+                                        background-image: url(./images/main_2024/sub/ico_alarm_on.png);
+                                    }
+                        </style>
+                        <ul class="cont_list_area">
+                            <li>
+                                <div class="cont_area">
+                                    <div class="img_wrap">
+                                        <img src="./images/main_2024/sub/cont_img01.png" alt="이천시 반도체 전문인력 양성과정 프로그램">
+                                    </div>
+                                    <div class="txt_wrap">
+                                        <p class="c_tit">그린컴퓨터아카데미</p>
+                                        <a href="#" class="s_tit_area" title="이천시 반도체 전문인력 양성과정 프로그램 바로가기">
+                                            <span class="s_tit">이천시 반도체 전문인력 양성과정 프로그램</span>
+                                            <span class="d_day">D - 2</span>
+                                        </a>
+                                        <ul class="info_list">
+                                            <li>
+                                                <span class="d_tit">모집일정 :</span>
+                                                <p class="d_txt">2024-02-26(월) 09:00 ~ 2024-03-18(월) 18:00</p>
+                                            </li>
+                                            <li>
+                                                <span class="d_tit">교육기간 :</span>
+                                                <div class="d_txt_area">
+                                                    <p class="d_txt">2024-03-20(수) 13:00 ~ 2024-03-29(금) 17:00</p>
+                                                    <div class="edu_link">
+                                                        <button type="button" class="edu_btn"><span>110회차</span></button>
+                                                        <div class="edu_link_list">
+                                                            <ul class="scrollbar-outer">
+                                                                <li>
+                                                                    <a href="#" title="111회차 이동">2024-04-01(월) ~ 2024-04-05(금) <span>111회차</span></a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" title="112회차 이동">2024-04-01(월) ~ 2024-04-05(금) <span>112회차</span></a>
+                                                                </li>  
+                                                                <li>
+                                                                    <a href="#" title="113회차 이동">2024-04-01(월) ~ 2024-04-05(금) <span>113회차</span></a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" title="114회차 이동">2024-04-01(월) ~ 2024-04-05(금) <span>114회차</span></a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" title="115회차 이동">2024-04-01(월) ~ 2024-04-05(금) <span>115회차</span></a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <span class="d_tit">교육장소 :</span>
+                                                <p class="d_txt">경기 이천시</p>
+                                            </li>
+                                            <li class="d_tag">
+                                                <span>#HRD-net</span>
+                                                <span>#문화 · 예술 · 디자인 · 방송</span>
+                                                <span>#국민내일배움카드(일반)</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="btn_area">
+                                    <button type="button" class="btn_like"><span class="ir-text">좋아요</span></button>
+                                    <button type="button" class="btn_alarm"><span class="ir-text">알림</span></button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cont_area">
+                                    <div class="img_wrap">
+                                        <img src="./images/main_2024/sub/cont_img03.jpg" alt="[경기도/성남시] AI융합 SW교육전문가 양성과정(8기) 교육생 모집">
+                                    </div>
+                                    <div class="txt_wrap">
+                                        <p class="c_tit">그린컴퓨터아카데미</p>
+                                        <a href="#" class="s_tit_area" title="[경기도/성남시] AI융합 SW교육전문가 양성과정(8기) 교육생 모집 바로가기">
+                                            <span class="s_tit">[경기도/성남시] AI융합 SW교육전문가 양성과정(8기) 교육생 모집</span>
+                                            <span class="d_day">D - 30</span>
+                                        </a>
+                                        <ul class="info_list">
+                                            <li>
+                                                <span class="d_tit">모집일정 :</span>
+                                                <p class="d_txt">2024-02-26(월) 09:00 ~ 2024-03-18(월) 18:00</p>
+                                            </li>
+                                            <li>
+                                                <span class="d_tit">교육기간 :</span>
+                                                <div class="d_txt_area">
+                                                    <p class="d_txt">2024-03-20(수) 13:00 ~ 2024-03-29(금) 17:00</p>
+                                                    <div class="edu_link">
+                                                        <button type="button" class="edu_btn"><span>110회차</span></button>
+                                                        <div class="edu_link_list">
+                                                            <ul class="scrollbar-outer">
+                                                                <li>
+                                                                    <a href="#" title="111회차 이동">2024-04-01(월) ~ 2024-04-05(금) <span>111회차</span></a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" title="112회차 이동">2024-04-01(월) ~ 2024-04-05(금) <span>112회차</span></a>
+                                                                </li>  
+                                                                <li>
+                                                                    <a href="#" title="113회차 이동">2024-04-01(월) ~ 2024-04-05(금) <span>113회차</span></a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" title="114회차 이동">2024-04-01(월) ~ 2024-04-05(금) <span>114회차</span></a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" title="115회차 이동">2024-04-01(월) ~ 2024-04-05(금) <span>115회차</span></a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <span class="d_tit">교육장소 :</span>
+                                                <p class="d_txt">경기 이천시</p>
+                                            </li>
+                                            <li class="d_tag">
+                                                <span>#HRD-net</span>
+                                                <span>#문화 · 예술 · 디자인 · 방송</span>
+                                                <span>#국민내일배움카드(일반)</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="btn_area">
+                                    <button type="button" class="btn_like"><span class="ir-text">좋아요</span></button>
+                                    <button type="button" class="btn_alarm"><span class="ir-text">알림</span></button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cont_area">
+                                    <div class="img_wrap">
+                                        <img src="./images/main_2024/sub/cont_img04.png" alt="홈매니저 양성과정 교육생 모집">
+                                    </div>
+                                    <div class="txt_wrap">
+                                        <p class="c_tit">그린컴퓨터아카데미</p>
+                                        <a href="#" class="s_tit_area" title="홈매니저 양성과정 교육생 모집 바로가기">
+                                            <span class="s_tit">홈매니저 양성과정 교육생 모집</span>
+                                            <span class="d_day">D - 100</span>
+                                        </a>
+                                        <ul class="info_list">
+                                            <li>
+                                                <span class="d_tit">모집일정 :</span>
+                                                <p class="d_txt">2024-02-26(월) 09:00 ~ 2024-03-18(월) 18:00</p>
+                                            </li>
+                                            <li>
+                                                <span class="d_tit">교육기간 :</span>
+                                                <div class="d_txt_area">
+                                                    <p class="d_txt">2024-03-20(수) 13:00 ~ 2024-03-29(금) 17:00</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <span class="d_tit">교육장소 :</span>
+                                                <p class="d_txt">경기 이천시</p>
+                                            </li>
+                                            <li class="d_tag">
+                                                <span>#HRD-net</span>
+                                                <span>#문화 · 예술 · 디자인 · 방송</span>
+                                                <span>#국민내일배움카드(일반)</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="btn_area">
+                                    <button type="button" class="btn_like"><span class="ir-text">좋아요</span></button>
+                                    <button type="button" class="btn_alarm"><span class="ir-text">알림</span></button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cont_area">
+                                    <div class="img_wrap">
+                                        <img src="./images/main_2024/sub/cont_img05.jpg" alt="2024년 맞춤형 취업지원 직업훈련 3톤 미만 지게차 프로그램">
+                                    </div>
+                                    <div class="txt_wrap">
+                                        <p class="c_tit">그린컴퓨터아카데미</p>
+                                        <a href="#" class="s_tit_area" title="2024년 맞춤형 취업지원 직업훈련 3톤 미만 지게차 프로그램 바로가기">
+                                            <span class="s_tit">2024년 맞춤형 취업지원 직업훈련 3톤 미만 지게차 면허 취득과정 참여자 모집2024년 맞춤형 취업지원 직업훈련 3톤 미만</span>
+                                            <span class="d_day">D - 1</span>
+                                        </a>
+                                        <ul class="info_list">
+                                            <li>
+                                                <span class="d_tit">모집일정 :</span>
+                                                <p class="d_txt">2024-02-26(월) 09:00 ~ 2024-03-18(월) 18:00</p>
+                                            </li>
+                                            <li>
+                                                <span class="d_tit">교육기간 :</span>
+                                                <div class="d_txt_area">
+                                                    <p class="d_txt">2024-03-20(수) 13:00 ~ 2024-03-29(금) 17:00</p>
+                                                    <div class="edu_link">
+                                                        <button type="button" class="edu_btn"><span>3회차</span></button>
+                                                        <div class="edu_link_list">
+                                                            <ul class="scrollbar-outer">
+                                                                <li>
+                                                                    <a href="#" title="111회차 이동">2024-04-01(월) ~ 2024-04-05(금) <span>111회차</span></a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" title="112회차 이동">2024-04-01(월) ~ 2024-04-05(금) <span>112회차</span></a>
+                                                                </li>  
+                                                                <li>
+                                                                    <a href="#" title="113회차 이동">2024-04-01(월) ~ 2024-04-05(금) <span>113회차</span></a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" title="114회차 이동">2024-04-01(월) ~ 2024-04-05(금) <span>114회차</span></a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" title="115회차 이동">2024-04-01(월) ~ 2024-04-05(금) <span>115회차</span></a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <span class="d_tit">교육장소 :</span>
+                                                <p class="d_txt">경기 이천시</p>
+                                            </li>
+                                            <li class="d_tag">
+                                                <span>#HRD-net</span>
+                                                <span>#문화 · 예술 · 디자인 · 방송</span>
+                                                <span>#국민내일배움카드(일반)</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="btn_area">
+                                    <button type="button" class="btn_like"><span class="ir-text">좋아요</span></button>
+                                    <button type="button" class="btn_alarm"><span class="ir-text">알림</span></button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
 			</div>			
 		</div>
 	</div>
@@ -1572,35 +2424,28 @@
         $(document).ready(function() {
 			$('.scrollbar-outer').scrollbar();
 
-			$(".srch_btn").click(function(e) {
-				$(this).toggleClass("active");
-			});
-			$(document).click(function() {
-				var container = $(".srch_wrap_item");
-				if (!container.is(event.target) && !container.has(event.target).length) {
-					$(".srch_btn").removeClass("active");
-				}
-			});
+            $(".srch_wrap_item, .edu_link").on("click", ".srch_btn, .edu_btn", function() {
+                var $container = $(this).closest(".srch_wrap_item, .edu_link");
+                $container.find(".srch_btn, .edu_btn").not(this).removeClass("active");
+                $(this).toggleClass("active");
+            });
 
-			// $(document).mouseup(function (e) {
-			// 	var wrapItems = $(".srch_wrap_item");
+            $(document).click(function(event) {
+                var $containers = $(".srch_wrap_item, .edu_link");
+                $containers.each(function() {
+                    var $container = $(this);
+                    if (!$container.is(event.target) && !$container.has(event.target).length) {
+                        $container.find(".srch_btn, .edu_btn").removeClass("active");
+                    }
+                });
+            });
 
-			// 	if (wrapItems.has(e.target).length === 0) {
-			// 		$(".srch_btn").removeClass("active");
-			// 	} else {
-			// 		var clickedInsideSrchItem = false;
-			// 		wrapItems.find(".srch_item").each(function() {
-			// 			if ($(this).has(e.target).length > 0) {
-			// 				clickedInsideSrchItem = true;
-			// 				return false;
-			// 			}
-			// 		});
-			// 		if (!clickedInsideSrchItem) {
-			// 			$(".srch_btn").removeClass("active");
-			// 		}
-			// 	}
-			// });
-			
+            $(".btn_like").click(function() {
+                $(this).toggleClass("on");
+            });
+            $(".btn_alarm").click(function() {
+                $(this).toggleClass("on");
+            });
 			
 		});
 		
