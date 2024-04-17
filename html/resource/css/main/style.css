@@ -668,7 +668,9 @@ body.scrollLock { overflow: hidden; }
  /* tag list */
  .contents-wrap .job_info_wrap .content_wrap .tag_area { display: flex; margin: 50px 0; padding: 20px 30px; background: #fff; border: 1px solid #eaeaea; border-left: 0; border-right: 0; align-items: center; } 
 .contents-wrap .job_info_wrap .content_wrap .tag_area .s_tit { margin-right: 60px; color: #696a6a; font-size: 16px; font-weight: 500; flex-shrink: 0; } 
-.contents-wrap .job_info_wrap .content_wrap .tag_area ul { display: inline-flex; align-items: center; flex-wrap: wrap; gap: 10px; } 
+/* .contents-wrap .job_info_wrap .content_wrap .tag_area ul { display: inline-flex; align-items: center; flex-wrap: wrap;flex-wrap: nowrap; white-space: nowrap; overflow-x: auto; gap: 10px; }  */
+.contents-wrap .job_info_wrap .content_wrap .tag_area .tag_cont { overflow: hidden;}
+.contents-wrap .job_info_wrap .content_wrap .tag_area .tag_cont .swiper-slide {display: inline-block;width: auto;}
 .contents-wrap .job_info_wrap .content_wrap .tag_area li a { display: block; padding: 2px 18px; color: #777777; font-size: 14px; text-align: center; border: 1px solid #cfcfcf; border-radius: 20px; } 
 /* content_wrap */
 .contents-wrap .job_info_wrap .content_wrap { width: 100%; } 
@@ -785,7 +787,6 @@ body.scrollLock { overflow: hidden; }
  .contents-wrap .job_info_wrap .content_wrap .recommend_list { display: none; } 
  
  .contents-wrap .job_info_wrap .content_wrap .tag_area { margin: 0 0 20px; padding: 10px 0 10px 10px; } 
- .contents-wrap .job_info_wrap .content_wrap .tag_area ul { flex-wrap: nowrap; white-space: nowrap; overflow-x: auto; } 
  .contents-wrap .job_info_wrap .content_wrap { background: #f8f8f8; } 
  .contents-wrap .job_info_wrap .content_wrap .tag_area .s_tit { margin-right: 20px; font-size: 12px; } 
  .contents-wrap .job_info_wrap .content_wrap .tag_area li a { padding: 2px 14px; font-size: 12px; } 
@@ -823,8 +824,8 @@ body.scrollLock { overflow: hidden; }
  
  }
 
-@media all and (max-width: 640px) { body[data-chatbot="no"] { #ch-plugin { display: none !important; } 
- } 
+@media all and (max-width: 640px) { 
+    body[data-chatbot="no"] { #ch-plugin { display: none !important; }} 
  }
 @media all and (max-width: 480px){
  .contents-wrap .job_info_wrap .content_wrap .cont_list_area .info_list .d_txt_area .edu_link .edu_link_list { left: -60px; } 
