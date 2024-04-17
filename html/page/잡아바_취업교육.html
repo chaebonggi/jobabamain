@@ -19,7 +19,8 @@
 
 	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/allnew_ia.css">
 	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/layout.css">
-	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/style.css">
+	<!-- <link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/style.css"> -->
+    <link type="text/css" rel="stylesheet" href="../resource/css/main/style.css">
 	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/style.css">
 	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/mobile.css">
 	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/mobile.css">
@@ -1116,225 +1117,7 @@
             </div>
         </div>
     </header>
-	<style>
-		.contents-wrap .innerSection {			
-			padding: 50px 20px;
-		}
-        .contents-wrap .job_info_wrap {
-            display: flex;
-        }
-		.contents-wrap .job_info_wrap .category_wrap {
-			width: 260px;
-			height: auto;
-            margin-right: 40px;
-            flex-shrink: 0;
-		}
-		.contents-wrap .job_info_wrap .category_wrap .srch_box {
-			position: relative;
-		}
-		.contents-wrap .job_info_wrap .category_wrap .srch_item {
-			display: none;
-			width: 100%;
-			padding: 0 6px;
-			position: absolute;
-			left: 0;
-			top: 40px;
-			background: #fff;
-			border: 1px solid #e5e5e5;
-			border-radius: 5px;	
-			z-index: 1000;
-		}
-		.contents-wrap .job_info_wrap .category_wrap .cate_search {
-			padding: 24px 20px;
-			border: 1px solid #e5e5e5;
-			border-radius: 10px;
-		}
-        .contents-wrap .job_info_wrap .category_wrap .cate_search .srch_title {
-            position: relative;
-            padding-left: 26px;
-            margin-bottom: 20px;
-            color: #000000;
-            font-size: 18px;
-        }
-        .contents-wrap .job_info_wrap .category_wrap .cate_search .srch_title::before {
-            content: '';
-            width: 18px;
-            height: 18px;
-            position: absolute;
-            top: 50%;
-            left: 0;
-            transform: translateY(-50%);
-            background: url(./images/main_2024/sub/ico_srch_tit.png) no-repeat;
-        }
-        .contents-wrap .job_info_wrap .category_wrap .cate_search .srch_wrap_item:first-child  {
-            padding-bottom: 25px;
-            margin-bottom: 15px;
-            border-bottom: 1px solid #efefef;
-        }
-		.contents-wrap .job_info_wrap .category_wrap .check_item {
-			padding: 10px 6px;
-			border-bottom: 1px solid #eaeaea;			
-		}
-		.contents-wrap .job_info_wrap .category_wrap .check_item:last-child {
-			border-bottom: 0;			
-		}
-		.contents-wrap .job_info_wrap .category_wrap .check_item .check_txt::before {
-			content: '';
-			display: block;
-			width: 12px;
-			height: 12px;
-			margin-top: 2px;
-			margin-right: 5px;
-			position: relative;
-			background-color: #fff;
-			border: 1px solid #dddddd;
-			box-sizing: border-box;
-			cursor: pointer;
-		}
-		.contents-wrap .job_info_wrap .category_wrap .check_item .check_txt::after {
-			content: none;
-		}
-		.contents-wrap .job_info_wrap .category_wrap .check_item input:checked + .check_txt::before {
-			border-color: #000;
-			background-image: url(./images/main_2024/sub/ico_check.png);
-			background-position: center;
-			background-repeat: no-repeat;
-		}
-        .contents-wrap .job_info_wrap .category_wrap .check_item input:checked + .check_txt {
-            color: #000;
-        }
-		.contents-wrap .job_info_wrap .category_wrap .check_item .check_txt {
-			display: flex;
-			color: #777777;
-			font-size: 14px;
-			align-items: center;
-            word-break: keep-all;
-            letter-spacing: -1px;
-		}
-		.contents-wrap .job_info_wrap .category_wrap .srch_wrap .scrollbar-outer { max-height:280px; overflow-y:scroll; } 
-		.contents-wrap .job_info_wrap .category_wrap .srch_wrap .scrollbar-outer > .scroll-content.scroll-scrolly_visible { margin: 0; left: 0;} 
-		.contents-wrap .job_info_wrap .category_wrap .srch_wrap .scrollbar-outer > .scroll-element .scroll-element_track { background: transparent; } 
-		.contents-wrap .job_info_wrap .category_wrap .srch_wrap .scrollbar-outer > .scroll-element .scroll-bar { background:#c9c9c9; } 
-		.contents-wrap .job_info_wrap .category_wrap .srch_wrap .scrollbar-outer > .scroll-element.scroll-y { width: 3px; background: transparent; } 
-		.contents-wrap .job_info_wrap .category_wrap .srch_wrap .scrollbar-outer > .scroll-element.scroll-y .scroll-element_outer { width: 3px; left: 0px; top: 4px;} 
-		
-		.contents-wrap .job_info_wrap .category_wrap .cate_search .srch_tit {
-			margin-bottom: 8px;
-			padding-left: 12px;
-			color: #000;
-			font-size: 14px;
-		}
-		.contents-wrap .job_info_wrap .category_wrap .cate_search .srch_btn {
-			display: flex;
-			width: 100%;
-			height: 35px;
-			padding-left: 10px;
-			position: relative;
-			background: #fff;
-			color: #777777;
-			font-size: 14px;
-			border: 1px solid #e5e5e5;
-			border-radius: 5px;
-			text-align: left;
-			align-items: center;
-		}
-		.contents-wrap .job_info_wrap .category_wrap .cate_search .srch_btn::after {
-			content: '';
-			width: 12px;
-			height: 10px;
-			position: absolute;
-			top: 50%;
-			transform: translateY(-50%);
-			right: 10px;
-			background: url(./images/main_2024/sub/ico_btn_style01.png) no-repeat;
-		}
-		.contents-wrap .job_info_wrap .category_wrap .cate_search .srch_btn.active::after {
-			transform: translateY(-50%) rotate(180deg);
-		}
-		.contents-wrap .job_info_wrap .category_wrap .cate_search .srch_btn.active + .srch_item {
-			display: block;
-		}
-        .contents-wrap .job_info_wrap .category_wrap .cate_result {            
-            padding: 16px 20px;
-            margin: 20px 0;
-            border: 1px solid #e5e5e5;
-            border-radius: 10px;           
-        }
-        .contents-wrap .job_info_wrap .category_wrap .cate_result .result_btn {
-            display: flex;            
-            justify-content: space-between;
-            align-items: center;
-        }
-        .contents-wrap .job_info_wrap .category_wrap .cate_result button:focus {
-            border: 1px solid transparent;
-        }
-        .contents-wrap .job_info_wrap .category_wrap .cate_result .reset_btn {
-            padding-left: 16px;
-            position: relative;
-            color: #555555;
-            font-size: 12px;
-        }
-        .contents-wrap .job_info_wrap .category_wrap .cate_result .reset_btn::before {
-            content: '';
-            width: 13px;
-            height: 13px;
-            position: absolute;
-            top: 50%;
-            left: 0;
-            transform: translateY(-50%);
-            background: url(./images/main_2024/sub/ico_reset.png) no-repeat;
-        }
-        .contents-wrap .job_info_wrap .category_wrap .cate_result .submit_btn {
-            padding: 8px 12px;
-            background: #008ae0;
-            color: #fff;
-            font-size: 12px;
-            border-radius: 5px;
-        }
-        .contents-wrap .job_info_wrap .category_wrap .cate_result .keywords_wrap {
-            padding-top: 16px;
-            margin-top: 20px;
-            border-top: 1px solid #efefef;
-        }
-        .contents-wrap .job_info_wrap .category_wrap .cate_result .cate_keywords {
-            display: inline-flex;
-            flex-wrap: wrap;
-            gap: 4px 10px;
-        }
-        .contents-wrap .job_info_wrap .category_wrap .cate_result .cate_keywords .selected_keyword {        
-            display: flex;                
-            padding: 2px 10px;
-            color: #6e6e6e;
-            font-size: 12px;
-            font-weight: 300;
-            align-items: center;
-            border: 1px solid #cfcfcf;
-            border-radius: 20px;
-            box-sizing: border-box;
-            align-items: center;
-        }
-        .contents-wrap .job_info_wrap .category_wrap .cate_result .cate_keywords .selected_keyword .btn_del {
-            width: 8px;
-            height: 8px;
-            margin-left: 4px;
-            background: url(./images/main_2024/sub/ico_del.png) no-repeat;
-            border: none;
-        }
-        /* content_wrap */
-        .contents-wrap .job_info_wrap .content_wrap {
-            width: 100%;
-        }
-        .contents-wrap .job_info_wrap .content_wrap p.tit {
-            color: #000;
-            font-size: 24px;
-            font-weight: 500;
-        }
-        .contents-wrap .job_info_wrap .content_wrap .fc_blue {
-            color: #008ae0;
-            font-weight: 500;
-        }
-        
-	</style>
+
 	<div class="contents-wrap">
 		<div class="innerSection">
 			<div class="job_info_wrap">
@@ -1697,67 +1480,28 @@
 					</div>
 					<div class="cate_result">
                         <div class="result_btn">
-                            <button type="button" class="reset_btn"><span>선택 초기화</span></button>
+                            <button type="button" class="reset_btn" onclick="fn_srchInit();"><span>선택 초기화</span></button>
                             <button type="button" class="submit_btn"><span>맞춤선택 검색하기</span></button>
                         </div>
                         <div class="keywords_wrap">
                             <div class="cate_keywords">
-                                <span class="selected_keyword">서울<button type="button" class="btn_del"><span class="ir-text">삭제</span></button></span>
-                                <span class="selected_keyword">고양시<button type="button" class="btn_del"><span class="ir-text">삭제</span></button></span>
-                                <span class="selected_keyword">경영 · 회계 · 사무<button type="button" class="btn_del"><span class="ir-text">삭제</span></button></span>
-                                <span class="selected_keyword">서울<button type="button" class="btn_del"><span class="ir-text">삭제</span></button></span>
-                                <span class="selected_keyword">고양시<button type="button" class="btn_del"><span class="ir-text">삭제</span></button></span>
-                                <span class="selected_keyword">안산시<button type="button" class="btn_del"><span class="ir-text">삭제</span></button></span>
+                                <!-- <span class="selected_keyword">서울<button type="button" class="btn_del"><span class="ir-text">삭제</span></button></span> -->
                             </div>
                         </div>
 					</div>
                     <div class="cate_banner">
-                        <ul>
-                            <li><a href="">
-                                <img src="./images/main_2024/sub/cate_banner01.png" alt="자시소개서 첨삭 바로가기">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide"><a href="" title="자기소개서 첨삭 바로가기">
+                                <img src="./images/main_2024/sub/cate_banner01.png" alt="자시소개서 첨삭">
+                            </a></li>
+                            <li class="swiper-slide"><a href="" title="자기소개서 첨삭 바로가기">
+                                <img src="./images/main_2024/sub/cate_banner01.png" alt="자시소개서 첨삭">
                             </a></li>
                         </ul>
+                        <div class="swiper-pagination"></div>
                     </div>
 				</div>
-                <style>
-                    /* recommend_list */
-                    .contents-wrap .job_info_wrap .content_wrap .recommend_list ul {
-                        display: flex;
-                        margin-top: 16px;
-                        justify-content: space-between;
-                        gap: 5px;
-                    }
-                    .contents-wrap .job_info_wrap .content_wrap .recommend_list ul li {
-                        max-width: 220px;
-                    }
-                    .contents-wrap .job_info_wrap .content_wrap .recommend_list .img_wrap {
-                        max-width: 220px;
-                        width: 100%;
-                        height: 176px;
-                        margin-bottom: 16px;
-                        border-radius: 10px;
-                        overflow: hidden;
-                    }
-                    .contents-wrap .job_info_wrap .content_wrap .recommend_list .img_wrap img {
-                        height: 100%;
-                        background-size: cover;
-                    }
-                    .contents-wrap .job_info_wrap .content_wrap .recommend_list .txt_wrap .s_tit {
-                        margin: 4px 0;
-                        color: #000000;
-                        font-size: 16px;
-                        display: -webkit-box;   
-                        -webkit-box-orient: vertical;
-                        overflow: hidden;
-                        -webkit-line-clamp: 2;
-                        text-overflow: ellipsis;
-                        letter-spacing: -1px;
-                    }
-                    .contents-wrap .job_info_wrap .content_wrap .recommend_list .txt_wrap .s_date {
-                        color: #888888;
-                        font-size: 14px;
-                    }
-                </style>
+
                 <div class="content_wrap">
                     <div class="recommend_list">
                         <p class="tit">추천 콘텐츠</p>
@@ -1812,40 +1556,9 @@
                             </li>
                         </ul>
                     </div>
-                    <style>
-                        /* tag list */
-                        .contents-wrap .job_info_wrap .content_wrap .tag_area {
-                            display: flex;
-                            margin: 50px 0;
-                            padding: 20px 30px;
-                            border: 1px solid #eaeaea;
-                            border-left: 0;
-                            border-right: 0;
-                            align-items: center;
-                        }
-                        .contents-wrap .job_info_wrap .content_wrap .tag_area .s_tit {
-                            margin-right: 60px;
-                            color: #696a6a;
-                            font-size: 16px;
-                            font-weight: 500;
-                            flex-shrink: 0;
-                        }
-                        .contents-wrap .job_info_wrap .content_wrap .tag_area ul {
-                            display: inline-flex;
-                            align-items: center;
-                            flex-wrap: wrap;
-                            gap: 10px;
-                        }
-                        .contents-wrap .job_info_wrap .content_wrap .tag_area li a {
-                            display: block;
-                            padding: 2px 18px;
-                            color: #777777;
-                            font-size: 14px;
-                            text-align: center;
-                            border: 1px solid #cfcfcf;
-                            border-radius: 20px;
-                        }
-                    </style>
+                    <div class="tit_area m_show">
+                        <p class="tit">취업교육 <span class="fc_blue">74</span>건</p>
+                    </div>
                     <div class="tag_area">
                         <p class="s_tit">인기태그</p>
                         <ul>
@@ -1854,41 +1567,10 @@
                             <li><a href="#"><span>#이력서</span></a></li>
                         </ul>
                     </div>
-                    <style>
-                        /* cont_list */                        
-                        .contents-wrap .job_info_wrap .select_style01 {
-                            width: 120px;
-                            height: 34px;
-                            padding: 0 8px;
-                            background: #fff url(./images/main_2024/sub/ico_btn_style01.png) center right 10px no-repeat;
-                            color: #777777;
-                            font-size: 14px;
-                            border: solid 1px #e2e2e2;
-                            border-radius: 5px;
-                            cursor: pointer;
-                        }
-                        .contents-wrap .job_info_wrap .select_style01.sw100 {
-                            width: 100px;
-                        }
-                        .contents-wrap .job_info_wrap .content_wrap .cont_list .tit_wrap {
-                            display: flex;
-                            padding-bottom: 10px;
-                            align-items: center;
-                            border-bottom: 1px solid #bbbbbb;
-                        }
-                        .contents-wrap .job_info_wrap .content_wrap .cont_list .tit_wrap ul {
-                            margin-left: auto;
-                        }
-                        .contents-wrap .job_info_wrap .content_wrap .cont_list .tit_wrap ul li {
-                            display: inline-flex;
-                        }
-                        .contents-wrap .job_info_wrap .content_wrap .cont_list .tit_wrap ul li + li {
-                            margin-left: 10px;
-                        }
-                    </style>
+
                     <div class="cont_list">
                         <div class="tit_wrap">
-                            <p class="tit">취업교육 <span class="fc_blue">74</span>건</p>
+                            <p class="tit m_hide">취업교육 <span class="fc_blue">74</span>건</p>
                             <ul>
                                 <li>
                                     <select class="select_style01" title="정렬순 선택">
@@ -1898,7 +1580,7 @@
                                         <option value="04">추천순</option>
                                     </select>
                                 </li>
-                                <li>
+                                <li class="m_hide">
                                     <select class="select_style01 sw100" title="목록 갯수 선택">
                                         <option value="20" selected="selected">20개씩</option>
                                         <option value="30">30개씩</option>
@@ -1907,176 +1589,6 @@
                                 </li>
                             </ul>
                         </div>
-                        <style>
-                            /* cont_list_area */
-                            .contents-wrap .job_info_wrap .content_wrap .cont_list_area > li {
-                                display: flex;
-                                padding: 30px 0;
-                                align-items: center;
-                                border-bottom: 1px solid #eaeaea;
-                            }
-                            .contents-wrap .job_info_wrap .content_wrap .cont_list_area .cont_area {
-                                display: flex;
-                                width: calc(100% - 80px);
-                                align-items: center;
-                                z-index: 90;
-                            }
-                            .contents-wrap .job_info_wrap .content_wrap .cont_list_area .img_wrap {
-                                width: 225px;
-                                height: 170px;
-                                margin-right: 30px;
-                                border-radius: 10px;
-                                overflow: hidden;
-                                flex-shrink: 0;
-                            }
-                            .contents-wrap .job_info_wrap .content_wrap .cont_list_area .img_wrap img {
-                                height: 100%;
-                                background-size: cover;
-                            }
-                            .contents-wrap .job_info_wrap .content_wrap .cont_list_area .txt_wrap .c_tit {
-                                color: #008ae0;
-                                font-size: 14px;
-                            }
-                            .contents-wrap .job_info_wrap .content_wrap .cont_list_area .txt_wrap .s_tit_area {
-                                display: flex;
-                                margin-bottom: 10px;
-                                align-items: center;
-                            }
-                            .contents-wrap .job_info_wrap .content_wrap .cont_list_area .txt_wrap .s_tit {                                
-                                color: #000000;
-                                font-size: 16px;
-                                display: -webkit-box;   
-                                -webkit-box-orient: vertical;
-                                overflow: hidden;
-                                -webkit-line-clamp: 1;
-                                text-overflow: ellipsis;
-                            }
-                            .contents-wrap .job_info_wrap .content_wrap .cont_list_area .txt_wrap .d_day {
-                                padding: 0 12px;
-                                margin-left: 12px;
-                                background: #f4f4f4;
-                                color: #ff0101;
-                                font-size: 10px;
-                                font-weight: 900;
-                                border: 1px solid #cecece;
-                                border-radius: 20px;
-                                flex-shrink: 0;
-                            }
-                            .contents-wrap .job_info_wrap .content_wrap .cont_list_area .info_list > li {
-                                display: flex;
-                                align-items: flex-start;
-                            }
-                            .contents-wrap .job_info_wrap .content_wrap .cont_list_area .info_list .d_tit {
-                                margin-right: 4px;
-                                color: #888888;
-                                font-size: 14px;
-                                flex-shrink: 0;
-                            }
-                            .contents-wrap .job_info_wrap .content_wrap .cont_list_area .info_list .d_txt_area {
-                                display: inline-flex;
-                                align-items: center;
-                            }
-                            .contents-wrap .job_info_wrap .content_wrap .cont_list_area .info_list .d_txt_area .edu_link {
-                                position: relative;                                
-                                flex-shrink: 0;
-                            }
-                            .contents-wrap .job_info_wrap .content_wrap .cont_list_area .info_list .d_txt_area .edu_btn {
-                                display: flex;
-                                padding: 2px 12px;
-                                margin-left: 12px;
-                                background: #fff;
-                                color: #777777;
-                                font-size: 12px;
-                                border: 1px solid #cecece;
-                                border-radius: 20px;
-                                align-items: center;
-                            }
-                            .contents-wrap .job_info_wrap .content_wrap .cont_list_area .info_list .d_txt_area .edu_btn::after {
-                                content: '';
-                                display: inline-block;
-                                width: 8px;
-                                height: 6px;
-                                margin-left: 4px;
-                                background: url(./images/main_2024/sub/ico_btn_style01.png) no-repeat;
-                                background-size: contain;
-                            }
-                            .contents-wrap .job_info_wrap .content_wrap .cont_list_area .info_list .d_txt_area .edu_btn.active::after {
-                                transform: rotate(180deg);
-                            }
-                            .contents-wrap .job_info_wrap .content_wrap .cont_list_area .info_list .d_txt_area .edu_btn.active + .edu_link_list {
-                                display: block;
-                            }
-                            .contents-wrap .job_info_wrap .content_wrap .cont_list_area .info_list .d_txt_area .edu_link .edu_link_list {
-                                display: none;
-                                width: 280px;
-                                padding: 10px 0;
-                                position: absolute;
-                                top: 30px;
-                                right: 0;
-                                background: #fff;
-                                border: 1px solid #cecece;
-                                border-radius: 10px;
-                                box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
-                            }
-                            .contents-wrap .job_info_wrap .content_wrap .cont_list_area .info_list .d_txt_area .edu_link li a {
-                                display: block;
-                                padding: 4px 0;
-                                color: #777777;
-                                font-size: 12px;
-                                text-align: center;
-                            }
-                            .contents-wrap .job_info_wrap .content_wrap .cont_list_area .info_list .d_txt_area .edu_link li a span {
-                                margin-left: 16px;
-                            }
-                            .contents-wrap .job_info_wrap .content_wrap .cont_list_area .info_list .d_txt_area .edu_link .scrollbar-outer { max-height:100px; overflow-y:scroll; } 
-                            .contents-wrap .job_info_wrap .content_wrap .cont_list_area .info_list .d_txt_area .edu_link .scrollbar-outer > .scroll-content.scroll-scrolly_visible { margin: 0; left: 0;} 
-                            .contents-wrap .job_info_wrap .content_wrap .cont_list_area .info_list .d_txt_area .edu_link .scrollbar-outer > .scroll-element .scroll-element_track { background: transparent; } 
-                            .contents-wrap .job_info_wrap .content_wrap .cont_list_area .info_list .d_txt_area .edu_link .scrollbar-outer > .scroll-element .scroll-bar { background:#c9c9c9; } 
-                            .contents-wrap .job_info_wrap .content_wrap .cont_list_area .info_list .d_txt_area .edu_link .scrollbar-outer > .scroll-element.scroll-y { width: 3px; background: transparent; } 
-                            .contents-wrap .job_info_wrap .content_wrap .cont_list_area .info_list .d_txt_area .edu_link .scrollbar-outer > .scroll-element.scroll-y .scroll-element_outer { width: 3px; left: -4px; top: 4px;} 
-                            .contents-wrap .job_info_wrap .content_wrap .cont_list_area .info_list .d_txt {
-                                color: #888888;
-                                font-size: 14px;
-                            }
-                            .contents-wrap .job_info_wrap .content_wrap .cont_list_area .info_list .d_tag {                                
-                                margin-top: 10px;
-                                color: #afafaf;
-                                font-size: 12px;
-                                display: -webkit-box;   
-                                -webkit-box-orient: vertical;
-                                overflow: hidden;
-                                -webkit-line-clamp: 1;
-                            }
-                            .contents-wrap .job_info_wrap .content_wrap .cont_list_area .info_list .d_tag span + span {
-                                margin-left: 20px;
-                            }
-                            .contents-wrap .job_info_wrap .content_wrap .cont_list_area .btn_area {
-                                        margin-left: auto;
-                                    }
-                                    .contents-wrap .job_info_wrap .content_wrap .cont_list_area .btn_area button {
-                                        width: 30px;
-                                        height: 30px;
-                                        background-repeat: no-repeat;
-                                        background-position: center;
-                                        border: 1px solid #e5e5e5;
-                                        border-radius: 50%;
-                                    }
-                                    .contents-wrap .job_info_wrap .content_wrap .cont_list_area .btn_area button + button {
-                                        margin-left: 6px;
-                                    }
-                                    .contents-wrap .job_info_wrap .content_wrap .cont_list_area .btn_area .btn_like {
-                                        background-image: url(./images/main_2024/sub/ico_heart.png);
-                                    }
-                                    .contents-wrap .job_info_wrap .content_wrap .cont_list_area .btn_area .btn_alarm {
-                                        background-image: url(./images/main_2024/sub/ico_alarm.png);
-                                    }
-                                    .contents-wrap .job_info_wrap .content_wrap .cont_list_area .btn_area .btn_like.on {
-                                        background-image: url(./images/main_2024/sub/ico_heart_on.png);
-                                    }
-                                    .contents-wrap .job_info_wrap .content_wrap .cont_list_area .btn_area .btn_alarm.on {
-                                        background-image: url(./images/main_2024/sub/ico_alarm_on.png);
-                                    }
-                        </style>
                         <ul class="cont_list_area">
                             <li>
                                 <div class="cont_area">
@@ -2301,6 +1813,22 @@
                                 </div>
                             </li>
                         </ul>
+                        <!-- 페이징 -->
+                        <div class="paging">
+                            <a href="javscript:void(0);"><span class="bnt_prev">이전</span></a>
+                            <a href="javscript:void(0);" class="current">1</a>
+                            <a href="javscript:void(0);">2</a>
+                            <a href="javscript:void(0);">3</a>
+                            <a href="javscript:void(0);">4</a>
+                            <a href="javscript:void(0);">5</a>
+                            <a href="javscript:void(0);"><span class="bnt_next">다음</span></a>
+                        </div>
+                        <div class="mpaging">
+                            <a href="javscript:void(0);">이전</a>
+                            <span>1</span> / 15
+                            <a href="javscript:void(0);">다음</a>
+                        </div>
+                        <!-- //페이징 -->
                     </div>
                 </div>
 			</div>			
@@ -2446,8 +1974,91 @@
             $(".btn_alarm").click(function() {
                 $(this).toggleClass("on");
             });
+
+            var cate_banner = new Swiper('.cate_banner', {
+                slidesPerView: 1,
+                loop: true,
+                autoplay: {
+                    delay: 5000
+                },
+                pagination: {
+                    el: '.cate_banner .swiper-pagination',
+                    clickable: true
+                },
+            });
+            $('input:checkbox[name="srchArea"]').change(function() {
+                fn_chkSrchArea($(this));
+            });
+            $('input:checkbox[name="srchJob"]').change(function() {
+                fn_chkSrchArea($(this));
+            });
+
+            checkChildElements();
+            $('.cate_keywords').on('DOMSubtreeModified', function() {
+                checkChildElements();
+            });
 			
 		});
+
+        function fn_chkSrchArea(obj) {            
+            fn_AddOrDelCdArray(obj.attr('id'), obj.prop('checked'), obj.next('.check_txt').text());
+        }
+        function fn_chkSrchJob(obj) {            
+            fn_AddOrDelCdArray(obj.attr('id'), obj.prop('checked'), obj.next('.check_txt').text());
+        }
+        function fn_AddOrDelCdArray(id, checked, idTxt) {
+            console.log(id + " = " + checked + " = " + idTxt);
+
+            if (checked) {
+                fn_AddCdArray(id, idTxt);
+            } else {
+                fn_DelCdArray(id);
+            }
+        }
+        function fn_AddCdArray(id, idTxt) {
+            $('#' + id).prop("checked", true);
+
+            // PC
+            let appendHtml = "<span class=\"selected_keyword\" id=\"txt_" + id + "\">";
+            appendHtml += idTxt;
+            appendHtml += "<button type=\"button\" class=\"btn_del\" onclick=\"fn_DelCdArray('" + id + "');\">";
+            appendHtml += "<span class=\"ir-text\">삭제</span>";
+            appendHtml += "</button>";
+            appendHtml += "</span>";
+            $(".keywords_wrap .cate_keywords").append(appendHtml);
+
+            // 모바일
+            // appendHtml = "<span class=\"selected_keyword\" id=\"txt_" + chgId + "\">";
+            // appendHtml += idTxt;
+            // appendHtml += "<button type=\"button\" class=\"btn_del\" onclick=\"fn_DelCdArray('" + chgId + "');\">";
+            // appendHtml += "<span class=\"ir-text\">삭제</span>";
+            // appendHtml += "</button>";
+            // appendHtml += "</span>";
+            // $(".pbj_m_keyword_wrap .keywords").append(appendHtml);
+        }
+        function fn_DelCdArray(id) {
+            $('#' + id).prop("checked", false);
+            $('#txt_' + id).remove();
+        }
+        function fn_srchInit() {
+            // let addCdArrayLength = addCdArray.length;
+            $('.keywords_wrap .cate_keywords').children().remove();
+            // $('.pbj_m_keyword_wrap .keywords').children().remove();
+
+            $("input:checkbox[name^='srch']").prop("checked", false);
+            // $("input:checkbox[name^='m_chk']").prop("checked", false);
+        }
+
+        function checkChildElements() {
+            var cateKeywords = $('.cate_keywords');
+            var keywordsWrap = $('.keywords_wrap');
+
+            if (cateKeywords.children().length === 0) {
+                keywordsWrap.hide();
+            } else {
+                keywordsWrap.show();
+            }
+        }
 		
 	</script>
 
