@@ -616,6 +616,7 @@
 
 
  /* 2024.04.17 취업교육 css 추가 */
+body.scrollLock { overflow: hidden; } 
 .contents-wrap .innerSection { padding: 50px 20px; } 
 .contents-wrap .job_info_wrap { display: flex; } 
 .contents-wrap .job_info_wrap .category_wrap { width: 260px; height: auto; margin-right: 40px; flex-shrink: 0; } 
@@ -659,13 +660,13 @@
 .contents-wrap .job_info_wrap .category_wrap .cate_banner .swiper-pagination .swiper-pagination-bullet { background: transparent; border: 1px solid #e7e7e7; opacity: 1; } 
 .contents-wrap .job_info_wrap .category_wrap .cate_banner .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active { background: #e7e7e7; } 
 /* recommend_list */
-.contents-wrap .job_info_wrap .content_wrap .recommend_list ul { display: flex; margin-top: 16px; justify-content: space-between; gap: 5px; }  
+.contents-wrap .job_info_wrap .content_wrap .recommend_list ul { display: flex; margin-top: 16px; justify-content: space-between; gap: 5px; } 
 .contents-wrap .job_info_wrap .content_wrap .recommend_list .img_wrap { max-width: 220px; width: 100%; height: 176px; margin-bottom: 16px; border-radius: 10px; overflow: hidden; } 
 .contents-wrap .job_info_wrap .content_wrap .recommend_list .img_wrap img { height: 100%; background-size: cover; } 
 .contents-wrap .job_info_wrap .content_wrap .recommend_list .txt_wrap .s_tit { margin: 4px 0; color: #000000; font-size: 16px; display: -webkit-box; -webkit-box-orient: vertical; overflow: hidden; -webkit-line-clamp: 2; text-overflow: ellipsis; letter-spacing: -1px; } 
 .contents-wrap .job_info_wrap .content_wrap .recommend_list .txt_wrap .s_date { color: #888888; font-size: 14px; } 
  /* tag list */
- .contents-wrap .job_info_wrap .content_wrap .tag_area { display: flex; margin: 50px 0; padding: 20px 30px; border: 1px solid #eaeaea; border-left: 0; border-right: 0; align-items: center; } 
+ .contents-wrap .job_info_wrap .content_wrap .tag_area { display: flex; margin: 50px 0; padding: 20px 30px; background: #fff; border: 1px solid #eaeaea; border-left: 0; border-right: 0; align-items: center; } 
 .contents-wrap .job_info_wrap .content_wrap .tag_area .s_tit { margin-right: 60px; color: #696a6a; font-size: 16px; font-weight: 500; flex-shrink: 0; } 
 .contents-wrap .job_info_wrap .content_wrap .tag_area ul { display: inline-flex; align-items: center; flex-wrap: wrap; gap: 10px; } 
 .contents-wrap .job_info_wrap .content_wrap .tag_area li a { display: block; padding: 2px 18px; color: #777777; font-size: 14px; text-align: center; border: 1px solid #cfcfcf; border-radius: 20px; } 
@@ -728,40 +729,103 @@
 .contents-wrap .job_info_wrap .paging a.current { color: #008ae0; font-weight: 900; border: 1px solid #008ae0; } 
 .contents-wrap .job_info_wrap .mpaging { display: none; } 
 
-.contents-wrap .job_info_wrap .mpaging { margin: 20px 0; color: #000; text-align: center; } 
+.contents-wrap .job_info_wrap .mpaging { margin: 20px 0; color: #000; font-size: 12px; text-align: center; } 
 .contents-wrap .job_info_wrap .mpaging a { display: inline-block; margin: 0 20px; background-color: #003281; color: #fff; padding: 4px 16px; border-radius: 4px; } 
 .contents-wrap .job_info_wrap .mpaging span { font-weight: 500; } 
 
-.m_show { display: none !important;}
+/* 모바일 메뉴 */
+.m_show { display: none !important; } 
+.contents-wrap .job_info_wrap .m_job_info { display: none; } 
+ .dim_shadow { display: none; position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 100; background-color: rgba(0, 0, 0, 0.7); } 
+.contents-wrap .job_info_wrap .m_job_info.on .dim_shadow { display: block; } 
+/* top */
+.contents-wrap .job_info_wrap .m_job_info.on .m_info_top { transform: translateY(0); } 
+.contents-wrap .job_info_wrap .m_job_info .m_info_top { width: 100%; padding-bottom: 50px; position: fixed; right: 0; bottom: 0; left: 0; background: #fff; border-radius: 25px 25px 0 0; transform: translateY(100%); transition: transform 0.3s ease-in-out; z-index: 200; } 
+.contents-wrap .job_info_wrap .m_job_info .m_info_top .tit_wrap { display: flex; justify-content: space-between; padding: 22px 18px; border-bottom: 1px solid #dfdfdf; } 
+.contents-wrap .job_info_wrap .m_job_info .m_info_top .tit { display: block; color: #000; font-size: 14px; font-weight: 500; } 
+.contents-wrap .job_info_wrap .m_job_info .m_info_top .m_bnt_close { width: 18px; height: 18px; background: url(../../../page/images/main_2024/sub/ico_close_btn.png) center no-repeat; border: none; } 
+.contents-wrap .job_info_wrap .m_job_info .m_info_top .m_info_content { display: flex; } 
+.contents-wrap .job_info_wrap .m_job_info .m_info_top .m_info_btn { border-bottom: 1px solid #dfdfdf; } 
+.contents-wrap .job_info_wrap .m_job_info .m_info_top .m_info_btn li { width: 90px; height: 35px; border-bottom: 1px solid #dfdfdf; } 
+.contents-wrap .job_info_wrap .m_job_info .m_info_top .m_info_btn button { display: block; width: 100%; height: 100%; background: #f3f3f3; color: #777777; font-size: 13px; border: none; } 
+.contents-wrap .job_info_wrap .m_job_info .m_info_top .m_info_btn li.active button { background: #fff; } 
+.contents-wrap .job_info_wrap .m_job_info .m_info_top .m_info_container { width: 100%; height: 140px; border: 1px solid #dfdfdf; border-top: none; border-right: none; overflow-y: scroll; } 
+.contents-wrap .job_info_wrap .m_job_info .m_info_top .m_info_box { display: none; } 
+.contents-wrap .job_info_wrap .m_job_info .m_info_top .m_info_box.active { display: block; } 
+.contents-wrap .job_info_wrap .m_job_info .m_info_top .m_check_list .check_item { display: block; width: 100%; height: 35px; padding-left: 10px; background: #fff; border-bottom: 1px solid #e2e7ed; box-sizing: border-box; } 
+.contents-wrap .job_info_wrap .m_job_info .m_info_top .m_check_list .check_item label { color: #000; font-size: 13px; font-weight: 300; line-height: 35px; } 
+.contents-wrap .job_info_wrap input[type=radio]:focus + span::before, .contents-wrap .job_info_wrap input[type=checkbox]:focus + span::after,
+.contents-wrap .job_info_wrap input[type=radio] + span::before, .contents-wrap .job_info_wrap input[type=checkbox] + span::after { content: none; } 
+.contents-wrap .job_info_wrap .m_job_info .m_info_top .m_check_list .check_item input:checked + .check_txt { color: #008ae0; } 
+.contents-wrap .job_info_wrap .m_job_info .m_info_top .m_keyword_wrap .keywords { display: flex; height: 40px; padding: 10px 20px; white-space: nowrap; overflow-x: auto; } 
+.contents-wrap .job_info_wrap .m_job_info .m_info_top .m_keyword_wrap .selected_keyword { display: inline-flex; height: 20px; padding: 2px 10px; margin-right: 4px; color: #6e6e6e; font-size: 10px; align-items: center; box-sizing: border-box; border: 1px solid #dfdfdf; border-radius: 30px; } 
+.contents-wrap .job_info_wrap .m_job_info .m_info_top .m_keyword_wrap .selected_keyword .btn_del { width: 8px; height: 8px; margin-left: 4px; background: url(../../../page/images/main_2024/sub/ico_del.png) no-repeat; border: none; } 
+/* bottom */
+.contents-wrap .job_info_wrap .m_job_info .m_info_bottom { width: 100%; height: 50px; position: fixed; right: 0; bottom: 0; left: 0; z-index: 200; } 
+.contents-wrap .job_info_wrap .m_job_info .m_info_bottom ul { display: flex; height: 50px; box-shadow: 0px 0px 20px 0px rgba(34, 37, 75, 0.4); } 
+.contents-wrap .job_info_wrap .m_job_info .m_info_bottom li { width: 100%; } 
+.contents-wrap .job_info_wrap .m_job_info .m_info_bottom li:first-child { width: 60px; } 
+.contents-wrap .job_info_wrap .m_job_info .m_info_bottom .btn_reset { background: url(../../../page/images/main_2024/sub/ico_reset_btn02.png) #fff center no-repeat; background-size: 28px; } 
+.contents-wrap .job_info_wrap .m_job_info .m_info_bottom ul button { display: block; width: 100%; height: 100%; border: none; } 
+.contents-wrap .job_info_wrap .m_job_info .m_info_bottom .btn_pop_open { background: #008ae0; color: #fff; font-size: 14px; font-weight: 500; } 
+.contents-wrap .job_info_wrap .m_job_info .m_info_bottom .btn_search { display: none; background: #008ae0; color: #fff; font-size: 14px; font-weight: 500; } 
 
 @media all and (max-width: 1024px){
-    .contents-wrap .job_info_wrap .content_wrap .recommend_list ul {
-        flex-wrap: wrap;
-        gap: 20px 5px;
-    }
-    .contents-wrap .job_info_wrap .content_wrap .recommend_list ul li {
-        max-width: 220px;
-        width: calc(100% / 2 - 10px );
-        margin: 0 auto;
-    }
-    .contents-wrap .job_info_wrap .content_wrap .cont_list_area .img_wrap {
-        display: none;
-    }
-}
+ .contents-wrap .job_info_wrap .content_wrap .recommend_list ul { flex-wrap: wrap; gap: 20px 5px; } 
+ .contents-wrap .job_info_wrap .content_wrap .recommend_list ul li { max-width: 220px; width: calc(100% / 2 - 10px ); margin: 0 auto; } 
+ .contents-wrap .job_info_wrap .content_wrap .cont_list_area .img_wrap { display: none; } 
+ }
 
 @media all and (max-width: 768px){
-    .m_show { display: block !important;}
-    .contents-wrap .job_info_wrap .category_wrap {
-        display: none;
-    }
-    .contents-wrap .job_info_wrap .content_wrap .recommend_list {
-        display: none;
-    }
+ .m_show { display: block !important; } 
+ .contents-wrap .innerSection { padding: 30px 0 0 0; } 
+ .contents-wrap .job_info_wrap .content_wrap .tit_area { padding-bottom: 20px; background: #fff; } 
+ .contents-wrap .job_info_wrap .content_wrap p.tit { padding-left: 10px; font-size: 16px; } 
+ .contents-wrap .job_info_wrap .category_wrap { display: none; } 
+ .contents-wrap .job_info_wrap .content_wrap .recommend_list { display: none; } 
+ 
+ .contents-wrap .job_info_wrap .content_wrap .tag_area { margin: 0 0 20px; padding: 10px 0 10px 10px; } 
+ .contents-wrap .job_info_wrap .content_wrap .tag_area ul { flex-wrap: nowrap; white-space: nowrap; overflow-x: auto; } 
+ .contents-wrap .job_info_wrap .content_wrap { background: #f8f8f8; } 
+ .contents-wrap .job_info_wrap .content_wrap .tag_area .s_tit { margin-right: 20px; font-size: 12px; } 
+ .contents-wrap .job_info_wrap .content_wrap .tag_area li a { padding: 2px 14px; font-size: 12px; } 
+ .contents-wrap .job_info_wrap .content_wrap .cont_list .tit_wrap { border-bottom: 0; } 
+ .contents-wrap .job_info_wrap .content_wrap .cont_list .tit_wrap ul li { margin-right: 10px; } 
+ .contents-wrap .job_info_wrap .select_style01 { width: 100px; font-size: 12px; } 
+ .contents-wrap .job_info_wrap .content_wrap .cont_list_area .btn_area { display: none; } 
+ .contents-wrap .job_info_wrap .content_wrap .cont_list_area > li { display: flex; width: calc(100% - 20px); padding: 20px 20px; margin: 0 auto; position: relative; background: #fff; border-bottom: 0; box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.08); border-radius: 20px; } 
+ .contents-wrap .job_info_wrap .content_wrap .cont_list_area > li:nth-child(1) { z-index: 10; } 
+ .contents-wrap .job_info_wrap .content_wrap .cont_list_area > li:nth-child(2) { z-index: 9; } 
+ .contents-wrap .job_info_wrap .content_wrap .cont_list_area > li:nth-child(3) { z-index: 8; } 
+ .contents-wrap .job_info_wrap .content_wrap .cont_list_area > li:nth-child(4) { z-index: 7; } 
+ .contents-wrap .job_info_wrap .content_wrap .cont_list_area > li:nth-child(5) { z-index: 6; } 
+ .contents-wrap .job_info_wrap .content_wrap .cont_list_area > li:nth-child(6) { z-index: 5; } 
+ .contents-wrap .job_info_wrap .content_wrap .cont_list_area > li:nth-child(7) { z-index: 4; } 
+ .contents-wrap .job_info_wrap .content_wrap .cont_list_area > li:nth-child(8) { z-index: 3; } 
+ .contents-wrap .job_info_wrap .content_wrap .cont_list_area > li:nth-child(9) { z-index: 2; } 
+ .contents-wrap .job_info_wrap .content_wrap .cont_list_area > li:nth-child(10) { z-index: 1; } 
+ .contents-wrap .job_info_wrap .content_wrap .cont_list_area > li + li { margin-top: 20px; } 
+ .contents-wrap .job_info_wrap .content_wrap .cont_list_area .info_list .d_txt_area .edu_link .edu_link_list { right: initial; left: 0; } 
+ .contents-wrap .job_info_wrap .content_wrap .cont_list_area .cont_area { width: 100%; } 
+ .contents-wrap .job_info_wrap .content_wrap .cont_list_area .info_list .d_tag { display: none; } 
+ .contents-wrap .job_info_wrap .content_wrap .cont_list_area .info_list .d_txt_area { flex-wrap: wrap; } 
+ .contents-wrap .job_info_wrap .content_wrap .cont_list_area .info_list .d_txt_area .edu_link { width: 100%; } 
+ .contents-wrap .job_info_wrap .content_wrap .cont_list_area .info_list .d_txt_area .edu_btn { margin: 4px 0; } 
+ .contents-wrap .job_info_wrap .content_wrap .cont_list_area .txt_wrap .c_tit { padding-right: 50px; margin-bottom: 4px; font-size: 12px; display: -webkit-box; -webkit-box-orient: vertical; overflow: hidden; -webkit-line-clamp: 1; text-overflow: ellipsis; } 
+ .contents-wrap .job_info_wrap .content_wrap .cont_list_area .txt_wrap .s_tit { font-size: 14px; -webkit-line-clamp: 2; } 
+ .contents-wrap .job_info_wrap .content_wrap .cont_list_area .info_list .d_tit { color: #000; font-size: 12px; } 
+ .contents-wrap .job_info_wrap .content_wrap .cont_list_area .info_list .d_txt { font-size: 12px; } 
+ .contents-wrap .job_info_wrap .content_wrap .cont_list_area .txt_wrap .d_day { position: absolute; top: 20px; right: 20px; } 
+ .contents-wrap .job_info_wrap .m_job_info { display: block; } 
+ .contents-wrap .job_info_wrap .paging { display: none; } 
+ .contents-wrap .job_info_wrap .mpaging { display: block; } 
+ #renewFooter .nfooter_top { margin-top: 0; } 
+ 
+ }
 
-    .contents-wrap .job_info_wrap .paging { display: none;}
-    .contents-wrap .job_info_wrap .mpaging { display: block; } 
-}
-
-@media all and (max-width: 640px){
-
-}
+@media all and (max-width: 640px) { body[data-chatbot="no"] { #ch-plugin { display: none !important; } 
+ } 
+ }
+@media all and (max-width: 480px){
+ .contents-wrap .job_info_wrap .content_wrap .cont_list_area .info_list .d_txt_area .edu_link .edu_link_list { left: -60px; } 
+ }
