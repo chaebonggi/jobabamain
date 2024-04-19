@@ -62,6 +62,10 @@
 	<div class="themaWrap">
 		<article class="mainVisual">
 			<style>
+				.themaWrap {
+					max-width: 1920px;
+					margin: 0 auto;
+				}
 				.themaWrap .mainVisual {
 					background: url(./images/20240419/main_bg.jpg) top center no-repeat;
 				}
@@ -159,77 +163,1207 @@
 				<h2><img src="./images/20240419/main_tit.png" alt="경기청년 일자리매치업 취업지원"></h2>
 			</div>			
 		</article>
+		<style>
+			.themaWrap .cont01 {
+				position: relative;
+				background-image: url(./images/20240419/cont01_bg01.png), url(./images/20240419/cont01_bg02.png);
+				background-color: #268fff;
+				background-repeat: no-repeat;
+				background-position: bottom center;
+			}
+			.themaWrap .cont01::before {
+				content: '';
+				width: 254px;
+				height: 385px;
+				position: absolute;
+				left: 60px;
+				top: -334px;
+				background: url(./images/20240419/cont01_item01.png) no-repeat;
+			}
+			.themaWrap .cont01::after {
+				content: '';
+				width: 124px;
+				height: 348px;
+				position: absolute;
+				right: 40px;
+				top: -300px;
+				background: url(./images/20240419/cont01_item02.png) no-repeat;
+			}
+			.themaWrap .cont01 .innerSection {
+				padding: 160px 0 270px;
+				position: relative;
+			}
+			.themaWrap .cont01 .innerSection::before {
+				content: '';
+				width: 303px;
+				height: 185px;
+				position: absolute;
+				left: 0;
+				top: -140px;
+				background: url(./images/20240419/cont01_item03.png) no-repeat;
+			}
+			.themaWrap .cont01 .titWrap p {
+				color: #fff;
+				font-size: 60px;
+			}
+			.themaWrap .cont01 .titWrap p span {
+				display: inline-block;
+				margin: 0 10px;
+				position: relative;
+				color: #fff839;
+			}
+			.themaWrap .cont01 .titWrap p span::before {
+				content: '';
+				width: 413px;
+				height: 179px;
+				position: absolute;
+				top: -80px;
+				left: 50%;
+				transform: translateX(-50%);
+				background: url(./images/20240419/cont01_tit_bg.png) no-repeat;
 
+			}
+		</style>
 		<article class="cont01">
 			<div class="innerSection">
-				
+				<div class="titWrap">
+					<p class="gBold">경기청년 <span class="gBold">일자리 매치업</span> 취업지원</p>
+				</div>
 			</div>			
 		</article>
-		
+		<style>
+			.themaWrap .cont02 {
+				background: url(./images/20240419/cont02_bg.png) top center no-repeat;
+			}
+			.themaWrap .cont02 .innerSection {
+				padding: 60px 0 90px;
+			}
+			.themaWrap .cont02 .boxWrap:nth-child(1)::before {
+				content: '';
+				width: 392px;
+				height: 192px;
+				position: absolute;
+				top: -186px;
+				left: 50%;
+				transform: translateX(-50%);
+				background: url(./images/20240419/cont02_item01.png) no-repeat;
+				background-size: contain;
+			}
+			.themaWrap .cont02 .boxWrap {
+				padding: 60px 10px;
+				position: relative;
+				background: #e8eff9;
+				box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.2);
+				border-radius: 20px;
+				border: 5px solid #ffffff;
+			}
+			.themaWrap .cont02 .boxWrap .boxTxt {
+				color: #000;
+				font-size: 26px;
+				letter-spacing: -1px;
+				text-align: center;
+			}
+			.themaWrap .cont02 .item {
+				max-width: 680px;
+				margin: 0 auto;
+				position: relative;
+				background: #fff;
+				border-radius: 20px;
+			}
+			.themaWrap .cont02 .itemWrap01 .item {
+				margin-top: 100px;
+				padding: 50px 0 30px 40px;
+			}
+			.themaWrap .cont02 .itemWrap01 .titWrap {
+				position: absolute;
+				left: 50%;
+				top: -29px;
+				transform: translateX(-50%);
+			}
+			.themaWrap .cont02 .itemWrap01 .titWrap .itemNum {
+				display: flex;
+				width: 50px;
+				height: 50px;
+				position: absolute;
+				top: -25px;
+				left: 0;
+				background: linear-gradient(120deg , #787eef, #c362ef);				
+				justify-content: center;
+				align-items: center;
+				transform: rotate(45deg);
+				border-radius: 15px;
+			}
+			.themaWrap .cont02 .itemWrap01 .titWrap .itemNum::before {
+				content: '01';
+				padding-top: 4px;
+				color: #fff;
+				font-size: 20px;
+				transform: rotate(-45deg);		
+			}
+			.themaWrap .cont02 .itemWrap01 .item:nth-child(2) .titWrap .itemNum::before {
+				content: '02';
+			}
+			.themaWrap .cont02 .itemWrap01 .item:nth-child(3) .titWrap .itemNum::before {
+				content: '03';
+			}
+			.themaWrap .cont02 .itemWrap01 .titWrap p {
+				display: flex;
+				width: 390px;
+				height: 58px;
+				padding-top: 4px;
+				background: #348ff1;
+				color: #fff;
+				font-size: 26px;
+				align-items: center;
+				justify-content: center;
+				border-radius: 50px;
+			}
+			.themaWrap .cont02 .itemWrap01 .item:nth-child(2) .titWrap p {
+				background: #ffab26;
+			}
+			.themaWrap .cont02 .itemWrap01 .item:nth-child(3) .titWrap p {
+				background: #7ad50f;
+			}
+			.themaWrap .cont02 .itemWrap01 li {
+				padding-left: 20px;
+				position: relative;
+				color: #000;
+				font-size: 24px;
+				letter-spacing: -1px;
+			}
+			.themaWrap .cont02 .itemWrap01 li + li {
+				margin-top: 6px;
+			}
+			.themaWrap .cont02 .itemWrap01 li::before {
+				content: '';
+				width: 14px;
+				height: 14px;
+				position: absolute;
+				left: 0;
+				top: 6px;
+				background: #fff;
+				border-radius: 50%;
+				border: 2px solid #6cb3ff;
+				box-sizing: border-box;
+			}
+			.themaWrap .cont02 .boxWrap:nth-child(2) {
+				margin-top: 30px;
+			}
+			.themaWrap .cont02 .boxWrap:nth-child(2)::before {
+				content: '';
+				width: 24px;
+				height: 113px;
+				position: absolute;
+				top: -74px;
+				left: 34px;
+				background: url(./images/20240419/cont02_icon01.png) no-repeat;
+			}
+			.themaWrap .cont02 .boxWrap:nth-child(2)::after {
+				content: '';
+				width: 24px;
+				height: 113px;
+				position: absolute;
+				top: -74px;
+				right: 34px;
+				background: url(./images/20240419/cont02_icon01.png) no-repeat;
+			}
+		</style>
+		<article class="cont02">
+			<div class="innerSection">
+				<div class="boxWrap">
+					<p class="boxTxt">
+						경기도내 <span class="gBold">청년친화적인 중소기업의 괜찮은 일자리를 발굴 및 매칭,</span><br>
+						<span class="gBold">청년 구직자에게 일할 기회를 제공</span>하여 <span class="gBold">정규직 전환을 지원</span>하는 사업입니다.
+					</p>
+					<div class="itemWrap01">
+						<div class="item">
+							<div class="titWrap">
+								<span class="itemNum gBold"></span>
+								<p class="gBold">일경험 기회 제공</p>
+							</div>
+							<ul>
+								<li>2개월 근무 후 기업 자체평가에 따른 정규직 정환 채용 가능</li>
+								<li>참여자 인건비 2개월 지원 (경기도 80%, 기업20% 부담)</li>
+							</ul>
+						</div>
+						<div class="item">
+							<div class="titWrap">
+								<span class="itemNum gBold"></span>
+								<p class="gBold">직무 역량강화 교육 지원</p>
+							</div>
+							<ul>
+								<li>입사전 기본교육 지원 (노동법, 비즈니스매너)</li>
+								<li>청년 맞춤형 역량강화교육 (잡아바 러닝센터 연계)</li>
+							</ul>
+						</div>
+						<div class="item">
+							<div class="titWrap">
+								<span class="itemNum gBold"></span>
+								<p class="gBold">직장 적응 컨설팅  제공</p>
+							</div>
+							<ul>
+								<li>일자리 전문가(전담 직업상담사)를 통한 1:1 맞춤 참여자<br> 컨설팅 진행</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+				<div class="boxWrap">
+					<style>
+						.themaWrap .cont02 .itemWrap02 .item {
+							padding: 30px 0 30px 50px;
+						}
+						.themaWrap .cont02 .itemWrap02 .titWrap {
+							max-width: 680px;
+							margin: 0 auto 20px;
+							padding-left: 20px;
+						}
+						.themaWrap .cont02 .itemWrap02 .titWrap p {
+							position: relative;
+							padding-left: 30px;
+							color: #000;
+							font-size: 30px;
+							letter-spacing: -1px;
+						}
+						.themaWrap .cont02 .itemWrap02 .titWrap p::before {
+							content: '';
+							width: 22px;
+							height: 21px;
+							position: absolute;
+							top: 4px;
+							left: 0;
+							background: url(./images/20240419/cont02_icon02.png) no-repeat;
+							background-size: contain;
+						}
+						.themaWrap .cont02 .itemWrap02 li + li {
+							margin-top: 10px;
+						}
+						.themaWrap .cont02 .itemWrap02 li {
+							display: flex;
+						}
+						.themaWrap .cont02 .itemWrap02 li strong {
+							display: inline-flex;
+							width: 120px;
+							height: 38px;
+							margin-right: 20px;
+							padding-top: 4px;
+							background: #268fff;
+							color: #fff;
+							font-size: 22px;
+							text-align: center;
+							border-radius: 5px;
+							align-items: center;
+							justify-content: center;
+							flex-shrink: 0;
+						}
+						.themaWrap .cont02 .itemWrap02 li p {
+							padding-top: 8px;
+							color: #000;
+							font-size: 24px;
+							letter-spacing: -1px;
+							line-height: 1;
+						}
+						.themaWrap .cont02 .itemWrap02 li p span {
+							display: inline-block;
+							font-size: 16px;
+						}
+						.themaWrap .cont02 .itemWrap02 .titWrap:not(:first-child) {
+							margin-top: 60px;
+						}
+					</style>
+					<div class="itemWrap02">
+						<div class="titWrap">
+							<p class="gBold">모집대상 및 분야</p>
+						</div>
+						<div class="item">							
+							<ul>
+								<li>
+									<strong class="gBold">필수자격</strong>
+									<p>입사일 기준 경기도 거주 및 18세~39세 청년</p>
+								</li>
+								<li>
+									<strong class="gBold">채용분야</strong>
+									<p>기계, 전기, 전자, 사무, 영업, 마케팅, 콘텐츠 등<br> <span>(기업별 채용분야 및 필수(우대) 자격요건은 지원페이지 참조)</span></p>
+								</li>
+							</ul>
+						</div>
+						<div class="titWrap">
+							<p class="gBold">지원대상</p>
+						</div>
+						<div class="item">							
+							<ul>
+								<li>
+									<strong class="gBold">지원시기</strong>
+									<p>상시모집 <span>(예산 소진 시 까지)</span></p>
+								</li>
+								<li>
+									<strong class="gBold">지원자격</strong>
+									<p>경기도내 거주 만18세~39세 미취업 구직 청년<br> <span>(입사일 기준)</span></p>
+								</li>
+								<li>
+									<strong class="gBold">지원방법</strong>
+									<p>잡아바 온라인 박람회 지원 <span>(www.jobaba.net)</span></p>
+								</li>
+							</ul>
+						</div>
+						<div class="titWrap">
+							<p class="gBold">선발절차</p>
+						</div>
+						<div class="item">							
+							
+						</div>
+					</div>
+				</div>
+			</div>			
+		</article>
+		<article class="cont03">
+			<div class="innerSection">
+
+			</div>
+		</article>
+		<article class="cont04">
+			<style>
+				.themaWrap .cont04 {
+					background: url(./images/20240419/cont04_bg.png) top center #fff no-repeat;
+				}
+				.themaWrap .cont04 .innerSection {
+					max-width: 1000px;
+					padding: 200px 0 100px;
+				}
+				.themaWrap .cont04 ul {
+					display: flex;
+					justify-content: center;
+					flex-wrap: wrap;
+					gap: 30px 20px;
+				}
+				.themaWrap .cont04 li {
+					display: none;
+					width: calc(100% / 4 - 15px);
+					background: #fff;
+					border: 1px solid #634cda;
+					border-radius: 15px;
+					text-align: center;
+					overflow: hidden;
+					transition: all 0.35s;
+				}
+				.themaWrap .cont04 li:hover {
+					border-color: transparent;
+					box-shadow: 2.5px 4.33px 20px 0px rgba(0, 0, 0, 0.2);
+				}
+				.themaWrap .cont04 li a {
+					display: flex;
+					height: 100%;
+					flex-direction: column;
+					letter-spacing: -1px;
+				}
+				.themaWrap .cont04 li .logoImg {
+					display: flex;
+					height: 55px;
+					margin: 16px 0 20px;
+					align-items: center;
+					justify-content: center;
+				}
+				.themaWrap .cont04 li .titWrap .tit {
+					min-height: 63px;
+					margin-bottom: 10px;
+					color: #000;
+					font-size: 24px;					
+				}
+				.themaWrap .cont04 li .titWrap .tit span {
+					font-size: 18px;
+				}
+				.themaWrap .cont04 li .titWrap .txt {
+					display: block;
+					min-height: 42px;
+					margin-bottom: 12px;
+					color: #777777;
+					font-size: 16px;
+				}
+				.themaWrap .cont04 li .txtWrap {
+					display: flex;
+					min-height: 78px;
+					padding: 10px 0;
+					margin-top: auto;
+					background: #f4f4f4;
+					align-items: center;
+					justify-content: center;
+				}
+				.themaWrap .cont04 li .txtWrap p {
+					color: #634cda;
+					font-size: 16px;
+					text-transform: uppercase;
+				}
+				.themaWrap .cont04 .titArea p::before {
+					content: '';
+					width: 262px;
+					height: 147px;
+					position: absolute;
+					left: 50%;
+					top: -134px;
+					transform: translateX(-50%);
+					background: url(./images/20240419/cont04_itme01.png) no-repeat;
+					background-size: contain;
+				}
+				.themaWrap .cont04 .titArea p {
+					display: flex;
+					width: 100%;
+					max-width: 790px;
+					height: 118px;
+					margin: 0 auto 80px;
+					padding-top: 10px;
+					position: relative;
+					background: #634cda;
+					color: #fff;
+					font-size: 60px;
+					border-radius: 100px;
+					align-items: center;
+					justify-content: center;
+					
+				}
+			</style>
+			<div class="innerSection">
+				<div class="titArea">
+					<p>경기도 청년친화 중소기업</p>
+				</div>
+				<ul>
+					<li>
+						<a href="" target="_blank">
+							<div class="logoImg">
+								<img src="./images/20240419/logo_01.png" alt="(주)갑진">
+							</div>
+							<div class="titWrap">
+								<p class="tit">(<span>주</span>)갑진</p>
+								<span class="txt">기타 전기 변환장치 제조업</span>
+							</div>
+							<div class="txtWrap">
+								<p>2차 전지 토탈 솔루션 기업</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="" target="_blank">
+							<div class="logoImg">
+								<img src="./images/20240419/logo_02.png" alt="(주)구름">
+							</div>
+							<div class="titWrap">
+								<p class="tit">(<span>주</span>)구름</p>
+								<span class="txt">응용 소프트웨어 개발<br> 및 공급업</span>
+							</div>
+							<div class="txtWrap">
+								<p>SaaS 기획, 개발,<br>
+									제공 스타트업</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="" target="_blank">
+							<div class="logoImg">
+								<img src="./images/20240419/logo_03.png" alt="(주)더스탠다드">
+							</div>
+							<div class="titWrap">
+								<p class="tit">(<span>주</span>)더스탠다드</p>
+								<span class="txt">그 외 기타 의료용 기기 제조업</span>
+							</div>
+							<div class="txtWrap">
+								<p>의료기기 전문 제조 기업<br>
+									(부정맥진단 카테터 등)</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="" target="_blank">
+							<div class="logoImg">
+								<img src="./images/20240419/logo_04.png" alt="(주)더채움">
+							</div>
+							<div class="titWrap">
+								<p class="tit">(<span>주</span>)더채움</p>
+								<span class="txt">그 외 기타  식료품 제조업</span>
+							</div>
+							<div class="txtWrap">
+								<p>견과류 전문 기업, 품질과<br>
+									건강을 중시하는 브랜드</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="" target="_blank">
+							<div class="logoImg">
+								<img src="./images/20240419/logo_05.png" alt="(주)도프">
+							</div>
+							<div class="titWrap">
+								<p class="tit">(<span>주</span>)도프</p>
+								<span class="txt">의료용품 및<br>
+									기타 의약 관련제품 제조업</span>
+							</div>
+							<div class="txtWrap">
+								<p>재생 생체재료 전문<br>
+									바이오 기업</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="" target="_blank">
+							<div class="logoImg">
+								<img src="./images/20240419/logo_06.png" alt="(주)딥인사이트">
+							</div>
+							<div class="titWrap">
+								<p class="tit">(<span>주</span>)딥인사이트</p>
+								<span class="txt">컴퓨터 프로그래밍 서비스업</span>
+							</div>
+							<div class="txtWrap">
+								<p>3D ToF 카메라와<br>
+									AI를 결합한 혁신 기업</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="" target="_blank">
+							<div class="logoImg">
+								<img src="./images/20240419/logo_07.png" alt="(주)메디아이플러스">
+							</div>
+							<div class="titWrap">
+								<p class="tit">(<span>주</span>)메디아이플러스</p>
+								<span class="txt">데이터베이스 및<br>
+									온라인정보 제공업</span>
+							</div>
+							<div class="txtWrap">
+								<p>임상시험 선순환을 만드는<br>
+									데이터큐레이션 기업</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="" target="_blank">
+							<div class="logoImg">
+								<img src="./images/20240419/logo_08.png" alt="(주)비모소프트">
+							</div>
+							<div class="titWrap">
+								<p class="tit">(<span>주</span>)비모소프트</p>
+								<span class="txt">시스템 소프트웨어 개발 및<br>
+									공급업</span>
+							</div>
+							<div class="txtWrap">
+								<p>전세계 200개국에<br>
+									영상 편집앱 VLLO와<br>
+									WEILO를 서비스</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="" target="_blank">
+							<div class="logoImg">
+								<img src="./images/20240419/logo_09.png" alt="(주)샤인소프트">
+							</div>
+							<div class="titWrap">
+								<p class="tit">(<span>주</span>)샤인소프트</p>
+								<span class="txt">응용 소프트웨어 개발 및 공급업</span>
+							</div>
+							<div class="txtWrap">
+								<p>첨단 IT 솔루션을 제공하는 기업</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="" target="_blank">
+							<div class="logoImg">
+								<img src="./images/20240419/logo_10.png" alt="(주)셀플러스코리아">
+							</div>
+							<div class="titWrap">
+								<p class="tit">(<span>주</span>)셀플러스코리아</p>
+								<span class="txt">컴퓨터 프로그래밍 서비스업</span>
+							</div>
+							<div class="txtWrap">
+								<p>자율주행 연구,<br>
+									인공지능 최적화 전문 기업</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="" target="_blank">
+							<div class="logoImg">
+								<img src="./images/20240419/logo_11.png" alt="(주)소울게임즈">
+							</div>
+							<div class="titWrap">
+								<p class="tit">(<span>주</span>)소울게임즈</p>
+								<span class="txt">게임소프트웨어 개발 및 공급업</span>
+							</div>
+							<div class="txtWrap">
+								<p>모바일게임 SW 개발 기업<br>
+									(루나모바일 등)</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="" target="_blank">
+							<div class="logoImg">
+								<img src="./images/20240419/logo_12.png" alt="(주)수산">
+							</div>
+							<div class="titWrap">
+								<p class="tit">(<span>주</span>)수산</p>
+								<span class="txt">합성수지 및<br>
+									기타플라스틱 물질 제조업</span>
+							</div>
+							<div class="txtWrap">
+								<p>정밀분자 제어로<br>
+									고품질 수성 합성수지를<br>
+									전문으로 생산</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="" target="_blank">
+							<div class="logoImg">
+								<img src="./images/20240419/logo_13.png" alt="(주)시스템알앤디">
+							</div>
+							<div class="titWrap">
+								<p class="tit">(<span>주</span>)시스템알앤디</p>
+								<span class="txt">배전반 및 전기 자동제어반<br>
+									제조업</span>
+							</div>
+							<div class="txtWrap">
+								<p>디스플레이 및<br>
+									2차 전지 등을 위한<br>
+									종합 공정장비 전문 기업</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="" target="_blank">
+							<div class="logoImg">
+								<img src="./images/20240419/logo_14.png" alt="(주)씨엠씨엘">
+							</div>
+							<div class="titWrap">
+								<p class="tit">(<span>주</span>)씨엠씨엘</p>
+								<span class="txt">그외 기타 분류 안된<br>
+									전문, 과학 및 기술 서비스업</span>
+							</div>
+							<div class="txtWrap">
+								<p>신뢰성 시험 전문<br>
+									KOLAS 국제공인시험기관</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="" target="_blank">
+							<div class="logoImg">
+								<img src="./images/20240419/logo_15.png" alt="(주)씨제이케이">
+							</div>
+							<div class="titWrap">
+								<p class="tit">(<span>주</span>)씨제이케이</p>
+								<span class="txt">그외 기타 특수목적용<br>
+									기계 제조업</span>
+							</div>
+							<div class="txtWrap">
+								<p>인간과 환경을 생각하는<br>
+									수처리 전문 기업</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="" target="_blank">
+							<div class="logoImg">
+								<img src="./images/20240419/logo_16.png" alt="(주)알엠지">
+							</div>
+							<div class="titWrap">
+								<p class="tit">(<span>주</span>)알엠지</p>
+								<span class="txt">시스템 소프트웨어<br>
+									개발 및 공급업</span>
+							</div>
+							<div class="txtWrap">
+								<p>브랜드 위조로부터 보호하는<br>
+									보안 솔루션 전문 기업</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="" target="_blank">
+							<div class="logoImg">
+								<img src="./images/20240419/logo_17.png" alt="(주)에르모어">
+							</div>
+							<div class="titWrap">
+								<p class="tit">(<span>주</span>)에르모어</p>
+								<span class="txt">전자상거래 소매 중개업</span>
+							</div>
+							<div class="txtWrap">
+								<p>다양한 분야를 아우르는<br>
+									영유아 전문 온라인 종합쇼핑몰</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="" target="_blank">
+							<div class="logoImg">
+								<img src="./images/20240419/logo_18.png" alt="(주)에브리봇">
+							</div>
+							<div class="titWrap">
+								<p class="tit">(<span>주</span>)에브리봇</p>
+								<span class="txt">기타 가정용 전기기기 제조업</span>
+							</div>
+							<div class="txtWrap">
+								<p>로봇 청소기 전문 기업</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="" target="_blank">
+							<div class="logoImg">
+								<img src="./images/20240419/logo_19.png" alt="(주)에스티씨엔지니어링">
+							</div>
+							<div class="titWrap">
+								<p class="tit">(<span>주</span>)에스티씨<br> 엔지니어링</p>
+								<span class="txt">그 외 기타 특수목적용<br>
+									기계 제조업</span>
+							</div>
+							<div class="txtWrap">
+								<p>자동화 장비 분야의<br>
+									토탈 솔루션을<br>
+									제공하는 전문 기업</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="" target="_blank">
+							<div class="logoImg">
+								<img src="./images/20240419/logo_20.png" alt="(주)에이치케이">
+							</div>
+							<div class="titWrap">
+								<p class="tit">(<span>주</span>)에이치케이</p>
+								<span class="txt">전자 응용 절삭기계 제조업</span>
+							</div>
+							<div class="txtWrap">
+								<p>고출력 레이저가공기 전문기업</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="" target="_blank">
+							<div class="logoImg">
+								<img src="./images/20240419/logo_21.png" alt="(주)에이텍씨앤">
+							</div>
+							<div class="titWrap">
+								<p class="tit">(<span>주</span>)에이텍씨앤</p>
+								<span class="txt">컴퓨터 및 주변장치,소프트웨어<br>
+									도매업</span>
+							</div>
+							<div class="txtWrap">
+								<p>IT 및 가전 전문 유통기업</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="" target="_blank">
+							<div class="logoImg">
+								<img src="./images/20240419/logo_22.png" alt="(주)에이프로">
+							</div>
+							<div class="titWrap">
+								<p class="tit">(<span>주</span>)에이프로</p>
+								<span class="txt">그 외 전기장비 제조업</span>
+							</div>
+							<div class="txtWrap">
+								<p>글로벌 미래 에너지를 선도하는<br>
+									2차전지 및 전기차 솔루션 기업</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="" target="_blank">
+							<div class="logoImg">
+								<img src="./images/20240419/logo_23.png" alt="(주)엑스넬스코리아">
+							</div>
+							<div class="titWrap">
+								<p class="tit">(<span>주</span>)엑스넬스코리아</p>
+								<span class="txt">운동 및 경기용품 도매업</span>
+							</div>
+							<div class="txtWrap">
+								<p>'테크스킨'으로 유명한<br>
+									골프용품 제조 및 유통 전문기업</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="" target="_blank">
+							<div class="logoImg">
+								<img src="./images/20240419/logo_24.png" alt="(주)연합시스템">
+							</div>
+							<div class="titWrap">
+								<p class="tit">(<span>주</span>)연합시스템</p>
+								<span class="txt">구름베어링 제조업</span>
+							</div>
+							<div class="txtWrap">
+								<p>50년 제조와 IT 융합으로<br>
+									스마트팩토리 플랫폼 제공</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="" target="_blank">
+							<div class="logoImg">
+								<img src="./images/20240419/logo_25.png" alt="(주)오토허브셀카">
+							</div>
+							<div class="titWrap">
+								<p class="tit">(<span>주</span>)오토허브셀카</p>
+								<span class="txt">중고 자동차 판매업</span>
+							</div>
+							<div class="txtWrap">
+								<p>중고차 네트워크와<br>
+									인프라를 활용한<br>
+									토탈 솔루션 서비스 제공</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="" target="_blank">
+							<div class="logoImg">
+								<img src="./images/20240419/logo_26.png" alt="(주)우진큐피디">
+							</div>
+							<div class="titWrap">
+								<p class="tit">(<span>주</span>)우진큐피디</p>
+								<span class="txt">자동차용 신품 전기장치<br>
+									제조업</span>
+							</div>
+							<div class="txtWrap">
+								<p>자동차용 익스텐션 와이어링<br>
+									하네스 전문기업</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="" target="_blank">
+							<div class="logoImg">
+								<img src="./images/20240419/logo_27.png" alt="(주)이에스티">
+							</div>
+							<div class="titWrap">
+								<p class="tit">(<span>주</span>)이에스티</p>
+								<span class="txt">반도체 및 디스플레이 제조용<br>
+									기계 제조업</span>
+							</div>
+							<div class="txtWrap">
+								<p>ESC(디스플레이 제조용 기계)<br>
+									제조 및 정전척 제작  전문기업</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="" target="_blank">
+							<div class="logoImg">
+								<img src="./images/20240419/logo_28.png" alt="이트너스(주)">
+							</div>
+							<div class="titWrap">
+								<p class="tit">이트너스(<span>주</span>)</p>
+								<span class="txt">경영 컨설팅업</span>
+							</div>
+							<div class="txtWrap">
+								<p>경영지원플랫폼 전문기업</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="" target="_blank">
+							<div class="logoImg">
+								<img src="./images/20240419/logo_29.png" alt="(주)인아웃로직">
+							</div>
+							<div class="titWrap">
+								<p class="tit">(<span>주</span>)인아웃로직</p>
+								<span class="txt">기타 공학 연구개발업</span>
+							</div>
+							<div class="txtWrap">
+								<p>국내 팹리스 반도체  선도기업</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="" target="_blank">
+							<div class="logoImg">
+								<img src="./images/20240419/logo_30.png" alt="(주)제이숲">
+							</div>
+							<div class="titWrap">
+								<p class="tit">(<span>주</span>)제이숲</p>
+								<span class="txt">생활용품·화장품</span>
+							</div>
+							<div class="txtWrap">
+								<p>화장품 및 생활용품 제조기업<br>
+									(브랜드 : 제이숲, 앙또미뇽)</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="" target="_blank">
+							<div class="logoImg">
+								<img src="./images/20240419/logo_31.png" alt="(주)진용엔지니어링">
+							</div>
+							<div class="titWrap">
+								<p class="tit">(<span>주</span>)진용엔지니어링</p>
+								<span class="txt">기타 가공 공작기계 제조업</span>
+							</div>
+							<div class="txtWrap">
+								<p>자동화 설비 업체<br>
+									(반도체, 2차전지 생산 장비<br>
+									제작)</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="" target="_blank">
+							<div class="logoImg">
+								<img src="./images/20240419/logo_32.png" alt="(주)테크니컬코리아">
+							</div>
+							<div class="titWrap">
+								<p class="tit">(<span>주</span>)테크니컬코리아</p>
+								<span class="txt">유압기기 제조업</span>
+							</div>
+							<div class="txtWrap">
+								<p>유압기기 제조 전문기업</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="" target="_blank">
+							<div class="logoImg">
+								<img src="./images/20240419/logo_33.png" alt="(주)티윈">
+							</div>
+							<div class="titWrap">
+								<p class="tit">(<span>주</span>)티윈</p>
+								<span class="txt">응용 소프트웨어 개발 및 공급업</span>
+							</div>
+							<div class="txtWrap">
+								<p>디지털 UX 서비스 전문<br>
+									개발 기업 </p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="" target="_blank">
+							<div class="logoImg">
+								<img src="./images/20240419/logo_34.png" alt="(주)포엔">
+							</div>
+							<div class="titWrap">
+								<p class="tit">(<span>주</span>)포엔</p>
+								<span class="txt">자동차 재제조 부품 제조업</span>
+							</div>
+							<div class="txtWrap">
+								<p>전기차 배터리 업사이클링 기업</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="" target="_blank">
+							<div class="logoImg">
+								<img src="./images/20240419/logo_35.png" alt="(주)포유디지탈">
+							</div>
+							<div class="titWrap">
+								<p class="tit">(<span>주</span>)포유디지탈</p>
+								<span class="txt">컴퓨터 제조업</span>
+							</div>
+							<div class="txtWrap">
+								<p>노트북, 태블릿 등 전자제품을<br>
+									개발, 생산, 판매, 수출하는<br>
+									전자제품 전문 기업</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="" target="_blank">
+							<div class="logoImg">
+								<img src="./images/20240419/logo_36.png" alt="(주)프로티움사이언스">
+							</div>
+							<div class="titWrap">
+								<p class="tit">(<span>주</span>)프로티움사이언스</p>
+								<span class="txt">의학 및 약학 연구개발업</span>
+							</div>
+							<div class="txtWrap">
+								<p>바이오의약품 위탁개발 및<br>
+									분석(CDAO)전문기업</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="" target="_blank">
+							<div class="logoImg">
+								<img src="./images/20240419/logo_37.png" alt="(주)수산">
+							</div>
+							<div class="titWrap">
+								<p class="tit">(<span>주</span>)수산</p>
+								<span class="txt"></span>
+							</div>
+							<div class="txtWrap">
+								<p></p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="" target="_blank">
+							<div class="logoImg">
+								<img src="./images/20240419/logo_38.png" alt="(주)수산">
+							</div>
+							<div class="titWrap">
+								<p class="tit">(<span>주</span>)수산</p>
+								<span class="txt"></span>
+							</div>
+							<div class="txtWrap">
+								<p></p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="" target="_blank">
+							<div class="logoImg">
+								<img src="./images/20240419/logo_39.png" alt="(주)수산">
+							</div>
+							<div class="titWrap">
+								<p class="tit">(<span>주</span>)수산</p>
+								<span class="txt"></span>
+							</div>
+							<div class="txtWrap">
+								<p></p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="" target="_blank">
+							<div class="logoImg">
+								<img src="./images/20240419/logo_40.png" alt="(주)수산">
+							</div>
+							<div class="titWrap">
+								<p class="tit">(<span>주</span>)수산</p>
+								<span class="txt"></span>
+							</div>
+							<div class="txtWrap">
+								<p></p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="" target="_blank">
+							<div class="logoImg">
+								<img src="./images/20240419/logo_41.png" alt="(주)수산">
+							</div>
+							<div class="titWrap">
+								<p class="tit">(<span>주</span>)수산</p>
+								<span class="txt"></span>
+							</div>
+							<div class="txtWrap">
+								<p></p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="" target="_blank">
+							<div class="logoImg">
+								<img src="./images/20240419/logo_42.png" alt="(주)수산">
+							</div>
+							<div class="titWrap">
+								<p class="tit">(<span>주</span>)수산</p>
+								<span class="txt"></span>
+							</div>
+							<div class="txtWrap">
+								<p></p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="" target="_blank">
+							<div class="logoImg">
+								<img src="./images/20240419/logo_43.png" alt="(주)수산">
+							</div>
+							<div class="titWrap">
+								<p class="tit">(<span>주</span>)수산</p>
+								<span class="txt"></span>
+							</div>
+							<div class="txtWrap">
+								<p></p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="" target="_blank">
+							<div class="logoImg">
+								<img src="./images/20240419/logo_44.png" alt="(주)수산">
+							</div>
+							<div class="titWrap">
+								<p class="tit">(<span>주</span>)수산</p>
+								<span class="txt"></span>
+							</div>
+							<div class="txtWrap">
+								<p></p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="" target="_blank">
+							<div class="logoImg">
+								<img src="./images/20240419/logo_45.png" alt="(주)수산">
+							</div>
+							<div class="titWrap">
+								<p class="tit">(<span>주</span>)수산</p>
+								<span class="txt"></span>
+							</div>
+							<div class="txtWrap">
+								<p></p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="" target="_blank">
+							<div class="logoImg">
+								<img src="./images/20240419/logo_46.png" alt="(주)수산">
+							</div>
+							<div class="titWrap">
+								<p class="tit">(<span>주</span>)수산</p>
+								<span class="txt"></span>
+							</div>
+							<div class="txtWrap">
+								<p></p>
+							</div>
+						</a>
+					</li>
+				</ul>
+				<style>
+					.themaWrap .cont04 .linkBtn {
+						margin-top: 50px;
+						text-align: center;
+					}
+					.themaWrap .cont04 .linkBtn .moreBtn {
+						width: 336px;
+						height: 70px;
+						padding-top: 4px;
+						background: #f8f8f8;
+						color: #797979;
+						font-size: 24px;
+					}
+					.themaWrap .cont04 .linkBtn .moreBtn::after {
+						content: '';
+						display: inline-block;
+						width: 19px;
+						height: 11px;
+						margin-left: 10px;
+						background: url(./images/20240419/cont04_icon01.png) no-repeat;
+						background-size: contain;
+					}
+				</style>
+				<div class="linkBtn">
+					<button type="button" class="moreBtn"><span>더보기</span></button>
+				</div>
+				
+			</div>
+		</article>
 
 	</div>
 
 
 	<script>
 	$(document).ready(function(){
-		var swiper = new Swiper('.tabCont', {
-            loop: true,
-			allowTouchMove: true,
-            slidesPerView: 1,
-			autoHeight : true,
-			spaceBetween: 50,
-            navigation: {
-                nextEl: '.tabWrap .btn_next',
-                prevEl: '.tabWrap .btn_prev',
-            },
-            pagination: {
-                el: '.tabWrap .slideList',
-                clickable: 'true',
-                type: 'custom',
-                renderCustom: function (swiper, current) {
-					$('.slideList').children().eq(current - 1).addClass('active').siblings().removeClass('active');
-					$('.slideList').on('click', 'li', function () {
-						swiper.slideToLoop($(this).index(), 500, false)
-					})
+		$(function(){
+			$(".themaWrap .cont04 li").slice(0, 16).show(); 
+			$(".linkBtn .moreBtn").click(function(){ 
+				$(".themaWrap .cont04 li:hidden").slice(0, 16).show();
+				if($(".themaWrap .cont04 li:hidden").length == 0){ 					
+					$('.linkBtn .moreBtn').hide();
 				}
-            },
-			// breakpoints: {        
-			// 	640: {
-			// 		allowTouchMove: false,
-			// 	},
-			// },
-        })
-		
+			});
+		});		
 
 		
 	});
-	function isInViewport(element) {
-		const rect = element.getBoundingClientRect();
-		return (
-			rect.top >= 0 &&
-			rect.left >= 0 &&
-			rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-			rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-		);
-	}
-	function animateGraph() {
-		const graphBox = document.querySelector('.graphBox');
-		if (isInViewport(graphBox)) {
-			graphBox.classList.add('animate');
-		}
-	}
-	// function resetGraphAnimation() {
-	// 	const graphBox = document.querySelector('.graphBox');
-	// 	if (!isInViewport(graphBox)) {
-	// 		graphBox.classList.remove('animate');
-	// 	}
-	// }
-	window.addEventListener('scroll', function() {
-		animateGraph();
-		// resetGraphAnimation();
-	});
-	animateGraph();
-	// resetGraphAnimation();
 	</script>
 
 </body>
