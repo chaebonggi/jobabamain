@@ -181,7 +181,7 @@
  .themaWrap .cont04 .innerSection { padding: 100px 0 30px; } 
  .themaWrap .cont04 ul { gap: 10px 6px; } 
  .themaWrap .cont04 li { width: calc(100% / 2 - 3px); } 
- .themaWrap .cont04 li .logoImg { height: 35px; padding: 6px 10px; margin: 12px 0 15px; } 
+ .themaWrap .cont04 li .logoImg { height: 35px; padding: 4px 10px; margin: 12px 0 15px; } 
  .themaWrap .cont04 li .logoImg img { height: 100%; object-fit: contain; } 
  .themaWrap .cont04 li .titWrap .tit { min-height: 45px; font-size: 16px; } 
  .themaWrap .cont04 li .titWrap .txt { min-height: 38px; margin-bottom: 10px; font-size: 14px; word-break: keep-all; } 
