@@ -673,7 +673,7 @@ body.scrollLock { overflow: hidden; }
 .contents-wrap .job_info_wrap .content_wrap .tag_area .tag_cont .swiper-slide {display: inline-block;width: auto;}
 .contents-wrap .job_info_wrap .content_wrap .tag_area li a { display: block; padding: 2px 18px; color: #777777; font-size: 14px; text-align: center; border: 1px solid #cfcfcf; border-radius: 20px; } 
 /* content_wrap */
-.contents-wrap .job_info_wrap .content_wrap { width: 100%; } 
+.contents-wrap .job_info_wrap .content_wrap { width: 100%; overflow: hidden;} 
 .contents-wrap .job_info_wrap .content_wrap p.tit { color: #000; font-size: 24px; font-weight: 500; } 
 .contents-wrap .job_info_wrap .content_wrap .fc_blue { color: #008ae0; font-weight: 500; } 
 
@@ -775,7 +775,8 @@ body.scrollLock { overflow: hidden; }
 
 @media all and (max-width: 1024px){
  .contents-wrap .job_info_wrap .content_wrap .recommend_list ul { flex-wrap: wrap; gap: 20px 5px; } 
- .contents-wrap .job_info_wrap .content_wrap .recommend_list ul li { max-width: 220px; width: calc(100% / 2 - 10px ); margin: 0 auto; } 
+ .contents-wrap .job_info_wrap .content_wrap .recommend_list ul li { width: calc(100% / 2 - 10px ); } 
+ .contents-wrap .job_info_wrap .content_wrap .recommend_list ul li a {display: block; max-width: 220px; margin: 0 auto;}
  .contents-wrap .job_info_wrap .content_wrap .cont_list_area .img_wrap { display: none; } 
  }
 
