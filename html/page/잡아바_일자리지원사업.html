@@ -2829,7 +2829,6 @@
             // 나를 위한 맞춤 검색
             const selectBtn = document.querySelector('.contents-wrap .job_info_wrap .category_wrap .selet_wrap .select_btn');
             const selectList = document.querySelector('.contents-wrap .job_info_wrap .category_wrap .selet_wrap .select_list');
-            const selectListButtons = document.querySelectorAll('.contents-wrap .job_info_wrap .category_wrap .selet_wrap .select_list button');
             selectBtn.addEventListener('click', () => {
                 selectBtn.classList.toggle('active');
             });
@@ -2838,11 +2837,6 @@
                     selectBtn.innerText = event.target.innerText;
                     selectBtn.classList.remove('active');
                 }
-            });
-            selectListButtons.forEach((button, index) => {
-                button.addEventListener('click', () => {
-                    switchTab(index);
-                });
             });
 
             $(".srch_wrap_item, .edu_link").on("click", ".srch_btn, .edu_btn", function() {
