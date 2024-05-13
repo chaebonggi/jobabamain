@@ -1505,11 +1505,11 @@
 					</div>
                     <div class="cate_banner">
                         <ul class="swiper-wrapper">
-                            <li class="swiper-slide"><a href="" title="자기소개서 첨삭 바로가기">
-                                <img src="./images/main_2024/sub/cate_banner01.png" alt="자시소개서 첨삭">
+                            <li class="swiper-slide"><a href="https://www.jobaba.net/empmn/recruitListJob.do" title="청년인턴 채용관 바로가기">
+                                <img src="./images/main_2024/sub/cate_banner02.png" alt="청년인턴 채용관">
                             </a></li>
-                            <li class="swiper-slide"><a href="" title="자기소개서 첨삭 바로가기">
-                                <img src="./images/main_2024/sub/cate_banner01.png" alt="자시소개서 첨삭">
+                            <li class="swiper-slide"><a href="https://www.jobaba.net/empmn/recruitListJob.do" title="청년인턴 채용관 바로가기">
+                                <img src="./images/main_2024/sub/cate_banner02.png" alt="청년인턴 채용관">
                             </a></li>
                         </ul>
                         <div class="swiper-pagination"></div>
@@ -1824,7 +1824,7 @@
                                         <div class="txt_wrap">
                                             <p class="c_tit">경기도일자리재단</p>
                                             <a href="../page/detailPageB.html" class="s_tit_area" title="이천시 반도체 전문인력 양성과정 프로그램 바로가기">
-                                                <span class="s_tit">이천시 반도체 전문인력 양성과정 프로그램</span>
+                                                <span class="s_tit">이천시 반도체 전문인력 양성과정 프로그램2</span>
                                                 <span class="d_day">D - 2</span>
                                             </a>
                                             <ul class="info_list">
@@ -2001,7 +2001,7 @@
                                         <div class="txt_wrap">
                                             <p class="c_tit">경기도일자리재단</p>
                                             <a href="../page/detailPageB.html" class="s_tit_area" title="이천시 반도체 전문인력 양성과정 프로그램 바로가기">
-                                                <span class="s_tit">이천시 반도체 전문인력 양성과정 프로그램</span>
+                                                <span class="s_tit">이천시 반도체 전문인력 양성과정 프로그램3</span>
                                                 <span class="d_day">D - 2</span>
                                             </a>
                                             <ul class="info_list">
@@ -2178,7 +2178,7 @@
                                         <div class="txt_wrap">
                                             <p class="c_tit">경기도일자리재단</p>
                                             <a href="../page/detailPageB.html" class="s_tit_area" title="이천시 반도체 전문인력 양성과정 프로그램 바로가기">
-                                                <span class="s_tit">이천시 반도체 전문인력 양성과정 프로그램</span>
+                                                <span class="s_tit">이천시 반도체 전문인력 양성과정 프로그램4</span>
                                                 <span class="d_day">D - 2</span>
                                             </a>
                                             <ul class="info_list">
@@ -2829,6 +2829,7 @@
             // 나를 위한 맞춤 검색
             const selectBtn = document.querySelector('.contents-wrap .job_info_wrap .category_wrap .selet_wrap .select_btn');
             const selectList = document.querySelector('.contents-wrap .job_info_wrap .category_wrap .selet_wrap .select_list');
+            const selectListButtons = document.querySelectorAll('.contents-wrap .job_info_wrap .category_wrap .selet_wrap .select_list button');
             selectBtn.addEventListener('click', () => {
                 selectBtn.classList.toggle('active');
             });
@@ -2837,6 +2838,11 @@
                     selectBtn.innerText = event.target.innerText;
                     selectBtn.classList.remove('active');
                 }
+            });
+            selectListButtons.forEach((button, index) => {
+                button.addEventListener('click', () => {
+                    switchTab(index);
+                });
             });
 
             $(".srch_wrap_item, .edu_link").on("click", ".srch_btn, .edu_btn", function() {
@@ -2937,17 +2943,25 @@
 		});
         // tab menu
         function switchTab(index) {
-            // Remove active class from all tabs and content sections
             const tabItems = document.querySelectorAll('.contents-wrap .job_info_wrap .tab_list_wrap li');
             tabItems.forEach(item => item.classList.remove('active'));
 
             const contentItems = document.querySelectorAll('.contents-wrap .job_info_wrap .tab_cont_wrap .cont_list');
             contentItems.forEach(item => item.classList.remove('active'));
 
-            // Add active class to the clicked tab and corresponding content section
             tabItems[index].classList.add('active');
             contentItems[index].classList.add('active');
+
+            const selectBtn = document.querySelector('.contents-wrap .job_info_wrap .category_wrap .selet_wrap .select_btn');
+            const selectListItems = document.querySelectorAll('.contents-wrap .job_info_wrap .category_wrap .selet_wrap .select_list li button');
+            selectBtn.innerText = selectListItems[index].innerText;
+            selectBtn.classList.remove('active');
         }
+
+
+
+
+
         function fn_chkSrchArea(obj) {            
             fn_AddOrDelCdArray(obj.attr('id'), obj.prop('checked'), obj.next('.check_txt').text());
         }
