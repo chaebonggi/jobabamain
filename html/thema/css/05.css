@@ -106,7 +106,7 @@
 @media all and (max-width:1600px){
  .themaWrap .mainVisual .imgWrap::before,
  .themaWrap .mainVisual .imgWrap::after { content: none; } 
-}
+ }
 
 @media all and (max-width:1024px){
  .themaWrap .innerSection { width: calc(100% - 20px); } 
@@ -144,7 +144,6 @@
 .themaWrap .cont03 .listTit { width: 100%; padding: 4px 0; height: auto; margin: 0 auto 20px; border-radius: 20px; } 
 .themaWrap .cont03 .contBox { padding: 80px 10px 60px; } 
 .themaWrap .cont03 .contBox .item a { min-height: auto; padding: 20px 0; font-size: 20px; } 
-
 }
 
 @media all and (max-width:640px){
@@ -174,7 +173,7 @@
 .themaWrap .cont02 .listInfo li p::before { width: 14px; height: 14px; top: 0; } 
 .themaWrap .cont02 .listInfo li p { padding-left: 20px; margin-bottom: 0; margin-right: 6px; } 
 .themaWrap .cont02 .listInfo li span { font-size: 16px; } 
-.themaWrap .cont02 .mapBtn button::before { width: 12px; height: 17px; left: -16px; top: 0px; background-size: contain !important; } 
+.themaWrap .cont02 .mapBtn button::before { width: 12px; height: 17px; left: -16px; top: 2px; background-size: contain !important; } 
 .themaWrap .cont02 .listInfo li + li { margin-top: 4px; } 
 .themaWrap .cont03 .innerSection { padding: 30px 0; } 
 .themaWrap .cont03 .contTit .cTit01 img { max-width: 200px; } 
@@ -187,4 +186,5 @@
 .themaWrap .cont03 .contBox .item a::before { height: 30px; background-size: contain !important; } 
 .themaWrap .cont03 .contBox .item a { padding: 20px 10px 10px; font-size: 12px; word-break: keep-all; } 
 .themaWrap .cont03 .contBox .item + .item { margin-top: 20px; } 
-}
+.themaWrap .cont02 .scrollbar-outer { max-height: 600px; } 
+ }
