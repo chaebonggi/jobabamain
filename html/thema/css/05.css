@@ -32,7 +32,7 @@
 .themaWrap .cont02 .mapBtn button.active::before { background: url(../images/20240528/icon_button_on.png) center no-repeat; } 
 .themaWrap .cont02 .mapBtn button.active { color: #e21851; } 
 .themaWrap .cont02 .mapCont { padding: 0; position: relative; } 
-.themaWrap .cont02 .mapTag span { padding: 6px 16px 2px; position: absolute; transform: translateX(-50%); color: #000; font-size: 26px; border: 2px solid #000; border-radius: 10px; box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 0.2); white-space: nowrap;} 
+.themaWrap .cont02 .mapTag span { padding: 6px 16px 2px; position: absolute; transform: translateX(-50%); color: #000; font-size: 26px; border: 2px solid #000; border-radius: 10px; box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 0.2); white-space: nowrap; } 
 .themaWrap .cont02 .mapTag span:nth-child(1) { top: 100px; left: calc(50% - 220px); background: #e1f4ff; } 
 .themaWrap .cont02 .mapTag span:nth-child(2) { top: 260px; left: calc(50% - -250px); background: #faffcc; } 
 .themaWrap .cont02 .mapTag span:nth-child(3) { bottom: 0px; left: calc(50% - -200px); background: #dafcd9; } 
@@ -69,7 +69,7 @@
  .themaWrap .cont02 .scrollbar-outer > .scroll-element .scroll-element_outer, .public_job .scrollbar-outer > .scroll-element .scroll-element_track, .public_job .scrollbar-outer > .scroll-element .scroll-bar { border-radius:0; } 
  .themaWrap .cont02 .scrollbar-outer > .scroll-element.scroll-y .scroll-element_outer { width: 15px; left: -20px; } 
  .themaWrap .cont03 { background: url(../images/20240528/cont03_bg.jpg) top center no-repeat; } 
- .themaWrap .cont03 .innerSection { padding: 120px 0 130px; }
+ .themaWrap .cont03 .innerSection { padding: 120px 0 130px; } 
  
  .themaWrap .cont03 .contBox { padding: 115px 30px 70px; background: linear-gradient(-120deg, #f9e6d8 30%, #e9e8f4, #f1f1f1); border: 3px solid #fff; border-radius: 20px; box-shadow: 0px 17px 76.14px 17.86px rgba(120, 92, 131, 0.2); } 
  .themaWrap .cont03 .contTit { margin-bottom: -50px; text-align: center; } 
@@ -79,7 +79,7 @@
  .themaWrap .cont03 .contBox .item { display: flex; align-items: center; } 
  .themaWrap .cont03 .contBox .item + .item { margin-top: 40px; } 
  .themaWrap .cont03 .listTit { display: flex; width: 154px; height: 154px; margin-right: 30px; position: relative; border-radius: 50%; border: 3px solid #fff; align-items: center; justify-content: center; box-sizing: border-box; flex-shrink: 0; } 
- .themaWrap .cont03 .listTit::after { content: ''; width: 25px; height: 23px; position: absolute; top: 50%; right: -24px; transform: translateY(-50%); }
+ .themaWrap .cont03 .listTit::after { content: ''; width: 25px; height: 23px; position: absolute; top: 50%; right: -24px; transform: translateY(-50%); } 
  .themaWrap .cont03 .listTit p { padding-top: 10px; color: #000; font-size: 30px; } 
  .themaWrap .cont03 .contBox .item:nth-child(1) .listTit { background: #ffef41; } 
  .themaWrap .cont03 .contBox .item:nth-child(2) .listTit { background: #c1e4ef; } 
@@ -92,7 +92,7 @@
  .themaWrap .cont03 .contBox .item ul li:not(:first-child) { border-left: 1px solid #f2f2f2; } 
  .themaWrap .cont03 .contBox .item a { display: block; min-height: 176px; height: 100%; padding: 36px 0 10px; color: #000; font-size: 26px; text-align: center; letter-spacing: -1px; } 
  .themaWrap .cont03 .contBox .item a p { line-height: 1.2; } 
- .themaWrap .cont03 .contBox .item a::before { content: ''; display: block; height: 66px; margin: 0 auto 10px; }
+ .themaWrap .cont03 .contBox .item a::before { content: ''; display: block; height: 66px; margin: 0 auto 10px; } 
  .themaWrap .cont03 .contBox .item:nth-child(1) li:nth-child(1) a::before { background: url(../images/20240528/list_icon01.png) center no-repeat; } 
  .themaWrap .cont03 .contBox .item:nth-child(1) li:nth-child(2) a::before { background: url(../images/20240528/list_icon02.png) center no-repeat; } 
  .themaWrap .cont03 .contBox .item:nth-child(1) li:nth-child(3) a::before { background: url(../images/20240528/list_icon03.png) center no-repeat; } 
@@ -104,275 +104,87 @@
  .themaWrap .cont03 .contBox .item:nth-child(3) li:nth-child(3) a::before { background: url(../images/20240528/list_icon09.png) center no-repeat; } 
 
 @media all and (max-width:1600px){
-  .themaWrap .mainVisual .imgWrap::before,
-  .themaWrap .mainVisual .imgWrap::after {
-    content: none;
-  }
-
+ .themaWrap .mainVisual .imgWrap::before,
+ .themaWrap .mainVisual .imgWrap::after { content: none; } 
 }
 
 @media all and (max-width:1024px){
-  .themaWrap .innerSection {
-    width: calc(100% - 20px);
-  }
-  .themaWrap .mainVisual .mainInfo ul {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .themaWrap .mainVisual .mainInfo li {
-    width: calc(100% / 3);
-  }
-}
+ .themaWrap .innerSection { width: calc(100% - 20px); } 
+ .themaWrap .mainVisual .mainInfo ul { flex-wrap: wrap; justify-content: center; } 
+ .themaWrap .mainVisual .mainInfo li { width: calc(100% / 3); } 
+ }
 
 @media all and (max-width:860px){
-  .themaWrap .mainVisual h2 img {
-    max-width: 600px;
-  }
-  .themaWrap .mainVisual .imgWrap img {
-    max-width: 600px;
-  }
-  .themaWrap .mainVisual .mainInfo li::before {
-    width: 140px;
-    height: 140px;
-}
-  .themaWrap .cont02 .innerSection {
-    padding: 60px 0;
-}
-  .themaWrap .cont02 .mapTit::before,
-  .themaWrap .cont02 .mapTit::after {
-    content: none;
-  }
-  .themaWrap .cont02 .mapTit {
-    padding: 10px 0;
-    height: auto;
-    margin: 0 auto 30px;
-    position: static;
-    border-radius: 15px;
-  }
-  .themaWrap .cont02 .mapTit p {
-    text-align: center;
-  }
-  .themaWrap .cont02 .mapTag span:nth-child(1) {
-    top: 230px;
-  }
-  .themaWrap .cont02 .mapTag span:nth-child(2) {
-    left: calc(50% - -220px);
-}
-.themaWrap .cont02 .mapTag span:nth-child(4) {
-  left: calc(50% - 258px);
-}
-.themaWrap .cont02 .mapTag span {
-  padding: 6px 12px 2px;
-  font-size: 22px;
-}
-.themaWrap .cont02 .tabList a {
-  display: block;
-  height: 100%;
-  padding: 0 10px 40px;
-}
-.themaWrap .cont02 .tabList .listTag {
-  width: 130px;
-  height: 40px;
-  margin: 0 auto;
-  padding: 10px;
-  border-radius: 0 0 10px 10px;
-}
-.themaWrap .cont02 .tabList .listImg {
-  margin: 20px auto;
-  text-align: center;
-}
-.themaWrap .cont02 .listInfo .tit {
-  margin: 10px 0;
-  min-height: auto;
-  text-align: center;
-}
-.themaWrap .cont02 .listInfo li {
-  text-align: center;
-}
-.themaWrap .cont02 .listInfo li p {
-  display: inline-block;
-}
-.themaWrap .cont02 .listInfo li span {
-  display: block;
-  padding-left: 0;
-}
-.themaWrap .cont03 .contTit .cTit02 img {
-  max-width: 400px;
-  width: 100%;
-}
-.themaWrap .cont03 .contTit .cTit01::after {
-  width: 100px;
-  height: 128px;
-  background-size: contain;
-}
-.themaWrap .cont03 .contTit {
-  margin-bottom: -30px;
-}
-.themaWrap .cont03 .contTit .cTit01 img {
-  max-width: 300px;
-}
-.themaWrap .cont03 .innerSection {
-  padding: 60px 0;
-}
-.themaWrap .cont03 .contBox .item {
-  display: block;
-}
-.themaWrap .cont03 .contBox .item .listTit::after {
-  content: none;
-}
-.themaWrap .cont03 .listTit {
-  width: 100%;
-  padding: 4px 0;
-  height: auto;
-  margin: 0 auto 20px;
-  border-radius: 20px;
-}
-.themaWrap .cont03 .contBox {
-  padding: 80px 10px 60px;
-}
-.themaWrap .cont03 .contBox .item a {
-  min-height: auto;
-  padding: 20px 0;
-  font-size: 20px;
-}
-
+ .themaWrap .mainVisual h2 img { max-width: 600px; } 
+ .themaWrap .mainVisual .imgWrap img { max-width: 600px; } 
+ .themaWrap .mainVisual .mainInfo li::before { width: 140px; height: 140px; } 
+ .themaWrap .cont02 .innerSection { padding: 60px 0; } 
+ .themaWrap .cont02 .mapTit::before,
+ .themaWrap .cont02 .mapTit::after { content: none; } 
+ .themaWrap .cont02 .mapTit { padding: 10px 0; height: auto; margin: 0 auto 30px; position: static; border-radius: 15px; } 
+ .themaWrap .cont02 .mapTit p { text-align: center; } 
+ .themaWrap .cont02 .mapTag span:nth-child(1) { top: 230px; } 
+ .themaWrap .cont02 .mapTag span:nth-child(2) { left: calc(50% - -220px); } 
+.themaWrap .cont02 .mapTag span:nth-child(4) { left: calc(50% - 258px); } 
+.themaWrap .cont02 .mapTag span { padding: 6px 12px 2px; font-size: 22px; } 
+.themaWrap .cont02 .tabList a { display: block; height: 100%; padding: 0 10px 40px; } 
+.themaWrap .cont02 .tabList .listTag { width: 130px; height: 40px; margin: 0 auto; padding: 10px; border-radius: 0 0 10px 10px; } 
+.themaWrap .cont02 .tabList .listImg { margin: 20px auto; text-align: center; } 
+.themaWrap .cont02 .listInfo .tit { margin: 10px 0; min-height: auto; text-align: center; } 
+.themaWrap .cont02 .listInfo li { text-align: center; } 
+.themaWrap .cont02 .listInfo li p { display: inline-block; } 
+.themaWrap .cont02 .listInfo li span { display: block; padding-left: 0; } 
+.themaWrap .cont03 .contTit .cTit02 img { max-width: 400px; width: 100%; } 
+.themaWrap .cont03 .contTit .cTit01::after { width: 100px; height: 128px; background-size: contain; } 
+.themaWrap .cont03 .contTit { margin-bottom: -30px; } 
+.themaWrap .cont03 .contTit .cTit01 img { max-width: 300px; } 
+.themaWrap .cont03 .innerSection { padding: 60px 0; } 
+.themaWrap .cont03 .contBox .item { display: block; } 
+.themaWrap .cont03 .contBox .item .listTit::after { content: none; } 
+.themaWrap .cont03 .listTit { width: 100%; padding: 4px 0; height: auto; margin: 0 auto 20px; border-radius: 20px; } 
+.themaWrap .cont03 .contBox { padding: 80px 10px 60px; } 
+.themaWrap .cont03 .contBox .item a { min-height: auto; padding: 20px 0; font-size: 20px; } 
 
 }
 
 @media all and (max-width:640px){
-  .themaWrap .mainVisual h2 img {
-    max-width: 300px;
-}
-.themaWrap .mainVisual .imgWrap img {
-  max-width: 300px;
-}
-.themaWrap .mainVisual .mainInfo {
-  padding: 20px 0;
-  border-radius: 20px;
-}
-.themaWrap .mainVisual .mainInfo li::before {
-  width: 80px;
-  height: 80px;
-}
-.themaWrap .mainVisual .mainInfo li p {
-  margin-top: 10px;
-  font-size: 16px;
-}
-.themaWrap .cont02 .innerSection {
-  padding: 30px 0;
-}
-.themaWrap .cont02 .mapTit p {
-  font-size: 20px;
-}
-.themaWrap .cont02 .mapItem {
-  max-width: 250px;
-  margin: 0 auto 40px;
-}
-.themaWrap .cont02 .mapTag span {
-  padding: 2px 6px;
-  font-size: 12px;
-  border-radius: 5px;
-  border: 1px solid #000;
-}
-.themaWrap .cont02 .mapTag span:nth-child(1) {
-  top: 180px;
-  left: calc(50% - 106px);
-}
-.themaWrap .cont02 .mapTag span:nth-child(2) {
-  left: calc(50% - -112px);
-}
-.themaWrap .cont02 .mapTag span:nth-child(3) {
-  left: calc(50% - -100px);
-}
-.themaWrap .cont02 .mapTag span:nth-child(4) {
-  bottom: 0;
-  left: calc(50% - 106px);
-}
-.themaWrap .cont02 .mapBtn button {
-  font-size: 16px;
-}
-.themaWrap .cont02 .tabWrap {
-  padding: 20px 0;
-}
-.themaWrap .cont02 .tabCont {
-  padding: 0 20px;
-}
-.themaWrap .cont02 .scrollbar-outer > .scroll-element.scroll-y .scroll-element_outer {
-  width: 4px;
-  left: 0px;
-}
-.themaWrap .cont02 .tabList .listTag {
-  height: auto;
-  padding: 6px;
-}
-.themaWrap .cont02 .tabList .listTag p {
-  color: #000;
-  font-size: 14px;
-}
-.themaWrap .cont02 .tabList a {
-  padding: 0 0 20px;
-}
-.themaWrap .cont02 .listInfo .tit {
-  font-size: 18px;
-  word-break: keep-all;
-}
-.themaWrap .cont02 .listInfo ul {
-  display: block;
-}
-.themaWrap .cont02 .listInfo li {
-  display: flex;
-  width: 100%;
-  align-items: center;
-}
-.themaWrap .cont02 .listInfo li p::before {
-  width: 14px;
-  height: 14px;
-  top: 0;
-}
-.themaWrap .cont02 .listInfo li p {
-  padding-left: 20px;
-  margin-bottom: 0;
-  margin-right: 6px;
-}
-.themaWrap .cont02 .listInfo li span {
-  font-size: 16px;
-}
-.themaWrap .cont03 .innerSection {
-  padding: 30px 0;
-}
-.themaWrap .cont03 .contTit .cTit01 img {
-  max-width: 200px;
-}
-.themaWrap .cont03 .contTit .cTit01::after {
-  width: 60px;
-  height: 77px;
-  margin: -10px auto -15px;
-}
-.themaWrap .cont03 .contTit .cTit02 img {
-  max-width: 250px;
-}
-.themaWrap .cont03 .contTit {
-  margin-bottom: -20px;
-}
-.themaWrap .cont03 .contBox {
-  padding: 40px 10px 30px;
-}
-.themaWrap .cont03 .listTit p {
-  padding: 0;
-  font-size: 16px;
-}
-.themaWrap .cont03 .listTit {
-  margin: 0 auto 10px;
-  border-radius: 10px;
-}
-.themaWrap .cont03 .contBox .item a::before {
-  height: 30px;
-  background-size: contain !important;
-}
-.themaWrap .cont03 .contBox .item a {
-  padding: 20px 10px 10px;
-  font-size: 12px;
-  word-break: keep-all;
-}
-
+ .themaWrap .mainVisual h2 img { max-width: 300px; } 
+.themaWrap .mainVisual .imgWrap img { max-width: 300px; } 
+.themaWrap .mainVisual .mainInfo { padding: 20px 0; border-radius: 20px; } 
+.themaWrap .mainVisual .mainInfo li::before { width: 80px; height: 80px; } 
+.themaWrap .mainVisual .mainInfo li p { margin-top: 10px; font-size: 16px; } 
+.themaWrap .cont02 .innerSection { padding: 30px 0; } 
+.themaWrap .cont02 .mapTit p { font-size: 20px; } 
+.themaWrap .cont02 .mapItem { max-width: 250px; margin: 0 auto 40px; } 
+.themaWrap .cont02 .mapTag span { padding: 2px 6px; font-size: 12px; border-radius: 5px; border: 1px solid #000; } 
+.themaWrap .cont02 .mapTag span:nth-child(1) { top: 180px; left: calc(50% - 106px); } 
+.themaWrap .cont02 .mapTag span:nth-child(2) { left: calc(50% - -112px); } 
+.themaWrap .cont02 .mapTag span:nth-child(3) { left: calc(50% - -100px); } 
+.themaWrap .cont02 .mapTag span:nth-child(4) { bottom: 0; left: calc(50% - 106px); } 
+.themaWrap .cont02 .mapBtn button { font-size: 16px; } 
+.themaWrap .cont02 .tabWrap { padding: 20px 0; } 
+.themaWrap .cont02 .tabCont { padding: 0 20px; } 
+.themaWrap .cont02 .scrollbar-outer > .scroll-element.scroll-y .scroll-element_outer { width: 4px; left: 0px; } 
+.themaWrap .cont02 .tabList .listTag { height: auto; padding: 6px; } 
+.themaWrap .cont02 .tabList .listTag p { color: #000; font-size: 14px; } 
+.themaWrap .cont02 .tabList a { padding: 0 0 20px; } 
+.themaWrap .cont02 .listInfo .tit { font-size: 18px; word-break: keep-all; } 
+.themaWrap .cont02 .listInfo ul { display: block; } 
+.themaWrap .cont02 .listInfo li { display: flex; width: 100%; align-items: center; } 
+.themaWrap .cont02 .listInfo li p::before { width: 14px; height: 14px; top: 0; } 
+.themaWrap .cont02 .listInfo li p { padding-left: 20px; margin-bottom: 0; margin-right: 6px; } 
+.themaWrap .cont02 .listInfo li span { font-size: 16px; } 
+.themaWrap .cont02 .mapBtn button::before { width: 12px; height: 17px; left: -16px; top: 0px; background-size: contain; } 
+.themaWrap .cont02 .listInfo li + li { margin-top: 4px; } 
+.themaWrap .cont03 .innerSection { padding: 30px 0; } 
+.themaWrap .cont03 .contTit .cTit01 img { max-width: 200px; } 
+.themaWrap .cont03 .contTit .cTit01::after { width: 60px; height: 77px; margin: -10px auto -15px; } 
+.themaWrap .cont03 .contTit .cTit02 img { max-width: 250px; } 
+.themaWrap .cont03 .contTit { margin-bottom: -20px; } 
+.themaWrap .cont03 .contBox { padding: 40px 10px 30px; } 
+.themaWrap .cont03 .listTit p { padding: 0; font-size: 16px; } 
+.themaWrap .cont03 .listTit { margin: 0 auto 10px; border-radius: 10px; } 
+.themaWrap .cont03 .contBox .item a::before { height: 30px; background-size: contain !important; } 
+.themaWrap .cont03 .contBox .item a { padding: 20px 10px 10px; font-size: 12px; word-break: keep-all; } 
+.themaWrap .cont03 .contBox .item + .item { margin-top: 20px; } 
 }
