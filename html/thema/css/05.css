@@ -19,9 +19,14 @@
 .themaWrap .mainVisual .mainInfo li:nth-child(5)::before { background: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20240528/main_list_05.png) center no-repeat; } 
 .themaWrap .mainVisual .mainInfo li p { margin-top: 20px; color: #fff; font-size: 28px; text-align: center; } 
 .themaWrap .cont02 .innerSection { padding: 120px 0 80px; } 
+.themaWrap .cont02 .tabCont .t_tit { margin: 20px 0 10px; color: #000; font-size: 26px; } 
 .themaWrap .cont02 .mapItem { max-width: 500px; margin: 0 auto 70px; } 
 .themaWrap .cont02 .mapItem svg { filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4)); } 
 .themaWrap .cont02 .mapItem .usMap { cursor: pointer; } 
+.themaWrap .cont02 .mapItem .usMap .mapArea { transition: all 0.35s; } 
+.themaWrap .cont02 .mapItem .usMap:hover .mapArea { fill: #40D0F9; transition: all 0.35s; } 
+.themaWrap .cont02 .mapItem .usMap:hover .cls-4 { fill: #fff; transition: all 0.35s; } 
+.themaWrap .cont02 .mapItem .usMap:hover .cls-9 { stroke: #fff;}
 .themaWrap .cont02 .tabWrap { padding: 50px 0; background: #fff; border-radius: 20px; } 
 .themaWrap .cont02 .tabCont { display: none; padding: 0 50px; } 
 .themaWrap .cont02 .tabCont.active { display: block; } 
@@ -52,15 +57,15 @@
 .themaWrap .cont02 .tabList .listTag p { color: #000; font-size: 16px; } 
 .themaWrap .cont02 .tabList .listImg { margin-right: 30px; flex-shrink: 0; } 
 .themaWrap .cont02 .listInfo { width: 100%; } 
-.themaWrap .cont02 .listInfo .tit { margin: 10px 0; min-height: 54px; color: #000; font-size: 22px; } 
+.themaWrap .cont02 .listInfo .tit { margin: 10px 0; min-height: 48px; color: #000; font-size: 24px; } 
 .themaWrap .cont02 .listInfo ul { display: flex; } 
 .themaWrap .cont02 .listInfo li { width: calc(100% / 3); } 
-.themaWrap .cont02 .listInfo li p { padding-left: 30px; margin-bottom: 4px; position: relative; color: #aaaaaa; font-size: 16px; } 
+.themaWrap .cont02 .listInfo li p { padding-left: 30px; margin-bottom: 4px; position: relative; color: #aaaaaa; font-size: 18px; } 
 .themaWrap .cont02 .listInfo li p::before { content: ''; width: 21px; height: 21px; position: absolute; left: 0; top: -4px; background-size: contain !important; } 
 .themaWrap .cont02 .listInfo li p.ic_01::before { background: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20240528/icon01.png) center no-repeat; } 
 .themaWrap .cont02 .listInfo li p.ic_02::before { background: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20240528/icon02.png) center no-repeat; } 
 .themaWrap .cont02 .listInfo li p.ic_03::before { background: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20240528/icon03.png) center no-repeat; } 
-.themaWrap .cont02 .listInfo li span { padding-left: 30px; color: #000; font-size: 18px; } 
+.themaWrap .cont02 .listInfo li span { display: block; padding-left: 30px; color: #000; font-size: 22px; } 
 .themaWrap .cont02 .scrollbar-outer { max-height:1000px; overflow-y:scroll; } 
  .themaWrap .cont02 .scrollbar-outer > .scroll-content.scroll-scrolly_visible { margin: 0; left: 0; } 
  .themaWrap .cont02 .scrollbar-outer > .scroll-element .scroll-element_track { background: transparent; } 
@@ -118,6 +123,7 @@
  .themaWrap .mainVisual h2 img { max-width: 600px; } 
  .themaWrap .mainVisual .imgWrap img { max-width: 600px; } 
  .themaWrap .mainVisual .mainInfo li::before { width: 140px; height: 140px; } 
+
  .themaWrap .cont02 .innerSection { padding: 60px 0; } 
  .themaWrap .cont02 .mapTit::before,
  .themaWrap .cont02 .mapTit::after { content: none; } 
@@ -144,7 +150,7 @@
 .themaWrap .cont03 .listTit { width: 100%; padding: 4px 0; height: auto; margin: 0 auto 20px; border-radius: 20px; } 
 .themaWrap .cont03 .contBox { padding: 80px 10px 60px; } 
 .themaWrap .cont03 .contBox .item a { min-height: auto; padding: 20px 0; font-size: 20px; } 
-}
+ }
 
 @media all and (max-width:640px){
  .themaWrap .mainVisual h2 img { max-width: 300px; } 
@@ -153,6 +159,7 @@
 .themaWrap .mainVisual .mainInfo li::before { width: 80px; height: 80px; } 
 .themaWrap .mainVisual .mainInfo li p { margin-top: 10px; font-size: 16px; } 
 .themaWrap .cont02 .innerSection { padding: 30px 0; } 
+.themaWrap .cont02 .tabCont .t_tit { margin: 10px 0 10px; font-size: 20px; } 
 .themaWrap .cont02 .mapTit p { font-size: 20px; } 
 .themaWrap .cont02 .mapItem { max-width: 250px; margin: 0 auto 40px; } 
 .themaWrap .cont02 .mapTag span { padding: 2px 6px; font-size: 12px; border-radius: 5px; border: 1px solid #000; } 
@@ -171,8 +178,8 @@
 .themaWrap .cont02 .listInfo ul { display: block; } 
 .themaWrap .cont02 .listInfo li { display: flex; width: 100%; align-items: center; } 
 .themaWrap .cont02 .listInfo li p::before { width: 14px; height: 14px; top: 0; } 
-.themaWrap .cont02 .listInfo li p { padding-left: 20px; margin-bottom: 0; margin-right: 6px; font-size: 14px;} 
-.themaWrap .cont02 .listInfo li span { font-size: 14px; } 
+.themaWrap .cont02 .listInfo li p { padding-left: 20px; margin-bottom: 0; margin-right: 10px; font-size: 15px; } 
+.themaWrap .cont02 .listInfo li span { font-size: 16px; } 
 .themaWrap .cont02 .mapBtn button::before { width: 12px; height: 17px; left: -16px; top: 2px; background-size: contain !important; } 
 .themaWrap .cont02 .listInfo li + li { margin-top: 4px; } 
 .themaWrap .cont03 .innerSection { padding: 30px 0; } 
