@@ -1,25 +1,16 @@
 // header all menu
-// function allMenu() {
-//     if(window.innerWidth < 860) {
-//         $('.h_mobile').toggleClass('show');
-//     } else {
-//         $('.h_gnb_bg').stop().slideToggle(300);
-//         $('.h_menu').toggleClass('active');
-//     }
-// }
-// $(document).mouseup(function(e){
-//     var navMenu = $(".h_gnb_bg");
-//     var navBg = $('.h_ui');
-//     var navBtn = $('.h_menu');
-//     if(navMenu.has(e.target).length === 0 && navBg.has(e.target).length === 0){
-//         navMenu.stop().slideUp(300);
-//         navBtn.removeClass('active');
-//     }
-// });
-// $('.h_mobile_close').click(function(){
-//     $('.h_mobile').removeClass('show');
-//     $('.h_menu').removeClass('active');
-// });
+function allMenu() {
+    if(window.innerWidth < 1024) {
+        $('.h_mobile').toggleClass('show');
+    } else {
+        $('.h_gnb_bg').stop().slideToggle(300);
+        $('.h_menu').toggleClass('active');
+    }
+}
+$('.h_mobile_close').click(function(){
+    $('.h_mobile').removeClass('show');
+    $('.h_menu').removeClass('active');
+});
 
 // random logo img
 // const logoImages = document.querySelectorAll('h1.logo img');
@@ -29,6 +20,16 @@
 // 		image.setAttribute('src', `/resource/images/main2023/logo_0${randomNumber}.png`);
 // 	});
 // }
+$("#newHeader .newGnb .depth1").bind('focus mouseover',function(){   
+    if (window.innerWidth > 1024  ){
+        $('#newHeader .newGnb').addClass('on');
+    }
+});
+$('#newHeader .newGnb').mouseleave(function(){
+    if (window.innerWidth > 1024){
+        $('#newHeader .newGnb').removeClass('on');
+    }
+});
 
 // footer menu
 $('.footer_btn').click(function () {

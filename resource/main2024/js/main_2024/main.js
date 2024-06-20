@@ -336,3 +336,34 @@ indSlide.find('.swiper-container').each(function(i){
         },
     });
 });
+var recruitSlide = new Swiper("#newMain .recruitSlide .swiper-container", {
+    slidesPerView: 1,
+    slidesPerGroup: 1,
+    slidesPerColumn: 2,
+    slidesPerColumnFill: "row", 
+    observer: true,
+    watchOverflow: true,
+    observeParents: true,
+    breakpoints: {
+        1024: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+            slidesPerColumn: 2,
+            slidesPerGroup: 3,
+        },
+        860: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+            slidesPerColumn: 2,
+            slidesPerGroup: 3,
+        },
+        640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+            slidesPerColumn: 1,
+            slidesPerGroup: 2,
+        },
+    },
+}); 
+
+$('#newMain .scrollbar-outer').scrollbar();
