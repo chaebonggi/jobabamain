@@ -54,7 +54,7 @@ function handleResize() {
     clearTimeout(resizeTimer);
     resizeTimer = setTimeout(() => {
         if (window.innerWidth > 860) {
-            const slides = document.querySelectorAll('#renewMain .mainBanner .swiper-slide');            
+            const slides = document.querySelectorAll('#newMain .mainBanner .swiper-slide');            
             slides.forEach((slide) => {
                 slide.style.width = '330px';
                 bannerSwiper.update();
@@ -87,4 +87,252 @@ itemSwiper();
 $('#newMain .policyWrap .checkItem .areaMore').click(function(){
     $('#newMain .policyWrap .checkItem .checkList.area').toggleClass('on');
     $(this).css('display', 'none');
+});
+
+function handleTabClick($btn, $items, tabAttr) {
+    $btn.click(function() {
+    var tab = $(this).attr(tabAttr);
+    $btn.removeClass('active');
+    $(this).addClass('active');
+    $items.removeClass('active');
+    $items.filter('[data-tab="' + tab + '"]').addClass('active');
+    });
+}
+handleTabClick($('.tipWrap .tabList li'), $('.tipWrap .tabItem'), 'data-tab');
+handleTabClick($('.publicWrap .tabList li'), $('.publicWrap .tabItem'), 'data-tab');
+handleTabClick($('.enterWrap .tabList li'), $('.enterWrap .tabItem'), 'data-tab');
+handleTabClick($('.indWrap .tabList li'), $('.indWrap .tabItem'), 'data-tab');
+
+var tipSlide = $('#newMain .tipWrap .tabItem');
+tipSlide.find('.swiper-container').each(function(i){
+    var $this = $(this);
+    $this.siblings().addClass("type" + i);
+    var policySwiper = new Swiper($(this), {
+        slidesPerView: 1.5,
+        spaceBetween: 8,
+        observer: true,
+        observeParents: true,
+        watchOverflow: true,
+        breakpoints: {
+            1024: {
+                slidesPerView: 4,
+                spaceBetween: 20,
+            },
+            860: {
+                slidesPerView: 3,
+            },
+            768: {
+                slidesPerView: 2,
+
+            },
+            460: {
+                slidesPerView: 2.5,
+                spaceBetween: 8,
+            },
+        },
+    });
+});
+
+var policySlide = new Swiper("#newMain .policySlide .swiper-container", {
+    slidesPerView: 1,
+    slidesPerGroup: 1,
+    slidesPerColumn: 2,
+    slidesPerColumnFill: "row", 
+    observer: true,
+    watchOverflow: true,
+    observeParents: true,
+    pagination: {
+        el: '#newMain .policySlide .swiper-pagination',
+        type: 'bullets'
+    },
+    breakpoints: {
+        1024: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+            slidesPerColumn: 2,
+            slidesPerGroup: 4,
+        },
+        860: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+            slidesPerColumn: 2,
+            slidesPerGroup: 3,
+        },
+        640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+            slidesPerColumn: 1,
+            slidesPerGroup: 2,
+        },
+    },
+}); 
+
+var issueSlide = new Swiper("#newMain .issueSlide .swiper-container", {
+    slidesPerView: 1,
+    observer: true,
+    watchOverflow: true,
+    observeParents: true,
+    pagination: {
+        el: '#newMain .issueSlide .swiper-pagination',
+        type: 'bullets'
+    },
+    breakpoints: {
+        1024: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+        },
+        860: {
+        },
+        640: {
+        },
+    },
+}); 
+
+var orderSlide = new Swiper("#newMain .orderSlide .swiper-container", {
+    slidesPerView: 1,
+    slidesPerGroup: 1,
+    slidesPerColumn: 2,
+    slidesPerColumnFill: "row", 
+    observer: true,
+    watchOverflow: true,
+    observeParents: true,
+    // pagination: {
+    //     el: '#newMain .policySlide .swiper-pagination',
+    //     type: 'bullets'
+    // },
+    breakpoints: {
+        1024: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+            slidesPerColumn: 2,
+            slidesPerGroup: 4,
+        },
+        860: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+            slidesPerColumn: 2,
+            slidesPerGroup: 3,
+        },
+        640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+            slidesPerColumn: 1,
+            slidesPerGroup: 2,
+        },
+    },
+}); 
+
+var publicSlide = $('#newMain .publicWrap .tabItem');
+publicSlide.find('.swiper-container').each(function(i){
+    var $this = $(this);
+    $this.siblings().addClass("type" + i);
+    var policySwiper = new Swiper($(this), {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        slidesPerColumn: 2,
+        slidesPerColumnFill: "row", 
+        observer: true,
+        watchOverflow: true,
+        observeParents: true,
+        // pagination: {
+        //     el: '#newMain .policySlide .swiper-pagination',
+        //     type: 'bullets'
+        // },
+        breakpoints: {
+            1024: {
+                slidesPerView: 4,
+                spaceBetween: 20,
+                slidesPerColumn: 2,
+                slidesPerGroup: 4,
+            },
+            860: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+                slidesPerColumn: 2,
+                slidesPerGroup: 3,
+            },
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+                slidesPerColumn: 1,
+                slidesPerGroup: 2,
+            },
+        },
+    });
+});
+var enterSlide = $('#newMain .enterWrap .tabItem');
+enterSlide.find('.swiper-container').each(function(i){
+    var $this = $(this);
+    $this.siblings().addClass("type" + i);
+    var policySwiper = new Swiper($(this), {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        slidesPerColumn: 2,
+        slidesPerColumnFill: "row", 
+        observer: true,
+        watchOverflow: true,
+        observeParents: true,
+        // pagination: {
+        //     el: '#newMain .policySlide .swiper-pagination',
+        //     type: 'bullets'
+        // },
+        breakpoints: {
+            1024: {
+                slidesPerView: 4,
+                spaceBetween: 20,
+                slidesPerColumn: 2,
+                slidesPerGroup: 4,
+            },
+            860: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+                slidesPerColumn: 2,
+                slidesPerGroup: 3,
+            },
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+                slidesPerColumn: 1,
+                slidesPerGroup: 2,
+            },
+        },
+    });
+});
+var indSlide = $('#newMain .indWrap .tabItem');
+indSlide.find('.swiper-container').each(function(i){
+    var $this = $(this);
+    $this.siblings().addClass("type" + i);
+    var policySwiper = new Swiper($(this), {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        slidesPerColumn: 2,
+        slidesPerColumnFill: "row", 
+        observer: true,
+        watchOverflow: true,
+        observeParents: true,
+        // pagination: {
+        //     el: '#newMain .policySlide .swiper-pagination',
+        //     type: 'bullets'
+        // },
+        breakpoints: {
+            1024: {
+                slidesPerView: 4,
+                spaceBetween: 20,
+                slidesPerColumn: 2,
+                slidesPerGroup: 4,
+            },
+            860: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+                slidesPerColumn: 2,
+                slidesPerGroup: 3,
+            },
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+                slidesPerColumn: 1,
+                slidesPerGroup: 2,
+            },
+        },
+    });
 });

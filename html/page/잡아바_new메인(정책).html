@@ -53,54 +53,6 @@
 
 </head>
 <body>
-    <style>
-        .ir-text { display:block; overflow:hidden; font-size:1px; line-height:0; text-indent:-9999px;}
-        #newHeader {
-            background: #fff;
-        }
-        #newHeader .innerSection {
-            max-width: 1260px;
-            margin: 0 auto;
-        }
-        #newHeader .topMenu {
-            position: relative;
-            background: #f4f4f4;
-            box-sizing: border-box;
-            border-top: 3px solid #f4f4f4;
-        }
-        #newHeader .topMenu::before {
-            content: '';
-            width: 50%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: -330px;
-            background: #fff;
-        }
-        #newHeader .topMenu ul {
-            display: flex;
-            width: 330px;
-            height: 42px;
-            padding: 8px 36px 0;
-            position: relative;
-            background: url(./images/main_2024/main/top_menu_bg.png) no-repeat bottom left;
-            box-sizing: border-box;
-        }        
-        #newHeader .topMenu ul li {
-            flex: 1;
-        }
-        #newHeader .topMenu ul a {
-            display: flex;
-            width: 100%;
-            height: 100%;
-            color: #fff;
-            font-size: 14px;
-            font-weight: bold;
-            box-sizing: border-box;
-            align-items: center;
-            justify-content: center;
-        }
-    </style>
     <header id="newHeader">
         <div class="topMenu">
             <div class="innerSection">
@@ -111,63 +63,6 @@
                 </ul>              
             </div>
         </div>
-        <style>
-            #newHeader .bottomMenu {
-                padding: 12px 0;
-            }
-            #newHeader .bottomMenu .flexBox {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-            }
-            #newHeader .bottomMenu .logo {
-                width: 200px;
-                height: 66px;
-            }
-            #newHeader .bottomMenu .searchBox {
-                position: relative;
-            }
-            #newHeader .bottomMenu .searchBox .inputSearch {
-                width: 460px;
-                height: 45px;
-                padding: 0 20px 0 54px;
-                font-size: 16px;
-                border: 2px solid #2a61f9;
-                border-radius: 30px;
-            }
-            #newHeader .bottomMenu .searchBox .inputSearch::placeholder {
-                color: #bcbcbc;
-                font-size: 16px;
-            }
-            #newHeader .bottomMenu .searchBox .inputSearch:focus {                
-                outline: inherit;
-            }
-            #newHeader .bottomMenu .searchBox button {
-                width: 24px;
-                height: 24px;
-                position: absolute;
-                left: 20px;
-                top: 50%;
-                transform: translateY(-50%);
-                background: url(./images/main_2024/main/icon_search_btn.png) center no-repeat;
-                background-size: contain;
-                border: none;
-            }
-            #newHeader .bottomMenu .searchBox button:focus {
-                outline: none;
-                border: none;
-            }
-            #newHeader .bottomMenu .util ul {
-                display: flex;
-                gap: 0 30px;
-            }
-            #newHeader .bottomMenu .util a {
-                display: block;
-                color: #666666;
-                font-size: 14px;
-                font-weight: 300;
-            }
-        </style>
         <div class="bottomMenu">
             <div class="innerSection">
                 <div class="flexBox">
@@ -191,133 +86,6 @@
                 </div>
             </div>
         </div>
-        <style>
-             #newHeader .newGnb {
-                height: 62px;
-                position: relative;
-                border-top: 1px solid #dadada;
-                box-sizing: border-box;
-             }
-             #newHeader .newGnb::before {
-                content: "";
-                display: block;
-                height: 240px;
-                position: absolute;
-                top: 61px;
-                right: 0;
-                left: 0;
-                background-color: #fff;
-                box-shadow: 0px 5px 5px 0px rgba(16, 17, 17, 0.1);
-                z-index: 90;
-                overflow: hidden;
-                opacity: 0;
-                visibility: hidden;
-            }
-            #newHeader .newGnb.on::before {
-                opacity: 1;
-                visibility: visible;
-                transition: 0.25s ease;
-            }
-            #newHeader .newGnb.on .depth2 {
-                opacity: 1;
-                visibility: visible;
-                transition: 0.5s ease;
-            }
-             #newHeader .newGnb::after {
-                content: '';
-                width: 100%;
-                height: 1px;
-                position: absolute;
-                bottom: 0;
-                background: #dadada;
-             }
-             #newHeader .newGnb .depth1 {
-                display: flex;
-             }
-             #newHeader .newGnb .depth1 > li.moveLink {                
-                max-width: 330px;
-                margin-left: 30px;
-                flex: 3;
-             }
-             #newHeader .newGnb .depth1 > li.moveLink > div {
-                display: flex;
-                height: 100%;
-                align-items: center;
-                justify-content: space-between;
-                gap: 0 14px;
-             }
-             #newHeader .newGnb .depth1 > li.moveLink .btnType {
-                display: flex;
-                height: 40px;
-                padding-left: 42px;
-                position: relative;
-                font-size: 18px;
-                border-radius: 30px;
-                font-weight: 400;
-                box-sizing: border-box;
-                align-items: center;
-                letter-spacing: -0.5px;
-             }
-             #newHeader .newGnb .depth1 > li.moveLink .btnType::before {
-                content: '';
-                width: 17px;
-                height: 17px;
-                position: absolute;
-                top: 50%;
-                left: 16px;
-                transform: translateY(-50%);                
-             }
-             #newHeader .newGnb .depth1 > li.moveLink .btnStyle01::before {
-                background: url(./images/main_2024/main/nav_icon01.png) center no-repeat;
-             }
-             #newHeader .newGnb .depth1 > li.moveLink .btnStyle02::before {
-                background: url(./images/main_2024/main/nav_icon02.png) center no-repeat;
-             }
-             #newHeader .newGnb .depth1 > li.moveLink .btnStyle01 {
-                max-width: 134px;
-                width: 100%;
-                background: #2a61f9;
-                color: #fff;
-                border: 1px solid #2a61f9;
-             }
-             #newHeader .newGnb .depth1 > li.moveLink .btnStyle02 {
-                max-width: 182px;
-                width: 100%;
-                background: #fff;
-                color: #2a61f9;
-                border: 1px solid #2a61f9;
-             }
-             #newHeader .newGnb .depth1 > li.moveLink .depth2 {
-                top: 110px;              
-             }
-             #newHeader .newGnb .depth1 > li {
-                flex: 1;
-             }
-             #newHeader .newGnb .depth1 > li > a {
-                display: flex;
-                height: 60px;
-                color: #000000;
-                font-size: 22px;
-                font-weight: 300;
-                align-items: center;
-                box-sizing: border-box;
-             }
-             #newHeader .newGnb .depth2 {
-                position: absolute;
-                top: 80px;
-                opacity: 0;
-                visibility: hidden;
-                z-index: 100;
-             }
-             #newHeader .newGnb .depth2 a { 
-                display: block;
-                padding: 5px 0;
-                color: #9b9b9b;
-                font-size: 15px;
-                font-weight: 300;
-                letter-spacing: -0.5px;
-             }
-        </style>
         <nav class="newGnb">
             <div class="innerSection">
                 <ul class="depth1">
@@ -735,121 +503,7 @@
 
 	</header>
      -->
-    <style>
-        #newMain .innerSection {
-            max-width: 1260px;
-            margin: 0 auto;
-        }
-        #newMain h3.title {
-            margin-bottom: 26px;
-            color: #000;
-            font-size: 26px;
-            font-weight: 500;
-        }
-        #newMain .mainVisual {
-            margin: 24px 0;
-        }
-        #newMain .visualWrap {
-            display: flex;
-            justify-content: space-between;
-        }
-        #newMain .mainVisual .visualCont {
-            width: calc(100% - 360px);
-            padding: 60px 0 25px;
-            background-image: url(./images/main_2024/main/visual_cont_01.png), url(./images/main_2024/main/visual_cont_02.png);
-            background-repeat: no-repeat;
-            background-position: left bottom, right top;
-            border: 1px solid #2a61f9;
-            border-radius: 20px;
-            box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
-        }
-        #newMain .mainVisual .searchCont {
-            max-width: 570px;
-            margin: 0 auto 25px;
-            position: relative;
-        }
-        #newMain .mainVisual .searchCont .inputSearch {
-            width: 100%;
-            height: 46px;
-            padding: 0 46px 20px 20px;
-            font-size: 16px;
-            border: 0;
-            border-bottom: 4px solid #2a61f9;
-        }
-        #newMain .mainVisual .searchCont .inputSearch:focus {                
-            outline: inherit;
-        }
-        #newMain .mainVisual .searchCont button {
-            width: 27px;
-            height: 27px;
-            position: absolute;
-            bottom: 20px;
-            right: 16px;
-            background: url(./images/main_2024/main/icon_search_btn.png) center no-repeat;
-            background-size: contain;
-            border: none;
-        }
-        #newMain .mainVisual .searchCont button:focus {
-            outline: none;
-            border: none;
-        }
-        #newMain .mainVisual .visualItem {
-            display: flex;
-            max-width: 570px;
-            margin: 0 auto;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-        #newMain .mainVisual .visualItem li {
-            width: 102px;
-            height: 112px;
-            margin-bottom: 10px;
-            border: 1px solid transparent;
-            box-sizing: border-box;            
-        }
-        #newMain .mainVisual .visualItem li a {
-            display: block;
-            height: 100%;
-            padding: 12px 0;
-            color: #666666;
-            font-size: 17px;
-            font-weight: 400;
-            letter-spacing: -0.5px;
-            text-align: center;
-        }
-        #newMain .mainVisual .visualItem li a::before {
-            content: '';
-            display: block;
-            width: 100%;
-            height: 52px;
-            margin: 0 auto 10px;            
-        }
-        #newMain .mainVisual .visualItem li a.vItem01::before {
-            background: url(./images/main_2024/main/visual_menu_01.png) center no-repeat;
-        }
-        #newMain .mainVisual .visualItem li a.vItem02::before {
-            background: url(./images/main_2024/main/visual_menu_02.png) center no-repeat;
-        }
-        #newMain .mainVisual .visualItem li a.vItem03::before {
-            background: url(./images/main_2024/main/visual_menu_03.png) center no-repeat;
-        }
-        #newMain .mainVisual .visualItem li a.vItem04::before {
-            background: url(./images/main_2024/main/visual_menu_04.png) center no-repeat;
-        }
-        #newMain .mainVisual .visualItem li a.vItem05::before {
-            background: url(./images/main_2024/main/visual_menu_05.png) center no-repeat;
-        }
-        #newMain .mainVisual .visualItem li:hover {
-            border-color: #2a61f9;
-            border-radius: 20px;
-            box-shadow: 2.192px 4.494px 5px 0px rgba(0, 0, 0, 0.25);
-        }
-        #newMain .mainVisual .visualItem li:hover a {
-            color: #000;
-            font-weight: 900;
-        }
-    </style>
-    <main id="newMain" style="display: block;">
+    <main id="newMain">
         <article class="mainVisual">
             <div class="innerSection">
                 <div class="visualWrap">
@@ -878,177 +532,6 @@
                             </ul>
                         </div>
                     </div>
-                    <style>
-                        #newMain .mainVisual .loginForm {
-                            width: 330px;
-                        }
-                        #newMain .mainVisual .loginWrap {
-                            margin-bottom: 18px;
-                            padding: 28px 20px 25px;
-                            background: #fff;
-                            box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
-                            border-radius: 20px;
-                            border: 1px solid transparent;
-                        }
-                        #newMain .mainVisual .loginWrap .txt {
-                            margin-bottom: 15px;
-                            color: #666666;
-                            font-size: 14px;
-                            font-weight: 300;
-                            text-align: center;
-                        }
-                        #newMain .mainVisual .loginWrap .loginBtn {
-                            display: block;
-                            width: 100%;
-                            padding: 13px 0;
-                            margin-bottom: 15px;
-                            background: #2a61f9;
-                            color: #fff;
-                            font-size: 16px;
-                            font-weight: 500;
-                            border-radius: 10px;
-                            text-align: center;
-                        }
-                        #newMain .mainVisual .loginWrap .loginBtn::before {
-                            content: '';
-                            display: inline-block;
-                            width: 51px;
-                            height: 16px;
-                            margin: -2px 5px 0 0;
-                            background: url(./images/main_2024/main/login_btn_icon.png) no-repeat;
-                            vertical-align: middle;
-                        }
-                        #newMain .mainVisual .loginWrap .loginSub {
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                        }
-                        #newMain .mainVisual .loginWrap .loginSub a {
-                            position: relative;
-                            color: #666666;
-                            font-size: 14px;
-                            font-weight: 300;
-                        }
-                        #newMain .mainVisual .loginWrap .loginSub a + a {
-                            margin-left: 10px;
-                            padding-left: 10px;
-                        }
-                        #newMain .mainVisual .loginWrap .loginSub a + a::before {
-                            content: '';
-                            display: flex;
-                            width: 1px;
-                            height: 10px;
-                            position: absolute;
-                            top: 50%;
-                            left: 0;
-                            background: #dddddd;
-                            transform: translateY(-50%);
-                        }
-                        #newMain .mainVisual .loginWrap.login {
-                            padding: 0;
-                            border-color: #dddddd;
-                            box-shadow: none;
-                        }
-                        #newMain .mainVisual .loginWrap.login .txtWrap {
-                            display: flex;
-                            padding: 0 24px;
-                            min-height: 80px;
-                            align-items: center;
-                            justify-content: space-between;
-                            border-bottom: 1px solid #ddd;
-                        }
-                        #newMain .mainVisual .loginWrap.login .txtWrap .uTxt::before {
-                            content: '';
-                            width: 27px;
-                            height: 27px;
-                            position: absolute;
-                            top: 50%;
-                            left: 0;
-                            transform: translateY(-50%);
-                            background: url(./images/main_2024/main/login_user_icon.png) center no-repeat;
-                        }
-                        #newMain .mainVisual .loginWrap.login .txtWrap .uTxt {
-                            padding-left: 34px;
-                            position: relative;
-                            font-size: 16px;
-                        }
-                        #newMain .mainVisual .loginWrap.login .txtWrap .uTxt strong {
-                            color: #000;
-                            font-weight: bold;
-                        }
-                        #newMain .mainVisual .loginWrap.login .txtWrap .uTxt span {
-                            color: #2a61f9;
-                        }
-                        #newMain .mainVisual .loginWrap.login .txtWrap .myLink {
-                            display: block;
-                            padding: 2px 12px;
-                            margin-left: 10px;
-                            background: #efefef;
-                            color: #3b3b3b;
-                            font-size: 12px;
-                            border: 1px solid #dddddd;
-                            border-radius: 20px;
-                            flex-shrink: 0;
-                        }
-                        #newMain .mainVisual .loginWrap.login .loginList {
-                            display: flex;
-                            flex-wrap: wrap;
-                        }
-                        #newMain .mainVisual .loginWrap.login .loginList li {
-                            width: calc(100% / 2);
-                            text-align: left;
-                        }
-                        #newMain .mainVisual .loginWrap.login .loginList li:nth-child(-n+2) {
-                            border-bottom: 1px solid #ddd;
-                        }
-                        #newMain .mainVisual .loginWrap.login .loginList li:nth-child(odd) {
-                            border-right: 1px solid #ddd;
-                        }
-                        #newMain .mainVisual .loginWrap.login .loginList a {
-                            display: inline-flex;
-                            margin-left: 24px;
-                            padding: 12px 0;
-                            align-items: center;
-                            color: #555555;
-                            font-size: 15px;
-                            font-weight: 300;
-                            letter-spacing: -1px;
-                        }
-                        #newMain .mainVisual .loginWrap.login .loginList a span {
-                            display: inline-block;
-                            margin-left: 10px;
-                            color: #2a61f9;
-                            font-weight: bold;
-                        }
-                        #newMain .mainVisual .counselingWrap {                            
-                            background: #2a61f9;
-                            border-radius: 50px;
-                        }
-                        #newMain .mainVisual .counselingWrap p {
-                            color: #fff;
-                            font-size: 14px;
-                            letter-spacing: -1px;
-                        }
-                        #newMain .mainVisual .counselingWrap strong {
-                            color: #fff;
-                            font-size: 26px;
-                            font-weight: 900;
-                        }
-                        #newMain .mainVisual .counselingWrap .chatTalk {
-                            display: block;
-                            padding: 14px 46px;
-                            position: relative;
-                        }
-                        #newMain .mainVisual .counselingWrap .chatTalk::after {
-                            content: '';
-                            width: 77px;
-                            height: 63px;
-                            position: absolute;
-                            top: 14px;
-                            right: 30px;
-                            background: url(./images/main_2024/main/live_icon.png) center no-repeat;
-                        }
-                    </style>
                     <div class="loginForm">
                         <div class="loginWrap">
                             <p class="txt">로그인하고 맞춤형 서비스를 이용해 보세요.</p>
@@ -1085,30 +568,6 @@
                 </div>
             </div>
         </article>
-        <style>
-            #newMain .mainBanner { max-width: 1986px; margin: 0 auto; overflow: hidden; }
-            #newMain .mainBanner .swiper-container { width: 100%; max-width: 1260px; padding: 0 0 36px 270px; margin: 0 auto 30px; overflow:visible; }
-            #newMain .mainBanner .swiper-wrapper { margin-left: 15px; }
-            #newMain .mainBanner .swiper-slide { display:flex; justify-content:center; align-items:flex-end; width: 330px; margin-right: 30px; border-radius: 20px; transition:none; overflow: hidden; box-sizing: border-box; }
-            #newMain .mainBanner .swiper-pagination-bullet.swiper-pagination-bullet-active { width: 70px; border-radius: 10px; background: #003280; }
-            #newMain .mainBanner .swiper-slide .imgWrap { width: 100%; height: 300px; }
-            #newMain .mainBanner .swiper-slide .imgWrap img { width: 100%; height: 100%; max-height: 300px; }
-            #newMain .mainBanner .swiper-slide .x2 { display: none; }
-            #newMain .mainBanner .swiper-slide.swiper-slide-active .x1 { display: none; }
-            #newMain .mainBanner .swiper-slide.swiper-slide-active .x2 { display: block; }
-            #newMain .mainBanner .changing,
-            #newMain .mainBanner .changed { transform:translateX(-285px); -ms-user-select: none; -moz-user-select: -moz-none; -khtml-user-select: none; -webkit-user-select: none; user-select: none; }
-            #newMain .mainBanner .changing { transition:transform 0.3s; pointer-events:none; }
-            #newMain .mainBanner .changed { transition:none; }
-            #newMain .mainBanner .changing.swiper-slide-active,
-            #newMain .mainBanner .changed.swiper-slide-active { transform: scaleX(2.72728); border-radius: 5px / 15px; }
-            #newMain .mainBanner .swiper-slide-active ~ .changing,
-            #newMain .mainBanner .swiper-slide-active ~ .changed { transform:translateX(285px); }
-            #newMain .mainBanner .changing .imgWrap,
-            #newMain .mainBanner .changed .imgWrap { transform-origin:center bottom; }
-            #newMain .mainBanner .changing .imgWrap { transition:transform 0.3s; }
-            #newMain .mainBanner .changed .imgWrap { transition:none; }
-        </style>
         <article class="mainBanner">
             <div class="swiper-container m_slider">
                 <div class="swiper-wrapper">
@@ -1148,79 +607,6 @@
                 <div class="swiper-pagination"></div>
               </div>
         </article>
-        <style>
-             #newMain .pageWrap {
-                position: relative;
-                background: #e9e9e9;
-                overflow: hidden;
-            }
-            #newMain .pageWrap a {
-                display: flex;
-                height: 100px;
-                color: #000;
-                font-size: 30px;
-                font-weight: 400;
-                flex: 1;
-                align-items: center;
-                justify-content: center;
-            }
-            #newMain .pageWrap a span {
-                font-weight: 900;
-            }
-            #newMain .pageWrap a.icon01::before {
-                content: '';
-                display: inline-block;
-                width: 101px;
-                height: 73px;
-                margin-right: 40px;
-                background: url(./images/main_2024/main/left_page_icon.png) center no-repeat;
-            }
-            #newMain .pageWrap a.icon02::after {
-                content: '';
-                display: inline-block;
-                width: 71px;
-                height: 77px;
-                margin-left: 28px;
-                background: url(./images/main_2024/main/right_page_icon.png) center no-repeat;
-            }
-             #newMain .pageWrap.leftPage a.active {
-                background: #5e51bb;
-                color: #fff;
-                border-radius: 0 50px 50px 0;
-                box-shadow: 12px 0px 15px -5px rgba(69, 80, 185, 0.5);
-                z-index: 2;
-            }
-             #newMain .pageWrap.leftPage::before {
-                content: '';
-                width: 50%;
-                height: 100%;
-                position: absolute;
-                top: 0;
-                left: -600px;
-                background: #5e51bb;
-                z-index: 1;
-            }
-            #newMain .pageWrap.rightPage a.active {
-                background: #2d95d0;
-                color: #fff;
-                border-radius: 50px 0 0 50px;
-                box-shadow: -12px 0px 15px -5px rgba(45, 149, 208, 0.5);
-                z-index: 2;
-            }
-             #newMain .pageWrap.rightPage::before {
-                content: '';
-                width: 50%;
-                height: 100%;
-                position: absolute;
-                top: 0;
-                right: -600px;
-                background: #2d95d0;
-                z-index: 1;
-            }
-            #newMain .pageWrap .flexBox {
-                display: flex;
-            }
-        </style>
         <article class="pageWrap rightPage">
             <div class="innerSection">
                 <div class="flexBox">
@@ -1230,84 +616,6 @@
             </div>            
         </article>
         <article class="policyFind">
-            <style>
-                #newMain .policyFind {
-                    padding: 65px 0;
-                }
-                #newMain .policyWrap {
-                    padding: 40px 70px 40px 40px;
-                    margin-bottom: 50px;
-                    background: #fff;
-                    border: 1px solid #d8d8d8;
-                    border-radius: 20px;
-                }
-                 #newMain .policyWrap .checkItem {
-                    display: flex;
-                    align-items: flex-start;
-                    gap: 8px;
-                 }
-                 #newMain .policyWrap .checkItem + .checkItem {
-                    margin-top: 10px;
-                 }
-                 #newMain .policyWrap .checkItem .tit {
-                    width: 96px;
-                    padding-left: 24px;
-                    margin-right: 20px;
-                    position: relative;
-                    color: #000;
-                    font-size: 16px;
-                    font-weight: 500;
-                    flex-shrink: 0;
-                    line-height: 38px;
-                    letter-spacing: -0.5px;
-                 }
-                 #newMain .policyWrap .checkItem .tit::before {
-                    content: '';
-                    width: 17px;
-                    height: 17px;
-                    position: absolute;
-                    left: 0;
-                    top: 12px;
-                    background: url(./images/main_2024/main/icon_search_btn.png) center no-repeat;
-                    background-size: contain;
-                 }
-                 #newMain .policyWrap .checkItem .tit::after {
-                    content: '';
-                    width: 7px;
-                    height: 12px;
-                    position: absolute;
-                    right: 0;
-                    top: 52%;
-                    transform: translateY(-50%);
-                    background: url(./images/main_2024/main/right_arrow_icon.png) center no-repeat;
-                    background-size: contain;
-                 }
-                #newMain .policyWrap .checkList {
-                    display: inline-flex;
-                    flex-wrap: wrap;
-                    gap: 8px;
-                }
-                #newMain .policyWrap .checkList .item .lb_tag {
-                    display: inline-flex;
-                    min-width: 120px;
-                    height: 40px;
-                    color: #000;
-                    font-size: 14px;
-                    font-weight: 300;
-                    border: 1px solid #d8d8d8;
-                    border-radius: 6px;
-                    text-align: center;
-                    box-sizing: border-box;
-                    align-items: center;
-                    justify-content: center;
-
-                }
-                #newMain .policyWrap .checkList .inp_chk:checked + .lb_tag {
-                    background: #2a61f9;
-                    color: #fff;
-                    border-color: #2a61f9;
-                }                
-            </style>
             <div class="innerSection">
                 <h3 class="title">잡아바 정책찾기</h3>
                 <div class="policyWrap">
@@ -1349,29 +657,6 @@
                         </ul>
                     </div>
                     <div class="checkItem">
-                        <style>
-                            #newMain .policyWrap .checkList.area {
-                                height: 40px;
-                                overflow: hidden;
-                            }
-                            #newMain .policyWrap .checkList.area.on {
-                                height: auto;
-                            }
-                            #newMain .policyWrap .checkList.area .item .lb_tag {
-                                min-width: 104px;
-                            }
-                            #newMain .policyWrap .checkItem {
-                                position: relative;
-                            }
-                            #newMain .policyWrap .checkItem .areaMore {
-                                position: absolute;
-                                top: 6px;
-                                right: -56px;
-                                color: #999999;
-                                font-size: 14px;
-                                font-weight: 300;
-                            }
-                        </style>
                         <p class="tit">지역</p>
                         <ul class="checkList">
                             <li class="item">
@@ -1675,182 +960,17 @@
                             </li>                  
                         </ul>
                     </div>
-                    <style>
-                        #newMain .btnWrap {
-                            margin-top: 40px;
-                            text-align: center;
-                        }
-                        #newMain .btnWrap button + button {
-                            margin-left: 15px;
-                        }
-                        #newMain .btnType {
-                            min-width: 132px;
-                            height: 38px;
-                            font-size: 15px;
-                            border-radius: 5px;
-                            box-sizing: border-box;
-                        }
-                        #newMain .btnType.btnStyle01 {
-                            background: #f8f8f8;
-                            color: #000;
-                            border: 1px solid #d8d8d8;
-                        }
-                        #newMain .btnType.btnStyle02 {
-                            background: #2a61f9;
-                            color: #fff;
-                            border: 1px solid #2a61f9;
-                        }
-                    </style>
                     <div class="btnWrap">
                         <button type="button" class="btnType btnStyle01">초기화</button>
                         <button type="button" class="btnType btnStyle02">선택 검색하기</button>
                     </div>
                 </div>
-                <style>
-                    #newMain .topListWrap {
-                        display: flex;
-                        margin-bottom: 20px;
-                        align-items: center;
-                    }
-                    #newMain .topListWrap .moreBtn {
-                        margin-left: auto;
-                    }
-                    #newMain .slideWrap .mb26 {
-                        margin-bottom: 26px;
-                    }
-                    #newMain .slideWrap .item {
-                        background: #fff;
-                        border: 1px solid #dfdfdf;
-                        border-radius: 10px;                        
-                        box-sizing: border-box;
-                    }
-                    #newMain .slideWrap .item a {
-                        display: block;
-                        position: relative;
-                        box-sizing: border-box;
-                    }
-                    #newMain .slideWrap .item:hover a {
-                        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
-                    }
-                    #newMain .slideWrap .item:hover a::before {
-                        content: '';
-                        position: absolute;
-                        top: -1px;
-                        left: -1px;
-                        right: -1px;
-                        bottom: -1px;
-                        border: 2px solid #2a61f9;
-                        border-radius: 10px;
-                        z-index: 10;
-                    }
-                    #newMain .slideWrap .item .imgWrap {
-                        height: 214px;
-                        border-radius: 10px 10px 0 0;
-                        overflow: hidden;
-                    }
-                    #newMain .slideWrap .item .imgWrap  img {
-                        width: 100%;
-                        height: 100%;
-                        object-fit: cover;
-                    }
-                    #newMain .slideWrap .item .txtWrap {
-                        padding: 16px 20px;
-                    }
-                    #newMain .slideWrap .item .txtWrap .tit {
-                        height: 48px;
-                        color: #000;
-                        font-size: 16px;
-                        font-weight: 300;
-                        display: -webkit-box;
-                        white-space: normal;
-                        -webkit-line-clamp: 2;
-                        -webkit-box-orient: vertical;
-                        text-overflow: ellipsis;
-                        overflow: hidden;
-                    }
-                    #newMain .slideWrap .item .txtWrap .txt {
-                        color: #888888;
-                        font-size: 14px;
-                        font-weight: 300;
-                        white-space: nowrap;
-                        text-overflow: ellipsis;
-                        overflow: hidden; 
-                    }
-                    #newMain .slideWrap .item .badgeWrap .badge {
-                        padding: 0 8px;
-                        position: absolute;
-                        top: 10px;
-                        right: 16px;
-                        font-size: 12px;
-                        border-radius: 15px;
-                        text-align: center;
-                    }
-                    #newMain .slideWrap .item .badgeWrap .badge.area {
-                        color: #888888;
-                        background: #fff;
-                        border: 1px solid #505769;
-                    }
-                    #newMain .slideWrap .item .badgeWrap .tip {
-                        display: flex;
-                        width: 56px;
-                        height: 28px;
-                        position: absolute;
-                        top: 0;
-                        left: 16px;
-                        background: #505769;
-                        color: #fff;
-                        font-size: 12px;
-                        font-weight: 300;
-                        align-items: center;
-                        justify-content: center;
-                    }
-                    #newMain .slideWrap .item .badgeWrap .tip::after {
-                        content: '';
-                        position: absolute;
-                        top: 28px;
-                        left: 0;                       
-                        border-top: 15px solid #505769;
-                        border-right: 28px solid transparent;
-                        border-left: 28px solid transparent;
-                    }
-                    #newMain .slideWrap.policySlide {
-                        padding-bottom: 10px;
-                        position: relative;
-                    }
-                    #newMain .slideWrap.policySlide .item {
-                        margin-top: 0 !important;
-                        margin-bottom: 30px;
-                    }
-                    #newMain .slideWrap.policySlide .item .txtWrap .tit {
-                        margin-bottom: 26px;
-                    }
-                    #newMain .slideWrap .swiper-pagination {
-                        left: 50%;
-                        bottom: 0;
-                        transform: translateX(-50%);
-                    }
-                    #newMain .slideWrap .swiper-pagination-bullet {
-                        width: 8px;
-                        height: 8px;
-                        display: inline-block;
-                        border-radius: 100%;
-                        background: #000;
-                        opacity: .2;
-                    }
-                    #newMain .slideWrap .swiper-pagination-bullet-active {
-                        opacity: 1;
-                        background: #2a61f9;
-                    }
-                    #newMain .slideWrap .swiper-pagination span + span {
-                        margin-left: 4px;
-                    }
-                    #newMain .slideWrap .swiper-pagination {
-                        display: none;
-                    }
-                </style>
                 <div class="topListWrap">
                     <a href="" class="moreBtn">정책 전체보기 &gt;</a>
                 </div>
+                <!-- <div class="noneData">
+                    <p>검색조건에 맞는 채용공고가 없습니다. 다시 검색해주세요</p>
+                </div> -->
                 <div class="slideWrap policySlide">
                     <div class="swiper-container">
                         <ul class="swiper-wrapper">
@@ -1983,39 +1103,6 @@
         <article class="issueWrap">
             <div class="innerSection">
                 <h3 class="title">지원정책 Hot issue!</h3>
-                <style>
-                    #newMain .issueWrap {
-                        padding: 65px 0;
-                        background: #f3f4f7;
-                    }
-                    #newMain .slideWrap.issueSlide .item .txtWrap .tit {
-                        margin-bottom: 6px;
-                    }
-                    #newMain .slideWrap .txtWrap .prog {
-                        display: inline-block;
-                        padding: 0 10px;
-                        margin-bottom: 4px;
-                        font-size: 12px;
-                        font-weight: 500;
-                        border: 1px solid #ddd;
-                        border-radius: 20px;
-                    }
-
-                    #newMain .slideWrap .txtWrap .prog.new {
-                        color: #38bab2;
-                        border-color: #38bab2;
-                    }
-
-                    #newMain .slideWrap .txtWrap .prog.hot {
-                        color: #f04217;
-                        border-color: #f04217;
-                    }
-
-                    #newMain .slideWrap .txtWrap .prog.best {
-                        color: #ff835f;
-                        border-color: #ff835f;
-                    }
-                </style>
                 <div class="slideWrap issueSlide">
                     <div class="swiper-container">
                         <ul class="swiper-wrapper">
@@ -2074,23 +1161,11 @@
             </div>
         </article>
         <article class="tipWrap">
-            <style>
-               .tabList li.active {
-                    background: #147dff;
-                    color: #fff;
-                }
-                .tabItem {
-                    display: none;
-                }
-                .tabItem.active {
-                    display: block;
-                }
-            </style>
             <div class="innerSection">
                 <h3 class="title">아주 유용한 꿀팁</h3>
                 <div class="tabWrap">
                     <div class="topListWrap">
-                        <ul class="tabList">
+                        <ul class="tabList listType01">
                             <li class="active" data-tab="tipSlide01"><a href="javascript:void(0);">전체</a></li>
                             <li data-tab="tipSlide02"><a href="javascript:void(0);">일자리</a></li>
                             <li data-tab="tipSlide03"><a href="javascript:void(0);">주거/자산</a></li>
@@ -2098,12 +1173,11 @@
                             <li data-tab="tipSlide05"><a href="javascript:void(0);">취업성공기</a></li>
                             <li data-tab="tipSlide06"><a href="javascript:void(0);">자격증</a></li>
                             <li data-tab="tipSlide07"><a href="javascript:void(0);">잡아바펀</a></li>
-                        </ul>
-                        <a href="" class="moreBtn">정책 전체보기 &gt;</a>
+                        </ul>                        
                     </div>
                     <div class="tabCont">
-                        <div class="tabItem active" data-tab="tipSlide01">
-                            <div class="swiper-container tibSlide">
+                        <div class="slideWrap tabItem active" data-tab="tipSlide01">
+                            <div class="swiper-container">
                                 <ul class="swiper-wrapper">
                                     <li class="item swiper-slide">
                                         <a href="#" target="_blank">
@@ -2112,7 +1186,7 @@
                                             </div>
                                             <div class="txtWrap">
                                                 <p class="tit">2024년 부천시 로봇창업기업 사업화 지원사업 모집</p>
-                                                <p class="txt">모집완료시까지</p>
+                                                <p class="txt">#교차로우회전 #교통법규</p>
                                             </div>                            
                                         </a>
                                     </li> 
@@ -2123,19 +1197,7 @@
                                             </div>
                                             <div class="txtWrap">
                                                 <p class="tit">2024년 부천시 로봇창업기업 사업화 지원사업 모집</p>
-                                                <p class="txt">모집완료시까지</p>
-                                            </div>                            
-                                        </a>
-                                    </li> 
-
-                                    <li class="item swiper-slide">
-                                        <a href="#" target="_blank">
-                                            <div class="imgWrap">
-                                                <img src="./images/main_2024/main/test_img02.png" alt="테스트 이미지">
-                                            </div>
-                                            <div class="txtWrap">
-                                                <p class="tit">2024년 부천시 로봇창업기업 사업화 지원사업 모집</p>
-                                                <p class="txt">모집완료시까지</p>
+                                                <p class="txt">#교차로우회전 #교통법규</p>
                                             </div>                            
                                         </a>
                                     </li> 
@@ -2146,15 +1208,26 @@
                                             </div>
                                             <div class="txtWrap">
                                                 <p class="tit">2024년 부천시 로봇창업기업 사업화 지원사업 모집</p>
-                                                <p class="txt">모집완료시까지</p>
+                                                <p class="txt">#교차로우회전 #교통법규</p>
+                                            </div>                            
+                                        </a>
+                                    </li> 
+                                    <li class="item swiper-slide">
+                                        <a href="#" target="_blank">
+                                            <div class="imgWrap">
+                                                <img src="./images/main_2024/main/test_img02.png" alt="테스트 이미지">
+                                            </div>
+                                            <div class="txtWrap">
+                                                <p class="tit">2024년 부천시 로봇창업기업 사업화 지원사업 모집</p>
+                                                <p class="txt">#교차로우회전 #교통법규</p>
                                             </div>                            
                                         </a>
                                     </li> 
                                 </ul>
                             </div>
                         </div>
-                        <div class="tabItem" data-tab="tipSlide02">
-                            <div class="swiper-container tibSlide">
+                        <div class="slideWrap tabItem" data-tab="tipSlide02">
+                            <div class="swiper-container">
                                 <ul class="swiper-wrapper">
                                     <li class="item swiper-slide">
                                         <a href="#" target="_blank">
@@ -2163,96 +1236,10 @@
                                             </div>
                                             <div class="txtWrap">
                                                 <p class="tit">2024년 부천시 로봇창업기업 사업화 지원사업 모집</p>
-                                                <p class="txt">모집완료시까지</p>
+                                                <p class="txt">#교차로우회전 #교통법규</p>
                                             </div>                            
                                         </a>
-                                    </li> 
-                                </ul>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-        </article>
-        <article class="testTab">
-            <style>
-               .tabList li.active {
-                    background: #147dff;
-                    color: #fff;
-                }
-                .tabItem {
-                    display: none;
-                }
-                .tabItem.active {
-                    display: block;
-                }
-            </style>
-            <div class="innerSection">
-                <h3 class="title">test</h3>
-                <div class="tabWrap">
-                    <div class="topListWrap">
-                        <ul class="tabList">
-                            <li class="active" data-tab="test01"><a href="javascript:void(0);">전체</a></li>
-                            <li data-tab="test02"><a href="javascript:void(0);">일자리</a></li>
-                        </ul>
-                        <a href="" class="moreBtn">정책 전체보기 &gt;</a>
-                    </div>
-                    <div class="tabCont">
-                        <div class="tabItem active" data-tab="test01">
-                            <div class="swiper-container tibSlide">
-                                <ul class="swiper-wrapper">
-                                    <li class="item swiper-slide">
-                                        <a href="#" target="_blank">
-                                            <div class="imgWrap">
-                                                <img src="./images/main_2024/main/test_img02.png" alt="테스트 이미지">
-                                            </div>
-                                            <div class="txtWrap">
-                                                <p class="tit">2024년 부천시 로봇창업기업 사업화 지원사업 모집</p>
-                                                <p class="txt">모집완료시까지</p>
-                                            </div>                            
-                                        </a>
-                                    </li> 
-                                    <li class="item swiper-slide">
-                                        <a href="#" target="_blank">
-                                            <div class="imgWrap">
-                                                <img src="./images/main_2024/main/test_img02.png" alt="테스트 이미지">
-                                            </div>
-                                            <div class="txtWrap">
-                                                <p class="tit">2024년 부천시 로봇창업기업 사업화 지원사업 모집</p>
-                                                <p class="txt">모집완료시까지</p>
-                                            </div>                            
-                                        </a>
-                                    </li> 
-
-                                    <li class="item swiper-slide">
-                                        <a href="#" target="_blank">
-                                            <div class="imgWrap">
-                                                <img src="./images/main_2024/main/test_img02.png" alt="테스트 이미지">
-                                            </div>
-                                            <div class="txtWrap">
-                                                <p class="tit">2024년 부천시 로봇창업기업 사업화 지원사업 모집</p>
-                                                <p class="txt">모집완료시까지</p>
-                                            </div>                            
-                                        </a>
-                                    </li> 
-                                    <li class="item swiper-slide">
-                                        <a href="#" target="_blank">
-                                            <div class="imgWrap">
-                                                <img src="./images/main_2024/main/test_img02.png" alt="테스트 이미지">
-                                            </div>
-                                            <div class="txtWrap">
-                                                <p class="tit">2024년 부천시 로봇창업기업 사업화 지원사업 모집</p>
-                                                <p class="txt">모집완료시까지</p>
-                                            </div>                            
-                                        </a>
-                                    </li> 
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="tabItem" data-tab="test02">
-                            <div class="swiper-container tibSlide">
-                                <ul class="swiper-wrapper">
+                                    </li>
                                     <li class="item swiper-slide">
                                         <a href="#" target="_blank">
                                             <div class="imgWrap">
@@ -2260,10 +1247,32 @@
                                             </div>
                                             <div class="txtWrap">
                                                 <p class="tit">2024년 부천시 로봇창업기업 사업화 지원사업 모집</p>
-                                                <p class="txt">모집완료시까지</p>
+                                                <p class="txt">#교차로우회전 #교통법규</p>
                                             </div>                            
                                         </a>
-                                    </li> 
+                                    </li>  
+                                    <li class="item swiper-slide">
+                                        <a href="#" target="_blank">
+                                            <div class="imgWrap">
+                                                <img src="./images/main_2024/main/test_img01.png" alt="테스트 이미지">
+                                            </div>
+                                            <div class="txtWrap">
+                                                <p class="tit">2024년 부천시 로봇창업기업 사업화 지원사업 모집</p>
+                                                <p class="txt">#교차로우회전 #교통법규</p>
+                                            </div>                            
+                                        </a>
+                                    </li>  
+                                    <li class="item swiper-slide">
+                                        <a href="#" target="_blank">
+                                            <div class="imgWrap">
+                                                <img src="./images/main_2024/main/test_img01.png" alt="테스트 이미지">
+                                            </div>
+                                            <div class="txtWrap">
+                                                <p class="tit">2024년 부천시 로봇창업기업 사업화 지원사업 모집</p>
+                                                <p class="txt">#교차로우회전 #교통법규</p>
+                                            </div>                            
+                                        </a>
+                                    </li>  
                                 </ul>
                             </div>
                         </div>
@@ -2274,136 +1283,8 @@
         </article>
     </main>
 
-
-    <script>
-        function handleTabClick($btn, $items, tabAttr) {
-            $btn.click(function() {
-            var tab = $(this).attr(tabAttr);
-            $btn.removeClass('active');
-            $(this).addClass('active');
-            $items.removeClass('active');
-            $items.filter('[data-tab="' + tab + '"]').addClass('active');
-            });
-        }
-        handleTabClick($('.tipWrap .tabList li'), $('.tipWrap .tabItem'), 'data-tab');
-        handleTabClick($('.testTab .tabList li'), $('.testTab .tabItem'), 'data-tab');
-
-        var tipSlide = $('.tipWrap .tabItem');
-        tipSlide.find('.tibSlide').each(function(i){
-            var $this = $(this);
-            $this.siblings().addClass("type" + i);
-            var policySwiper = new Swiper($(this), {
-                slidesPerView: 1.5,
-                spaceBetween: 8,
-                observer: true,
-                observeParents: true,
-                breakpoints: {
-                    1024: {
-                        slidesPerView: 5,
-                        spaceBetween: 10,
-                    },
-                    860: {
-                        slidesPerView: 3,
-                    },
-                    768: {
-                        slidesPerView: 2,
-
-                    },
-                    460: {
-                        slidesPerView: 2.5,
-                        spaceBetween: 8,
-                    },
-                },
-            });
-        });
-        var testSlide = $('.testTab .tabItem');
-        testSlide.find('.tibSlide').each(function(i){
-            var $this = $(this);
-            $this.siblings().addClass("type" + i);
-            var policySwiper = new Swiper($(this), {
-                slidesPerView: 1.5,
-                spaceBetween: 8,
-                observer: true,
-                observeParents: true,
-                breakpoints: {
-                    1024: {
-                        slidesPerView: 5,
-                        spaceBetween: 10,
-                    },
-                    860: {
-                        slidesPerView: 3,
-                    },
-                    768: {
-                        slidesPerView: 2,
-
-                    },
-                    460: {
-                        slidesPerView: 2.5,
-                        spaceBetween: 8,
-                    },
-                },
-            });
-        });
-
-
-        var policySlide = new Swiper("#newMain .policySlide .swiper-container", {
-            slidesPerView: 1,
-            slidesPerGroup: 1,
-            slidesPerColumn: 2,
-            slidesPerColumnFill: "row", 
-            observer: true,
-            watchOverflow: true,
-            observeParents: true,
-            pagination: {
-                el: '#newMain .policySlide .swiper-pagination',
-                type: 'bullets'
-            },
-            breakpoints: {
-                1024: {
-                    slidesPerView: 4,
-                    spaceBetween: 20,
-                    slidesPerColumn: 2,
-                    slidesPerGroup: 4,
-                },
-                860: {
-                    slidesPerView: 3,
-                    spaceBetween: 20,
-                    slidesPerColumn: 2,
-                    slidesPerGroup: 3,
-                },
-                640: {
-                    slidesPerView: 2,
-                    spaceBetween: 20,
-                    slidesPerColumn: 1,
-                    slidesPerGroup: 2,
-                },
-            },
-        }); 
-        var issueSlide = new Swiper("#newMain .issueSlide .swiper-container", {
-            slidesPerView: 1,
-            observer: true,
-            watchOverflow: true,
-            observeParents: true,
-            pagination: {
-                el: '#newMain .issueSlide .swiper-pagination',
-                type: 'bullets'
-            },
-            breakpoints: {
-                1024: {
-                    slidesPerView: 4,
-                    spaceBetween: 20,
-                },
-                860: {
-                },
-                640: {
-                },
-            },
-        }); 
-    </script>
-
-
-	  <!-- 푸터 -->
-	<footer id="renewFooter" style="display: block;">
+    <!-- 푸터 -->
+	<footer id="newFooter">
         <div class="nfooter_top">
             <div class="innerSection">
                 <div class="f_util">
