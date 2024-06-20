@@ -1150,7 +1150,6 @@
         </article>
         <style>
              #newMain .pageWrap {
-                margin-bottom: 80px;
                 position: relative;
                 background: #e9e9e9;
                 overflow: hidden;
@@ -1232,6 +1231,9 @@
         </article>
         <article class="policyFind">
             <style>
+                #newMain .policyFind {
+                    padding: 65px 0;
+                }
                 #newMain .policyWrap {
                     padding: 40px 70px 40px 40px;
                     margin-bottom: 50px;
@@ -1707,19 +1709,17 @@
                 <style>
                     #newMain .topListWrap {
                         display: flex;
-                        margin-bottom: 26px;
+                        margin-bottom: 20px;
                         align-items: center;
                     }
                     #newMain .topListWrap .moreBtn {
                         margin-left: auto;
                     }
-                    #newMain .slideWrap .swiper-container {
-                        padding: 10px 0;
-                    }
                     #newMain .slideWrap .mb26 {
                         margin-bottom: 26px;
                     }
                     #newMain .slideWrap .item {
+                        background: #fff;
                         border: 1px solid #dfdfdf;
                         border-radius: 10px;                        
                         box-sizing: border-box;
@@ -1754,7 +1754,7 @@
                         object-fit: cover;
                     }
                     #newMain .slideWrap .item .txtWrap {
-                        padding: 24px 26px 20px;
+                        padding: 16px 20px;
                     }
                     #newMain .slideWrap .item .txtWrap .tit {
                         height: 48px;
@@ -1776,16 +1776,11 @@
                         text-overflow: ellipsis;
                         overflow: hidden; 
                     }
-                    #newMain .slideWrap .item .badgeWrap {
-                        display: flex;
-                        width: 100%;
-                        position: absolute;
-                        justify-content: space-between;
-                        border: 1px solid red;
-                    }
                     #newMain .slideWrap .item .badgeWrap .badge {
-                        padding: 0 0 1px;
-                        width: 55px;
+                        padding: 0 8px;
+                        position: absolute;
+                        top: 10px;
+                        right: 16px;
                         font-size: 12px;
                         border-radius: 15px;
                         text-align: center;
@@ -1795,137 +1790,187 @@
                         background: #fff;
                         border: 1px solid #505769;
                     }
+                    #newMain .slideWrap .item .badgeWrap .tip {
+                        display: flex;
+                        width: 56px;
+                        height: 28px;
+                        position: absolute;
+                        top: 0;
+                        left: 16px;
+                        background: #505769;
+                        color: #fff;
+                        font-size: 12px;
+                        font-weight: 300;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    #newMain .slideWrap .item .badgeWrap .tip::after {
+                        content: '';
+                        position: absolute;
+                        top: 28px;
+                        left: 0;                       
+                        border-top: 15px solid #505769;
+                        border-right: 28px solid transparent;
+                        border-left: 28px solid transparent;
+                    }
+                    #newMain .slideWrap.policySlide {
+                        padding-bottom: 10px;
+                        position: relative;
+                    }
+                    #newMain .slideWrap.policySlide .item {
+                        margin-top: 0 !important;
+                        margin-bottom: 30px;
+                    }
+                    #newMain .slideWrap.policySlide .item .txtWrap .tit {
+                        margin-bottom: 26px;
+                    }
+                    #newMain .slideWrap .swiper-pagination {
+                        left: 50%;
+                        bottom: 0;
+                        transform: translateX(-50%);
+                    }
+                    #newMain .slideWrap .swiper-pagination-bullet {
+                        width: 8px;
+                        height: 8px;
+                        display: inline-block;
+                        border-radius: 100%;
+                        background: #000;
+                        opacity: .2;
+                    }
+                    #newMain .slideWrap .swiper-pagination-bullet-active {
+                        opacity: 1;
+                        background: #2a61f9;
+                    }
+                    #newMain .slideWrap .swiper-pagination span + span {
+                        margin-left: 4px;
+                    }
+                    #newMain .slideWrap .swiper-pagination {
+                        display: none;
+                    }
                 </style>
                 <div class="topListWrap">
                     <a href="" class="moreBtn">정책 전체보기 &gt;</a>
                 </div>
-                <div class="slideWrap">
-                    <div class="swiper-container policySlide">
+                <div class="slideWrap policySlide">
+                    <div class="swiper-container">
                         <ul class="swiper-wrapper">
                             <li class="item swiper-slide">
                                 <a href="#" target="_blank">
                                     <div class="badgeWrap">
-                                        <span class="badge days">D-0</span>
+                                        <span class="tip">취업준비</span>
                                         <span class="badge area">남양주</span>
                                     </div>
                                     <div class="imgWrap">
                                         <img src="./images/main_2024/main/test_img01.png" alt="테스트 이미지">
                                     </div>
                                     <div class="txtWrap">
-                                        <p class="tit mb26">경기도 일자리 우수기업 채용관 경기도 일자리 우수기업 채용관경기도 일자리 우수기업 채용관경기도 일자리 우수기업 채용관경기도 일자리 우수기업 채용관경기도 일자리 우수기업 채용관</p>
-                                        <p class="txt">2024/05/14 ~ 2024/06/04 2024/05/14 ~ 2024/06/042024/05/14 ~ 2024/06/042024/05/14 ~ 2024/06/042024/05/14 ~ 2024/06/04</p>
+                                        <p class="tit">2024년 부천시 로봇창업기업 사업화 지원사업 모집</p>
+                                        <p class="txt">2024/05/14 ~ 2024/06/04</p>
                                     </div>                            
                                 </a>
                             </li>
                             <li class="item swiper-slide">
                                 <a href="#" target="_blank">
+                                    <div class="badgeWrap">
+                                        <span class="tip">취업준비</span>
+                                        <span class="badge area">남양주</span>
+                                    </div>
                                     <div class="imgWrap">
-                                        <img src="./images/main_2024/main/test_img01.png" alt="테스트 이미지">
+                                        <img src="./images/main_2024/main/test_img02.png" alt="테스트 이미지">
                                     </div>
                                     <div class="txtWrap">
-                                        <span class="prog st1">박람회오픈</span>
-                                        <p class="tit">경기도 일자리 우수기업 채용관</p>
-                                        <ul>
-                                            <li>2024/05/14 ~ 2024/06/04</li>
-                                        </ul>
+                                        <p class="tit">2024년 부천시 로봇창업기업 사업화 지원사업 모집</p>
+                                        <p class="txt">2024/05/14 ~ 2024/06/04</p>
                                     </div>                            
                                 </a>
                             </li>
                             <li class="item swiper-slide">
                                 <a href="#" target="_blank">
+                                    <div class="badgeWrap">
+                                        <span class="tip">취업준비</span>
+                                        <span class="badge area">남양주</span>
+                                    </div>
                                     <div class="imgWrap">
                                         <img src="./images/main_2024/main/test_img01.png" alt="테스트 이미지">
                                     </div>
                                     <div class="txtWrap">
-                                        <span class="prog st1">박람회오픈</span>
-                                        <p class="tit">경기도 일자리 우수기업 채용관</p>
-                                        <ul>
-                                            <li>2024/05/14 ~ 2024/06/04</li>
-                                        </ul>
+                                        <p class="tit">2024년 부천시 로봇창업기업 사업화 지원사업 모집</p>
+                                        <p class="txt">2024/05/14 ~ 2024/06/04</p>
                                     </div>                            
                                 </a>
                             </li>
                             <li class="item swiper-slide">
                                 <a href="#" target="_blank">
+                                    <div class="badgeWrap">
+                                        <span class="tip">취업준비</span>
+                                        <span class="badge area">남양주</span>
+                                    </div>
                                     <div class="imgWrap">
-                                        <img src="./images/main_2024/main/test_img01.png" alt="테스트 이미지">
+                                        <img src="./images/main_2024/main/test_img02.png" alt="테스트 이미지">
                                     </div>
                                     <div class="txtWrap">
-                                        <span class="prog st1">박람회오픈</span>
-                                        <p class="tit">경기도 일자리 우수기업 채용관</p>
-                                        <ul>
-                                            <li>2024/05/14 ~ 2024/06/04</li>
-                                        </ul>
+                                        <p class="tit">2024년 부천시 로봇창업기업 사업화 지원사업 모집</p>
+                                        <p class="txt">2024/05/14 ~ 2024/06/04</p>
                                     </div>                            
                                 </a>
                             </li>
                             <li class="item swiper-slide">
                                 <a href="#" target="_blank">
+                                    <div class="badgeWrap">
+                                        <span class="tip">취업준비</span>
+                                        <span class="badge area">남양주</span>
+                                    </div>
                                     <div class="imgWrap">
                                         <img src="./images/main_2024/main/test_img01.png" alt="테스트 이미지">
                                     </div>
                                     <div class="txtWrap">
-                                        <span class="prog st1">박람회오픈</span>
-                                        <p class="tit">경기도 일자리 우수기업 채용관</p>
-                                        <ul>
-                                            <li>2024/05/14 ~ 2024/06/04</li>
-                                        </ul>
+                                        <p class="tit">2024년 부천시 로봇창업기업 사업화 지원사업 모집</p>
+                                        <p class="txt">2024/05/14 ~ 2024/06/04</p>
                                     </div>                            
                                 </a>
                             </li>
                             <li class="item swiper-slide">
                                 <a href="#" target="_blank">
+                                    <div class="badgeWrap">
+                                        <span class="tip">취업준비</span>
+                                        <span class="badge area">남양주</span>
+                                    </div>
                                     <div class="imgWrap">
-                                        <img src="./images/main_2024/main/test_img01.png" alt="테스트 이미지">
+                                        <img src="./images/main_2024/main/test_img02.png" alt="테스트 이미지">
                                     </div>
                                     <div class="txtWrap">
-                                        <span class="prog st1">박람회오픈</span>
-                                        <p class="tit">경기도 일자리 우수기업 채용관</p>
-                                        <ul>
-                                            <li>2024/05/14 ~ 2024/06/04</li>
-                                        </ul>
+                                        <p class="tit">2024년 부천시 로봇창업기업 사업화 지원사업 모집</p>
+                                        <p class="txt">2024/05/14 ~ 2024/06/04</p>
                                     </div>                            
                                 </a>
                             </li>
                             <li class="item swiper-slide">
                                 <a href="#" target="_blank">
+                                    <div class="badgeWrap">
+                                        <span class="tip">취업준비</span>
+                                        <span class="badge area">남양주</span>
+                                    </div>
                                     <div class="imgWrap">
                                         <img src="./images/main_2024/main/test_img01.png" alt="테스트 이미지">
                                     </div>
                                     <div class="txtWrap">
-                                        <span class="prog st1">박람회오픈</span>
-                                        <p class="tit">경기도 일자리 우수기업 채용관</p>
-                                        <ul>
-                                            <li>2024/05/14 ~ 2024/06/04</li>
-                                        </ul>
+                                        <p class="tit">2024년 부천시 로봇창업기업 사업화 지원사업 모집</p>
+                                        <p class="txt">2024/05/14 ~ 2024/06/04</p>
                                     </div>                            
                                 </a>
                             </li>
                             <li class="item swiper-slide">
                                 <a href="#" target="_blank">
+                                    <div class="badgeWrap">
+                                        <span class="tip">취업준비</span>
+                                        <span class="badge area">남양주</span>
+                                    </div>
                                     <div class="imgWrap">
-                                        <img src="./images/main_2024/main/test_img01.png" alt="테스트 이미지">
+                                        <img src="./images/main_2024/main/test_img02.png" alt="테스트 이미지">
                                     </div>
                                     <div class="txtWrap">
-                                        <span class="prog st1">박람회오픈</span>
-                                        <p class="tit">경기도 일자리 우수기업 채용관</p>
-                                        <ul>
-                                            <li>2024/05/14 ~ 2024/06/04</li>
-                                        </ul>
-                                    </div>                            
-                                </a>
-                            </li>
-                            <li class="item swiper-slide">
-                                <a href="#" target="_blank">
-                                    <div class="imgWrap">
-                                        <img src="./images/main_2024/main/test_img01.png" alt="테스트 이미지">
-                                    </div>
-                                    <div class="txtWrap">
-                                        <span class="prog st1">박람회오픈</span>
-                                        <p class="tit">경기도 일자리 우수기업 채용관</p>
-                                        <ul>
-                                            <li>2024/05/14 ~ 2024/06/04</li>
-                                        </ul>
+                                        <p class="tit">2024년 부천시 로봇창업기업 사업화 지원사업 모집</p>
+                                        <p class="txt">2024/05/14 ~ 2024/06/04</p>
                                     </div>                            
                                 </a>
                             </li>
@@ -1934,45 +1979,426 @@
                     <div class="swiper-pagination"></div>
                 </div>
             </div>
+        </article>
+        <article class="issueWrap">
+            <div class="innerSection">
+                <h3 class="title">지원정책 Hot issue!</h3>
+                <style>
+                    #newMain .issueWrap {
+                        padding: 65px 0;
+                        background: #f3f4f7;
+                    }
+                    #newMain .slideWrap.issueSlide .item .txtWrap .tit {
+                        margin-bottom: 6px;
+                    }
+                    #newMain .slideWrap .txtWrap .prog {
+                        display: inline-block;
+                        padding: 0 10px;
+                        margin-bottom: 4px;
+                        font-size: 12px;
+                        font-weight: 500;
+                        border: 1px solid #ddd;
+                        border-radius: 20px;
+                    }
+
+                    #newMain .slideWrap .txtWrap .prog.new {
+                        color: #38bab2;
+                        border-color: #38bab2;
+                    }
+
+                    #newMain .slideWrap .txtWrap .prog.hot {
+                        color: #f04217;
+                        border-color: #f04217;
+                    }
+
+                    #newMain .slideWrap .txtWrap .prog.best {
+                        color: #ff835f;
+                        border-color: #ff835f;
+                    }
+                </style>
+                <div class="slideWrap issueSlide">
+                    <div class="swiper-container">
+                        <ul class="swiper-wrapper">
+                            <li class="item swiper-slide">
+                                <a href="#" target="_blank">
+                                    <div class="imgWrap">
+                                        <img src="./images/main_2024/main/test_img01.png" alt="테스트 이미지">
+                                    </div>
+                                    <div class="txtWrap">
+                                        <span class="prog best">BEST</span>
+                                        <p class="tit">2024년 부천시 로봇창업기업 사업화 지원사업 모집</p>
+                                        <p class="txt">모집완료시까지</p>
+                                    </div>                            
+                                </a>
+                            </li>
+                            <li class="item swiper-slide">
+                                <a href="#" target="_blank">
+                                    <div class="imgWrap">
+                                        <img src="./images/main_2024/main/test_img02.png" alt="테스트 이미지">
+                                    </div>
+                                    <div class="txtWrap">
+                                        <span class="prog best">BEST</span>
+                                        <p class="tit">2024년 부천시 로봇창업기업 사업화 지원사업 모집</p>
+                                        <p class="txt">모집완료시까지</p>
+                                    </div>                            
+                                </a>
+                            </li>
+                            <li class="item swiper-slide">
+                                <a href="#" target="_blank">
+                                    <div class="imgWrap">
+                                        <img src="./images/main_2024/main/test_img01.png" alt="테스트 이미지">
+                                    </div>
+                                    <div class="txtWrap">
+                                        <span class="prog new">NEW</span>
+                                        <p class="tit">2024년 부천시 로봇창업기업 사업화 지원사업 모집</p>
+                                        <p class="txt">모집완료시까지</p>
+                                    </div>                            
+                                </a>
+                            </li>
+                            <li class="item swiper-slide">
+                                <a href="#" target="_blank">
+                                    <div class="imgWrap">
+                                        <img src="./images/main_2024/main/test_img02.png" alt="테스트 이미지">
+                                    </div>
+                                    <div class="txtWrap">
+                                        <span class="prog hot">HOT</span>
+                                        <p class="tit">2024년 부천시 로봇창업기업 사업화 지원사업 모집</p>
+                                        <p class="txt">모집완료시까지</p>
+                                    </div>                            
+                                </a>
+                            </li>    
+                        </ul>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </article>
+        <article class="tipWrap">
+            <style>
+               .tabList li.active {
+                    background: #147dff;
+                    color: #fff;
+                }
+                .tabItem {
+                    display: none;
+                }
+                .tabItem.active {
+                    display: block;
+                }
+            </style>
+            <div class="innerSection">
+                <h3 class="title">아주 유용한 꿀팁</h3>
+                <div class="tabWrap">
+                    <div class="topListWrap">
+                        <ul class="tabList">
+                            <li class="active" data-tab="tipSlide01"><a href="javascript:void(0);">전체</a></li>
+                            <li data-tab="tipSlide02"><a href="javascript:void(0);">일자리</a></li>
+                            <li data-tab="tipSlide03"><a href="javascript:void(0);">주거/자산</a></li>
+                            <li data-tab="tipSlide04"><a href="javascript:void(0);">생활/문화</a></li>
+                            <li data-tab="tipSlide05"><a href="javascript:void(0);">취업성공기</a></li>
+                            <li data-tab="tipSlide06"><a href="javascript:void(0);">자격증</a></li>
+                            <li data-tab="tipSlide07"><a href="javascript:void(0);">잡아바펀</a></li>
+                        </ul>
+                        <a href="" class="moreBtn">정책 전체보기 &gt;</a>
+                    </div>
+                    <div class="tabCont">
+                        <div class="tabItem active" data-tab="tipSlide01">
+                            <div class="swiper-container tibSlide">
+                                <ul class="swiper-wrapper">
+                                    <li class="item swiper-slide">
+                                        <a href="#" target="_blank">
+                                            <div class="imgWrap">
+                                                <img src="./images/main_2024/main/test_img02.png" alt="테스트 이미지">
+                                            </div>
+                                            <div class="txtWrap">
+                                                <p class="tit">2024년 부천시 로봇창업기업 사업화 지원사업 모집</p>
+                                                <p class="txt">모집완료시까지</p>
+                                            </div>                            
+                                        </a>
+                                    </li> 
+                                    <li class="item swiper-slide">
+                                        <a href="#" target="_blank">
+                                            <div class="imgWrap">
+                                                <img src="./images/main_2024/main/test_img02.png" alt="테스트 이미지">
+                                            </div>
+                                            <div class="txtWrap">
+                                                <p class="tit">2024년 부천시 로봇창업기업 사업화 지원사업 모집</p>
+                                                <p class="txt">모집완료시까지</p>
+                                            </div>                            
+                                        </a>
+                                    </li> 
+
+                                    <li class="item swiper-slide">
+                                        <a href="#" target="_blank">
+                                            <div class="imgWrap">
+                                                <img src="./images/main_2024/main/test_img02.png" alt="테스트 이미지">
+                                            </div>
+                                            <div class="txtWrap">
+                                                <p class="tit">2024년 부천시 로봇창업기업 사업화 지원사업 모집</p>
+                                                <p class="txt">모집완료시까지</p>
+                                            </div>                            
+                                        </a>
+                                    </li> 
+                                    <li class="item swiper-slide">
+                                        <a href="#" target="_blank">
+                                            <div class="imgWrap">
+                                                <img src="./images/main_2024/main/test_img02.png" alt="테스트 이미지">
+                                            </div>
+                                            <div class="txtWrap">
+                                                <p class="tit">2024년 부천시 로봇창업기업 사업화 지원사업 모집</p>
+                                                <p class="txt">모집완료시까지</p>
+                                            </div>                            
+                                        </a>
+                                    </li> 
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tabItem" data-tab="tipSlide02">
+                            <div class="swiper-container tibSlide">
+                                <ul class="swiper-wrapper">
+                                    <li class="item swiper-slide">
+                                        <a href="#" target="_blank">
+                                            <div class="imgWrap">
+                                                <img src="./images/main_2024/main/test_img01.png" alt="테스트 이미지">
+                                            </div>
+                                            <div class="txtWrap">
+                                                <p class="tit">2024년 부천시 로봇창업기업 사업화 지원사업 모집</p>
+                                                <p class="txt">모집완료시까지</p>
+                                            </div>                            
+                                        </a>
+                                    </li> 
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="testTab">
+            <style>
+               .tabList li.active {
+                    background: #147dff;
+                    color: #fff;
+                }
+                .tabItem {
+                    display: none;
+                }
+                .tabItem.active {
+                    display: block;
+                }
+            </style>
+            <div class="innerSection">
+                <h3 class="title">test</h3>
+                <div class="tabWrap">
+                    <div class="topListWrap">
+                        <ul class="tabList">
+                            <li class="active" data-tab="test01"><a href="javascript:void(0);">전체</a></li>
+                            <li data-tab="test02"><a href="javascript:void(0);">일자리</a></li>
+                        </ul>
+                        <a href="" class="moreBtn">정책 전체보기 &gt;</a>
+                    </div>
+                    <div class="tabCont">
+                        <div class="tabItem active" data-tab="test01">
+                            <div class="swiper-container tibSlide">
+                                <ul class="swiper-wrapper">
+                                    <li class="item swiper-slide">
+                                        <a href="#" target="_blank">
+                                            <div class="imgWrap">
+                                                <img src="./images/main_2024/main/test_img02.png" alt="테스트 이미지">
+                                            </div>
+                                            <div class="txtWrap">
+                                                <p class="tit">2024년 부천시 로봇창업기업 사업화 지원사업 모집</p>
+                                                <p class="txt">모집완료시까지</p>
+                                            </div>                            
+                                        </a>
+                                    </li> 
+                                    <li class="item swiper-slide">
+                                        <a href="#" target="_blank">
+                                            <div class="imgWrap">
+                                                <img src="./images/main_2024/main/test_img02.png" alt="테스트 이미지">
+                                            </div>
+                                            <div class="txtWrap">
+                                                <p class="tit">2024년 부천시 로봇창업기업 사업화 지원사업 모집</p>
+                                                <p class="txt">모집완료시까지</p>
+                                            </div>                            
+                                        </a>
+                                    </li> 
+
+                                    <li class="item swiper-slide">
+                                        <a href="#" target="_blank">
+                                            <div class="imgWrap">
+                                                <img src="./images/main_2024/main/test_img02.png" alt="테스트 이미지">
+                                            </div>
+                                            <div class="txtWrap">
+                                                <p class="tit">2024년 부천시 로봇창업기업 사업화 지원사업 모집</p>
+                                                <p class="txt">모집완료시까지</p>
+                                            </div>                            
+                                        </a>
+                                    </li> 
+                                    <li class="item swiper-slide">
+                                        <a href="#" target="_blank">
+                                            <div class="imgWrap">
+                                                <img src="./images/main_2024/main/test_img02.png" alt="테스트 이미지">
+                                            </div>
+                                            <div class="txtWrap">
+                                                <p class="tit">2024년 부천시 로봇창업기업 사업화 지원사업 모집</p>
+                                                <p class="txt">모집완료시까지</p>
+                                            </div>                            
+                                        </a>
+                                    </li> 
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tabItem" data-tab="test02">
+                            <div class="swiper-container tibSlide">
+                                <ul class="swiper-wrapper">
+                                    <li class="item swiper-slide">
+                                        <a href="#" target="_blank">
+                                            <div class="imgWrap">
+                                                <img src="./images/main_2024/main/test_img01.png" alt="테스트 이미지">
+                                            </div>
+                                            <div class="txtWrap">
+                                                <p class="tit">2024년 부천시 로봇창업기업 사업화 지원사업 모집</p>
+                                                <p class="txt">모집완료시까지</p>
+                                            </div>                            
+                                        </a>
+                                    </li> 
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
             </div>
         </article>
     </main>
 
 
     <script>
-        var infoSlide01 = new Swiper("#newMain .policySlide", {
-        slidesPerView: 1,
-        slidesPerGroup: 1,
-        slidesPerColumn: 2,
-        slidesPerColumnFill: "row", 
-        observer: true,
-        watchOverflow: true,
-        observeParents: true,
-        pagination: {
-            el: '.infoSlideWrap.inSlide01 .swiper-pagination',
-            type: 'bullets'
-        },
-        breakpoints: {
-            1024: {
-                slidesPerView: 4,
-                spaceBetween: 20,
-                slidesPerColumn: 2,
-                slidesPerGroup: 4,
+        function handleTabClick($btn, $items, tabAttr) {
+            $btn.click(function() {
+            var tab = $(this).attr(tabAttr);
+            $btn.removeClass('active');
+            $(this).addClass('active');
+            $items.removeClass('active');
+            $items.filter('[data-tab="' + tab + '"]').addClass('active');
+            });
+        }
+        handleTabClick($('.tipWrap .tabList li'), $('.tipWrap .tabItem'), 'data-tab');
+        handleTabClick($('.testTab .tabList li'), $('.testTab .tabItem'), 'data-tab');
+
+        var tipSlide = $('.tipWrap .tabItem');
+        tipSlide.find('.tibSlide').each(function(i){
+            var $this = $(this);
+            $this.siblings().addClass("type" + i);
+            var policySwiper = new Swiper($(this), {
+                slidesPerView: 1.5,
+                spaceBetween: 8,
+                observer: true,
+                observeParents: true,
+                breakpoints: {
+                    1024: {
+                        slidesPerView: 5,
+                        spaceBetween: 10,
+                    },
+                    860: {
+                        slidesPerView: 3,
+                    },
+                    768: {
+                        slidesPerView: 2,
+
+                    },
+                    460: {
+                        slidesPerView: 2.5,
+                        spaceBetween: 8,
+                    },
+                },
+            });
+        });
+        var testSlide = $('.testTab .tabItem');
+        testSlide.find('.tibSlide').each(function(i){
+            var $this = $(this);
+            $this.siblings().addClass("type" + i);
+            var policySwiper = new Swiper($(this), {
+                slidesPerView: 1.5,
+                spaceBetween: 8,
+                observer: true,
+                observeParents: true,
+                breakpoints: {
+                    1024: {
+                        slidesPerView: 5,
+                        spaceBetween: 10,
+                    },
+                    860: {
+                        slidesPerView: 3,
+                    },
+                    768: {
+                        slidesPerView: 2,
+
+                    },
+                    460: {
+                        slidesPerView: 2.5,
+                        spaceBetween: 8,
+                    },
+                },
+            });
+        });
+
+
+        var policySlide = new Swiper("#newMain .policySlide .swiper-container", {
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+            slidesPerColumn: 2,
+            slidesPerColumnFill: "row", 
+            observer: true,
+            watchOverflow: true,
+            observeParents: true,
+            pagination: {
+                el: '#newMain .policySlide .swiper-pagination',
+                type: 'bullets'
             },
-            860: {
-                slidesPerView: 3,
-                spaceBetween: 20,
-                slidesPerColumn: 2,
-                slidesPerGroup: 3,
+            breakpoints: {
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                    slidesPerColumn: 2,
+                    slidesPerGroup: 4,
+                },
+                860: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                    slidesPerColumn: 2,
+                    slidesPerGroup: 3,
+                },
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                    slidesPerColumn: 1,
+                    slidesPerGroup: 2,
+                },
             },
-            640: {
-                slidesPerView: 2,
-                spaceBetween: 20,
-                slidesPerColumn: 1,
-                slidesPerGroup: 2,
+        }); 
+        var issueSlide = new Swiper("#newMain .issueSlide .swiper-container", {
+            slidesPerView: 1,
+            observer: true,
+            watchOverflow: true,
+            observeParents: true,
+            pagination: {
+                el: '#newMain .issueSlide .swiper-pagination',
+                type: 'bullets'
             },
-        },
-    }); 
+            breakpoints: {
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                },
+                860: {
+                },
+                640: {
+                },
+            },
+        }); 
     </script>
 
 
