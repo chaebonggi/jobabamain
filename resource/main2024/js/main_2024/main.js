@@ -83,3 +83,8 @@ function itemSwiper() {
     }
 }
 itemSwiper();
+
+$('#newMain .policyWrap .checkItem .areaMore').click(function(){
+    $('#newMain .policyWrap .checkItem .checkList.area').toggleClass('on');
+    $(this).css('display', 'none');
+});

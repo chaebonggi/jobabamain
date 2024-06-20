@@ -22,13 +22,13 @@
 // });
 
 // random logo img
-const logoImages = document.querySelectorAll('h1.logo img');
-if (document.location.pathname != '/main/main.do') {
-	logoImages.forEach((image) => {
-		let randomNumber = Math.floor(Math.random() * 4) + 1;
-		image.setAttribute('src', `/resource/images/main2023/logo_0${randomNumber}.png`);
-	});
-}
+// const logoImages = document.querySelectorAll('h1.logo img');
+// if (document.location.pathname != '/main/main.do') {
+// 	logoImages.forEach((image) => {
+// 		let randomNumber = Math.floor(Math.random() * 4) + 1;
+// 		image.setAttribute('src', `/resource/images/main2023/logo_0${randomNumber}.png`);
+// 	});
+// }
 
 // footer menu
 $('.footer_btn').click(function () {
