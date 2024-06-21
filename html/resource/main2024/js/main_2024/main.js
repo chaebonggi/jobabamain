@@ -73,8 +73,8 @@ var menuSwiper = undefined;
 function itemSwiper() {
     if (window.innerWidth  < 641 && menuSwiper == undefined) {
             menuSwiper = new Swiper(".itemSwiper", {
-            slidesPerView: 'auto',
-            spaceBetween: 16,
+            slidesPerView: 2.9,
+            spaceBetween: 10,
             simulateTouch: true,
         });
     } else if (window.innerWidth >= 641 && menuSwiper != undefined) {
@@ -224,6 +224,22 @@ var orderSlide = new Swiper("#newMain .orderSlide .swiper-container", {
         },
     },
 }); 
+var infoSlide = new Swiper("#newMain .infoSlide .swiper-container", {
+    slidesPerView: 1.5,
+    watchOverflow: true,
+    breakpoints: {
+        1024: {
+            slidesPerView: 4,
+            
+        },
+        860: {
+            slidesPerView: 3.5,
+        },
+        480: {
+            slidesPerView: 2.5,
+        },
+    },
+}); 
 
 var publicSlide = $('#newMain .publicWrap .tabItem');
 publicSlide.find('.swiper-container').each(function(i){
@@ -364,7 +380,7 @@ var recruitSlide = new Swiper("#newMain .recruitSlide .swiper-container", {
     },
 }); 
 
-// $('#newMain .scrollbar-outer').scrollbar();
+$('#newMain .scrollbar-outer').scrollbar();
 
  // 모바일 체크박스 탭
  const mtabButton = $(".moFindBtn .mo_cont_list li");

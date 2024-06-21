@@ -5,7 +5,7 @@
 #newHeader .topMenu::before { content: ''; width: 50%; height: 100%; position: absolute; top: 0; left: -330px; background: #fff; } 
 #newHeader .topMenu ul { display: flex; width: 330px; height: 42px; padding: 8px 36px 0; position: relative; background: url(../../../../page/images/main_2024/main/top_menu_bg.png) no-repeat bottom left; box-sizing: border-box; } 
 #newHeader .topMenu ul li { flex: 1; } 
-#newHeader .topMenu ul a { display: flex; width: 100%; height: 100%; color: #fff; font-size: 14px; font-weight: bold; box-sizing: border-box; align-items: center; justify-content: center; } 
+#newHeader .topMenu ul a { display: flex; width: 100%; height: 100%; color: #fff; font-size: 14px; box-sizing: border-box; align-items: center; justify-content: center; } 
 #newHeader .bottomMenu { padding: 12px 0; } 
 #newHeader .bottomMenu .flexBox { display: flex; align-items: center; justify-content: space-between; } 
 #newHeader .bottomMenu .logo { width: 200px; height: 66px; } 
@@ -112,19 +112,20 @@
  #newMain .visualWrap { display: flex; justify-content: space-between; } 
  #newMain .mainVisual .visualCont { width: calc(100% - 360px); padding: 60px 10px 25px; background-image: url(../../../../page/images/main_2024/main/visual_cont_01.png), url(../../../../page/images/main_2024/main/visual_cont_02.png); background-repeat: no-repeat; background-position: left bottom, right top; border: 1px solid #2a61f9; border-radius: 20px; box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1); } 
  #newMain .mainVisual .searchCont { max-width: 570px; margin: 0 auto 25px; position: relative; } 
- #newMain .mainVisual .searchCont .inputSearch { width: 100%; height: 46px; padding: 0 46px 20px 20px; font-size: 16px; border: 0; border-bottom: 4px solid #2a61f9; } 
+ #newMain .mainVisual .searchCont .inputSearch { width: 100%; height: 46px; padding: 0 46px 20px 20px; background: transparent; font-size: 16px; border: 0; border-bottom: 4px solid #2a61f9; } 
  #newMain .mainVisual .searchCont .inputSearch:focus { outline: inherit; } 
  #newMain .mainVisual .searchCont button { width: 27px; height: 27px; position: absolute; bottom: 20px; right: 16px; background: url(../../../../page/images/main_2024/main/icon_search_btn.png) center no-repeat; background-size: contain; border: none; } 
  #newMain .mainVisual .searchCont button:focus { outline: none; border: none; } 
  #newMain .mainVisual .visualItem { display: flex; max-width: 570px; margin: 0 auto; flex-wrap: wrap; justify-content: space-between; } 
  #newMain .mainVisual .visualItem li { width: 102px; height: 112px; margin-bottom: 10px; border: 1px solid transparent; box-sizing: border-box; } 
- #newMain .mainVisual .visualItem li a { display: block; height: 100%; padding: 12px 0; color: #666666; font-size: 17px; font-weight: 400; letter-spacing: -0.5px; text-align: center; } 
+ #newMain .mainVisual .visualItem li a { display: block; height: 100%; padding: 12px 0; color: #666666; font-size: 16px; font-weight: 400; letter-spacing: -1px; text-align: center; } 
  #newMain .mainVisual .visualItem li a::before { content: ''; display: block; width: 100%; height: 52px; margin: 0 auto 10px; } 
  #newMain .mainVisual .visualItem li a.vItem01::before { background: url(../../../../page/images/main_2024/main/visual_menu_01.png) center no-repeat; } 
  #newMain .mainVisual .visualItem li a.vItem02::before { background: url(../../../../page/images/main_2024/main/visual_menu_02.png) center no-repeat; } 
  #newMain .mainVisual .visualItem li a.vItem03::before { background: url(../../../../page/images/main_2024/main/visual_menu_03.png) center no-repeat; } 
  #newMain .mainVisual .visualItem li a.vItem04::before { background: url(../../../../page/images/main_2024/main/visual_menu_04.png) center no-repeat; } 
  #newMain .mainVisual .visualItem li a.vItem05::before { background: url(../../../../page/images/main_2024/main/visual_menu_05.png) center no-repeat; } 
+ #newMain .mainVisual .visualItem li a.vItem06::before { background: url(../../../../page/images/main_2024/main/visual_menu_06.png) center no-repeat; }
  #newMain .mainVisual .visualItem li:hover { border-color: #2a61f9; border-radius: 20px; box-shadow: 2.192px 4.494px 5px 0px rgba(0, 0, 0, 0.25); } 
  #newMain .mainVisual .visualItem li:hover a { color: #000; font-weight: 900; } 
  #newMain .mainVisual .loginForm { width: 330px; } 
@@ -287,17 +288,16 @@
 #newMain .jobFindWrap .jobSelect .select_style01 { width: 100%; height: 38px; padding: 0 8px; background: #fff url(../../../../page/images/main_2024/main/ico_btn_style01.png) center right 10px no-repeat; color: #000; font-size: 14px; font-family: inherit; font-weight: 300; border: solid 1px #e2e2e2; border-radius: 5px; cursor: pointer; } 
 #newMain .orderWrap { padding: 65px 0; } 
 #newMain .jobSlideWrap.orderSlide .item { margin-top: 0 !important; margin-bottom: 30px; } 
+#newMain .infoWrap .infoSlide { max-width: 1180px; margin: 0 auto;}
 #newMain .infoWrap { padding: 60px 0; background: #f6f6f6; } 
 #newMain .infoWrap .titWrap { display: flex; margin-bottom: 30px; align-items: center; } 
 #newMain .infoWrap .titWrap .title { margin-bottom: 0; } 
 #newMain .infoWrap .titWrap .liveTag { padding: 0 8px 0 20px; margin-left: 10px; background: url(../../../../page/images/main_2024/main/livedata_icon.png) center left 2px #fff no-repeat; color: #ff0000; font-size: 12px; font-weight: 500; border: 1px solid #ff0000; border-radius: 20px; } 
-#newMain .infoWrap ul { display: flex; max-width: 1180px; margin: 0 auto; } 
-#newMain .infoWrap ul li { flex: 1; } 
-#newMain .infoWrap ul a { display: inline-block; padding-left: 60px; } 
-#newMain .infoWrap ul a.icon01 { background: url(../../../../page/images/main_2024/main/info_icon01.png) left bottom no-repeat; } 
-#newMain .infoWrap ul a.icon02 { background: url(../../../../page/images/main_2024/main/info_icon02.png) left bottom no-repeat; } 
-#newMain .infoWrap ul a.icon03 { background: url(../../../../page/images/main_2024/main/info_icon03.png) left bottom no-repeat; } 
-#newMain .infoWrap ul a.icon04 { background: url(../../../../page/images/main_2024/main/info_icon04.png) left bottom no-repeat; } 
+#newMain .infoWrap ul a {display: block; padding-left: 60px;}
+#newMain .infoWrap ul a.icon01 { background: url(../../../../page/images/main_2024/main/info_icon01.png) left center no-repeat; } 
+#newMain .infoWrap ul a.icon02 { background: url(../../../../page/images/main_2024/main/info_icon02.png) left center no-repeat; } 
+#newMain .infoWrap ul a.icon03 { background: url(../../../../page/images/main_2024/main/info_icon03.png) left center no-repeat; } 
+#newMain .infoWrap ul a.icon04 { background: url(../../../../page/images/main_2024/main/info_icon04.png) left center no-repeat; } 
 #newMain .infoWrap ul .countWrap .count { color: #000; font-size: 40px; font-weight: 300; } 
 #newMain .infoWrap ul .countWrap .count span { margin-left: 10px; color: #6b6b6b; font-size: 14px; font-weight: 300; } 
 #newMain .infoWrap ul .txt { color: #6b6b6b; font-size: 14px; font-weight: 500; } 
@@ -428,10 +428,6 @@
 
 #newMain .pageWrap .innerSection { width: 100%; } 
 
-/* 채용 - 잡아바 채용정보 */
-#newMain .infoWrap ul { max-width: 800px; flex-wrap: wrap; gap: 20px 0; } 
-#newMain .infoWrap ul li { width: 50%; flex: initial; } 
-#newMain .infoWrap ul li a { display: block; } 
  }
 
 @media screen and (max-width: 860px){
@@ -496,10 +492,13 @@
 #newMain h3.title { margin-bottom: 16px; font-size: 20px; } 
 
 /* 채용 - 정책 태그 */
-#newMain .pageWrap a { display: block; height: auto; padding: 10px 0; font-size: 16px; text-align: center; } 
-#newMain .pageWrap a.icon01::before { display: block; width: 50px; height: 36px; margin: 0 auto; } 
+#newMain .pageWrap a { height: auto; padding: 10px 0; font-size: 16px; text-align: center; flex-direction: column;} 
+#newMain .pageWrap a.active {flex: 1.5;}
+#newMain .pageWrap.leftPage a.icon02::before {content: none;}
+#newMain .pageWrap.rightPage a.icon01::before {content: none;}
+#newMain .pageWrap a.icon01::before {width: 50px; height: 36px; margin: 0 auto; } 
 #newMain .pageWrap a.icon02::after { content: none; } 
-#newMain .pageWrap a.icon02::before { content: ''; display: block; width: 34px; height: 37px; margin: 0 auto; background: url(../../../../page/images/main_2024/main/right_page_icon.png) center no-repeat; background-size: contain; } 
+#newMain .pageWrap a.icon02::before { content: ''; width: 34px; height: 37px; margin: 0 auto; background: url(../../../../page/images/main_2024/main/right_page_icon.png) center no-repeat; background-size: contain; } 
 
 /* 채용 */
 #newMain .orderWrap, #newMain .infoWrap, #newMain .publicWrap, #newMain .recruitWrap, #newMain .enterWrap { padding: 30px 0; } 
@@ -507,7 +506,7 @@
 
 #newMain .infoWrap ul li a { padding-left: 40px; background-size: 30px !important; } 
 #newMain .infoWrap ul a.icon03 { background-size: 20px auto !important; } 
-#newMain .infoWrap ul .countWrap .count { font-size: 20px; } 
+#newMain .infoWrap ul .countWrap .count { font-size: 26px; } 
 /* 채용 - 대기업 채용관 */
 
 #newMain .recruitWrap .item a { padding: 16px 16px; background-size: 60px auto !important; } 
