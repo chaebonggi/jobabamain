@@ -317,7 +317,9 @@
  #newMain .jobSlideWrap .item .dateWrap .day { margin-right: 12px; color: #000; font-size: 12px; } 
  #newMain .jobSlideWrap .item .dateWrap .date { color: #777777; font-size: 12px; } 
  #newMain .jobSlideWrap .item .dateWrap .tag { display: block; padding: 4px 10px; margin-left: auto; background: #eeeeee; color: #000; font-size: 12px; font-weight: 300; border-radius: 5px; } 
- #newMain .jobSlideWrap .item .dateWrap .tag::before { content: ''; display: inline-block; width: 11px; height: 15px; margin-right: 4px; background: url(../../../../page/images/main_2024/main/tag_icon.png) no-repeat; vertical-align: middle; } 
+ #newMain .jobSlideWrap .item .dateWrap .tag::before { content: ''; display: inline-block; margin-right: 4px; vertical-align: middle; } 
+ #newMain .jobSlideWrap .item .dateWrap .tag.icon01::before {width: 11px; height: 15px; background: url(../../../../page/images/main_2024/main/tag_icon.png) no-repeat; } 
+ #newMain .jobSlideWrap .item .dateWrap .tag.icon02::before {width: 14px; height: 15px; background: url(../../../../page/images/main_2024/main/tag_icon02.png) no-repeat; } 
  #newMain .jobSlideWrap .item .listBottom { padding: 6px 20px 10px; border-top: 1px solid #dfdfdf; } 
  #newMain .jobSlideWrap .item .listBottom .etc { color: #777777; font-size: 12px; } 
  #newMain .enterWrap { padding: 65px 0; } 
