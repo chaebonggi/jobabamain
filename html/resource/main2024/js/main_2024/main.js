@@ -379,8 +379,9 @@ var recruitSlide = new Swiper("#newMain .recruitSlide .swiper-container", {
         },
     },
 }); 
-
-$('#newMain .scrollbar-outer').scrollbar();
+if ($.fn.scrollbar) {
+    $('#newMain .scrollbar-outer').scrollbar();
+}
 
  // 모바일 체크박스 탭
  const mtabButton = $(".moFindBtn .mo_cont_list li");
