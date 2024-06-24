@@ -225,12 +225,11 @@ var orderSlide = new Swiper("#newMain .orderSlide .swiper-container", {
     },
 }); 
 var infoSlide = new Swiper("#newMain .infoSlide .swiper-container", {
-    slidesPerView: 'auto',    
+    slidesPerView: 1.5,    
     watchOverflow: true,
     breakpoints: {
         1024: {
-            slidesPerView: 4,
-            
+            slidesPerView: 4,            
         },
         860: {
             slidesPerView: 3.5,
@@ -249,6 +248,7 @@ publicSlide.find('.swiper-container').each(function(i){
         slidesPerView: 1,
         slidesPerGroup: 1,
         slidesPerColumn: 2,
+        spaceBetween: 10,
         slidesPerColumnFill: "row", 
         observer: true,
         watchOverflow: true,
@@ -272,7 +272,7 @@ publicSlide.find('.swiper-container').each(function(i){
             },
             640: {
                 slidesPerView: 2,
-                spaceBetween: 20,
+                spaceBetween: 10,
                 slidesPerColumn: 1,
                 slidesPerGroup: 2,
             },
@@ -286,15 +286,12 @@ enterSlide.find('.swiper-container').each(function(i){
     var policySwiper = new Swiper($(this), {
         slidesPerView: 1,
         slidesPerGroup: 1,
-        slidesPerColumn: 2,
-        slidesPerColumnFill: "row", 
+        slidesPerColumn: 1,
+        spaceBetween: 10,
+        slidesPerColumnFill: "row",
         observer: true,
         watchOverflow: true,
         observeParents: true,
-        // pagination: {
-        //     el: '#newMain .policySlide .swiper-pagination',
-        //     type: 'bullets'
-        // },
         breakpoints: {
             1024: {
                 slidesPerView: 4,
@@ -310,7 +307,7 @@ enterSlide.find('.swiper-container').each(function(i){
             },
             640: {
                 slidesPerView: 2,
-                spaceBetween: 20,
+                spaceBetween: 10,
                 slidesPerColumn: 1,
                 slidesPerGroup: 2,
             },
@@ -325,6 +322,7 @@ indSlide.find('.swiper-container').each(function(i){
         slidesPerView: 1,
         slidesPerGroup: 1,
         slidesPerColumn: 2,
+        spaceBetween: 10,
         slidesPerColumnFill: "row", 
         observer: true,
         watchOverflow: true,

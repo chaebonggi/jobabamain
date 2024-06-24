@@ -401,7 +401,7 @@
 #newMain .moFindBtn .m_find_top .mo_cont_Wrap .mo_cont_box { display: none; } 
 #newMain .moFindBtn .m_find_top .mo_cont_Wrap .mo_cont_box.active { display: block; } 
 #newMain .moFindBtn .m_find_top .mo_cont_Wrap .m_check_list .item { display: block; width: 100%; height: 35px; background: #fff; border-bottom: 1px solid #e2e7ed; box-sizing: border-box; } 
-#newMain .moFindBtn .m_find_top .mo_cont_Wrap .m_check_list .item .lb_tag {display: block; padding-left: 10px;  color: #000; font-size: 13px; font-weight: 300; line-height: 35px; } 
+#newMain .moFindBtn .m_find_top .mo_cont_Wrap .m_check_list .item .lb_tag { display: block; padding-left: 10px; color: #000; font-size: 13px; font-weight: 300; line-height: 35px; } 
 #newMain .moFindBtn .m_find_top .mo_cont_Wrap .m_check_list .inp_chk:checked + .lb_tag { color: #008ae0; } 
 #newMain .moFindBtn .m_find_bottom { width: 100%; height: 50px; position: fixed; bottom: 0; z-index: 200; } 
 #newMain .moFindBtn .m_find_bottom ul { display: flex; height: 50px; box-shadow: 0px 0px 20px 0px rgba(34, 37, 75, 0.4); } 
@@ -507,9 +507,9 @@
 #newMain .orderWrap, #newMain .infoWrap, #newMain .publicWrap, #newMain .recruitWrap, #newMain .enterWrap { padding: 30px 0; } 
 #newMain .jobFind { display: none; } 
 
-#newMain .infoWrap ul li a { padding-left: 40px; background-size: 30px !important; } 
+#newMain .infoWrap ul li a { padding-left: 40px; background-size: 35px !important; } 
 #newMain .infoWrap ul a.icon03 { background-size: 20px auto !important; } 
-#newMain .infoWrap ul .countWrap .count { font-size: 30px; } 
+#newMain .infoWrap ul .countWrap .count { font-size: 34px; } 
 /* 채용 - 대기업 채용관 */
 
 #newMain .recruitWrap .item a { padding: 16px 16px; background-size: 60px auto !important; } 
@@ -518,8 +518,8 @@
 #newMain .recruitWrap .item .tit { margin-bottom: 10px; font-size: 16px; } 
 
 /* 탭 리스트 */
-#newMain .topListWrap {position: relative;}
-#newMain .topListWrap .moreBtn {position: absolute; top: -40px; right: 0;}
+#newMain .topListWrap { position: relative; } 
+#newMain .topListWrap .moreBtn { position: absolute; top: -40px; right: 0; } 
 #newMain .tabWrap .tabList { white-space: nowrap; overflow-x: scroll; } 
 
 
@@ -535,7 +535,7 @@
 
 #newMain .moFindBtn { display: block; } 
 body[data-chatbot="no"] { #ch-plugin { display: none !important; } 
- #renewFooter { padding-bottom: 50px; } 
+ #newFooter { padding-bottom: 50px; } 
  } 
  }
 
