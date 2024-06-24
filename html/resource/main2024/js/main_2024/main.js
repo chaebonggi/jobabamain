@@ -225,7 +225,7 @@ var orderSlide = new Swiper("#newMain .orderSlide .swiper-container", {
     },
 }); 
 var infoSlide = new Swiper("#newMain .infoSlide .swiper-container", {
-    slidesPerView: 1.5,
+    slidesPerView: 'auto',    
     watchOverflow: true,
     breakpoints: {
         1024: {

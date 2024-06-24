@@ -423,16 +423,40 @@
                         <div class="tit"><span>희망직종</span></div>
                         <div class="selectItem">
                             <select class="select_style01" title="직종선택">
-                                <option selected disabled hidden>직종선택</option>
-                                <option value="01">직종1</option>
-                                <option value="02">직종2</option>
+                                <option value="">직종선택</option>
+                                <option value="">경영ㆍ사무ㆍ금융ㆍ보험직</option>
+                                <option value="">연구직 및 공학 기술직</option>
+                                <option value="">교육ㆍ법률ㆍ사회복지ㆍ경찰ㆍ소방직 및 군인</option>
+                                <option value="">보건ㆍ의료직</option>
+                                <option value="">예술ㆍ디자인ㆍ방송ㆍ스포츠직</option>
+                                <option value="">미용ㆍ여행ㆍ숙박ㆍ음식ㆍ경비ㆍ청소직</option>
+                                <option value="">영업ㆍ판매ㆍ운전ㆍ운송직</option>
+                                <option value="">건설ㆍ채굴직</option>
+                                <option value="">설치ㆍ정비ㆍ생산직</option>
+                                <option value="">농림어업직</option>
                             </select>
                         </div>
                         <div class="selectItem">
                             <select class="select_style01" title="직무선택">
-                                <option selected disabled hidden>직무선택</option>
-                                <option value="01">직무1</option>
-                                <option value="02">직무2</option>
+                                <option value="">직무선택</option>
+                                <option value="">의회의원ㆍ고위공무원 및 기업 고위 임원</option>
+                                <option value="">행정ㆍ경영ㆍ금융ㆍ보험 관리자</option>
+                                <option value="">전문서비스 관리자</option>
+                                <option value="">미용ㆍ여행ㆍ숙박ㆍ음식ㆍ경비ㆍ청소 관리자</option>
+                                <option value="">영업ㆍ판매ㆍ운송 관리자</option>
+                                <option value="">건설ㆍ채굴ㆍ제조ㆍ생산 관리자</option>
+                                <option value="">정부ㆍ공공행정 전문가</option>
+                                <option value="">경영ㆍ인사 전문가</option>
+                                <option value="">회계ㆍ세무ㆍ감정 전문가</option>
+                                <option value="">광고ㆍ조사ㆍ상품기획ㆍ행사기획 전문가</option>
+                                <option value="">정부․공공 행정 사무원</option>
+                                <option value="">경영지원 사무원</option>
+                                <option value="">회계ㆍ경리 사무원</option>
+                                <option value="">무역ㆍ운송ㆍ생산ㆍ품질 사무원</option>
+                                <option value="">안내ㆍ고객상담ㆍ통계ㆍ비서ㆍ사무보조 및 기타 사무원</option>
+                                <option value="">금융ㆍ보험 전문가</option>
+                                <option value="">금융ㆍ보험 사무원</option>
+                                <option value="">금융ㆍ보험 영업원</option>
                             </select>
                         </div>
                     </div>
@@ -441,39 +465,213 @@
                             <div class="tit icon01"><span>근무지</span></div>
                             <div class="cateBox scrollbar-outer">
                                 <div class="ckItem">
-                                    <input type="checkbox" class="inp_chk" id="checkA1" name="checkA" />
-                                    <label class="lb_tag" for="checkA1">                                        
+                                    <input type="checkbox" class="inp_chk" id="chkJobC_All" name="chkJobC_All" />
+                                    <label class="lb_tag" for="chkJobC_All">                                        
                                         <span class="txt">전체</span>
                                     </label>
                                 </div>
                                 <div class="ckItem">
-                                    <input type="checkbox" class="inp_chk" id="checkA2" name="checkA" />
-                                    <label class="lb_tag" for="checkA2">                                        
+                                    <input type="checkbox" class="inp_chk" id="chkJobC1" name="chkJobC" />
+                                    <label class="lb_tag" for="chkJobC1">                                        
                                         <span class="txt">경기도</span>
                                     </label>
                                 </div>
                                 <div class="ckItem">
-                                    <input type="checkbox" class="inp_chk" id="checkA3" name="checkA" />
-                                    <label class="lb_tag" for="checkA3">                                        
+                                    <input type="checkbox" class="inp_chk" id="chkJobC2" name="chkJobC" />
+                                    <label class="lb_tag" for="chkJobC2">                                        
                                         <span class="txt">서울</span>
                                     </label>
                                 </div>
                                 <div class="ckItem">
-                                    <input type="checkbox" class="inp_chk" id="checkA4" name="checkA" />
-                                    <label class="lb_tag" for="checkA4">                                        
+                                    <input type="checkbox" class="inp_chk" id="chkJobC3" name="chkJobC" />
+                                    <label class="lb_tag" for="chkJobC3">                                        
                                         <span class="txt">인천</span>
                                     </label>
                                 </div>
                                 <div class="ckItem">
-                                    <input type="checkbox" class="inp_chk" id="checkA5" name="checkA" />
-                                    <label class="lb_tag" for="checkA5">                                        
+                                    <input type="checkbox" class="inp_chk" id="chkJobC4" name="chkJobC" />
+                                    <label class="lb_tag" for="chkJobC4">                                        
                                         <span class="txt">수원시</span>
                                     </label>
                                 </div>
                                 <div class="ckItem">
-                                    <input type="checkbox" class="inp_chk" id="checkA6" name="checkA" />
-                                    <label class="lb_tag" for="checkA6">                                        
+                                    <input type="checkbox" class="inp_chk" id="chkJobC5" name="chkJobC" />
+                                    <label class="lb_tag" for="chkJobC5">                                        
                                         <span class="txt">용인시</span>
+                                    </label>
+                                </div>
+                                <div class="ckItem">
+                                    <input type="checkbox" class="inp_chk" id="chkJobC6" name="chkJobC" />
+                                    <label class="lb_tag" for="chkJobC6">                                        
+                                        <span class="txt">고양시</span>
+                                    </label>
+                                </div>
+                                <div class="ckItem">
+                                    <input type="checkbox" class="inp_chk" id="chkJobC7" name="chkJobC" />
+                                    <label class="lb_tag" for="chkJobC7">                                        
+                                        <span class="txt">화성시</span>
+                                    </label>
+                                </div>
+                                <div class="ckItem">
+                                    <input type="checkbox" class="inp_chk" id="chkJobC8" name="chkJobC" />
+                                    <label class="lb_tag" for="chkJobC8">                                        
+                                        <span class="txt">성남시</span>
+                                    </label>
+                                </div>
+                                <div class="ckItem">
+                                    <input type="checkbox" class="inp_chk" id="chkJobC9" name="chkJobC" />
+                                    <label class="lb_tag" for="chkJobC9">                                        
+                                        <span class="txt">부천시</span>
+                                    </label>
+                                </div>
+                                <div class="ckItem">
+                                    <input type="checkbox" class="inp_chk" id="chkJobC10" name="chkJobC" />
+                                    <label class="lb_tag" for="chkJobC10">                                        
+                                        <span class="txt">남양주시</span>
+                                    </label>
+                                </div>
+                                <div class="ckItem">
+                                    <input type="checkbox" class="inp_chk" id="chkJobC11" name="chkJobC" />
+                                    <label class="lb_tag" for="chkJobC11">                                        
+                                        <span class="txt">안산시</span>
+                                    </label>
+                                </div>
+                                <div class="ckItem">
+                                    <input type="checkbox" class="inp_chk" id="chkJobC12" name="chkJobC" />
+                                    <label class="lb_tag" for="chkJobC12">                                        
+                                        <span class="txt">평택시</span>
+                                    </label>
+                                </div>
+                                <div class="ckItem">
+                                    <input type="checkbox" class="inp_chk" id="chkJobC13" name="chkJobC" />
+                                    <label class="lb_tag" for="chkJobC13">                                        
+                                        <span class="txt">안양시</span>
+                                    </label>
+                                </div>
+                                <div class="ckItem">
+                                    <input type="checkbox" class="inp_chk" id="chkJobC14" name="chkJobC" />
+                                    <label class="lb_tag" for="chkJobC14">                                        
+                                        <span class="txt">시흥시</span>
+                                    </label>
+                                </div>
+                                <div class="ckItem">
+                                    <input type="checkbox" class="inp_chk" id="chkJobC15" name="chkJobC" />
+                                    <label class="lb_tag" for="chkJobC15">                                        
+                                        <span class="txt">파주시</span>
+                                    </label>
+                                </div>
+                                <div class="ckItem">
+                                    <input type="checkbox" class="inp_chk" id="chkJobC16" name="chkJobC" />
+                                    <label class="lb_tag" for="chkJobC16">                                        
+                                        <span class="txt">김포시</span>
+                                    </label>
+                                </div>
+                                <div class="ckItem">
+                                    <input type="checkbox" class="inp_chk" id="chkJobC17" name="chkJobC" />
+                                    <label class="lb_tag" for="chkJobC17">                                        
+                                        <span class="txt">의정부시</span>
+                                    </label>
+                                </div>
+                                <div class="ckItem">
+                                    <input type="checkbox" class="inp_chk" id="chkJobC18" name="chkJobC" />
+                                    <label class="lb_tag" for="chkJobC18">                                        
+                                        <span class="txt">광주시</span>
+                                    </label>
+                                </div>
+                                <div class="ckItem">
+                                    <input type="checkbox" class="inp_chk" id="chkJobC19" name="chkJobC" />
+                                    <label class="lb_tag" for="chkJobC19">                                        
+                                        <span class="txt">하남시</span>
+                                    </label>
+                                </div>
+                                <div class="ckItem">
+                                    <input type="checkbox" class="inp_chk" id="chkJobC20" name="chkJobC" />
+                                    <label class="lb_tag" for="chkJobC20">                                        
+                                        <span class="txt">광명시</span>
+                                    </label>
+                                </div>
+                                <div class="ckItem">
+                                    <input type="checkbox" class="inp_chk" id="chkJobC21" name="chkJobC" />
+                                    <label class="lb_tag" for="chkJobC21">                                        
+                                        <span class="txt">양주시</span>
+                                    </label>
+                                </div>
+                                <div class="ckItem">
+                                    <input type="checkbox" class="inp_chk" id="chkJobC22" name="chkJobC" />
+                                    <label class="lb_tag" for="chkJobC22">                                        
+                                        <span class="txt">군포시</span>
+                                    </label>
+                                </div>
+                                <div class="ckItem">
+                                    <input type="checkbox" class="inp_chk" id="chkJobC23" name="chkJobC" />
+                                    <label class="lb_tag" for="chkJobC23">                                        
+                                        <span class="txt">오산시</span>
+                                    </label>
+                                </div>
+                                <div class="ckItem">
+                                    <input type="checkbox" class="inp_chk" id="chkJobC24" name="chkJobC" />
+                                    <label class="lb_tag" for="chkJobC24">                                        
+                                        <span class="txt">이천시</span>
+                                    </label>
+                                </div>
+                                <div class="ckItem">
+                                    <input type="checkbox" class="inp_chk" id="chkJobC25" name="chkJobC" />
+                                    <label class="lb_tag" for="chkJobC25">                                        
+                                        <span class="txt">안성시</span>
+                                    </label>
+                                </div>
+                                <div class="ckItem">
+                                    <input type="checkbox" class="inp_chk" id="chkJobC26" name="chkJobC" />
+                                    <label class="lb_tag" for="chkJobC26">                                        
+                                        <span class="txt">구리시</span>
+                                    </label>
+                                </div>
+                                <div class="ckItem">
+                                    <input type="checkbox" class="inp_chk" id="chkJobC27" name="chkJobC" />
+                                    <label class="lb_tag" for="chkJobC27">                                        
+                                        <span class="txt">의왕시</span>
+                                    </label>
+                                </div>
+                                <div class="ckItem">
+                                    <input type="checkbox" class="inp_chk" id="chkJobC28" name="chkJobC" />
+                                    <label class="lb_tag" for="chkJobC28">                                        
+                                        <span class="txt">포천시</span>
+                                    </label>
+                                </div>
+                                <div class="ckItem">
+                                    <input type="checkbox" class="inp_chk" id="chkJobC29" name="chkJobC" />
+                                    <label class="lb_tag" for="chkJobC29">                                        
+                                        <span class="txt">양평군</span>
+                                    </label>
+                                </div>
+                                <div class="ckItem">
+                                    <input type="checkbox" class="inp_chk" id="chkJobC30" name="chkJobC" />
+                                    <label class="lb_tag" for="chkJobC30">                                        
+                                        <span class="txt">여주시</span>
+                                    </label>
+                                </div>
+                                <div class="ckItem">
+                                    <input type="checkbox" class="inp_chk" id="chkJobC31" name="chkJobC" />
+                                    <label class="lb_tag" for="chkJobC31">                                        
+                                        <span class="txt">동두천시</span>
+                                    </label>
+                                </div>
+                                <div class="ckItem">
+                                    <input type="checkbox" class="inp_chk" id="chkJobC32" name="chkJobC" />
+                                    <label class="lb_tag" for="chkJobC32">                                        
+                                        <span class="txt">과천시</span>
+                                    </label>
+                                </div>
+                                <div class="ckItem">
+                                    <input type="checkbox" class="inp_chk" id="chkJobC33" name="chkJobC" />
+                                    <label class="lb_tag" for="chkJobC33">                                        
+                                        <span class="txt">가평군</span>
+                                    </label>
+                                </div>
+                                <div class="ckItem">
+                                    <input type="checkbox" class="inp_chk" id="chkJobC34" name="chkJobC" />
+                                    <label class="lb_tag" for="chkJobC34">                                        
+                                        <span class="txt">연천군</span>
                                     </label>
                                 </div>
                             </div>
@@ -482,39 +680,57 @@
                             <div class="tit icon02"><span>학력</span></div>
                             <div class="cateBox scrollbar-outer">
                                 <div class="ckItem">
-                                    <input type="checkbox" class="inp_chk" id="checkB1" name="checkB" />
-                                    <label class="lb_tag" for="checkB1">                                        
+                                    <input type="checkbox" class="inp_chk" id="chkJobD_All" name="chkJobD_All" />
+                                    <label class="lb_tag" for="chkJobD_All">                                        
                                         <span class="txt">전체</span>
                                     </label>
                                 </div>
                                 <div class="ckItem">
-                                    <input type="checkbox" class="inp_chk" id="checkB2" name="checkB" />
-                                    <label class="lb_tag" for="checkB2">                                        
+                                    <input type="checkbox" class="inp_chk" id="chkJobD1" name="chkJobD" />
+                                    <label class="lb_tag" for="chkJobD1">                                        
                                         <span class="txt">학력무관</span>
                                     </label>
                                 </div>
                                 <div class="ckItem">
-                                    <input type="checkbox" class="inp_chk" id="checkB3" name="checkB" />
-                                    <label class="lb_tag" for="checkB3">                                        
+                                    <input type="checkbox" class="inp_chk" id="chkJobD2" name="chkJobD" />
+                                    <label class="lb_tag" for="chkJobD2">                                        
                                         <span class="txt">초졸이하</span>
                                     </label>
                                 </div>
                                 <div class="ckItem">
-                                    <input type="checkbox" class="inp_chk" id="checkB4" name="checkB" />
-                                    <label class="lb_tag" for="checkB4">                                        
+                                    <input type="checkbox" class="inp_chk" id="chkJobD3" name="chkJobD" />
+                                    <label class="lb_tag" for="chkJobD3">                                        
                                         <span class="txt">중졸</span>
                                     </label>
                                 </div>
                                 <div class="ckItem">
-                                    <input type="checkbox" class="inp_chk" id="checkB5" name="checkB" />
-                                    <label class="lb_tag" for="checkB5">                                        
+                                    <input type="checkbox" class="inp_chk" id="chkJobD4" name="chkJobD" />
+                                    <label class="lb_tag" for="chkJobD4">                                        
                                         <span class="txt">고졸</span>
                                     </label>
                                 </div>
                                 <div class="ckItem">
-                                    <input type="checkbox" class="inp_chk" id="checkB6" name="checkB" />
-                                    <label class="lb_tag" for="checkB6">                                        
-                                        <span class="txt">대졸</span>
+                                    <input type="checkbox" class="inp_chk" id="chkJobD5" name="chkJobD" />
+                                    <label class="lb_tag" for="chkJobD5">                                        
+                                        <span class="txt">대졸(2~3년)</span>
+                                    </label>
+                                </div>
+                                <div class="ckItem">
+                                    <input type="checkbox" class="inp_chk" id="chkJobD6" name="chkJobD" />
+                                    <label class="lb_tag" for="chkJobD6">                                        
+                                        <span class="txt">대졸(4년)</span>
+                                    </label>
+                                </div>
+                                <div class="ckItem">
+                                    <input type="checkbox" class="inp_chk" id="chkJobD7" name="chkJobD" />
+                                    <label class="lb_tag" for="chkJobD7">                                        
+                                        <span class="txt">석사</span>
+                                    </label>
+                                </div>
+                                <div class="ckItem">
+                                    <input type="checkbox" class="inp_chk" id="chkJobD8" name="chkJobD" />
+                                    <label class="lb_tag" for="chkJobD8">                                        
+                                        <span class="txt">박사</span>
                                     </label>
                                 </div>
                             </div>
@@ -523,39 +739,57 @@
                             <div class="tit icon03"><span>희망연봉</span></div>
                             <div class="cateBox scrollbar-outer">
                                 <div class="ckItem">
-                                    <input type="checkbox" class="inp_chk" id="checkC1" name="checkC" />
-                                    <label class="lb_tag" for="checkC1">                                        
+                                    <input type="checkbox" class="inp_chk" id="chkJobE_All" name="chkJobE_All" />
+                                    <label class="lb_tag" for="chkJobE_All">                                        
                                         <span class="txt">전체</span>
                                     </label>
                                 </div>
                                 <div class="ckItem">
-                                    <input type="checkbox" class="inp_chk" id="checkC2" name="checkC" />
-                                    <label class="lb_tag" for="checkC2">                                        
+                                    <input type="checkbox" class="inp_chk" id="chkJobE1" name="chkJobE" />
+                                    <label class="lb_tag" for="chkJobE1">                                        
                                         <span class="txt">회사내규에 따름</span>
                                     </label>
                                 </div>
                                 <div class="ckItem">
-                                    <input type="checkbox" class="inp_chk" id="checkC3" name="checkC" />
-                                    <label class="lb_tag" for="checkC3">                                        
+                                    <input type="checkbox" class="inp_chk" id="chkJobE2" name="chkJobE" />
+                                    <label class="lb_tag" for="chkJobE2">                                        
                                         <span class="txt">2500만원 이하</span>
                                     </label>
                                 </div>
                                 <div class="ckItem">
-                                    <input type="checkbox" class="inp_chk" id="checkC4" name="checkC" />
-                                    <label class="lb_tag" for="checkC4">                                        
+                                    <input type="checkbox" class="inp_chk" id="chkJobE3" name="chkJobE" />
+                                    <label class="lb_tag" for="chkJobE3">                                        
                                         <span class="txt">2500~3000 만원</span>
                                     </label>
                                 </div>
                                 <div class="ckItem">
-                                    <input type="checkbox" class="inp_chk" id="checkC5" name="checkC" />
-                                    <label class="lb_tag" for="checkC5">                                        
+                                    <input type="checkbox" class="inp_chk" id="chkJobE4" name="chkJobE" />
+                                    <label class="lb_tag" for="chkJobE4">                                        
                                         <span class="txt">3000~4000 만원</span>
                                     </label>
                                 </div>
                                 <div class="ckItem">
-                                    <input type="checkbox" class="inp_chk" id="checkC6" name="checkC" />
-                                    <label class="lb_tag" for="checkC6">                                        
+                                    <input type="checkbox" class="inp_chk" id="chkJobE5" name="chkJobE" />
+                                    <label class="lb_tag" for="chkJobE5">                                        
                                         <span class="txt">4000~5000 만원</span>
+                                    </label>
+                                </div>
+                                <div class="ckItem">
+                                    <input type="checkbox" class="inp_chk" id="chkJobE6" name="chkJobE" />
+                                    <label class="lb_tag" for="chkJobE6">                                        
+                                        <span class="txt">5000~6000 만원</span>
+                                    </label>
+                                </div>
+                                <div class="ckItem">
+                                    <input type="checkbox" class="inp_chk" id="chkJobE7" name="chkJobE" />
+                                    <label class="lb_tag" for="chkJobE7">                                        
+                                        <span class="txt">6000~7000 만원</span>
+                                    </label>
+                                </div>
+                                <div class="ckItem">
+                                    <input type="checkbox" class="inp_chk" id="chkJobE8" name="chkJobE" />
+                                    <label class="lb_tag" for="chkJobE8">                                        
+                                        <span class="txt">7000만원 이상</span>
                                     </label>
                                 </div>
                             </div>
@@ -564,32 +798,32 @@
                             <div class="tit icon04"><span>고용형태</span></div>
                             <div class="cateBox scrollbar-outer">
                                 <div class="ckItem">
-                                    <input type="checkbox" class="inp_chk" id="checkD1" name="checkD" />
-                                    <label class="lb_tag" for="checkD1">                                        
+                                    <input type="checkbox" class="inp_chk" id="chkJobF_All" name="chkJobF_All" />
+                                    <label class="lb_tag" for="chkJobF_All">                                        
                                         <span class="txt">전체</span>
                                     </label>
                                 </div>
                                 <div class="ckItem">
-                                    <input type="checkbox" class="inp_chk" id="checkD2" name="checkD" />
-                                    <label class="lb_tag" for="checkD2">                                        
+                                    <input type="checkbox" class="inp_chk" id="chkJobF1" name="chkJobF" />
+                                    <label class="lb_tag" for="chkJobF1">                                        
                                         <span class="txt">정규직</span>
                                     </label>
                                 </div>
                                 <div class="ckItem">
-                                    <input type="checkbox" class="inp_chk" id="checkD3" name="checkD" />
-                                    <label class="lb_tag" for="checkD3">                                        
+                                    <input type="checkbox" class="inp_chk" id="chkJobF2" name="chkJobF" />
+                                    <label class="lb_tag" for="chkJobF2">                                        
                                         <span class="txt">계약직</span>
                                     </label>
                                 </div>
                                 <div class="ckItem">
-                                    <input type="checkbox" class="inp_chk" id="checkD4" name="checkD" />
-                                    <label class="lb_tag" for="checkD4">                                        
+                                    <input type="checkbox" class="inp_chk" id="chkJobF3" name="chkJobF" />
+                                    <label class="lb_tag" for="chkJobF3">                                        
                                         <span class="txt">인턴직</span>
                                     </label>
                                 </div>
                                 <div class="ckItem">
-                                    <input type="checkbox" class="inp_chk" id="checkD5" name="checkD" />
-                                    <label class="lb_tag" for="checkD5">                                        
+                                    <input type="checkbox" class="inp_chk" id="chkJobF4" name="chkJobF" />
+                                    <label class="lb_tag" for="chkJobF4">                                        
                                         <span class="txt">기타/아르바이트</span>
                                     </label>
                                 </div>
@@ -599,26 +833,26 @@
                             <div class="tit icon05"><span>채용구분</span></div>
                             <div class="cateBox scrollbar-outer">
                                 <div class="ckItem">
-                                    <input type="checkbox" class="inp_chk" id="checkE1" name="checkE" />
-                                    <label class="lb_tag" for="checkE1">                                        
+                                    <input type="checkbox" class="inp_chk" id="chkJobG_All" name="chkJobG_All" />
+                                    <label class="lb_tag" for="chkJobG_All">                                        
                                         <span class="txt">전체</span>
                                     </label>
                                 </div>
                                 <div class="ckItem">
-                                    <input type="checkbox" class="inp_chk" id="checkE2" name="checkE" />
-                                    <label class="lb_tag" for="checkE2">                                        
+                                    <input type="checkbox" class="inp_chk" id="chkJobG1" name="chkJobG" />
+                                    <label class="lb_tag" for="chkJobG1">                                        
                                         <span class="txt">신입</span>
                                     </label>
                                 </div>
                                 <div class="ckItem">
-                                    <input type="checkbox" class="inp_chk" id="checkE3" name="checkE" />
-                                    <label class="lb_tag" for="checkE3">                                        
+                                    <input type="checkbox" class="inp_chk" id="chkJobG2" name="chkJobG" />
+                                    <label class="lb_tag" for="chkJobG2">                                        
                                         <span class="txt">경력</span>
                                     </label>
                                 </div>
                                 <div class="ckItem">
-                                    <input type="checkbox" class="inp_chk" id="checkE4" name="checkE" />
-                                    <label class="lb_tag" for="checkE4">                                        
+                                    <input type="checkbox" class="inp_chk" id="chkJobG3" name="chkJobG" />
+                                    <label class="lb_tag" for="chkJobG3">                                        
                                         <span class="txt">신입/경력</span>
                                     </label>
                                 </div>
@@ -884,7 +1118,7 @@
                                                     경쟁임용시험 시행 경쟁임용시험 시행경쟁임용시험 시행</p>
                                                 <div class="jobDesc">
                                                     <div class="dateWrap">
-                                                        <span class="day">D-20</span>
+                                                        <span class="day fcRed">D-day</span>
                                                         <span class="date">~2024-03-20</span>                                                
                                                     </div>
                                                 </div>                                        
@@ -926,7 +1160,7 @@
                                                     경쟁임용시험 시행 경쟁임용시험 시행경쟁임용시험 시행</p>
                                                 <div class="jobDesc">
                                                     <div class="dateWrap">
-                                                        <span class="day">D-20</span>
+                                                        <span class="day fcRed">D-day</span>
                                                         <span class="date">~2024-03-20</span>                                                
                                                     </div>
                                                 </div>                                        
@@ -1168,7 +1402,51 @@
                                                     <div class="dateWrap">
                                                         <span class="day">D-20</span>
                                                         <span class="date">~2024-03-20</span>
-                                                        <span class="tag icon01">연봉1위</span>
+                                                        <span class="tag icon01">연봉 1위</span>
+                                                    </div>
+                                                </div>                                        
+                                            </div>
+                                            <div class="listBottom">
+                                                <span class="etc">경영 · 회계 · 사무</span>
+                                            </div>                                    
+                                        </a>
+                                    </li>
+                                    <li class="item swiper-slide">
+                                        <a href="" target="_blank">
+                                            <div class="listTop">
+                                                <div class="jobArea">
+                                                    <p class="area">경기 수원시 외</p>
+                                                    <span class="corp">용인시청</span>
+                                                </div>                                        
+                                                <p class="tit">2024년도 제1회 경기도 지방공무원 공개
+                                                    경쟁임용시험 시행 경쟁임용시험 시행경쟁임용시험 시행</p>
+                                                <div class="jobDesc">
+                                                    <div class="dateWrap">
+                                                        <span class="day fcRed">D-day</span>
+                                                        <span class="date">~2024-03-20</span>
+                                                        <span class="tag icon01">연봉 2위</span>
+                                                    </div>
+                                                </div>                                        
+                                            </div>
+                                            <div class="listBottom">
+                                                <span class="etc">경영 · 회계 · 사무</span>
+                                            </div>                                    
+                                        </a>
+                                    </li>
+                                    <li class="item swiper-slide">
+                                        <a href="" target="_blank">
+                                            <div class="listTop">
+                                                <div class="jobArea">
+                                                    <p class="area">경기 수원시 외</p>
+                                                    <span class="corp">용인시청</span>
+                                                </div>                                        
+                                                <p class="tit">2024년도 제1회 경기도 지방공무원 공개
+                                                    경쟁임용시험 시행 경쟁임용시험 시행경쟁임용시험 시행</p>
+                                                <div class="jobDesc">
+                                                    <div class="dateWrap">
+                                                        <span class="day fcRed">D-day</span>
+                                                        <span class="date">~2024-03-20</span>
+                                                        <span class="tag icon01">연봉 3위</span>
                                                     </div>
                                                 </div>                                        
                                             </div>
@@ -1190,7 +1468,7 @@
                                                     <div class="dateWrap">
                                                         <span class="day">D-20</span>
                                                         <span class="date">~2024-03-20</span>
-                                                        <span class="tag icon01">연봉2위</span>
+                                                        <span class="tag icon01">연봉 4위</span>
                                                     </div>
                                                 </div>                                        
                                             </div>
@@ -1212,7 +1490,7 @@
                                                     <div class="dateWrap">
                                                         <span class="day">D-20</span>
                                                         <span class="date">~2024-03-20</span>
-                                                        <span class="tag icon01">연봉10위</span>
+                                                        <span class="tag icon01">연봉 5위</span>
                                                     </div>
                                                 </div>                                        
                                             </div>
@@ -1234,7 +1512,7 @@
                                                     <div class="dateWrap">
                                                         <span class="day">D-20</span>
                                                         <span class="date">~2024-03-20</span>
-                                                        <span class="tag icon01">연봉100위</span>
+                                                        <span class="tag icon01">연봉 6위</span>
                                                     </div>
                                                 </div>                                        
                                             </div>
@@ -1256,7 +1534,7 @@
                                                     <div class="dateWrap">
                                                         <span class="day">D-20</span>
                                                         <span class="date">~2024-03-20</span>
-                                                        <span class="tag icon01">연봉용인시청1위</span>
+                                                        <span class="tag icon01">연봉 7위</span>
                                                     </div>
                                                 </div>                                        
                                             </div>
@@ -1278,51 +1556,7 @@
                                                     <div class="dateWrap">
                                                         <span class="day">D-20</span>
                                                         <span class="date">~2024-03-20</span>
-                                                        <span class="tag icon01">연봉20위</span>
-                                                    </div>
-                                                </div>                                        
-                                            </div>
-                                            <div class="listBottom">
-                                                <span class="etc">경영 · 회계 · 사무</span>
-                                            </div>                                    
-                                        </a>
-                                    </li>
-                                    <li class="item swiper-slide">
-                                        <a href="" target="_blank">
-                                            <div class="listTop">
-                                                <div class="jobArea">
-                                                    <p class="area">경기 수원시 외</p>
-                                                    <span class="corp">용인시청</span>
-                                                </div>                                        
-                                                <p class="tit">2024년도 제1회 경기도 지방공무원 공개
-                                                    경쟁임용시험 시행 경쟁임용시험 시행경쟁임용시험 시행</p>
-                                                <div class="jobDesc">
-                                                    <div class="dateWrap">
-                                                        <span class="day">D-20</span>
-                                                        <span class="date">~2024-03-20</span>
-                                                        <span class="tag icon01">연봉30위</span>
-                                                    </div>
-                                                </div>                                        
-                                            </div>
-                                            <div class="listBottom">
-                                                <span class="etc">경영 · 회계 · 사무</span>
-                                            </div>                                    
-                                        </a>
-                                    </li>
-                                    <li class="item swiper-slide">
-                                        <a href="" target="_blank">
-                                            <div class="listTop">
-                                                <div class="jobArea">
-                                                    <p class="area">경기 수원시 외</p>
-                                                    <span class="corp">용인시청</span>
-                                                </div>                                        
-                                                <p class="tit">2024년도 제1회 경기도 지방공무원 공개
-                                                    경쟁임용시험 시행 경쟁임용시험 시행경쟁임용시험 시행</p>
-                                                <div class="jobDesc">
-                                                    <div class="dateWrap">
-                                                        <span class="day">D-20</span>
-                                                        <span class="date">~2024-03-20</span>
-                                                        <span class="tag icon01">연봉용인시청위</span>
+                                                        <span class="tag icon01">연봉 8위</span>
                                                     </div>
                                                 </div>                                        
                                             </div>
@@ -1348,9 +1582,9 @@
                                                     경쟁임용시험 시행 경쟁임용시험 시행경쟁임용시험 시행</p>
                                                 <div class="jobDesc">
                                                     <div class="dateWrap">
-                                                        <span class="day">D-20</span>
+                                                        <span class="day fcRed">D-day</span>
                                                         <span class="date">~2024-03-20</span>
-                                                        <span class="tag icon02">매출1위</span>
+                                                        <span class="tag icon02">매출 1위</span>
                                                     </div>
                                                 </div>                                        
                                             </div>
@@ -1372,7 +1606,7 @@
                                                     <div class="dateWrap">
                                                         <span class="day">D-20</span>
                                                         <span class="date">~2024-03-20</span>
-                                                        <span class="tag icon02">매출11위</span>
+                                                        <span class="tag icon02">매출 2위</span>
                                                     </div>
                                                 </div>                                        
                                             </div>
@@ -1394,7 +1628,7 @@
                                                     <div class="dateWrap">
                                                         <span class="day">D-20</span>
                                                         <span class="date">~2024-03-20</span>
-                                                        <span class="tag icon02">매출111위</span>
+                                                        <span class="tag icon02">매출 3위</span>
                                                     </div>
                                                 </div>                                        
                                             </div>
@@ -1416,7 +1650,95 @@
                                                     <div class="dateWrap">
                                                         <span class="day">D-20</span>
                                                         <span class="date">~2024-03-20</span>
-                                                        <span class="tag icon02">매출1111위</span>
+                                                        <span class="tag icon02">매출 4위</span>
+                                                    </div>
+                                                </div>                                        
+                                            </div>
+                                            <div class="listBottom">
+                                                <span class="etc">경영 · 회계 · 사무</span>
+                                            </div>                                    
+                                        </a>
+                                    </li>
+                                    <li class="item swiper-slide">
+                                        <a href="" target="_blank">
+                                            <div class="listTop">
+                                                <div class="jobArea">
+                                                    <p class="area">경기 수원시 외</p>
+                                                    <span class="corp">용인시청</span>
+                                                </div>                                        
+                                                <p class="tit">2024년도 제1회 경기도 지방공무원 공개
+                                                    경쟁임용시험 시행 경쟁임용시험 시행경쟁임용시험 시행</p>
+                                                <div class="jobDesc">
+                                                    <div class="dateWrap">
+                                                        <span class="day">D-20</span>
+                                                        <span class="date">~2024-03-20</span>
+                                                        <span class="tag icon02">매출 5위</span>
+                                                    </div>
+                                                </div>                                        
+                                            </div>
+                                            <div class="listBottom">
+                                                <span class="etc">경영 · 회계 · 사무</span>
+                                            </div>                                    
+                                        </a>
+                                    </li>
+                                    <li class="item swiper-slide">
+                                        <a href="" target="_blank">
+                                            <div class="listTop">
+                                                <div class="jobArea">
+                                                    <p class="area">경기 수원시 외</p>
+                                                    <span class="corp">용인시청</span>
+                                                </div>                                        
+                                                <p class="tit">2024년도 제1회 경기도 지방공무원 공개
+                                                    경쟁임용시험 시행 경쟁임용시험 시행경쟁임용시험 시행</p>
+                                                <div class="jobDesc">
+                                                    <div class="dateWrap">
+                                                        <span class="day">D-20</span>
+                                                        <span class="date">~2024-03-20</span>
+                                                        <span class="tag icon02">매출 6위</span>
+                                                    </div>
+                                                </div>                                        
+                                            </div>
+                                            <div class="listBottom">
+                                                <span class="etc">경영 · 회계 · 사무</span>
+                                            </div>                                    
+                                        </a>
+                                    </li>
+                                    <li class="item swiper-slide">
+                                        <a href="" target="_blank">
+                                            <div class="listTop">
+                                                <div class="jobArea">
+                                                    <p class="area">경기 수원시 외</p>
+                                                    <span class="corp">용인시청</span>
+                                                </div>                                        
+                                                <p class="tit">2024년도 제1회 경기도 지방공무원 공개
+                                                    경쟁임용시험 시행 경쟁임용시험 시행경쟁임용시험 시행</p>
+                                                <div class="jobDesc">
+                                                    <div class="dateWrap">
+                                                        <span class="day">D-20</span>
+                                                        <span class="date">~2024-03-20</span>
+                                                        <span class="tag icon02">매출 7위</span>
+                                                    </div>
+                                                </div>                                        
+                                            </div>
+                                            <div class="listBottom">
+                                                <span class="etc">경영 · 회계 · 사무</span>
+                                            </div>                                    
+                                        </a>
+                                    </li>
+                                    <li class="item swiper-slide">
+                                        <a href="" target="_blank">
+                                            <div class="listTop">
+                                                <div class="jobArea">
+                                                    <p class="area">경기 수원시 외</p>
+                                                    <span class="corp">용인시청</span>
+                                                </div>                                        
+                                                <p class="tit">2024년도 제1회 경기도 지방공무원 공개
+                                                    경쟁임용시험 시행 경쟁임용시험 시행경쟁임용시험 시행</p>
+                                                <div class="jobDesc">
+                                                    <div class="dateWrap">
+                                                        <span class="day">D-20</span>
+                                                        <span class="date">~2024-03-20</span>
+                                                        <span class="tag icon02">매출 8위</span>
                                                     </div>
                                                 </div>                                        
                                             </div>
@@ -1673,15 +1995,69 @@
                         <div class="mo_cont_box active">
                             <ul class="m_check_list">
                                 <li class="item">
-                                    <input type="checkbox" class="inp_chk" id="mcheckA1" name="mcheckA" value="" data-check-type="all">
-                                    <label class="lb_tag" for="mcheckA1">
-                                        <span class="txt">직종1</span>
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobA_All" name="m_chkJobA_All" />
+                                    <label class="lb_tag" for="m_chkJobA_All">                                        
+                                        <span class="txt">직종선택</span>
                                     </label>
                                 </li>
                                 <li class="item">
-                                    <input type="checkbox" class="inp_chk" id="mcheckA2" name="mcheckA" value="">
-                                    <label class="lb_tag" for="mcheckA2">
-                                        <span class="txt">직종2</span>
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobA2" name="m_chkJobA" />
+                                    <label class="lb_tag" for="m_chkJobA2">                                        
+                                        <span class="txt">경영ㆍ사무ㆍ금융ㆍ보험직</span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobA3" name="m_chkJobA" />
+                                    <label class="lb_tag" for="m_chkJobA3">                                        
+                                        <span class="txt">연구직 및 공학 기술직</span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobA4" name="m_chkJobA" />
+                                    <label class="lb_tag" for="m_chkJobA4">                                        
+                                        <span class="txt">교육ㆍ법률ㆍ사회복지ㆍ경찰ㆍ소방직 및 군인</span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobA5" name="m_chkJobA" />
+                                    <label class="lb_tag" for="m_chkJobA5">                                        
+                                        <span class="txt">보건ㆍ의료직</span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobA6" name="m_chkJobA" />
+                                    <label class="lb_tag" for="m_chkJobA6">                                        
+                                        <span class="txt">예술ㆍ디자인ㆍ방송ㆍ스포츠직</span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobA7" name="m_chkJobA" />
+                                    <label class="lb_tag" for="m_chkJobA7">                                        
+                                        <span class="txt">미용ㆍ여행ㆍ숙박ㆍ음식ㆍ경비ㆍ청소직</span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobA8" name="m_chkJobA" />
+                                    <label class="lb_tag" for="m_chkJobA8">                                        
+                                        <span class="txt">영업ㆍ판매ㆍ운전ㆍ운송직</span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobA9" name="m_chkJobA" />
+                                    <label class="lb_tag" for="m_chkJobA9">                                        
+                                        <span class="txt">건설ㆍ채굴직</span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobA10" name="m_chkJobA" />
+                                    <label class="lb_tag" for="m_chkJobA10">                                        
+                                        <span class="txt">설치ㆍ정비ㆍ생산직</span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobA11" name="m_chkJobA" />
+                                    <label class="lb_tag" for="m_chkJobA11">                                        
+                                        <span class="txt">농림어업직</span>
                                     </label>
                                 </li>
                             </ul>
@@ -1689,15 +2065,111 @@
                         <div class="mo_cont_box">
                             <ul class="m_check_list">
                                 <li class="item">
-                                    <input type="checkbox" class="inp_chk" id="mcheckB1" name="mcheckB" value="">
-                                    <label class="lb_tag" for="mcheckB1">
-                                        <span class="txt">직무1</span>
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobB_All" name="m_chkJobB_All" />
+                                    <label class="lb_tag" for="m_chkJobB_All">                                        
+                                        <span class="txt">직무선택</span>
                                     </label>
                                 </li>
                                 <li class="item">
-                                    <input type="checkbox" class="inp_chk" id="mcheckB2" name="mcheckB" value="">
-                                    <label class="lb_tag" for="mcheckB2">
-                                        <span class="txt">직무2</span>
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobB1" name="m_chkJobB" />
+                                    <label class="lb_tag" for="m_chkJobB1">                                        
+                                        <span class="txt">의회의원ㆍ고위공무원 및 기업 고위 임원</span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobB2" name="m_chkJobB" />
+                                    <label class="lb_tag" for="m_chkJobB2">                                        
+                                        <span class="txt">행정ㆍ경영ㆍ금융ㆍ보험 관리자</span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobB3" name="m_chkJobB" />
+                                    <label class="lb_tag" for="m_chkJobB3">                                        
+                                        <span class="txt">미용ㆍ여행ㆍ숙박ㆍ음식ㆍ경비ㆍ청소 관리자</span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobB4" name="m_chkJobB" />
+                                    <label class="lb_tag" for="m_chkJobB4">                                        
+                                        <span class="txt">영업ㆍ판매ㆍ운송 관리자</span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobB5" name="m_chkJobB" />
+                                    <label class="lb_tag" for="m_chkJobB5">                                        
+                                        <span class="txt">건설ㆍ채굴ㆍ제조ㆍ생산 관리자</span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobB6" name="m_chkJobB" />
+                                    <label class="lb_tag" for="m_chkJobB6">                                        
+                                        <span class="txt">정부ㆍ공공행정 전문가</span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobB7" name="m_chkJobB" />
+                                    <label class="lb_tag" for="m_chkJobB7">                                        
+                                        <span class="txt">경영ㆍ인사 전문가</span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobB8" name="m_chkJobB" />
+                                    <label class="lb_tag" for="m_chkJobB8">                                        
+                                        <span class="txt">회계ㆍ세무ㆍ감정 전문가</span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobB9" name="m_chkJobB" />
+                                    <label class="lb_tag" for="m_chkJobB9">                                        
+                                        <span class="txt">광고ㆍ조사ㆍ상품기획ㆍ행사기획 전문가</span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobB10" name="m_chkJobB" />
+                                    <label class="lb_tag" for="m_chkJobB10">                                        
+                                        <span class="txt">정부․공공 행정 사무원</span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobB11" name="m_chkJobB" />
+                                    <label class="lb_tag" for="m_chkJobB11">                                        
+                                        <span class="txt">경영지원 사무원</span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobB12" name="m_chkJobB" />
+                                    <label class="lb_tag" for="m_chkJobB12">                                        
+                                        <span class="txt">회계ㆍ경리 사무원</span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobB13" name="m_chkJobB" />
+                                    <label class="lb_tag" for="m_chkJobB13">                                        
+                                        <span class="txt">무역ㆍ운송ㆍ생산ㆍ품질 사무원</span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobB14" name="m_chkJobB" />
+                                    <label class="lb_tag" for="m_chkJobB14">                                        
+                                        <span class="txt">안내ㆍ고객상담ㆍ통계ㆍ비서ㆍ사무보조 및 기타 사무원</span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobB15" name="m_chkJobB" />
+                                    <label class="lb_tag" for="m_chkJobB15">                                        
+                                        <span class="txt">금융ㆍ보험 전문가</span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobB16" name="m_chkJobB" />
+                                    <label class="lb_tag" for="m_chkJobB16">                                        
+                                        <span class="txt">금융ㆍ보험 사무원</span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobB17" name="m_chkJobB" />
+                                    <label class="lb_tag" for="m_chkJobB17">                                        
+                                        <span class="txt">금융ㆍ보험 영업원</span>
                                     </label>
                                 </li>
                             </ul>
@@ -1705,67 +2177,271 @@
                         <div class="mo_cont_box">
                             <ul class="m_check_list">
                                 <li class="item">
-                                    <input type="checkbox" class="inp_chk" id="mcheckC1" name="mcheckC" value="">
-                                    <label class="lb_tag" for="mcheckC1">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobC_All" name="m_chkJobC_All" />
+                                    <label class="lb_tag" for="m_chkJobC_All">                                        
                                         <span class="txt">전체</span>
                                     </label>
-                                </li>   
+                                </li>
                                 <li class="item">
-                                    <input type="checkbox" class="inp_chk" id="mcheckC2" name="mcheckC" value="">
-                                    <label class="lb_tag" for="mcheckC2">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobC1" name="m_chkJobC" />
+                                    <label class="lb_tag" for="m_chkJobC1">                                        
                                         <span class="txt">경기도</span>
                                     </label>
                                 </li>
                                 <li class="item">
-                                    <input type="checkbox" class="inp_chk" id="mcheckC3" name="mcheckC" value="">
-                                    <label class="lb_tag" for="mcheckC3">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobC2" name="m_chkJobC" />
+                                    <label class="lb_tag" for="m_chkJobC2">                                        
                                         <span class="txt">서울</span>
                                     </label>
-                                </li>  
+                                </li>
                                 <li class="item">
-                                    <input type="checkbox" class="inp_chk" id="mcheckC4" name="mcheckC" value="">
-                                    <label class="lb_tag" for="mcheckC4">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobC3" name="m_chkJobC" />
+                                    <label class="lb_tag" for="m_chkJobC3">                                        
                                         <span class="txt">인천</span>
                                     </label>
-                                </li>  
+                                </li>
                                 <li class="item">
-                                    <input type="checkbox" class="inp_chk" id="mcheckC5" name="mcheckC" value="">
-                                    <label class="lb_tag" for="mcheckC5">
-                                        <span class="txt">수원</span>
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobC4" name="m_chkJobC" />
+                                    <label class="lb_tag" for="m_chkJobC4">                                        
+                                        <span class="txt">수원시</span>
                                     </label>
-                                </li>  
+                                </li>
+                                <li class="item">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobC5" name="m_chkJobC" />
+                                    <label class="lb_tag" for="m_chkJobC5">                                        
+                                        <span class="txt">용인시</span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobC6" name="m_chkJobC" />
+                                    <label class="lb_tag" for="m_chkJobC6">                                        
+                                        <span class="txt">고양시</span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobC7" name="m_chkJobC" />
+                                    <label class="lb_tag" for="m_chkJobC7">                                        
+                                        <span class="txt">화성시</span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobC8" name="m_chkJobC" />
+                                    <label class="lb_tag" for="m_chkJobC8">                                        
+                                        <span class="txt">성남시</span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobC9" name="m_chkJobC" />
+                                    <label class="lb_tag" for="m_chkJobC9">                                        
+                                        <span class="txt">부천시</span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobC10" name="m_chkJobC" />
+                                    <label class="lb_tag" for="m_chkJobC10">                                        
+                                        <span class="txt">남양주시</span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobC11" name="m_chkJobC" />
+                                    <label class="lb_tag" for="m_chkJobC11">                                        
+                                        <span class="txt">안산시</span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobC12" name="m_chkJobC" />
+                                    <label class="lb_tag" for="m_chkJobC12">                                        
+                                        <span class="txt">평택시</span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobC13" name="m_chkJobC" />
+                                    <label class="lb_tag" for="m_chkJobC13">                                        
+                                        <span class="txt">안양시</span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobC14" name="m_chkJobC" />
+                                    <label class="lb_tag" for="m_chkJobC14">                                        
+                                        <span class="txt">시흥시</span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobC15" name="m_chkJobC" />
+                                    <label class="lb_tag" for="m_chkJobC15">                                        
+                                        <span class="txt">파주시</span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobC16" name="m_chkJobC" />
+                                    <label class="lb_tag" for="m_chkJobC16">                                        
+                                        <span class="txt">김포시</span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobC17" name="m_chkJobC" />
+                                    <label class="lb_tag" for="m_chkJobC17">                                        
+                                        <span class="txt">의정부시</span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobC18" name="m_chkJobC" />
+                                    <label class="lb_tag" for="m_chkJobC18">                                        
+                                        <span class="txt">광주시</span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobC19" name="m_chkJobC" />
+                                    <label class="lb_tag" for="m_chkJobC19">                                        
+                                        <span class="txt">하남시</span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobC20" name="m_chkJobC" />
+                                    <label class="lb_tag" for="m_chkJobC20">                                        
+                                        <span class="txt">광명시</span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobC21" name="m_chkJobC" />
+                                    <label class="lb_tag" for="m_chkJobC21">                                        
+                                        <span class="txt">양주시</span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobC22" name="m_chkJobC" />
+                                    <label class="lb_tag" for="m_chkJobC22">                                        
+                                        <span class="txt">군포시</span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobC23" name="m_chkJobC" />
+                                    <label class="lb_tag" for="m_chkJobC23">                                        
+                                        <span class="txt">오산시</span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobC24" name="m_chkJobC" />
+                                    <label class="lb_tag" for="m_chkJobC24">                                        
+                                        <span class="txt">이천시</span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobC25" name="m_chkJobC" />
+                                    <label class="lb_tag" for="m_chkJobC25">                                        
+                                        <span class="txt">안성시</span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobC26" name="m_chkJobC" />
+                                    <label class="lb_tag" for="m_chkJobC26">                                        
+                                        <span class="txt">구리시</span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobC27" name="m_chkJobC" />
+                                    <label class="lb_tag" for="m_chkJobC27">                                        
+                                        <span class="txt">의왕시</span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobC28" name="m_chkJobC" />
+                                    <label class="lb_tag" for="m_chkJobC28">                                        
+                                        <span class="txt">포천시</span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobC29" name="m_chkJobC" />
+                                    <label class="lb_tag" for="m_chkJobC29">                                        
+                                        <span class="txt">양평군</span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobC30" name="m_chkJobC" />
+                                    <label class="lb_tag" for="m_chkJobC30">                                        
+                                        <span class="txt">여주시</span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobC31" name="m_chkJobC" />
+                                    <label class="lb_tag" for="m_chkJobC31">                                        
+                                        <span class="txt">동두천시</span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobC32" name="m_chkJobC" />
+                                    <label class="lb_tag" for="m_chkJobC32">                                        
+                                        <span class="txt">과천시</span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobC33" name="m_chkJobC" />
+                                    <label class="lb_tag" for="m_chkJobC33">                                        
+                                        <span class="txt">가평군</span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobC34" name="m_chkJobC" />
+                                    <label class="lb_tag" for="m_chkJobC34">                                        
+                                        <span class="txt">연천군</span>
+                                    </label>
+                                </li>
                             </ul>
                         </div>
                         <div class="mo_cont_box">
                             <ul class="m_check_list">
                                 <li class="item">
-                                    <input type="checkbox" class="inp_chk" id="mcheckD1" name="mcheckD" value="">
-                                    <label class="lb_tag" for="mcheckD1">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobD_All" name="m_chkJobD_All" />
+                                    <label class="lb_tag" for="m_chkJobD_All">                                        
                                         <span class="txt">전체</span>
                                     </label>
                                 </li>
                                 <li class="item">
-                                    <input type="checkbox" class="inp_chk" id="mcheckD2" name="mcheckD" value="">
-                                    <label class="lb_tag" for="mcheckD2">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobD1" name="m_chkJobD" />
+                                    <label class="lb_tag" for="m_chkJobD1">                                        
                                         <span class="txt">학력무관</span>
                                     </label>
                                 </li>
                                 <li class="item">
-                                    <input type="checkbox" class="inp_chk" id="mcheckD3" name="mcheckD" value="">
-                                    <label class="lb_tag" for="mcheckD3">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobD2" name="m_chkJobD" />
+                                    <label class="lb_tag" for="m_chkJobD2">                                        
                                         <span class="txt">초졸이하</span>
                                     </label>
                                 </li>
                                 <li class="item">
-                                    <input type="checkbox" class="inp_chk" id="mcheckD4" name="mcheckD" value="">
-                                    <label class="lb_tag" for="mcheckD4">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobD3" name="m_chkJobD" />
+                                    <label class="lb_tag" for="m_chkJobD3">                                        
                                         <span class="txt">중졸</span>
                                     </label>
                                 </li>
                                 <li class="item">
-                                    <input type="checkbox" class="inp_chk" id="mcheckD4" name="mcheckD" value="">
-                                    <label class="lb_tag" for="mcheckD4">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobD4" name="m_chkJobD" />
+                                    <label class="lb_tag" for="m_chkJobD4">                                        
                                         <span class="txt">고졸</span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobD5" name="m_chkJobD" />
+                                    <label class="lb_tag" for="m_chkJobD5">                                        
+                                        <span class="txt">대졸(2~3년)</span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobD6" name="m_chkJobD" />
+                                    <label class="lb_tag" for="m_chkJobD6">                                        
+                                        <span class="txt">대졸(4년)</span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobD7" name="m_chkJobD" />
+                                    <label class="lb_tag" for="m_chkJobD7">                                        
+                                        <span class="txt">석사</span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobD8" name="m_chkJobD" />
+                                    <label class="lb_tag" for="m_chkJobD8">                                        
+                                        <span class="txt">박사</span>
                                     </label>
                                 </li>
                             </ul>
@@ -1773,33 +2449,57 @@
                         <div class="mo_cont_box">
                             <ul class="m_check_list">
                                 <li class="item">
-                                    <input type="checkbox" class="inp_chk" id="mcheckE1" name="mcheckE" value="">
-                                    <label class="lb_tag" for="mcheckE1">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobE_All" name="m_chkJobE_All" />
+                                    <label class="lb_tag" for="m_chkJobE_All">                                        
                                         <span class="txt">전체</span>
                                     </label>
                                 </li>
                                 <li class="item">
-                                    <input type="checkbox" class="inp_chk" id="mcheckE2" name="mcheckE" value="">
-                                    <label class="lb_tag" for="mcheckE2">
-                                        <span class="txt">회사내규에따름</span>
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobE1" name="m_chkJobE" />
+                                    <label class="lb_tag" for="m_chkJobE1">                                        
+                                        <span class="txt">회사내규에 따름</span>
                                     </label>
                                 </li>
                                 <li class="item">
-                                    <input type="checkbox" class="inp_chk" id="mcheckE3" name="mcheckE" value="">
-                                    <label class="lb_tag" for="mcheckE3">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobE2" name="m_chkJobE" />
+                                    <label class="lb_tag" for="m_chkJobE2">                                        
                                         <span class="txt">2500만원 이하</span>
                                     </label>
                                 </li>
                                 <li class="item">
-                                    <input type="checkbox" class="inp_chk" id="mcheckE4" name="mcheckE" value="">
-                                    <label class="lb_tag" for="mcheckE4">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobE3" name="m_chkJobE" />
+                                    <label class="lb_tag" for="m_chkJobE3">                                        
                                         <span class="txt">2500~3000 만원</span>
                                     </label>
                                 </li>
                                 <li class="item">
-                                    <input type="checkbox" class="inp_chk" id="mcheckE5" name="mcheckE" value="">
-                                    <label class="lb_tag" for="mcheckE5">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobE4" name="m_chkJobE" />
+                                    <label class="lb_tag" for="m_chkJobE4">                                        
                                         <span class="txt">3000~4000 만원</span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobE5" name="m_chkJobE" />
+                                    <label class="lb_tag" for="m_chkJobE5">                                        
+                                        <span class="txt">4000~5000 만원</span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobE6" name="m_chkJobE" />
+                                    <label class="lb_tag" for="m_chkJobE6">                                        
+                                        <span class="txt">5000~6000 만원</span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobE7" name="m_chkJobE" />
+                                    <label class="lb_tag" for="m_chkJobE7">                                        
+                                        <span class="txt">6000~7000 만원</span>
+                                    </label>
+                                </li>
+                                <li class="item">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobE8" name="m_chkJobE" />
+                                    <label class="lb_tag" for="m_chkJobE8">                                        
+                                        <span class="txt">7000만원 이상</span>
                                     </label>
                                 </li>
                             </ul>
@@ -1807,32 +2507,32 @@
                         <div class="mo_cont_box">
                             <ul class="m_check_list">
                                 <li class="item">
-                                    <input type="checkbox" class="inp_chk" id="mcheckF1" name="mcheckF" value="">
-                                    <label class="lb_tag" for="mcheckF1">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobF_All" name="m_chkJobF_All" />
+                                    <label class="lb_tag" for="m_chkJobF_All">                                        
                                         <span class="txt">전체</span>
                                     </label>
                                 </li>
                                 <li class="item">
-                                    <input type="checkbox" class="inp_chk" id="mcheckF2" name="mcheckF" value="">
-                                    <label class="lb_tag" for="mcheckF2">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobF1" name="m_chkJobF" />
+                                    <label class="lb_tag" for="m_chkJobF1">                                        
                                         <span class="txt">정규직</span>
                                     </label>
                                 </li>
                                 <li class="item">
-                                    <input type="checkbox" class="inp_chk" id="mcheckF3" name="mcheckF" value="">
-                                    <label class="lb_tag" for="mcheckF3">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobF2" name="m_chkJobF" />
+                                    <label class="lb_tag" for="m_chkJobF2">                                        
                                         <span class="txt">계약직</span>
                                     </label>
                                 </li>
                                 <li class="item">
-                                    <input type="checkbox" class="inp_chk" id="mcheckF4" name="mcheckF" value="">
-                                    <label class="lb_tag" for="mcheckF4">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobF3" name="m_chkJobF" />
+                                    <label class="lb_tag" for="m_chkJobF3">                                        
                                         <span class="txt">인턴직</span>
                                     </label>
                                 </li>
                                 <li class="item">
-                                    <input type="checkbox" class="inp_chk" id="mcheckF5" name="mcheckF" value="">
-                                    <label class="lb_tag" for="mcheckF5">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobF4" name="m_chkJobF" />
+                                    <label class="lb_tag" for="m_chkJobF4">                                        
                                         <span class="txt">기타/아르바이트</span>
                                     </label>
                                 </li>
@@ -1841,26 +2541,26 @@
                         <div class="mo_cont_box">
                             <ul class="m_check_list">
                                 <li class="item">
-                                    <input type="checkbox" class="inp_chk" id="mcheckG1" name="mcheckG" value="">
-                                    <label class="lb_tag" for="mcheckG1">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobG_All" name="m_chkJobG_All" />
+                                    <label class="lb_tag" for="m_chkJobG_All">                                        
                                         <span class="txt">전체</span>
                                     </label>
                                 </li>
                                 <li class="item">
-                                    <input type="checkbox" class="inp_chk" id="mcheckG2" name="mcheckG" value="">
-                                    <label class="lb_tag" for="mcheckG2">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobG1" name="m_chkJobG" />
+                                    <label class="lb_tag" for="m_chkJobG1">                                        
                                         <span class="txt">신입</span>
                                     </label>
                                 </li>
                                 <li class="item">
-                                    <input type="checkbox" class="inp_chk" id="mcheckG3" name="mcheckG" value="">
-                                    <label class="lb_tag" for="mcheckG3">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobG2" name="m_chkJobG" />
+                                    <label class="lb_tag" for="m_chkJobG2">                                        
                                         <span class="txt">경력</span>
                                     </label>
                                 </li>
                                 <li class="item">
-                                    <input type="checkbox" class="inp_chk" id="mcheckG4" name="mcheckG" value="">
-                                    <label class="lb_tag" for="mcheckG4">
+                                    <input type="checkbox" class="inp_chk" id="m_chkJobG3" name="m_chkJobG" />
+                                    <label class="lb_tag" for="m_chkJobG3">                                        
                                         <span class="txt">신입/경력</span>
                                     </label>
                                 </li>
