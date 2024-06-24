@@ -395,6 +395,8 @@ if ($.fn.scrollbar) {
  const mPopupOpenBtn = mBottomCont.find('.btn_pop_open');
  const mSearchBtn = mBottomCont.find('.btn_search');
  const mPopCloseBtn = mBottomCont.find('.mo_btn_close');
+ const mLayerTop = $(".m_find_top");
+ const mLayerBottom = $(".m_find_bottom");
  const dimShadow = $('#newMain .dim_shadow');
  mPopupOpenBtn.on("click", function(){
      mBottomCont.addClass('on');
@@ -412,3 +414,10 @@ if ($.fn.scrollbar) {
      mPopupOpenBtn.show();
      $('body').removeClass('scrollLock');
  });
+ $(document).mouseup(function (e) {
+    if (!mLayerTop.is(e.target) && mLayerTop.has(e.target).length === 0 && !mLayerBottom.is(e.target) && mLayerBottom.has(e.target).length === 0) {
+        mBottomCont.removeClass('on');
+        mPopupOpenBtn.show();
+        $('body').removeClass('scrollLock');
+    }
+});
