@@ -109,7 +109,7 @@ tipSlide.find('.swiper-container').each(function(i){
     $this.siblings().addClass("type" + i);
     var policySwiper = new Swiper($(this), {
         slidesPerView: 1.2,
-        spaceBetween: 8,
+        spaceBetween: 10,
         observer: true,
         observeParents: true,
         watchOverflow: true,
@@ -195,14 +195,15 @@ var orderSlide = new Swiper("#newMain .orderSlide .swiper-container", {
     slidesPerView: 1,
     slidesPerGroup: 1,
     slidesPerColumn: 2,
+    spaceBetween: 10,
     slidesPerColumnFill: "row", 
     observer: true,
     watchOverflow: true,
     observeParents: true,
-    // pagination: {
-    //     el: '#newMain .policySlide .swiper-pagination',
-    //     type: 'bullets'
-    // },
+    pagination: {
+        el: ".orderSlide .swiper-pagination",
+        clickable: true,
+    },
     breakpoints: {
         1024: {
             slidesPerView: 4,
@@ -218,7 +219,7 @@ var orderSlide = new Swiper("#newMain .orderSlide .swiper-container", {
         },
         640: {
             slidesPerView: 2,
-            spaceBetween: 20,
+            spaceBetween: 10,
             slidesPerColumn: 1,
             slidesPerGroup: 2,
         },
@@ -282,6 +283,7 @@ publicSlide.find('.swiper-container').each(function(i){
 var enterSlide = $('#newMain .enterWrap .tabItem');
 enterSlide.find('.swiper-container').each(function(i){
     var $this = $(this);
+    var paginationClass = 'swiper-pagination-' + i;
     $this.siblings().addClass("type" + i);
     var policySwiper = new Swiper($(this), {
         slidesPerView: 1,
@@ -292,6 +294,10 @@ enterSlide.find('.swiper-container').each(function(i){
         observer: true,
         watchOverflow: true,
         observeParents: true,
+        pagination: {
+            el: '.' + paginationClass,
+            type: 'bullets'
+        },
         breakpoints: {
             1024: {
                 slidesPerView: 4,
@@ -346,7 +352,7 @@ indSlide.find('.swiper-container').each(function(i){
             },
             640: {
                 slidesPerView: 2,
-                spaceBetween: 20,
+                spaceBetween: 10,
                 slidesPerColumn: 1,
                 slidesPerGroup: 2,
             },
@@ -371,7 +377,7 @@ var recruitSlide = new Swiper("#newMain .recruitSlide .swiper-container", {
         },
         640: {
             slidesPerView: 2,
-            spaceBetween: 20,
+            spaceBetween: 10,
             slidesPerColumn: 2,
             slidesPerGroup: 2,
         },
