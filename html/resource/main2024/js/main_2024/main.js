@@ -106,7 +106,7 @@ handleTabClick($('.indWrap .tabList li'), $('.indWrap .tabItem'), 'data-tab');
 var tipSlide = $('#newMain .tipWrap .tabItem');
 tipSlide.find('.swiper-container').each(function(i){
     var $this = $(this);
-    $this.siblings().addClass("type" + i);
+    $this.addClass("type" + i);
     var policySwiper = new Swiper($(this), {
         slidesPerView: 1.2,
         spaceBetween: 10,
@@ -244,7 +244,7 @@ var infoSlide = new Swiper("#newMain .infoSlide .swiper-container", {
 var publicSlide = $('#newMain .publicWrap .tabItem');
 publicSlide.find('.swiper-container').each(function(i){
     var $this = $(this);
-    $this.siblings().addClass("type" + i);
+    $this.addClass("type" + i);
     var policySwiper = new Swiper($(this), {
         slidesPerView: 1,
         slidesPerGroup: 1,
@@ -282,9 +282,7 @@ publicSlide.find('.swiper-container').each(function(i){
 });
 var enterSlide = $('#newMain .enterWrap .tabItem');
 enterSlide.find('.swiper-container').each(function(i){
-    var $this = $(this);
-    var paginationClass = 'swiper-pagination-' + i;
-    $this.siblings().addClass("type" + i);
+    $(this).find(".swiper-pagination").addClass("type"+i);
     var policySwiper = new Swiper($(this), {
         slidesPerView: 1,
         slidesPerGroup: 1,
@@ -294,8 +292,12 @@ enterSlide.find('.swiper-container').each(function(i){
         observer: true,
         watchOverflow: true,
         observeParents: true,
+        // pagination: {
+        //     el: '.' + paginationClass,
+        //     type: 'bullets'
+        // },
         pagination: {
-            el: '.' + paginationClass,
+            el: enterSlide.find('.swiper-pagination.type'+i),
             type: 'bullets'
         },
         breakpoints: {
@@ -323,7 +325,7 @@ enterSlide.find('.swiper-container').each(function(i){
 var indSlide = $('#newMain .indWrap .tabItem');
 indSlide.find('.swiper-container').each(function(i){
     var $this = $(this);
-    $this.siblings().addClass("type" + i);
+    $this.addClass("type" + i);
     var policySwiper = new Swiper($(this), {
         slidesPerView: 1,
         slidesPerGroup: 1,
