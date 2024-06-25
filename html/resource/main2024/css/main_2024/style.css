@@ -401,8 +401,7 @@
 #newMain .moFindBtn .m_find_top .mo_cont_Wrap.type02 { height: 350px; } 
 #newMain .moFindBtn .m_find_top .mo_cont_Wrap .mo_cont_box { display: none; } 
 #newMain .moFindBtn .m_find_top .mo_cont_Wrap .mo_cont_box.active { display: block; } 
-#newMain .moFindBtn .m_find_top .mo_cont_Wrap .m_check_list .item { display: block; width: 100%; height: 50px; background: #fff; border-bottom: 1px solid #e2e7ed; box-sizing: border-box; } 
-#newMain .moFindBtn .m_find_top .mo_cont_Wrap .m_check_list .item:last-child { border-bottom: 0; } 
+#newMain .moFindBtn .m_find_top .mo_cont_Wrap .m_check_list .item { display: block; width: 100%; height: 50px; background: #fff; border-bottom: 1px solid #e2e7ed; box-sizing: border-box; }  
 #newMain .moFindBtn .m_find_top .mo_cont_Wrap .m_check_list .item .lb_tag { display: block; padding-left: 10px; color: #000; font-size: 13px; font-weight: 300; line-height: 50px; } 
 #newMain .moFindBtn .m_find_top .mo_cont_Wrap .m_check_list .inp_chk:checked + .lb_tag { color: #008ae0; } 
 #newMain .moFindBtn .m_find_bottom { width: 100%; height: 50px; position: fixed; bottom: 0; z-index: 200; } 
@@ -413,7 +412,8 @@
 #newMain .moFindBtn .m_find_bottom .btn_pop_open { background: #008ae0; color: #fff; font-size: 14px; font-weight: 500; } 
 #newMain .moFindBtn .m_find_bottom .btn_search { display: none; background: #008ae0; color: #fff; font-size: 14px; font-weight: 500; } 
 #newMain .moFindBtn .m_find_bottom ul button { display: block; width: 100%; height: 100%; border: none; } 
-#newMain .moFindBtn .noneBox { height: 40px; background: #fff; } 
+#newMain .moFindBtn .noneBox { height: 50px; background: #fff; }
+#newMain .moFindBtn .noneBox::before {content: '';display: block; width: 90px; height: 100%; background: #f3f3f3; border-right: 1px solid #e2e7ed;}
 
 @media screen and (max-width: 1300px){
  #newHeader .innerSection { width: calc(100% - 20px); } 
