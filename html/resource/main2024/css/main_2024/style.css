@@ -398,8 +398,8 @@
 #newMain .moFindBtn .m_find_top .mo_cont_list li { width: 90px; height: 50px; border-bottom: 1px solid #dfdfdf; } 
 #newMain .moFindBtn .m_find_top .mo_cont_list button { display: block; width: 100%; height: 100%; background: #f3f3f3; color: #777777; font-size: 13px; border: none; } 
 #newMain .moFindBtn .m_find_top .mo_cont_list li.active button { background: #fff; } 
-#newMain .moFindBtn .m_find_top .mo_cont_Wrap { width: 100%; height: 250px; border: 1px solid #dfdfdf; border-top: none; border-right: none; overflow-y: scroll; } 
-#newMain .moFindBtn .m_find_top .mo_cont_Wrap.type02 { height: 400px; } 
+#newMain .moFindBtn .m_find_top .mo_cont_Wrap { width: 100%; height: 251px; border: 1px solid #dfdfdf; border-top: none; border-right: none; overflow-y: scroll; } 
+#newMain .moFindBtn .m_find_top .mo_cont_Wrap.type02 { height: 401px; } 
 #newMain .moFindBtn .m_find_top .mo_cont_Wrap .mo_cont_box { display: none; } 
 #newMain .moFindBtn .m_find_top .mo_cont_Wrap .mo_cont_box.active { display: block; } 
 #newMain .moFindBtn .m_find_top .mo_cont_Wrap .m_check_list .item { display: block; width: 100%; height: 50px; background: #fff; border-bottom: 1px solid #e2e7ed; box-sizing: border-box; }  
