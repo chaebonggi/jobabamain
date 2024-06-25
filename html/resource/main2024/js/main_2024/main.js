@@ -243,8 +243,7 @@ var infoSlide = new Swiper("#newMain .infoSlide .swiper-container", {
 
 var publicSlide = $('#newMain .publicWrap .tabItem');
 publicSlide.find('.swiper-container').each(function(i){
-    var $this = $(this);
-    $this.addClass("type" + i);
+    $(this).find(".swiper-pagination").addClass("type"+i);
     var policySwiper = new Swiper($(this), {
         slidesPerView: 1,
         slidesPerGroup: 1,
@@ -254,10 +253,10 @@ publicSlide.find('.swiper-container').each(function(i){
         observer: true,
         watchOverflow: true,
         observeParents: true,
-        // pagination: {
-        //     el: '#newMain .policySlide .swiper-pagination',
-        //     type: 'bullets'
-        // },
+        pagination: {
+            el: publicSlide.find('.swiper-pagination.type'+i),
+            type: 'bullets'
+        },
         breakpoints: {
             1024: {
                 slidesPerView: 4,
@@ -292,10 +291,6 @@ enterSlide.find('.swiper-container').each(function(i){
         observer: true,
         watchOverflow: true,
         observeParents: true,
-        // pagination: {
-        //     el: '.' + paginationClass,
-        //     type: 'bullets'
-        // },
         pagination: {
             el: enterSlide.find('.swiper-pagination.type'+i),
             type: 'bullets'
@@ -324,8 +319,7 @@ enterSlide.find('.swiper-container').each(function(i){
 });
 var indSlide = $('#newMain .indWrap .tabItem');
 indSlide.find('.swiper-container').each(function(i){
-    var $this = $(this);
-    $this.addClass("type" + i);
+    $(this).find(".swiper-pagination").addClass("type"+i);
     var policySwiper = new Swiper($(this), {
         slidesPerView: 1,
         slidesPerGroup: 1,
@@ -335,10 +329,10 @@ indSlide.find('.swiper-container').each(function(i){
         observer: true,
         watchOverflow: true,
         observeParents: true,
-        // pagination: {
-        //     el: '#newMain .policySlide .swiper-pagination',
-        //     type: 'bullets'
-        // },
+        pagination: {
+            el: indSlide.find('.swiper-pagination.type'+i),
+            type: 'bullets'
+        },
         breakpoints: {
             1024: {
                 slidesPerView: 4,

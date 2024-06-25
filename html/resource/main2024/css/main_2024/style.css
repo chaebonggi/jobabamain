@@ -453,9 +453,9 @@
 #newMain .mainBanner .changing.swiper-slide-active,
 #newMain .mainBanner .changed.swiper-slide-active { transform:none; border-radius: 20px; } 
 
-#newMain .jobSlideWrap { position: relative; padding-bottom: 20px;} 
+#newMain .jobSlideWrap .swiper-container { position: relative; padding-bottom: 20px;} 
 #newMain .jobSlideWrap .swiper-pagination { display: block; left: 50%; transform: translateX(-50%); bottom: 0; } 
-#newMain .jobSlideWrap .swiper-pagination-clickable .swiper-pagination-bullet { margin: 0 2px; } 
+#newMain .jobSlideWrap .swiper-pagination-bullet { margin: 0 3px;} 
 
 /* 채용 - 채용찾기 */
 #newMain .jobFindWrap .cateWrap { gap: 20px 0; } 
