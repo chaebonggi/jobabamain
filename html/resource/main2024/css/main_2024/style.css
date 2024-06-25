@@ -520,8 +520,11 @@
 #newMain .infoWrap ul li a { padding-left: 40px; background-size: 35px !important; } 
 #newMain .infoWrap ul a.icon03 { background-size: 20px auto !important; } 
 #newMain .infoWrap ul .countWrap .count { font-size: 34px; } 
-
-
+#newMain .indWrap .innerSection {width: 100%;}
+#newMain .indWrap .topListWrap {padding-left: 10px;}
+#newMain .indWrap h3.title {padding-left: 10px;}
+#newMain .indWrap .topListWrap .moreBtn {right: 10px;}
+#newMain .indWrap .tabCont {padding: 0 10px;}
 
 /* 채용 - 대기업 채용관 */
 #newMain .recruitWrap .innerSection { width: 100%; padding-left: 10px; } 
