@@ -334,7 +334,7 @@ html { overflow: initial; }
  /* 면접 가이드 */
 .aiAbility .cont06 h3::before { width: 30px; height: 27px; left: 0; top: 5px; background-size: contain; transform: none; } 
 .aiAbility .cont06 h3 span { font-size: 14px; } 
-.aiAbility .cont06 .tabList li a { padding: 14px 0; font-size: 18px; } 
+.aiAbility .cont06 .tabList li a { padding: 12px 0; font-size: 16px; } 
 .aiAbility .cont06 .guideWrap .guideList li button { padding: 15px 0 15px 20px; font-size: 14px; } 
 .aiAbility .cont06 .resultWrap .resultList > li { display: block; padding: 15px 15px; } 
 .aiAbility .cont06 .resultWrap .resultList > li .tit { font-size: 16px; } 
