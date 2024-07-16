@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>취업가이드</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css">
+    <link rel="stylesheet" href="./guide/css/reset.css">
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <style>
+        @font-face {
+            font-family: 'GmarketSansMedium';
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'GmarketSansBold';
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: '777Newyorkers';
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/777Newyorkers.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        .guideWrap .newYork {font-family: '777Newyorkers';}
+        .guideWrap .gBold {font-family: 'GmarketSansBold';}
+        .guideWrap * {font-family: 'GmarketSansMedium', 'Noto Sans KR', 'Sans-serif'; font-weight: 500;}
+        .guideWrap {max-width: 1920px; margin: 0 auto;}
+        .guideWrap .innerSection {max-width: 1100px; width: calc(100% - 20px); margin: 0 auto;}
+
+        .guideWrap .header {
+            position: relative;
+            background-image: url(./guide/images/header_bg01.png), url(./guide/images/header_bg02.png);
+            background-position: top left, top right;
+            background-repeat: no-repeat;
+            background-color: #ecf9ff;
+        }
+        .guideWrap .header::before {
+            content: '';
+            width: 431px;
+            height: 993px;
+            position: absolute;
+            top: 145px;
+            left: 0;
+            background: url(./guide/images/header_item01.png) no-repeat;
+            z-index: 200;
+        }
+        .guideWrap .header::after {
+            content: '';
+            width: 338px;
+            height: 397px;
+            position: absolute;
+            bottom: 70px;
+            right: 80px;
+            background: url(./guide/images/header_item02.png) no-repeat;
+        }
+        .guideWrap .header .innerSection {
+            padding: 50px 0 70px;
+        }
+        .guideWrap .header h1 {margin-bottom: 220px; text-align: center;}
+        .guideWrap .header .txtWrap {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 85px 0 70px;
+            position: relative;
+            background: url(./guide/images/header_txt_img02.png) bottom right 100px #fff8a5 no-repeat;
+            border: 2px solid #000;
+            border-radius: 200px;
+            text-align: center;
+        }
+        .guideWrap .header .txtWrap::before {
+            content: '';
+            width: 124px;
+            height: 178px;
+            position: absolute;
+            top: -180px;
+            right: 275px;
+            background: url(./guide/images/header_txt_img01.png) no-repeat;
+        }
+        .guideWrap .header .txtWrap .img {
+            position: absolute;
+            top: -190px;
+            left: 136px;
+        }
+        .guideWrap .header .txtWrap .txt01 {
+            margin-bottom: 40px;
+            color: #000;
+            font-size: 48px;
+            letter-spacing: -1px;
+        }
+        .guideWrap .header .txtWrap .txt01 span {
+            color: #318eb0;
+        }
+        .guideWrap .header .txtWrap .txt02 {
+            padding-left: 230px;
+            font-size: 48px;
+            text-align: left;
+        }
+        .guideWrap .header .txtWrap .circle::before,
+        .guideWrap .header .txtWrap .circle::after {
+            content: '';
+            width: 22px;
+            height: 22px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: url(./guide/images/header_circle.png) no-repeat;            
+        }
+        .guideWrap .header .txtWrap .circle::before {
+            left: 30px;
+        }
+        .guideWrap .header .txtWrap .circle::after {
+            right: 30px;
+        }
+    </style>
+    <div class="guideWrap">
+        <div class="header">
+            <div class="innerSection">
+                <h1><img src="./guide/images/guide_tit.png" alt="취업하jobaba"></h1>
+                <div class="txtWrap">
+                    <span class="circle"></span>
+                    <div class="img">
+                        <img src="./guide/images/header_txt.png" alt="취업 혼자 하지마! 잡아바랑 해!">
+                    </div>
+                    <div>
+                        <p class="txt01 gBold"><span class="gBold">잡아바</span>가 여러분의 <span class="gBold">취업</span>을 도와드립니다.</p>
+                        <p class="txt02 newYork">잡아바 200% 활용법 알아볼까요?</p>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <style>
+            .guideWrap .menuWrap {
+                padding-top: 56px;
+                position: sticky;
+                top: 0;
+                background: #e7e7e7;
+                z-index: 100;
+                overflow: hidden;
+            }
+            .guideWrap .menuWrap::after {
+                content: '';
+                width: 100%;
+                height: 14px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                background: #fff;
+            }
+            .guideWrap .menuWrap .tabMenu {
+                max-width: 1000px;
+                margin: 0 auto 14px;
+            }
+            .guideWrap .menuWrap .tabMenu li {
+                width: 150px;
+                height: 108px;
+                position: relative;
+            }
+            .guideWrap .menuWrap .menuList li.active::after {
+                content: '';
+                width: 100%;
+                height: 5px;
+                position: absolute;
+                bottom: -14px;
+                left: 0;
+            }
+            .guideWrap .menuWrap .menuList li:nth-child(1).active::after {
+                background: #f2802d;
+            }
+            .guideWrap .menuWrap .menuList li:nth-child(2).active::after {
+                background: #f9af21;
+            }
+            .guideWrap .menuWrap .menuList li:nth-child(3).active::after {
+                background: #66c391;
+            }
+            .guideWrap .menuWrap .menuList li:nth-child(4).active::after {
+                background: #5ccfd9;
+            }
+            .guideWrap .menuWrap .menuList li:nth-child(5).active::after {
+                background: #ef7c8d;
+            }
+            .guideWrap .menuWrap .menuList li:nth-child(6).active::after {
+                background: #9485dd;
+            }
+            .guideWrap .menuWrap .tabMenu li:nth-child(1) {
+                background: url(./guide/images/list_bg01.png) no-repeat;
+            }
+            .guideWrap .menuWrap .tabMenu li:nth-child(2) {
+                background: url(./guide/images/list_bg02.png) no-repeat;
+            }
+            .guideWrap .menuWrap .tabMenu li:nth-child(3) {
+                background: url(./guide/images/list_bg03.png) no-repeat;
+            }
+            .guideWrap .menuWrap .tabMenu li:nth-child(4) {
+                background: url(./guide/images/list_bg04.png) no-repeat;
+            }
+            .guideWrap .menuWrap .tabMenu li:nth-child(5) {
+                background: url(./guide/images/list_bg05.png) no-repeat;
+            }
+            .guideWrap .menuWrap .tabMenu li:nth-child(6) {
+                background: url(./guide/images/list_bg06.png) no-repeat;
+            }
+            .guideWrap .menuWrap .tabMenu li:not(:first-child) {
+                margin-left: 20px;
+            }
+            .guideWrap .menuWrap .menuList li a {
+                display: block;
+                height: 100%;
+                padding-top: 32px;
+                color: #fff;
+                font-size: 24px;                
+                text-align: center;
+                line-height: 1.3;
+            }
+            
+        </style>
+        <div class="guidCont">
+            <div class="menuWrap">
+                <div class="innerSection">
+                    <div class="tabMenu">
+                        <div class="tabSwiper">
+                            <ul class="menuList swiper-wrapper">
+                                <li class="swiper-slide active"><a href="#moveTo01"><span class="gBold">잡아바<br> 상담 TALK</span></a></li>
+                                <li class="swiper-slide"><a href="#moveTo02"><span class="gBold">자기소개서<br> 컨설팅</span></a></li>
+                                <li class="swiper-slide"><a href="#moveTo03"><span class="gBold">AI<br> 역량검사</span></a></li>
+                                <li class="swiper-slide"><a href="#moveTo04"><span class="gBold">잡아바<br> 러닝센터</span></a></li>
+                                <li class="swiper-slide"><a href="#moveTo05"><span class="gBold">취업진로<br> 진단검사</span></a></li>
+                                <li class="swiper-slide"><a href="#moveTo06"><span class="gBold">커리어<br> 부트캠프</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <style>
+                .guideWrap .contList {
+                    background: #fff;
+                    border-bottom: 2px dashed #c4c4c4;
+                }
+                .guideWrap .contList .innerSection {
+                    padding: 90px 0;
+                }
+                .guideWrap .contList h2 {
+                    margin-bottom: 24px;
+                    text-align: center;
+                }
+                .guideWrap .contList .txtBox {
+                    max-width: 1000px;
+                    margin: 0 auto 60px;
+                    padding: 40px 10px 30px;                       
+                    border-radius: 100px;            
+                    text-align: center;                    
+                }
+                .guideWrap .contList .txtBox p {
+                    margin-bottom: 20px;
+                    color: #000;
+                    font-size: 32px;
+                }
+                .guideWrap .contList .txtBox span {
+                    color: #777777;
+                    font-size: 22px;
+                    line-height: 1.3;
+                }
+                .guideWrap .contList .guideList {
+                    margin-bottom: 70px;
+                }
+                .guideWrap .contList .guideList .tit {
+                    display: flex;
+                    margin-bottom: 40px;
+                    color: #000;
+                    font-size: 36px;
+                    letter-spacing: -1px;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .guideWrap .contList .guideList .tit span {
+                    margin-right: 10px;
+                }
+                .guideWrap .contList .guideList .tit i {
+                    display: inline-block;
+                    width: 39px;
+                    height: 39px;
+                    margin-left: 14px;
+                    background: url(./guide/images/guide_icon01.png) no-repeat;
+                }
+                .guideWrap .contList .guideList ul {
+                    display: flex;
+                    gap: 22px;
+                }
+                .guideWrap .contList .guideList ul li {
+                    padding: 30px 10px;
+                    border-radius: 50px;
+                    flex: 1;
+                    letter-spacing: -1px;
+                    text-align: center;                    
+                }
+                .guideWrap .contList .guideList ul li p {
+                    color: #000;
+                    font-size: 24px;
+                    line-height: 1.3;
+                }
+                .guideWrap .contList .guideList ul li p::before {
+                    content: '';
+                    display: block;
+                    height: 90px;
+                    margin-bottom: 20px;
+                }
+                .guideWrap .contList .guideList ul li p.icon01::before {
+                    background: url(./guide/images/guide_list_ico01.png) center no-repeat;
+                }
+                .guideWrap .contList .guideList ul li p.icon02::before {
+                    background: url(./guide/images/guide_list_ico02.png) center no-repeat;
+                }
+                .guideWrap .contList .guideList ul li p.icon03::before {
+                    background: url(./guide/images/guide_list_ico03.png) center no-repeat;
+                }
+                .guideWrap .contList .guideList ul li p.icon04::before {
+                    background: url(./guide/images/guide_list_ico04.png) center no-repeat;
+                }
+                .guideWrap .contList .guideList ul li p.icon05::before {
+                    background: url(./guide/images/guide_list_ico05.png) center no-repeat;
+                }
+                .guideWrap .contList .guideList ul li p.icon06::before {
+                    background: url(./guide/images/guide_list_ico06.png) center no-repeat;
+                }
+                .guideWrap .contList .guideList ul li p.icon07::before {
+                    background: url(./guide/images/guide_list_ico07.png) center no-repeat;
+                }
+                .guideWrap .contList .guideList ul li p.icon08::before {
+                    background: url(./guide/images/guide_list_ico08.png) center no-repeat;
+                }
+                .guideWrap .contList .guideList ul li p.icon09::before {
+                    background: url(./guide/images/guide_list_ico09.png) center no-repeat;
+                }
+                .guideWrap .contList .guideList ul li p.icon10::before {
+                    background: url(./guide/images/guide_list_ico10.png) center no-repeat;
+                }
+                .guideWrap .contList .guideList ul li p.icon11::before {
+                    background: url(./guide/images/guide_list_ico11.png) center no-repeat;
+                }
+                .guideWrap .contList .guideList ul li p.icon12::before {
+                    background: url(./guide/images/guide_list_ico12.png) center no-repeat;
+                }
+                .guideWrap .contList .guideList ul li p.icon13::before {
+                    background: url(./guide/images/guide_list_ico13.png) center no-repeat;
+                }
+                .guideWrap .contList .guideList ul li p.icon14::before {
+                    background: url(./guide/images/guide_list_ico14.png) center no-repeat;
+                }
+                .guideWrap .contList .guideLink {
+                    margin-top: 60px;
+                    text-align: center;
+                }
+                .guideWrap .contList .guideLink a {
+                    display: inline-block;
+                    max-width: 462px;
+                    width: 100%;
+                    padding: 26px 0 20px;
+                    color: #fff;
+                    font-size: 36px;
+                    border: 2px solid #000000;
+                    border-radius: 50px;
+                }
+                .guideWrap .contList.cont01 .txtBox {
+                    border: 2px dashed #f2802d;  
+                }
+                .guideWrap .contList.cont01 .guideList .tit span {
+                    color: #f2802d;
+                }
+                .guideWrap .contList.cont01 .bannerBox {
+                    display: flex;
+                    padding: 56px 0;
+                    background: #edf4f9;
+                    border-radius: 30px;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .guideWrap .contList.cont01 .bannerBox .tit {
+                    padding-left: 138px;
+                    margin-right: 56px;
+                    position: relative;
+                    color: #000;
+                    font-size: 36px;
+                }
+                .guideWrap .contList.cont01 .bannerBox .tit::before {
+                    content: '';
+                    width: 110px;
+                    height: 110px;
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    transform: translateY(-50%);
+                    background: url(./guide/images/cont01_item01.png) no-repeat;
+                }
+                .guideWrap .contList.cont01 .bannerBox .tit span {
+                    display: block;
+                    margin-bottom: 10px;
+                    font-size: 24px;
+                }
+                .guideWrap .contList.cont01 .bannerBox li {
+                    padding-left: 40px;
+                    position: relative;
+                    color: #000;
+                    font-size: 24px;
+                }
+                .guideWrap .contList.cont01 .bannerBox li + li {
+                    margin-top: 16px;
+                }
+                .guideWrap .contList.cont01 .bannerBox li::before {
+                    content: '';
+                    width: 28px;
+                    height: 27px;
+                    position: absolute;
+                    top: -4px;
+                    left: 0;
+                    background: url(./guide/images/cont01_item02.png) no-repeat;
+                }
+                .guideWrap .contList.cont01 .guideLink a {
+                    background: #f2802d;
+                }
+                .guideWrap .contList.cont01 .guideList ul li {
+                    border: 5px solid #f2802d;
+                    box-shadow: 0px 10px 10px 0px rgba(242, 128, 45, 0.1);
+                }
+                
+            </style>
+            <article id="moveTo01" class="contList cont01">
+                <div class="innerSection">
+                    <h2><img src="./guide/images/cont01_tit.png" alt="잡아바 상담 talk"></h2>
+                    <div class="txtBox">
+                        <p class="gBold">전문 직업상담사에게 기다리지말고 바로 취업상담 받자!</p>
+                        <span>지금 바로 차별화된 취업상담을 받아보세요, 쏟아지는 채용정보 말고<br>
+                            나에게 딱! 맞는 정보만 골라서 알려드립니다!</span>
+                    </div>
+                    <div class="guideList">
+                        <p class="tit gBold"><span class="gBold">잡아바 상담TALK</span> 이용 GUIDE <i class="icon01"></i></p>
+                        <ul>
+                            <li>
+                                <p class="icon01">취업희망 내용만 입력하면<br>
+                                    간편하게 채팅으로 상담!</p>
+                            </li>
+                            <li>
+                                <p class="icon02">이직, 취업, 직장내 고민<br>
+                                    무엇이든 물어보세요!</p>
+                            </li>
+                            <li>
+                                <p class="icon03">나에게 딱! 맞는<br>
+                                    채용알선 받아보세요!</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bannerBox">
+                        <p class="tit gBold"><span class="gBold">잡아바 상담톡은</span>
+                            이렇게 다릅니다.</p>
+                        <ul>
+                            <li>언제 어디서나 편리한 채팅 상담</li>
+                            <li>전문상담사가 직접 상담하는 맞춤 컨설팅</li>
+                            <li>내게 필요한 정보만 빠르고 정확하게 전달</li>
+                            <li>비대면 상담으로 속 깊은 상담 가능</li>
+                            <li>상담이 끊어져도 연계 상담 가능</li>
+                        </ul>
+                    </div>
+                    <div class="guideLink">
+                        <a href="">바로가기 &#8594;	</a>
+                    </div>
+                </div>
+            </article>
+            <style>
+                .guideWrap .contList.cont02 .txtBox {
+                    border: 2px dashed #f9af21;
+                }
+                .guideWrap .contList.cont02 .guideList .tit span {
+                    color: #f9af21;
+                }
+                .guideWrap .contList.cont02 .guideLink a {
+                    background: #f9af21;
+                }
+                .guideWrap .contList.cont02 .guideList ul li {
+                    border: 5px solid #f9af21;
+                    box-shadow: 0px 10px 10px 0px rgba(249, 175, 33, 0.2);
+                }
+            </style>
+            <article id="moveTo02" class="contList cont02">
+                <div class="innerSection">
+                    <h2><img src="./guide/images/cont02_tit.png" alt="자기소개서 컨설팅"></h2>
+                    <div class="txtBox">
+                        <p class="gBold">어려운 자기소개서 작성, 잡아바와 함께라면 문제없어요!</p>
+                        <span>전문 컨설턴트들의 차별화된 첨삭 지도로 눈에 띄는 자기소개서가 될 수 있도록<br>
+                            심층적인 컨설팅이 이루어 집니다.</span>
+                    </div>
+                    <div class="guideList">
+                        <p class="tit gBold"><span class="gBold">자기소개서 컨설팅</span> 이용 GUIDE <i class="icon01"></i></p>
+                        <ul>
+                            <li>
+                                <p class="icon04">이력서, 자기소개서 작성<br>
+                                    및 컨설팅 신청!</p>
+                            </li>
+                            <li>
+                                <p class="icon05">전문 컨설턴트가<br>
+                                    48시간 이내 첨삭 완료!</p>
+                            </li>
+                            <li>
+                                <p class="icon06">반복 첨삭을 통해,<br>
+                                    자신만의 자소서 완성!</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bannerBox">
+                        <p class="tit gBold"><span class="gBold">회원님들의 자소서 컨설팅</span> 생생후기<i class="icon02"></i></p>
+                        
+                    </div>
+                    <div class="guideLink">
+                        <a href="">바로가기 &#8594;	</a>
+                    </div>
+                </div>
+            </article>
+            
+            <article id="moveTo03" class="contList cont03">
+                <style>
+                    .guideWrap .contList.cont03 .txtBox {
+                        border: 2px dashed #66c391;
+                    }
+                    .guideWrap .contList.cont03 .guideList .tit span {
+                        color: #66c391;
+                    }
+                    .guideWrap .contList.cont03 .guideList ul li {
+                        border: 5px solid #66c391;
+                        box-shadow: 0px 10px 10px 0px rgba(102, 195, 145, 0.2);
+                    }
+                    .guideWrap .contList.cont03 .guideLink a {
+                        background: #66c391;
+                    }
+                </style>
+                <div class="innerSection">
+                    <h2><img src="./guide/images/cont03_tit.png" alt="ai역량검사"></h2>
+                    <div class="txtBox">
+                        <p class="gBold">지금껏 알기 어려웠던 나의 진짜 역량을 확인해 보세요</p>
+                        <span>나의 잠재 역량을 파악하고 취업에 직접 활용할 수 있는 검사입니다.<br>
+                            3가지 유형, 17개 과제로 구성되어 약 80분간 진행 <em>(이어서 진행 가능)</em></span>
+                    </div>
+                    <div class="guideList">
+                        <p class="tit gBold"><span class="gBold">자기소개서 컨설팅</span> 이용 GUIDE <i class="icon01"></i></p>
+                        <ul>
+                            <li>
+                                <p class="icon07">검사 시작 전, 마이크와<br>
+                                    웹캠을 준비해주세요!</p>
+                            </li>
+                            <li>
+                                <p class="icon08">횟수 제한없이<br>
+                                    무제한 반복 연습 가능!</p>
+                            </li>
+                            <li>
+                                <p class="icon09">검사 완료 후,<br>
+                                    마이페이지에서 결과지 확인!</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bannerBox">
+                        <p class="tit gBold"><span class="gBold">회원님들의 자소서 컨설팅</span> 생생후기<i class="icon02"></i></p>
+                        
+                    </div>
+                    <div class="guideLink">
+                        <a href="">바로가기 &#8594;	</a>
+                    </div>
+                </div>
+            </article>
+            <article id="moveTo04" class="contList cont04">
+                <style>
+                    .guideWrap .contList.cont04 .txtBox {
+                        border: 2px dashed #5bced8;
+                    }
+                    .guideWrap .contList.cont04 .guideList .tit span {
+                        color: #5bced8;
+                    }
+                    .guideWrap .contList.cont04 .guideList ul li {
+                        border: 5px solid #5bced8;
+                        box-shadow: 0px 10px 10px 0px rgba(91, 206, 216, 0.2);
+                    }
+                    .guideWrap .contList.cont04 .guideLink a {
+                        background: #5bced8;
+                    }
+                </style>
+                <div class="innerSection">
+                    <h2><img src="./guide/images/cont04_tit.png" alt="잡아바 러닝센터"></h2>
+                    <div class="txtBox">
+                        <p class="gBold">분야별 전문 교육과정 수강하고 취뽀하자!</p>
+                        <span>대기업, 공기업, 자격증, 직무스킬업, 기관별 전문교육이 모두 무료!<br>
+                            총 155개 과정 무한 반복 수강 가능!</span>
+                    </div>
+                    <div class="guideList">
+                        <p class="tit gBold"><span class="gBold">러닝센터</span> 이용 GUIDE <i class="icon01"></i></p>
+                        <ul>
+                            <li>
+                                <p class="icon10">대기업 공기업 취업준비<br>
+                                    잡아바 러닝센터에서 시작!</p>
+                            </li>
+                            <li>
+                                <p class="icon11">재직자, 창업준비, 일반교육까지<br>
+                                    다양한 교육 제공!</p>
+                            </li>
+                            <li>
+                                <p class="icon12">잡아바 회원가입만 하면<br>
+                                    무제한 반복 수강 가능!</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bannerBox">
+                        <p class="tit gBold"><span class="gBold">회원님들의 자소서 컨설팅</span> 생생후기<i class="icon02"></i></p>
+                        
+                    </div>
+                    <div class="guideLink">
+                        <a href="">바로가기 &#8594;	</a>
+                    </div>
+                </div>
+            </article>
+            <article id="moveTo05" class="contList cont05">
+                <style>
+                    .guideWrap .contList.cont05 .txtBox {
+                        border: 2px dashed #ef7c8d;
+                    }
+                    .guideWrap .contList.cont05 .guideList .tit span {
+                        margin-right: 0;
+                        color: #ef7c8d;
+                    }
+                    .guideWrap .contList.cont05 .guideList ul {
+                        justify-content: center;
+                        gap: 20px 40px;
+                    }
+                    .guideWrap .contList.cont05 .guideList ul li {
+                        max-width: 368px;
+                        background: #f9f9f9;
+                        border: 5px solid #ef7c8d;
+                        border-radius: 80px;
+                        box-shadow: 0px 10px 10px 0px rgba(239, 124, 141, 0.2);
+                    }
+                    .guideWrap .contList.cont05 .guideList li .listTit {
+                        display: block;
+                        margin-bottom: 10px;
+                        color: #000;
+                        font-size: 30px;
+                    }
+                    .guideWrap .contList.cont05 .guideList ul li p::before {
+                        margin-bottom: 10px;
+                    }
+                    .guideWrap .contList.cont05 .guideList ul li p.icon13::before {
+                        margin-left: 10px;
+                    }
+                    .guideWrap .contList.cont05 .guideList ul li .listLink {
+                        margin-top: 24px;
+                    }
+                    
+                    .guideWrap .contList.cont05 .guideList ul li .listLink a {
+                        display: inline-block;
+                        max-width: 124px;
+                        width: 100%;
+                        padding: 10px 0 6px;
+                        background: #ef7c8d;
+                        color: #fff;
+                        font-size: 16px;
+                        text-align: center;
+                        border-radius: 50px;
+                    }
+                    .guideWrap .contList.cont05 .guideLink a {
+                        background: #ef7c8d;
+                    }
+                </style>
+                <div class="innerSection">
+                    <h2><img src="./guide/images/cont05_tit.png" alt="취업진로 진단검사"></h2>
+                    <div class="txtBox">
+                        <p class="gBold">취업준비의 시작!</p>
+                        <span>자가 취업역량진단을 통해 취어방향성을 구체화하고<br>
+                            취업가능성을 높이세요!</span>
+                    </div>
+                    <div class="guideList">
+                        <p class="tit gBold"><span class="gBold">내가 원하는 직무와 경로</span>를 탐색해보세요! <i class="icon01"></i></p>
+                        <ul>
+                            <li>
+                                <strong class="listTit gBold">사전 진단</strong>
+                                <p class="icon13">나에게 필요한<br>
+                                    취업역량 서비스는 무엇일까?</p>
+                                <div class="listLink">
+                                    <a href="">바로가기 &#8594;	</a>
+                                </div>
+                            </li>
+                            <li>
+                                <strong class="listTit gBold">직업선호도 진단</strong>
+                                <p class="icon14">성격&middot;흥미에 딱! 맞는<br>
+                                    직업은 무엇일까?</p>
+                                <div class="listLink">
+                                    <a href="">바로가기 &#8594;	</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bannerBox">
+                        <p class="tit gBold"><span class="gBold">회원님들의 자소서 컨설팅</span> 생생후기<i class="icon02"></i></p>
+                        
+                    </div>
+                    <div class="guideLink">
+                        <a href="">바로가기 &#8594;	</a>
+                    </div>
+                </div>
+            </article>
+            <article id="moveTo06" class="contList cont05">
+                <style>
+                    .guideWrap .contList.cont06 .txtBox {
+                        border: 2px dashed #9485dd;
+                    }
+                    
+                    .guideWrap .contList.cont06 .guideLink a {
+                        background: #9485dd;
+                    }
+                </style>
+                <div class="innerSection">
+                    <h2><img src="./guide/images/cont06_tit.png" alt="커리어 부트캠프"></h2>
+                    <div class="txtBox">
+                        <p class="gBold">취업정보, 업무상담 현업 선배들과 멘토링 함께 할래?</p>
+                        <span>분야별 현업 선배들에게 무엇이든 물어보세요!<br>
+                            서류, 면접 등의 취업정보부터 현업고민, 직무역량강화 방법까지!</span>
+                    </div>
+                    <div class="mentoList">
+                        <p class="tit gBold">이런 분들이라면 <span class="gBold">멘토링 신청</span>하세요! <i class="icon01"></i></p>
+                        <ul>
+                            <li>
+                                <p>실제로 도움되는<br>
+                                    취업 정보가 필요한 구직자</p>
+                            </li>
+                            <li>
+                                
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bannerBox">
+                        <p class="tit gBold"><span class="gBold">회원님들의 자소서 컨설팅</span> 생생후기<i class="icon02"></i></p>
+                        
+                    </div>
+                    <div class="guideLink">
+                        <a href="">바로가기 &#8594;	</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            initTabSwipers();
+            menuScroll();
+        });
+        function menuScroll() {
+            const $menuWrap = $('.tabMenu');
+            const $menuBox = $menuWrap.find('.tabSwiper');
+            const $menu = $('.menuList');
+            const $menuList = $menu.find('li');
+            const $menuItems = $menu.find('a');
+            const $contents = $('.contList');
+            const offsetMo = 0; // 메뉴 상단 고정 위치 (모바일)
+            const offsetPC = 0; // 메뉴 상단 고정 위치 (PC)
+            const topMo = 45; // 스크롤 했을 때 컨텐츠 시작 위치 (모바일)
+            const topPc = 178; // 스크롤 했을 때 컨텐츠 시작 위치 (PC)
+            const breakpoints = 1181; // 모바일 사이즈 분기점
+            let windowWidth = window.innerWidth;
+            let isMobile = window.innerWidth < breakpoints;
+            let position = $menuWrap.offset().top;
+            let resizeTimer;
+            let scrollTimer;
+
+             // 메뉴를 고정하는 함수
+            // function scrollAct() {
+            //     const scrollTop = $(window).scrollTop();
+            //     const offset = isMobile ? offsetMo : offsetPC;
+            //     if (scrollTop > position - offset) {
+            //         $menuWrap.css({ 'position': 'fixed', 'top': offset + 'px' });
+            //     } else {
+            //         $menuWrap.css({ 'position': 'absolute', 'top': '0' });
+            //     }
+            // }
+
+            // 활성화된 메뉴 항목을 중앙으로 이동하는 함수
+            function activeMenu(target) {
+                const targetPos = target.position();
+                let pos;
+                let listWidth = 0;
+
+                $menu.find('.swiper-slide').each(function () {
+                    listWidth += $(this).outerWidth();
+                });
+
+                const selectTargetPos = targetPos.left + target.outerWidth() / 2;
+                if ($menu.outerWidth() < listWidth) {
+                    const boxHarf = $menuBox.width() / 2;
+                    if (selectTargetPos <= boxHarf) { // 왼쪽에 위치
+                        pos = 0;
+                    } else if ((listWidth - selectTargetPos) <= boxHarf) { // 오른쪽에 위치
+                        pos = listWidth - $menuBox.width();
+                    } else {
+                        pos = selectTargetPos - boxHarf;
+                    }
+                }
+                $menu.css({
+                    "transform": "translate3d(" + (pos * -1) + "px, 0, 0)",
+                    "transition-duration": "300ms"
+                });
+            }
+
+            // 창 크기 변경 이벤트 핸들러
+            // function handleResize() {
+            //     if (windowWidth == window.innerWidth) return;
+            //     $(window).off('scroll', scrollAct);
+            //     clearTimeout(resizeTimer);
+            //     resizeTimer = setTimeout(function () {
+            //         isMobile = window.innerWidth < breakpoints;
+            //         $menuWrap.css({ 'position': 'absolute', 'top': '0' });
+            //         position = $menuWrap.offset().top;
+            //         $(window).on('scroll', scrollAct);
+            //     }, 100);
+            //     windowWidth = window.innerWidth;
+            // }
+
+            // 스크롤 할 때 메뉴의 활성 상태를 설정하는 함수
+            function handleScroll() {
+                if (!$('html, body').is(":animated")) {
+                    if ($(window).scrollTop() + window.innerHeight < $(document).height()) {
+                        const scltop = $(window).scrollTop() + (isMobile ? topMo : topPc);
+                        $.each($contents, function (idx, item) {
+                            const targetTop = $(this).offset().top;
+                            if (targetTop <= scltop) {
+                                clearTimeout(scrollTimer);
+                                scrollTimer = setTimeout(function () {
+                                    $menuList.removeClass('active');
+                                    $menuList.eq(idx).addClass('active');
+                                    activeMenu($menuList.eq(idx));
+                                }, 50);
+                            }
+                        });
+                    }else{ // 맨 아래에 도달하면 마지막 메뉴 항목 활성화
+                        clearTimeout(scrollTimer);
+                        scrollTimer = setTimeout(function () {
+                            const lastInx = $menuList.length - 1
+                            $menuList.removeClass('active');
+                            $menuList.eq(lastInx).addClass('active');
+                            activeMenu($menuList.eq(lastInx));
+                        }, 50);
+                    }
+                }
+            }
+
+            
+            // $(window).on('load', function () {
+            //     $(window).on('scroll', scrollAct).scroll();
+            // });
+
+            // $(window).on('resize', handleResize);
+            $(window).scroll(handleScroll);
+
+            $menuItems.on('click', function (e) {
+                e.preventDefault();
+                const gnbHash = $(this).attr('href');
+                const offset = $(gnbHash).offset().top - (isMobile ? topMo - 1 : topPc - 1);
+                $('html, body').animate({ scrollTop: offset }, 500);
+                $(this).closest('li').addClass('active').siblings().removeClass('active');
+            });
+        }
+        function initTabSwipers() {
+            $(".tabSwiper").each(function (index) {
+                const $container = $(this);
+                
+                // 각 탭 스와이프 컨테이너에 클래스를 추가합니다.
+                $container.addClass(`tabSwiper_${index}`);
+
+                // Swiper 라이브러리를 사용하여 탭 스와이프를 초기화합니다.
+                const swiper = new Swiper(`.tabSwiper_${index}`, {
+                    slidesPerView: "auto",
+                    preventClicks: true,
+                    preventClicksPropagation: false,
+                    observer: true, // 슬라이드 변경 관찰 활성화
+                    observeParents: true // 부모 요소의 변경도 관찰
+                });
+
+                // 탭 항목이 클릭 되면 실행할 함수를 연결합니다.
+                $container.on('click', '.swiper-slide a', function (e) {
+                    e.preventDefault();
+                    const $item = $(this).parent();
+
+                    // 클릭 된 항목을 활성 상태로 표시하고 나머지 항목 비활성화
+                    $container.find('.swiper-slide').removeClass('active');
+                    $item.addClass('active');
+
+                    // 클릭한 항목을 가운데 정렬하는 함수 호출
+                    centerTabItem($item);
+                });
+
+                // 페이지 로드 후에 active 클래스가 있는 항목을 가운데 정렬
+                const $activeItem = $container.find('.swiper-slide.active');
+                if ($activeItem.length > 0) {
+                    centerTabItem($activeItem);
+                }
+
+                function centerTabItem($target) {
+                    const $wrapper = $container.find('.swiper-wrapper');
+                    const targetPos = $target.position();
+                    const containerWidth = $container.width();
+                    let newPosition = 0;
+                    let listWidth = 0;
+
+                    // 모든 슬라이드의 너비를 합산하여 리스트 전체 너비 계산
+                    $wrapper.find('.swiper-slide').each(function () {
+                        listWidth += $(this).outerWidth();
+                    });
+
+                    // 클릭한 항목을 가운데 정렬하기 위한 위치 계산
+                    const selectTargetPos = targetPos.left + $target.outerWidth() / 2;
+                    if (containerWidth < listWidth) {
+                        if (selectTargetPos <= containerWidth / 2) {
+                            newPosition = 0; // 왼쪽
+                        } else if ((listWidth - selectTargetPos) <= containerWidth / 2) {
+                            newPosition = listWidth - containerWidth; // 오른쪽
+                        } else {
+                            newPosition = selectTargetPos - containerWidth / 2;
+                        }
+                    }
+
+                    // 슬라이드를 새 위치로 이동시키는 애니메이션 설정
+                    $wrapper.css({
+                        "transform": `translate3d(${-newPosition}px, 0, 0)`,
+                        "transition-duration": "500ms"
+                    });
+                }
+            });
+        }
+    </script>
+</body>
+</html>
