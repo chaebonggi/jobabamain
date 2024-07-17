@@ -28,32 +28,10 @@
 .guideWrap .menuWrap { padding-top: 56px; position: sticky; top: 0; background: #e7e7e7; z-index: 100; overflow: hidden; } 
 .guideWrap .menuWrap::after { content: ''; width: 100%; height: 14px; position: absolute; bottom: 0; left: 0; background: #fff; } 
 .guideWrap .menuWrap .tabMenu { margin: 0 auto 14px; } 
-/* .guideWrap .menuWrap .tabMenu li { width: 150px; height: 108px; position: relative; }  */
-/*  */
-.guideWrap .menuWrap .innerSection {max-width: 1140px; width: 100%; margin: 0 auto;}
-.guideWrap .menuWrap .tabMenu li {width: auto;}
-.guideWrap .menuWrap .menuList li a { display: flex; width: 170px; height: 108px; height: 100%; padding: 30px 10px 10px; color: #fff; font-size: 24px; text-align: center; line-height: 1.3; }
-.guideWrap .menuWrap .menuList li a span {display: block; margin: 0 auto;}
-
-/* .guideWrap .menuWrap .innerSection {max-width: 1000px; width: 100%; margin: 0;}
-.guideWrap .menuWrap .tabMenu { width: 100%;max-width: 700px;background: #000; }
-.guideWrap .menuWrap .tabMenu li { width: auto; height: 108px; position: relative; box-sizing: border-box;} 
-.guideWrap .menuWrap .menuList {align-items: center;}
-.guideWrap .menuWrap .menuList li a {
-    display: flex;
-    width: 150px;
-    align-items: center;
-    position: relative;
-    height: 65px;
-    padding: 0 20px;
-    font-size: 18px;
-    font-weight: 500;
-    letter-spacing: -0.025em;
-    color: #fff;
-    text-decoration: none;
-    box-sizing: border-box;
-} */
-/*  */
+.guideWrap .menuWrap .innerSection { max-width: 1140px; width: 100%; margin: 0 auto; } 
+.guideWrap .menuWrap .tabMenu li { width: auto; } 
+.guideWrap .menuWrap .menuList li a { display: flex; width: 170px; height: 108px; height: 100%; padding: 30px 10px 10px; color: #fff; font-size: 24px; text-align: center; line-height: 1.3; } 
+.guideWrap .menuWrap .menuList li a span { display: block; margin: 0 auto; } 
 .guideWrap .menuWrap .menuList li.active::after { content: ''; width: 150px; height: 5px; position: absolute; bottom: -14px; left: 50%; transform: translateX(-50%); } 
 .guideWrap .menuWrap .menuList li:nth-child(1).active::after { background: #f2802d; } 
 .guideWrap .menuWrap .menuList li:nth-child(2).active::after { background: #f9af21; } 
@@ -67,8 +45,6 @@
 .guideWrap .menuWrap .tabMenu li:nth-child(4) a { background: url(../../guide/images/list_bg04.png) top center no-repeat; } 
 .guideWrap .menuWrap .tabMenu li:nth-child(5) a { background: url(../../guide/images/list_bg05.png) top center no-repeat; } 
 .guideWrap .menuWrap .tabMenu li:nth-child(6) a { background: url(../../guide/images/list_bg06.png) top center no-repeat; } 
-/* .guideWrap .menuWrap .tabMenu li:not(:first-child) { margin-left: 20px; }  */
-/* .guideWrap .menuWrap .menuList li a { display: block; height: 100%; padding-top: 32px; color: #fff; font-size: 24px; text-align: center; line-height: 1.3; }  */
 .guideWrap .contList { background: #fff; border-bottom: 2px dashed #c4c4c4; } 
 .guideWrap .contList .innerSection { padding: 90px 0; } 
 .guideWrap .contList h2 { margin-bottom: 24px; text-align: center; } 
@@ -244,24 +220,10 @@
 .guideWrap .contList.cont05 .guideList .tit { display: block; text-align: center; } 
 .guideWrap .contList.cont05 .bannerWrap .tit { display: block; text-align: center; } 
 .guideWrap .contList.cont05 .guideList ul { flex-direction: initial; } 
-.guideWrap .contList.cont06 .mentoList ul {
-    flex-wrap: wrap;
-}
-.guideWrap .contList.cont06 .mentoList ul li {
-    flex: auto;
-    width: calc(100% / 2 - 10px);
-}
-.guideWrap .contList.cont06 .banner::before {
-    width: 127px;
-    height: 126px;
-    bottom: 0;
-    right: 16px;
-    background-size: contain !important;
-}
-.guideWrap .contList.cont06 .banner {
-    padding: 50px 10px 40px 40px;
-}
-
+.guideWrap .contList.cont06 .mentoList ul { flex-wrap: wrap; } 
+.guideWrap .contList.cont06 .mentoList ul li { flex: auto; width: calc(100% / 2 - 10px); } 
+.guideWrap .contList.cont06 .banner::before { width: 127px; height: 126px; bottom: 0; right: 16px; background-size: contain !important; } 
+.guideWrap .contList.cont06 .banner { padding: 50px 10px 40px 40px; } 
 }
 
 @media all and (max-width:640px){
@@ -300,16 +262,16 @@
 .guideWrap .contList .bannerWrap .tit { display: block; margin-bottom: 20px; font-size: 20px; text-align: center; word-break: keep-all; } 
 .guideWrap .contList .bannerWrap .tit i { display: none !important; } 
 .guideWrap .contList.cont02 .bannerWrap .tit span { margin-right: 4px; } 
-.guideWrap .contList.cont02 .bannerList li::before { width: 70px; height: 38px; top: -16px; left: 28px; background-size: contain !important; } 
+.guideWrap .contList.cont02 .bannerList li::before { display: block; width: 70px; height: 38px; margin-bottom: 10px; position: static; background-size: contain !important; } 
 .guideWrap .contList .banner .swiper-prev, .guideWrap .contList .banner .swiper-next { width: 14px; height: 25px; background-size: contain !important; } 
 .guideWrap .contList .banner .swiper-prev { left: 10px; } 
 .guideWrap .contList .banner .swiper-next { right: 10px; } 
-.guideWrap .contList.cont02 .banner { padding: 30px 30px 10px; } 
-.guideWrap .contList.cont02 .bannerList { padding-top: 16px; } 
+.guideWrap .contList.cont02 .banner { padding: 30px 30px; } 
+.guideWrap .contList.cont02 .bannerList { padding-top: 0; } 
 .guideWrap .contList.cont02 .bannerList li p { margin-bottom: 10px; font-size: 14px; } 
 .guideWrap .contList.cont02 .bannerList li span { font-size: 12px; } 
 .guideWrap .contList.cont02 .guideList ul li { border: 2px solid #f9af21; } 
-.guideWrap .contList.cont02 .bannerList li { padding: 30px 15px 20px; } 
+.guideWrap .contList.cont02 .bannerList li { padding: 20px 15px; } 
 .guideWrap .contList.cont03 h2 img { max-width: 130px; } 
 .guideWrap .contList.cont03 .banner .swiper-prev { left: 10px; } 
 .guideWrap .contList.cont03 .banner .swiper-next { right: 10px; } 
@@ -334,59 +296,21 @@
 .guideWrap .contList.cont05 .guideList ul li { max-width: 100%; } 
 .guideWrap .contList.cont05 .banner li p::before { height: 38px; } 
 .guideWrap .contList.cont05 .banner li p { font-size: 18px; } 
-.guideWrap .contList.cont06 .mentoList  .tit { display: block; margin-bottom: 20px; font-size: 20px; text-align: center; word-break: keep-all; } 
-.guideWrap .contList.cont06 .mentoList  .tit i { display: none !important; }
-.guideWrap .contList.cont06 .mentoList .tit span {
-    margin-left: 4px;
-}
-.guideWrap .contList.cont06 h2 img {
-    max-width: 180px;
-}
-.guideWrap .contList.cont06 .mentoList ul li {
-    width: 100%
-}
-.guideWrap .contList.cont06 .mentoList ul li::before {
-    height: 110px;
-    margin-bottom: 10px;
-    background-size: 50% auto !important;
-    border: 2px solid #9485dd;
-}
-.guideWrap .contList.cont06 .mentoList ul li p {
-    font-size: 14px;
-}
-.guideWrap .contList.cont06 .mentoList {
-    margin-bottom: 30px;
-}
-.guideWrap .contList.cont06 .banner::before {
-    content: none;
-}
-.guideWrap .contList.cont06 .banner {
-    padding: 30px 20px;
-}
-.guideWrap .contList.cont06 .banner span {
-    font-size: 16px;
-    word-break: keep-all;
-}
-.guideWrap .contList.cont06 .banner p {
-    margin: 10px 0 20px;
-    font-size: 20px;
-}
-.guideWrap .contList.cont06 .banner .listLink a {
-    padding: 15px 0;
-    font-size: 20px;
-}
-.guideWrap .menuWrap .menuList li a {
-    width: 120px;
-    padding: 20px 10px 10px;
-    font-size: 16px;
-    background-size: 120px !important;
-}
-.guideWrap .menuWrap .menuList li.active::after {
-    width: 120px;
-}
-.guideWrap .menuWrap {
-    padding-top: 20px;
-}
-
+.guideWrap .contList.cont06 .mentoList .tit { display: block; margin-bottom: 20px; font-size: 20px; text-align: center; word-break: keep-all; } 
+.guideWrap .contList.cont06 .mentoList .tit i { display: none !important; } 
+.guideWrap .contList.cont06 .mentoList .tit span { margin-left: 4px; } 
+.guideWrap .contList.cont06 h2 img { max-width: 180px; } 
+.guideWrap .contList.cont06 .mentoList ul li { width: 100%}
+.guideWrap .contList.cont06 .mentoList ul li::before { height: 110px; margin-bottom: 10px; background-size: 50% auto !important; border: 2px solid #9485dd; } 
+.guideWrap .contList.cont06 .mentoList ul li p { font-size: 14px; } 
+.guideWrap .contList.cont06 .mentoList { margin-bottom: 30px; } 
+.guideWrap .contList.cont06 .banner::before { content: none; } 
+.guideWrap .contList.cont06 .banner { padding: 30px 20px; } 
+.guideWrap .contList.cont06 .banner span { font-size: 16px; word-break: keep-all; } 
+.guideWrap .contList.cont06 .banner p { margin: 10px 0 20px; font-size: 20px; } 
+.guideWrap .contList.cont06 .banner .listLink a { padding: 15px 0; font-size: 20px; } 
+.guideWrap .menuWrap .menuList li a { width: 120px; padding: 20px 10px 10px; font-size: 16px; background-size: 120px !important; } 
+.guideWrap .menuWrap .menuList li.active::after { width: 120px; } 
+.guideWrap .menuWrap { padding-top: 20px; } 
 
 }
