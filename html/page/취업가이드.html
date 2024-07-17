@@ -466,7 +466,10 @@
             var swiper01 = new Swiper(".guideWrap .contList.cont02 .bannerSwiper", {
                 spaceBetween: 10,
                 slidesPerView: 1,
-                autoplay: false,
+                autoplay: {
+                    delay: 3000,
+                    desableOnInteraction: false, 
+                },
                 loop: true,
                 navigation: {
                     nextEl: ".guideWrap .contList.cont02 .swiper-next",
@@ -476,7 +479,10 @@
             var swiper02 = new Swiper(".guideWrap .contList.cont03 .bannerSwiper", {
                 spaceBetween: 10,
                 slidesPerView: 1,
-                autoplay: false,
+                autoplay: {
+                    delay: 3000,
+                    desableOnInteraction: false, 
+                },
                 loop: true,
                 navigation: {
                     nextEl: ".guideWrap .contList.cont03 .swiper-next",
@@ -554,7 +560,7 @@
             const $contents = $('.contList');
             const offsetMo = 0; // 메뉴 상단 고정 위치 (모바일)
             const offsetPC = 0; // 메뉴 상단 고정 위치 (PC)
-            const topMo = 45; // 스크롤 했을 때 컨텐츠 시작 위치 (모바일)
+            const topMo = 106; // 스크롤 했을 때 컨텐츠 시작 위치 (모바일)
             const topPc = 178; // 스크롤 했을 때 컨텐츠 시작 위치 (PC)
             const breakpoints = 640; // 모바일 사이즈 분기점
             let windowWidth = window.innerWidth;
