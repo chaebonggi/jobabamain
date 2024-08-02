@@ -22,18 +22,22 @@
 .themaWrap .mainVisual .txtWrap .txt { color: #fff; font-size: 32px; line-height: 1.2; } 
 .themaWrap .titWrap { margin-bottom: 90px; text-align: center; } 
 .themaWrap .titWrap h3 { display: inline-block; } 
-.themaWrap .titWrap h3 img { width: 100%; } 
+.themaWrap .titWrap h3 img { width: 100%; max-width: 800px;} 
 .themaWrap .cont01 { background-image: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20240731/cont01_bg01.png), url(https://chaebonggi.github.io/jobabamain/html/thema/images/20240731/cont01_bg02.png); background-position: top left, bottom right; background-repeat: no-repeat; background-color: #fffef1; } 
 .themaWrap .cont01 .innerSection {max-width: 1000px; padding: 108px 0 180px; } 
 .themaWrap .swiperArea .slideTit { margin-bottom: 40px; text-align: center; } 
-.themaWrap .swiperArea .slideTit h4 { margin-bottom: 46px; font-size: 96px; line-height: 80px; text-shadow: 0px 0px 0px #000; word-break: keep-all; } 
-.themaWrap .swiperArea .slideTit ul { display: flex; max-width: 1000px; margin: 0 auto; padding: 26px 130px; background: #fff; border: 8px solid #ff8b87; border-radius: 100px; box-shadow: 0px 10px 10px 0px rgba(255, 96, 90, 0.1); flex-wrap: wrap; gap: 16px 0; } 
+.themaWrap .swiperArea .slideTit h4 { margin-bottom: 40px; font-size: 70px; line-height: 70px; text-shadow: 0px 0px 0px #000; word-break: keep-all; } 
+.themaWrap .swiperArea .slideTit .infoList {max-width: 850px; margin: 0 auto; padding: 20px 10px; background: #fff; border: 6px solid #ff8b87; border-radius: 40px; box-shadow: 0px 10px 10px 0px rgba(255, 96, 90, 0.1); }
+.themaWrap .swiperArea .slideTit ul { display: flex; max-width: 650px; margin: 0 auto; flex-wrap: wrap; gap: 10px 0;} 
 .themaWrap .swiperArea .slideTit ul li { display: flex; width: 50%; align-items: center; } 
-.themaWrap .swiperArea .slideTit li strong { display: flex; min-width: 95px; height: 40px; padding-top: 4px; margin-right: 20px; background: #f0f0f0; color: #ff5750; font-size: 24px; border-radius: 10px; align-items: center; justify-content: center; } 
-.themaWrap .swiperArea .slideTit li p { color: #000; font-size: 28px; text-align: left; } 
-.themaWrap .swiperArea + .swiperArea { margin-top: 110px; } 
-.themaWrap .swiperArea .slideItem { position: relative; padding: 0 80px 56px; } 
-.themaWrap .swiperArea .slideItem li { padding: 20px; background: #fefefe; border: 10px solid #ffc9c7; border-radius: 50px; box-sizing: border-box; } 
+.themaWrap .swiperArea .slideTit li strong { display: flex; min-width: 95px; height: 35px; padding-top: 4px; margin-right: 20px; background: #f0f0f0; color: #ff5750; font-size: 22px; border-radius: 10px; align-items: center; justify-content: center; } 
+.themaWrap .swiperArea .slideTit li p { color: #000; font-size: 24px; text-align: left; } 
+.themaWrap .swiperArea + .swiperArea { margin-top: 80px; } 
+.themaWrap .swiperArea .slideItem { position: relative; padding: 0 80px 50px; } 
+.themaWrap .swiperArea .slideItem .swiper-container {
+    max-width: 700px;
+}
+.themaWrap .swiperArea .slideItem li { padding: 5px; background: #fefefe; border: 8px solid #ffc9c7; border-radius: 40px; box-sizing: border-box; } 
 .themaWrap .swiperArea .slideItem li .txtWrap { min-height: 760px; padding: 50px 10px 0; box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1); border-radius: 30px; text-align: center; } 
 .themaWrap .swiperArea .slideItem li .txtWrap.bg01 { background: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20240731/slide_bg01.png) center bottom #fff no-repeat; } 
 .themaWrap .swiperArea .slideItem li .txtWrap.bg02 { background: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20240731/slide_bg02.png) center bottom 10px #fff no-repeat; } 
@@ -52,20 +56,21 @@
 .themaWrap .swiper-button-next:after, .themaWrap .swiper-container-rtl .swiper-button-prev:after,
 .themaWrap .swiper-button-prev:after, .themaWrap .swiper-container-rtl .swiper-button-next:after { content: none; } 
 .themaWrap .swiper-button-next,
-.themaWrap .swiper-button-prev { width: 34px; height: 83px; margin: 0; top: 50%; transform: translateY(-50%); } 
-.themaWrap .swiper-button-next { left: inherit !important; right: 0; background: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20240731/right_btn01.png) no-repeat; } 
-.themaWrap .swiper-button-prev { left: 0; background: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20240731/left_btn01.png) no-repeat; } 
+.themaWrap .swiper-button-prev { width: 34px; height: 83px; margin: 0; top: calc(50% - 50px); transform: translateY(-50%); } 
+.themaWrap .swiper-button-next { left: inherit !important; right: 50px; background: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20240731/right_btn01.png) no-repeat; } 
+.themaWrap .swiper-button-prev { left: 50px; background: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20240731/left_btn01.png) no-repeat; } 
 .themaWrap .swiper-pagination { left: 50%; bottom: 0; transform: translateX(-50%); } 
-.themaWrap .swiper-pagination-bullet { width: 20px; height: 20px; cursor: pointer; background: #fff; border: 2px solid #aeaeae; box-sizing: border-box; opacity: 1; } 
+.themaWrap .swiper-pagination-bullet { width: 16px; height: 16px; cursor: pointer; background: #fff; border: 2px solid #aeaeae; box-sizing: border-box; opacity: 1; } 
 .themaWrap .swiper-pagination-bullet + .swiper-pagination-bullet { margin-left: 10px; } 
 .themaWrap .swiper-pagination-bullet-active { background: #000; border-color: #000; } 
 .themaWrap .cont02 { background-image: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20240731/cont02_bg01.png), url(https://chaebonggi.github.io/jobabamain/html/thema/images/20240731/cont02_bg02.png); background-position: top left, bottom right; background-repeat: no-repeat; background-color: #f1faff; } 
-.themaWrap .cont02 .innerSection { padding: 220px 0 160px; } 
-.themaWrap .swiperArea.style02 .slideTit ul { padding: 26px 74px; border-color: #71b1ff; gap: 0; } 
+.themaWrap .cont02 .innerSection {max-width: 1000px; padding: 150px 0 160px; } 
+.themaWrap .swiperArea.style02 .slideTit .infoList {gap: 0; border-color: #71b1ff; gap: 0;}
+.themaWrap .swiperArea.style02 .slideTit ul {max-width: 726px;}
 .themaWrap .swiperArea.style02 .slideTit li { width: auto; align-items: initial; } 
 .themaWrap .swiperArea.style02 .slideTit li p { padding-top: 4px; word-break: keep-all; } 
 .themaWrap .swiperArea.style02 .slideItem li { border-color: #afd3ff; } 
-.themaWrap .swiperArea.style02 .slideTit li:nth-child(odd) { width: 320px; } 
+.themaWrap .swiperArea.style02 .slideTit li:nth-child(odd) { width: 280px; } 
 .themaWrap .swiperArea.style02 .slideTit li:nth-child(even) strong { min-width: 138px; } 
 .themaWrap .swiperArea.style02 .slideTit li strong { color: #2788ff; } 
 .themaWrap .swiperArea.style02 .slideItem li .txtWrap { min-height: 1000px; } 
@@ -151,13 +156,15 @@
 @media all and (max-width:1024px){
  .themaWrap .mainVisual .txtWrap { padding: 50px 10px 60px; text-align: center; } 
  .themaWrap .mainVisual .txtWrap::before { background-position: bottom left 60px; background-size: 150px auto; } 
- .themaWrap .swiperArea .slideTit ul { padding: 26px 56px; } 
  .themaWrap .swiperArea .slideItem { padding: 0 50px 56px; } 
  .themaWrap .swiperArea .slideItem li p { font-size: 26px; } 
  .themaWrap .swiperArea .slideItem li .txtWrap { min-height: 600px; background-size: 70% auto !important; } 
 
  .themaWrap .swiperArea.style02 .slideTit ul { flex-direction: column; gap: 8px 0; } 
 .themaWrap .swiperArea.style02 .slideTit ul li { width: 100%; } 
+.themaWrap .swiperArea.style02 .slideTit li:nth-child(odd) {
+    width: 100%;
+}
 .themaWrap .swiperArea.style02 .slideTit li strong { min-width: 120px !important; } 
 .themaWrap .swiperArea .slideTit li p br { display: none; } 
 .themaWrap .swiperArea .slideItem li .txtWrap.style02 strong { width: 150px; height: 50px; margin-bottom: 20px; padding-top: 6px; font-size: 26px; } 
@@ -180,7 +187,12 @@
 .themaWrap .cont03 .tabList li:nth-child(1).active::before { left: 60px; } 
 .themaWrap .cont03 .tabList02 p { font-size: 30px; } 
 .themaWrap .cont03 .tabList02 span { font-size: 20px; } 
-
+.themaWrap .swiper-button-prev {
+    left: 0;
+}
+.themaWrap .swiper-button-next {
+    right: 0;
+}
 
 
 }
@@ -195,7 +207,8 @@
  .themaWrap .titWrap h3 img { max-width: 480px; } 
  .themaWrap .titWrap { margin-bottom: 60px; } 
 .themaWrap .swiperArea .slideTit h4 { margin-bottom: 30px; font-size: 60px; line-height: 60px; } 
-.themaWrap .swiperArea .slideTit ul { max-width: 650px; padding: 20px 30px; flex-direction: column; border: 6px solid #ff8b87; border-radius: 40px; gap: 8px 0; } 
+.themaWrap .swiperArea .slideTit .infoList {max-width: 650px; padding: 20px 30px; border: 6px solid #ff8b87; border-radius: 40px; gap: 8px 0;}
+.themaWrap .swiperArea .slideTit ul {  flex-direction: column; } 
 .themaWrap .swiperArea .slideTit ul li { width: 100%; } 
 .themaWrap .swiperArea .slideTit li strong { margin-right: 20px; font-size: 20px; } 
 .themaWrap .swiperArea .slideTit li p { font-size: 22px; } 
@@ -211,7 +224,7 @@
 
 .themaWrap .cont02 { background-size: 200px auto; } 
 .themaWrap .cont02 .innerSection { padding: 60px 0 60px; } 
-.themaWrap .swiperArea.style02 .slideTit ul { padding: 20px 30px; border: 6px solid #71b1ff; } 
+.themaWrap .swiperArea.style02 .slideTit .infoList { padding: 20px 30px; border: 6px solid #71b1ff;}
 .themaWrap .swiperArea .slideItem li .txtWrap.style02 strong { width: 120px; height: 40px; margin-bottom: 10px; font-size: 20px; } 
 .themaWrap .swiperArea .slideItem li .txtWrap li::before { left: 0; } 
 .themaWrap .swiperArea .slideItem li .txtWrap li { padding-left: 26px; font-size: 20px; word-break: keep-all; } 
@@ -248,7 +261,8 @@
 .themaWrap .titWrap { margin-bottom: 20px; } 
 .themaWrap .swiperArea .slideTit { margin-bottom: 20px; } 
 .themaWrap .swiperArea .slideTit h4 { margin-bottom: 20px; font-size: 30px; line-height: 30px; } 
-.themaWrap .swiperArea .slideTit ul { padding: 20px 20px; border: 3px solid #ff8b87; border-radius: 20px; gap: 4px 0; } 
+.themaWrap .swiperArea .slideTit .infoList {padding: 20px 20px; border: 3px solid #ff8b87; border-radius: 20px; gap: 4px 0;}
+.themaWrap .swiperArea.style02 .slideTit .infoList {padding: 20px 20px; border: 3px solid #71b1ff; border-radius: 20px; gap: 4px 0;}
 .themaWrap .swiperArea .slideTit ul li { display: block; } 
 .themaWrap .swiperArea .slideTit li strong { min-width: 100%; height: 30px; padding-top: 0; margin-right: 0; margin-bottom: 10px; font-size: 14px; } 
 .themaWrap .swiperArea .slideTit li p { font-size: 14px; text-align: center; } 
