@@ -57,7 +57,7 @@
 </head>
 <body>
 <div id="page-content">
-	<section class="eventWrap">
+	<div class="eventWrap">
 		<article class="eventMain">
 			<div class="innerSection">
 				<div class="mainVisual">
@@ -74,9 +74,11 @@
 			</div>
 		</article>
 		<style>
+			.eventWrap .event02 {background: url(./images/eventImg/event04/ev02_bg.jpg) top center #ffe180 no-repeat;}
+			.eventWrap .event02 .innerSection {padding: 76px 0 65px;}
 			.eventWrap #gameContainer { width: 821px; height: 821px; text-align: center; margin: auto; position: relative; margin-top: 120px; zoom: 0.8; } 
-			.eventWrap #gameContainer .gameShadow::before { content: ''; width: 461px; height: 91px; position: absolute; bottom: -30px; left: 50%; transform: translateX(-50%); background: url(../resource/images/eventImg/event08/ev_bg.png) bottom center no-repeat; z-index: 1; } 
-			.eventWrap #gameContainer .cursor { position: absolute; background: url(../resource/images/eventImg/event08/ev_obj.png) no-repeat; width: 84px; height: 123px; top: -60px; left: 50%; transform: translateX(-50%); z-index: 999; } 
+			.eventWrap #gameContainer .gameShadow::before { content: ''; width: 804px; height: 384px; position: absolute; bottom: -30px; left: 50%; transform: translateX(-50%); background: url(./images/eventImg/event04/roulette02.png) bottom center no-repeat; z-index: 1; } 
+			.eventWrap #gameContainer .cursor {width: 67px; height: 107px; position: absolute; top: -30px; left: 50%; background: url(./images/eventImg/event04/ev_obj.png) no-repeat; transform: translateX(-50%); z-index: 999; } 
 			.eventWrap #gameContainer .board_on { width: 821px; height: 821px; position: relative; background: url(./images/eventImg/event04/roulette.png) no-repeat center; z-index: 2; background-size: contain;} 
 			.eventWrap #gameContainer .board_start { width: 235px; height: 235px;cursor: pointer; position: absolute; top: 50%; left: 50%; z-index: 55; transform: translate(-50%,-50%);} 
 			.eventWrap #gameContainer .board_on img { position:absolute; } 
@@ -88,12 +90,39 @@
 			.eventWrap #gameContainer .board_on img:nth-child(6) { right: 118px; top: 343px; transform: rotate(90deg);}
 			.eventWrap #gameContainer .board_on img:nth-child(7) { right: 200px; top: 170px; transform: rotate(45deg);}
 			.eventWrap #gameContainer .board_on img:nth-child(8) { left: 358px; top: 100px; }
+			.eventWrap .evTicket {text-align: center;}
+			.eventWrap .evTicket p {color: #000000; font-size: 28px;}
+			.eventWrap .evTicket p span {color: #ff5a00;}
+
+			/* 팝업 */
+			.eventWrap .shadow { background: rgba(0, 0, 0, 0.5); position: fixed; top: 0; left: 0; z-index: 9999; width: 100%; height: 100vh; display: none; } 
+			.eventWrap .ev_pop { position: fixed; background: #fff; top: 50%; left: 50%; transform: translate(-50%,-50%); z-index: 9999; border: 1px solid #000; border-radius: 10px; box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3); overflow: hidden; } 
+			.eventWrap .ev_pop.wd400 { max-width: 400px; width: 100%;}
+			.eventWrap .ev_pop.wd650 { max-width: 650px; width: 100%;}
+			.eventWrap .ev_pop .popup_inner { padding: 30px; text-align: center;} 
+			.eventWrap .btn_wrap { margin-top: 30px; text-align: center; } 
+			.eventWrap .ev_pop .btn_wrap a { font-size: 18px; padding: 7px 20px; } 
+			.eventWrap .ev_pop .btn_wrap a + a { margin-left: 10px } 
+			.eventWrap .ev_pop .btn_wrap .btn_blue { background: #1d407c !important } 
+			.eventWrap .ev_pop .btn_wrap .btn_gray { background: #dcdcdc; } 
+			.eventWrap .ev_pop .lottery_present img {margin-left: 80px; margin-bottom: 20px; } 
+			.eventWrap .ev_pop .lottery_present img + img { display: none; } 
+			.eventWrap .ev_pop .lottery_present .gift_end1 {margin-bottom: 10px;}
+			.eventWrap .ev_pop .lottery_present .gift_end1 strong { color: #ff5a00; font-size: 24px; font-weight: 700; } 
+			.eventWrap .ev_pop .lottery_present .gift_end1 strong.losing { color: #000;} 
+			.eventWrap .ev_pop .lottery_present .gift_end2 {color: #8d8d8d; font-size: 16px; letter-spacing: -1px;}
+			.eventWrap .ev_pop .lottery_present .gift_end2 span.losing { font-size: 20px;} 
+			.eventWrap .ev_pop#popup_deadline .txt {
+				color: #000;
+				font-size: 26px;
+				line-height: 1.5;
+			}
 		</style>
 		<article class="event02">
 			<div class="innerSection">
 				<div class="cont01">
 					<div class="evTicket">
-						<p class="">남은 행운송편: 0개</p>
+						<p>남은 참여권: <span class="gBold">0</span>개</p>
 					</div>
 					<div id="gameContainer">					
 						<a href="javascript:void(0)" onclick="" class="board_start startBtn">
@@ -112,7 +141,128 @@
 						</div>
 						<div class="gameShadow"></div>
 					</div>
-				</div>					
+				</div>
+				<div class="cont02">
+					<style>
+						.eventWrap .giftInfo {
+							max-width: 500px;
+							margin: 80px auto 0;
+							padding: 60px 30px 25px;
+							position: relative;
+							background: #fff;
+							border: 2px solid #a4e0ff;
+							border-radius: 30px;
+							text-align: center;
+							box-sizing: border-box;
+						}
+						.eventWrap .giftInfo .titWrap {
+							width: 100%;
+							max-width: 300px;
+							position: absolute;
+							top: -30px;
+							left: 50%;
+							transform: translateX(-50%);
+							background: #a4e0ff;
+							border-radius: 50px;
+						}
+						.eventWrap .giftInfo .titWrap::after {
+							content: '';
+							position: absolute; 
+							bottom: -16px;
+							left: 50%;
+							transform: translateX(-50%);
+							border-left: 9px solid transparent; 
+							border-right: 9px solid transparent; 
+							border-top: 16px solid #a4e0ff;
+						}
+						.eventWrap .giftInfo .titWrap p {
+							display: flex;
+							height: 60px;
+							color: #3c00ff;
+							font-size: 28px;
+							align-items: center;
+							justify-content: center;
+						}
+						.eventWrap .giftInfo table {
+							width: 100%;
+							background: #fff;
+						}
+						.eventWrap .giftInfo table th {
+							padding: 10px 0;
+							background: #ffd51e;
+							color: #000;
+							font-size: 18px;
+							font-weight: 700;
+						}
+						.eventWrap .giftInfo table td {
+							padding: 10px 0;
+							color: #000;
+							font-size: 16px;
+						}
+						.eventWrap .giftInfo table tbody tr:nth-child(even) {
+							background-color: #f5f5f5;
+						}
+					</style>
+					<!-- 당첨 내역 -->
+					<div class="giftInfo">
+						<div class="titWrap">
+							<p class="gBold">나의 룰렛 당첨 내역</p>
+						</div>
+						<table>
+							<caption>나의 룰렛 당첨내역</caption>
+							<colgroup>
+								<col width="20%">
+								<col width="*">
+								<col width="30%">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>NO.</th>
+									<th>당첨내역</th>
+									<th>당첨일</th>
+								</tr>
+								<!-- <tr>
+									<td colspan="3">당첨 내역이 없습니다.</td>
+								</tr>					 -->
+								<tr>
+									<td>1</td>
+									<td>바나나 우유</td>
+									<td>24.08.14</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>꽝</td>
+									<td>24.08.15</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>꽝</td>
+									<td>24.08.15</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td>바나나 우유</td>
+									<td>24.08.14</td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- 페이징 -->
+						<div class="paging">
+							<a href="javscript:void(0);">&lt;</a>
+							<a href="javscript:void(0);" class="current">1</a>
+							<a href="javscript:void(0);">2</a>
+							<a href="javscript:void(0);">3</a>
+							<a href="javscript:void(0);">4</a>
+							<a href="javscript:void(0);">5</a>
+							<a href="javscript:void(0);">&gt;</a>
+						</div>
+						<div class="mpaging">
+							<a href="javscript:void(0);">이전</a>
+							<span>1</span> / 15
+							<a href="javscript:void(0);">다음</a>
+						</div>
+					</div>					
+				</div>
 			</div>
 		</article>
 	
@@ -121,8 +271,7 @@
 			<div class="innerSection">
 				<h3>이벤트 참여 유의사항</h3>
 				<ul>
-					<li>이벤트에 응모하신 내용에 대한 소유권 및 사용권은 잡아바에 귀속되며 수정 &middot; 보완하여 사용할 수 있습니다.</li>
-					<li>본 이벤트는 중복 당첨이 불가합니다.</li>
+					<li>본 경품 소진 시까지 반복적으로 참여 가능합니다.</li>
 					<li>이벤트 응모 과정에서 부정한 방법을 사용한 것이 확인되는 경우 당첨이 취소될 수 있습니다.</li>
 					<li>경품은 사전공지 없이 유사 품목·가격대의 경품으로 대체될 수 있습니다.</li>
 					<li>개인정보 오기입으로 인한 경품 미수령 시 재발송되지 않습니다.</li>
@@ -130,12 +279,69 @@
 					<li>경품 지급시기는 사정에 따라 변경될 수 있으며, 이 경우 잡아바 홈페이지를 통해 공고합니다.</li>
 					<li>이벤트에 응모하는 경우 상기 내용에 모두 동의하는 것으로 간주합니다.</li>
 					<li>본 사이트의 이벤트는 경기도일자리재단의 위탁을 받아 ㈜인키움 에서 이벤트 운영, 관리합니다.</li>
-					<li>잡아바에서 진행하는 경품이벤트는 경기도일자리재단에서 주관 · 주최하는 이벤트로서 Apple의 경우 경품이벤트와 무관하며,<br> 어떠한 식으로든 관여하지 않습니다.</li>
+					<li>잡아바에서 진행하는 경품이벤트는 경기도일자리재단에서 주관 &middot; 주최하는 이벤트로서 Apple의 경우 경품이벤트와 무관하며,<br> 어떠한 식으로든 관여하지 않습니다. </li>
 				</ul>
 			</div>
 		</article>
-	</section>
 
+		<!-- 팝업창 -->
+		<div class="shadow"></div>
+		<div id="popup_gift" class="ev_pop wd400 fixed" style="display: none">
+			<div class="popup_inner">
+				<div class="lottery_present">
+					<p class="gift_end1"></p>
+					<p class="gift_end2"></p>
+				</div>
+				<div class="btn_wrap tct mt_20">
+					<a href="javascript:void(0)" class="btn_style04 btn_gray btn" onclick="closePopup()">닫기</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- 미참여 이벤트가 있는 경우 출력 -->
+		<div id="popup_more_ticket" class="ev_pop wd400 fixed" style="display: none">
+			<div class="popup_inner">
+				<div>이벤트에 참여해 참여권을<br>
+					획득 후 룰렛을 돌려주세요.
+				</div>
+				<div class="btn_wrap tct mt_20">
+					<a href="javascript:void(0)" class="btn_style04 btn_gray btn" onclick="closePopup()">닫기 </a>
+				</div>
+			</div>
+		</div>
+		<!-- //미참여 이벤트가 있는 경우 출력 -->
+
+		<!-- 응모권 없을 때 출력 -->
+		<div id="popup_no_ticket" class="ev_pop wd400 fixed" style="display: none">
+			<div class="popup_inner">
+				<div class="f18 tct">이미 행운송편을 모두<br>
+					사용하였습니다. 이벤트 참여에<br>
+					감사드립니다.
+				</div>
+				<div class="btn_wrap tct mt_20">
+					<a href="javascript:void(0)" class="btn_style04 btn_gray btn" onclick="closePopup()">닫기 </a>
+				</div>
+			</div>
+		</div>
+		<!-- //응모권 없을 때 출력 -->
+
+		<!-- 이벤트 마감 출력 -->
+		<div id="popup_deadline" class="ev_pop wd650 fixed" style="display: none">
+			<div class="popup_inner">
+				<p class="txt">준비된 경품이 모두 소진되어<br>
+					<span class="gBold">잡아바 MISSION 수행 이벤트는 종료되었습니다.</span><br>
+					성원에 감사드립니다.
+				</p>
+				<div class="btn_wrap tct mt_20">
+					<a href="javascript:void(0)" class="btn_style04 btn_gray btn" onclick="closePopup()">닫기 </a>
+				</div>
+			</div>
+
+		</div>
+		<!-- //이벤트 마감 출력 -->
+		<!-- //팝업창-->
+	</div>
+	
 
 </div>
 
@@ -151,12 +357,12 @@
 		// 	$(".board_on").append('<img  src="' + pictures + '" />');
 		// }
 		$(".eventWrap .startBtn").on("mousedown", function() {
-			iniGame(Math.floor(Math.random() * 7));
+			iniGame(Math.floor(Math.random() * 8));
 		});
 		
 	});
 	var gift;
-	var present = ['네이버 페이 30,000원', '교촌 치킨세트', '맘스터치 햄버거 세트', 'CU상품권 3,000원', '바나나 우유', '비타 500', '꽝']
+	var present = ['네이버 페이 30,000원권', '교촌 치킨세트', '맘스터치 햄버거 세트', '스타벅스 아메리카노', 'CU상품권 3,000원', '바나나 우유', '비타 500', '꽝']
 	var clicked = 0;
 	var rotationPos = new Array(45, 90, 135, 180, 225, 270, 315, 360);
 
@@ -168,7 +374,7 @@
 				rotation: rotationPos[gift]
 			}
 		});
-		TweenLite.from($(".board_on"), 6, {
+		TweenLite.from($(".board_on"), 1, {
 			css: {
 				rotation: -3000
 			},
@@ -177,15 +383,25 @@
 	}
 
 	function endGame() {
-		var copImg = "./resource/images/eventImg/event08/gift_icon0" + (gift + 1) + ".png";
-		$("#popup_gift .lottery_present .gift_end1").text(function() {
-			return "축하합니다."
-			});
+		if (gift === 7) { 
+			$('<img src="./images/eventImg/event04/gift02.png" />').prependTo("#popup_gift .lottery_present");
+			$("#popup_gift .lottery_present .gift_end1").html('<strong class="losing">정말 아쉬워요!</strong>');
+			$("#popup_gift .lottery_present .gift_end2").html('<span class="losing">다음 기회에 다시 도전해주세요!</span>');
+			
+		} else {
+			$('<img src="./images/eventImg/event04/gift01.png" />').prependTo("#popup_gift .lottery_present");
+			$("#popup_gift .lottery_present .gift_end1").html("<strong>" + present[gift] + "</strong>");
+			$("#popup_gift .lottery_present .gift_end2").html("경품은 이벤트 종료 후,<br> 8월 27일(화) 기프트콘으로 일괄 지급 예정입니다.");
+			
+		}
+		// $("#popup_gift .lottery_present .gift_end1").text(function() {
+		// 	return "축하합니다."
+		// 	});
 
-		$("#popup_gift .lottery_present .gift_end2").html(function() {
-			return "<strong>" + present[gift] + "</strong>" + " 에 당첨 되었습니다.";
-		});
-		$('<img  src="' + copImg + '" />').prependTo("#popup_gift .lottery_present");
+		// $("#popup_gift .lottery_present .gift_end2").html(function() {
+		// 	return "<strong>" + present[gift] + "</strong>" + " 에 당첨 되었습니다.";
+		// });
+		// $('<img  src="./images/eventImg/event04/gift01.png" />').prependTo("#popup_gift .lottery_present");
 		setTimeout(function() {
 			openPopup("popup_gift");
 		}, 1000);
