@@ -58,18 +58,496 @@
 <body>
 <div id="page-content">
 	<div class="eventWrap">
+		<style>
+			.eventWrap .eventMain {
+				position: relative;
+				background-image: url(./images/eventImg/event04/main_bg02.png), url(./images/eventImg/event04/main_bg01.png);
+				background-repeat: no-repeat;
+				background-position: center bottom -25px, top center;
+			    background-position-x: calc(50% - 40px), center;
+			}
+			.eventWrap .eventMain .innerSection {
+				padding-top: 65px;
+			}
+			.eventWrap .eventMain::after {
+				content: '';
+				width: 100%;
+				height: 94px;
+				position: absolute;
+				bottom: 0;
+				background: url(./images/eventImg/event04/main_bg03.png) center no-repeat;				
+			}
+			.eventWrap .eventMain .mainVisual {
+				margin-bottom: 30px;
+				text-align: center;
+			}
+			.eventWrap .eventMain h2 {
+				display: inline-block;
+			}
+			.eventWrap .eventMain h2 img {
+				width: 100%;
+			}
+			.eventWrap .eventMain .evInfo {
+				width: 900px;
+				height: 350px;
+				margin: 0 auto;
+				padding-top: 80px;
+				position: relative;
+				background: url(./images/eventImg/event04/main_item01.png) no-repeat;
+				background-size: cover;
+			}
+			.eventWrap .eventMain .evInfo::before {
+				content: '';
+				width: 200px;
+				height: 224px;
+				position: absolute;
+				top: -153px;
+    			left: -49px;
+				background: url(./images/eventImg/event04/main_info01.png) no-repeat;
+			}
+			.eventWrap .eventMain .evInfo::after {
+				content: '';
+				width: 244px;
+				height: 230px;
+				position: absolute;
+				top: -94px;
+				right: -86px;
+				background: url(./images/eventImg/event04/main_info02.png) no-repeat;
+			}			
+			.eventWrap .eventMain .evInfo .txt {
+				margin-bottom: 25px;
+				color: #000;
+				font-size: 24px;
+				letter-spacing: -1px;
+				text-align: center;
+			}
+			.eventWrap .eventMain .evInfo .txt span {
+				color: #3c00ff;
+			}
+			.eventWrap .eventMain .evInfo ul {
+				max-width: 730px;
+				margin: 0 auto;
+			}
+			.eventWrap .eventMain .evInfo li {
+				display: flex;
+				align-items: center;
+			}
+			.eventWrap .eventMain .evInfo li + li {
+				margin-top: 10px;
+			}
+			.eventWrap .eventMain .evInfo li strong {
+				display: inline-flex;
+				width: 130px;
+				height: 40px;
+				margin-right: 16px;
+				padding-top: 4px;
+				background: #3c00ff;
+				color: #fff;
+				font-size: 18px;
+				border-radius: 30px;
+				align-items: center;
+				justify-content: center;
+			}
+			.eventWrap .eventMain .evInfo li p {
+				color: #000;
+				font-size: 24px;
+			}
+			.eventWrap .eventMain .evInfo li p span {
+				color: #3c00ff;
+				font-size: 30px;
+			}
+		</style>
 		<article class="eventMain">
 			<div class="innerSection">
 				<div class="mainVisual">
-					<h2><img src="./images/eventImg/event03/main_tit.png" alt="취업성공 축하이벤트"></h2>
-				</div>			
+					<h2><img src="./images/eventImg/event04/main_tit.png" alt="잡아바 mission 수행이벤트"></h2>
+				</div>		
+				<div class="evInfo">
+					<p class="txt gBold">잡아바에서 <span class="gBold">취업 역량도 강화</span>하고 <span class="gBold">경품 당첨의 행운</span>까지 잡아보세요!!</p>
+					<ul>
+						<li>
+							<strong>이벤트 기간</strong>
+							<p>2024년 <span class="gBold">8</span>월 <span class="gBold">12</span>일(월) ~ <span class="gBold">8</span>월 <span class="gBold">25</span>일(일) / 14일간 진행</p>
+						</li>
+						<li>
+							<strong>당첨자 발표</strong>
+							<p>2024년 8월 27일(화)</p>
+						</li>
+					</ul>
+				</div>	
 			</div>	 
 		</article>
-		
+		<style>
+			.eventWrap .event01 {
+				background: url(./images/eventImg/event04/ev01_bg.png) center #fff no-repeat;
+			}
+			.eventWrap .event01 .innerSection {
+				padding-top: 60px;
+			}
+			.eventWrap .event01 .infoBox {
+				padding: 90px 60px 40px;
+				position: relative;
+				border: 1px solid #000;
+				border-radius: 50px;
+			}
+			.eventWrap .event01 .infoBox + .infoBox {
+				margin-top: 125px;
+			}
+			.eventWrap .event01 .infoBox .titWrap {				
+				position: absolute;
+				top: -45px;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+			.eventWrap .event01 .infoBox.list01 ul {
+				display: flex;
+				margin-bottom: 40px;
+				flex-wrap: wrap;
+				justify-content: center;
+				gap: 10px 0;
+			}
+			.eventWrap .event01 .infoBox.list01 li:nth-child(1) > div {
+				margin-right: -20px;
+			}
+			.eventWrap .event01 .infoBox.list01 li:nth-child(3) > div {
+				margin-left: -20px;
+			}
+			.eventWrap .event01 .infoBox.list01 li:nth-child(-n+3) {
+				width: 30%;
+			}
+			.eventWrap .event01 .infoBox.list01 li:nth-child(n+4) {
+				width: 22%;
+			}
+			.eventWrap .event01 .infoBox.list01 li > div {
+				width: 160px;
+				height: 160px;
+				padding-top: 28px;
+				margin: 0 auto;
+				position: relative;
+				border: 2px solid #ffd51e;
+				border-radius: 50%;
+				box-sizing: border-box;
+			}
+			.eventWrap .event01 .infoBox.list01 li > div::before {				
+				display: flex;
+				width: 75px;
+				height: 39px;
+				padding-top: 2px;
+				position: absolute;
+				top: -16px;
+				left: 50%;
+				transform: translateX(-50%);
+				background: url(./images/eventImg/event04/ev01_list_bg.png) no-repeat;
+				color: #000;
+				font-size: 18px;
+				align-items: center;
+				justify-content: center;
+				letter-spacing: -1px;				
+			}
+			.eventWrap .event01 .infoBox.list01 li:nth-child(1) > div::before {
+				content: '5명';
+			}
+			.eventWrap .event01 .infoBox.list01 li:nth-child(2) > div::before {
+				content: '10명';
+			}
+			.eventWrap .event01 .infoBox.list01 li:nth-child(3) > div::before {
+				content: '20명';
+			}
+			.eventWrap .event01 .infoBox.list01 li:nth-child(4) > div::before {
+				content: '50명';
+			}
+			.eventWrap .event01 .infoBox.list01 li:nth-child(5) > div::before {
+				content: '100명';
+			}
+			.eventWrap .event01 .infoBox.list01 li:nth-child(6) > div::before {
+				content: '300명';
+			}
+			.eventWrap .event01 .infoBox.list01 li:nth-child(7) > div::before {
+				content: '800명';
+			}
+			.eventWrap .event01 .infoBox.list01 li .imgWrap {
+				display: flex;
+				height: 74px;
+				margin-bottom: 2px;
+				align-items: center;
+				justify-content: center;
+				overflow: hidden;
+			}
+			.eventWrap .event01 .infoBox.list01 li:nth-child(n+4) .imgWrap img {
+				padding-top: 2px;
+			}
+			.eventWrap .event01 .infoBox.list01 li p {
+				color: #000;
+				font-size: 16px;
+				text-align: center;
+				line-height: 1.1;
+			}
+			.eventWrap .event01 .infoBox.list01 .etc {
+				display: flex;
+				width: 420px;
+				height: 36px;
+				padding-top: 2px;
+				margin: 0 auto;
+				background: #e9e9e9;
+				color: #000;
+				font-size: 16px;
+				letter-spacing: -1px;
+				align-items: center;
+				justify-content: center;
+				border-radius: 30px;
+			}
+		</style>
 		<article class="event01">
 			<div class="innerSection">
 				<div class="cont01">
-					
+					<div class="infoBox list01">
+						<div class="titWrap">
+							<img src="./images/eventImg/event04/info_tit01.png" alt="이벤트 경품">
+						</div>
+						<ul>
+							<li>
+								<div>
+									<div class="imgWrap">
+										<img src="./images/eventImg/event04/ev01_list01.png" alt="네이버페이 30,000원권">
+									</div>
+									<p class="gBold">네이버페이<br> 30,000원권</p>
+								</div>
+							</li>
+							<li>
+								<div>
+									<div class="imgWrap">
+										<img src="./images/eventImg/event04/ev01_list02.png" alt="교촌치킨 세트">
+									</div>
+									<p class="gBold">교촌치킨<br> 세트</p>
+								</div>
+							</li>
+							<li>
+								<div>
+									<div class="imgWrap">
+										<img src="./images/eventImg/event04/ev01_list03.png" alt="맘스터치 햄버거 세트">
+									</div>
+									<p class="gBold">맘스터치<br> 햄버거 세트</p>
+								</div>
+							</li>
+							<li>
+								<div>
+									<div class="imgWrap">
+										<img src="./images/eventImg/event04/ev01_list04.png" alt="스타벅스 아메리카노">
+									</div>
+									<p class="gBold">스타벅스<br> 아메리카노</p>
+								</div>
+							</li>
+							<li>
+								<div>
+									<div class="imgWrap">
+										<img src="./images/eventImg/event04/ev01_list05.png" alt="cu상품권 3,000원권">
+									</div>
+									<p class="gBold">CU상품권<br> 3,000원권</p>
+								</div>
+							</li>
+							<li>
+								<div>
+									<div class="imgWrap">
+										<img src="./images/eventImg/event04/ev01_list06.png" alt="바나나우유">
+									</div>
+									<p class="gBold">바나나우유</p>
+								</div>
+							</li>
+							<li>
+								<div>
+									<div class="imgWrap">
+										<img src="./images/eventImg/event04/ev01_list07.png" alt="비타 500">
+									</div>
+									<p class="gBold">비타 500</p>
+								</div>
+							</li>
+						</ul>
+						<p class="etc">※ 준비된 경품 소진 시 이벤트는 조기 마감될 수 있습니다.</p>
+					</div>					
+					<div class="infoBox list02">
+						<style>
+							.eventWrap .event01 .infoBox.list02 .txtWrap {
+								margin-bottom: 60px;
+							}
+							.eventWrap .event01 .infoBox.list02 .txt01 {
+								margin-bottom: 4px;
+								color: #000;
+								font-size: 36px;
+								text-align: center;
+							}
+							.eventWrap .event01 .infoBox.list02 .txt01 span {
+								color: #3c00ff;
+							}
+							.eventWrap .event01 .infoBox.list02 .txt02 {
+								color: #000;
+								font-size: 26px;
+								text-align: center;
+							}
+							.eventWrap .event01 .infoBox.list02 .txt03 {
+								display: flex;
+								width: 578px;
+								height: 56px;
+								padding-left: 80px;
+								padding-top: 4px;
+								margin: 30px auto 0;
+								background: url(./images/eventImg/event04/ev01_list02_icon01.png) left 20px bottom #e9e9e9 no-repeat;
+								color: #ff4800;
+								font-size: 22px;
+								letter-spacing: -1px;
+								border-radius: 10px;
+								align-items: center;
+							}
+							.eventWrap .event01 .infoBox.list02 ul {
+								display: flex;
+								gap: 0 20px;
+							}
+							.eventWrap .event01 .infoBox.list02 ul li {
+								width: 100%;
+							}
+							.eventWrap .event01 .infoBox.list02 ul a {
+								display: block;
+								height: 100%;
+								padding: 40px 10px 18px 24px;
+								position: relative;
+								border: 2px solid #20bae2;
+								border-radius: 20px;
+								box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.03);
+								box-sizing: border-box;
+							}
+							.eventWrap .event01 .infoBox.list02 ul .listTit {
+								width: 142px;								
+								position: absolute;
+								top: -18px;
+								left: 50%;
+								transform: translateX(-50%);
+								background: #20bae2;
+								border-radius: 50px;
+							}
+							.eventWrap .event01 .infoBox.list02 ul .listTit::after {
+								content: '';
+								position: absolute;
+								bottom: -14px;
+								left: 50%;
+								transform: translateX(-50%);
+								border-left: 8px solid transparent;
+								border-right: 8px solid transparent;
+								border-top: 14px solid #20bae2;
+							}
+							.eventWrap .event01 .infoBox.list02 ul .listTit p {
+								display: flex;
+								height: 36px;
+								color: #fff;
+								font-size: 14px;
+								align-items: center;
+								justify-content: center;
+							}							
+							.eventWrap .event01 .infoBox.list02 ul .listTxt p {
+								padding-left: 48px;
+								position: relative;
+								color: #000;
+								font-size: 18px;
+								letter-spacing: -1px;
+							}
+							.eventWrap .event01 .infoBox.list02 ul li .listTxt p::before {
+								content: '';
+								width: 38px;
+								height: 70px;
+								position: absolute;
+								left: 0;
+								bottom: 0;
+							}
+							.eventWrap .event01 .infoBox.list02 ul li:nth-child(1) .listTxt p::before {
+								background: url(./images/eventImg/event04/ev02_list02_icon02.png) no-repeat;
+							}
+							.eventWrap .event01 .infoBox.list02 ul li:nth-child(2) .listTxt p::before {
+								background: url(./images/eventImg/event04/ev02_list02_icon03.png) no-repeat;
+							}
+							.eventWrap .event01 .infoBox.list02 ul li:nth-child(3) .listTxt p::before {
+								background: url(./images/eventImg/event04/ev02_list02_icon04.png) no-repeat;
+							}
+							.eventWrap .event01 .infoBox.list02 ul .listTxt p strong {
+								display: block;
+								margin-bottom: 4px;
+								color: #20bae2;
+								font-size: 24px;								
+							}
+							.eventWrap .event01 .infoBox.list02 ul .listTxt p span {
+								color: #20bae2;
+							}
+							.eventWrap .event01 .infoBox.list02 ul .listBtn p {
+								display: flex;
+								width: 92px;
+								height: 30px;
+								padding-top: 4px;
+								margin: 16px auto 0;
+								background: #000000;
+								color: #fff;
+								font-size: 14px;
+								letter-spacing: -1px;
+								border-radius: 30px;
+								align-items: center;
+								justify-content: center;
+							}
+						</style>
+						<div class="titWrap">
+							<img src="./images/eventImg/event04/info_tit02.png" alt="이벤트 참여방법">
+						</div>
+						<div class="txtWrap">
+							<p class="gBold txt01"><span class="gBold">MISSION</span>을 수행하면 <span class="gBold">‘룰렛 참여권’</span>을 드립니다!</p>
+							<p class="txt02">룰렛을 돌려 경품을 죽시 확인해보세요!</p>
+							<p class="txt03">경품은 8월 27일(화) 기프티콘으로 일괄 발송됩니다.</p>
+						</div>
+						<ul>
+							<li>
+								<a href="">
+									<div class="listTit">
+										<p class="gBold">MISSION. 1</p>
+									</div>
+									<div class="listTxt">
+										<p>
+											<strong class="gBold">AI역량검사</strong>
+											룰렛 참여권 <span class="gBold">4개</span> 지급!
+										</p>
+									</div>
+									<div class="listBtn">
+										<p>바로가기 ▶</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<div class="listTit">
+										<p class="gBold">MISSION. 2</p>
+									</div>
+									<div class="listTxt">
+										<p>
+											<strong class="gBold">취업진로진단검사</strong>
+											룰렛 참여권 <span class="gBold">3개</span> 지급!
+										</p>
+									</div>
+									<div class="listBtn">
+										<p>바로가기 ▶</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<div class="listTit">
+										<p class="gBold">MISSION. 3</p>
+									</div>
+									<div class="listTxt">
+										<p>
+											<strong class="gBold">취업진단검사 4종</strong>
+											룰렛 참여권 <span class="gBold">1개</span> 지급!
+										</p>
+									</div>
+									<div class="listBtn">
+										<p>바로가기 ▶</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</article>
@@ -262,6 +740,292 @@
 							<a href="javscript:void(0);">다음</a>
 						</div>
 					</div>					
+				</div>
+			</div>
+		</article>
+		<article class="event03">
+			<style>
+				.eventWrap .event03 {
+					background: url(./images/eventImg/event04/ev03_bg.png) top center no-repeat;
+				}
+				.eventWrap .event03 .innerSection {
+					padding: 160px 0 100px;
+				}				
+				.eventWrap .event03 .itemBox {
+					display: flex;
+					padding: 50px 10px 40px 42px;					
+					background-position: left bottom 50px !important;
+					box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
+				}
+				.eventWrap .event03 .itemBox.box01 {
+					background: url(./images/eventImg/event04/ev03_item_bg01.png) #fff no-repeat;
+				}
+				.eventWrap .event03 .itemBox.box02 {
+					background: url(./images/eventImg/event04/ev03_item_bg02.png) #fff no-repeat;
+				}
+				.eventWrap .event03 .itemBox.box03 {
+					background: url(./images/eventImg/event04/ev03_item_bg03.png) #fff no-repeat;
+				}
+				.eventWrap .event03 .itemBox + .itemBox {
+					margin-top: 56px;
+				}
+				.eventWrap .event03 .itemBox .titWrap {
+					width: 260px;
+					margin-right: 26px;					
+				}
+				.eventWrap .event03 .itemBox.box01 .titWrap {
+					background: url(./images/eventImg/event04/ev03_item01.png) center bottom no-repeat;
+				}
+				.eventWrap .event03 .itemBox.box02 .titWrap {
+					background: url(./images/eventImg/event04/ev03_item02.png) center bottom no-repeat;
+				}
+				.eventWrap .event03 .itemBox.box03 .titWrap {
+					background: url(./images/eventImg/event04/ev03_item03.png) center bottom no-repeat;
+				}
+				.eventWrap .event03 .itemBox .titWrap p {
+					display: flex;
+					width: 145px;
+					height: 34px;
+					margin: 0 auto;
+					padding-top: 4px;
+					background: #000000;
+					color: #fff;
+					font-size: 18px;
+					align-items: center;
+					justify-content: center;
+
+				}
+				.eventWrap .event03 .itemBox .txtWrap .txt {
+					margin-bottom: 20px;
+					color: #868686;
+					font-size: 22px;
+					letter-spacing: -1px;
+				}
+				.eventWrap .event03 .itemBox .txtWrap .txt strong {
+					display: block;
+					color: #687aff;
+					font-size: 40px;
+				}
+				.eventWrap .event03 .itemBox .infoList {
+					margin-bottom: 30px;
+				}
+				.eventWrap .event03 .itemBox .infoList li {
+					display: flex;
+				}
+				.eventWrap .event03 .itemBox .infoList li + li {
+					margin-top: 10px;
+				}
+				.eventWrap .event03 .itemBox .infoList strong {
+					display: inline-flex;
+					width: 158px;
+					height: 36px;
+					margin-right: 15px;
+					padding-top: 4px;
+					background: #ececec;
+					color: #555555;
+					font-size: 18px;
+					align-items: center;
+					justify-content: center;
+				}
+				.eventWrap .event03 .itemBox .infoList p {
+					padding-top: 4px;
+					color: #000;
+					font-size: 22px;
+				}
+				.eventWrap .event03 .itemBox .infoList p span {
+					color: #687aff;
+				}
+				.eventWrap .event03 .itemBox .infoList p em {
+					font-size: 18px;
+				}
+				.eventWrap .event03 .itemBox .infoList p em span {
+					color: #ff0000;
+					font-size: 16px;
+				}
+				.eventWrap .event03 .itemBox .btnList {
+					display: flex;
+					max-width: 452px;
+					flex-wrap: wrap;
+					gap: 14px;
+				}
+				.eventWrap .event03 .itemBox .btnList li {
+					width: calc(100% / 2 - 7px);
+				}
+				.eventWrap .event03 .itemBox .btnList li a {
+					display: flex;
+					height: 56px;
+					padding-top: 4px;
+					background: #7078ff;
+					color: #fff;
+					font-size: 20px;
+					align-items: center;
+					justify-content: center;
+					border-radius: 30px;
+					border: 1px solid #000;
+					box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 1);
+					box-sizing: border-box;
+				}
+			</style>
+			<div class="innerSection">
+				<div class="cont01">
+					<div class="itemBox box01">
+						<div class="titWrap">
+							<p>MISSION. 1</p>
+						</div>
+						<div class="txtWrap">
+							<p class="txt">
+								<strong class="gBold">잡아바 AI 역량검사</strong>
+								지금껏 알지 못했던 나의 진짜 역량을 알아보자!
+							</p>
+							<ul class="infoList">
+								<li>
+									<strong>미션 수행 방법</strong>
+									<p><span>AI역량검사 완료</span>하면 참여권 지급</p>
+								</li>
+								<li>
+									<strong>참여권 지급 개수</strong>
+									<p><span>4개</span> <em>(검사 완료 후 익일 오전 4:00에 참여권 지급)</em></p>
+								</li>
+							</ul>
+							<ul class="btnList">
+								<li>
+									<a href=""><p class="gBold">바로가기 →</p></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="itemBox box02">
+						<div class="titWrap">
+							<p>MISSION. 2</p>
+						</div>
+						<div class="txtWrap">
+							<p class="txt">
+								<strong class="gBold">취업진로진단검사</strong>
+								나에게 적합한 진로, 직업, 직무가 고민이라면? 지금 바로 신청하세요
+							</p>
+							<ul class="infoList">
+								<li>
+									<strong>미션 수행 방법</strong>
+									<p><span>취업진로진단검사 완료</span>하면 참여권 지급</p>
+								</li>
+								<li>
+									<strong>참여권 지급 개수</strong>
+									<p><span>3개</span> <em>(검사 완료 후 즉시 지급)</em></p>
+								</li>
+							</ul>
+							<ul class="btnList">
+								<li>
+									<a href=""><p class="gBold">바로가기 →</p></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="itemBox box03">
+						<div class="titWrap">
+							<p>MISSION. 3</p>
+						</div>
+						<div class="txtWrap">
+							<p class="txt">
+								<strong class="gBold">취업진단검사 4종</strong>
+								자가 취업역량진단을 통해 취업가능성을 높여보세요!
+							</p>
+							<ul class="infoList">
+								<li>
+									<strong>미션 수행 방법</strong>
+									<p><span>직업선호도, 취업준비도, 취업가능성,<br>
+										NCS직업역량진단검사 완료</span>하면 참여권 지급</p>
+								</li>
+								<li>
+									<strong>참여권 지급 개수</strong>
+									<p><span>1개</span> <em>(검사 완료 후 즉시 지급)<br> <span>※ 4개 진단 모두 완료해야만 참여권 지급</span></em></p>
+								</li>
+							</ul>
+							<ul class="btnList">
+								<li>
+									<a href=""><p class="gBold">직업선호도 →</p></a>
+								</li>
+								<li>
+									<a href=""><p class="gBold">취업준비도 →</p></a>
+								</li>
+								<li>
+									<a href=""><p class="gBold">취업가능성 →</p></a>
+								</li>
+								<li>
+									<a href=""><p class="gBold">NCS직업역량진단 →</p></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="infoWrap">
+						<style>
+							.eventWrap .event03 .infoWrap {
+								margin-top: 110px;
+								padding: 40px 10px;
+								position: relative;
+								background: #fff840;
+								border-radius: 30px;
+								box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
+							}
+							.eventWrap .event03 .infoWrap::before {
+								content: '';
+								position: absolute;
+								top: 50%;
+								left: 50%;
+								transform: translate(-50%, -50%);
+								width: calc(100% - 10px);
+								height: calc(100% - 10px);
+								background: url(./images/eventImg/event04/ev03_list01.png) left 28px top 40px #fff no-repeat;
+								border: 2px dashed #000;
+								border-radius: 30px;
+								box-sizing: border-box;
+								z-index: 1;
+							}
+							.eventWrap .event03 .infoWrap p {
+								color: #000;
+								font-size: 22px;
+							}
+							.eventWrap .event03 .infoWrap p span {
+								color: #ff0000;
+							}
+							.eventWrap .event03 .infoWrap p em {
+								font-size: 18px;
+							}
+							.eventWrap .event03 .infoWrap ul {
+								padding-left: 164px;
+								position: relative;
+								z-index: 2;
+							}
+							.eventWrap .event03 .infoWrap ul li {
+								padding-left: 26px;
+								position: relative;
+								letter-spacing: -1px;
+							}
+							.eventWrap .event03 .infoWrap ul li + li {
+								margin-top: 18px;
+							}
+							.eventWrap .event03 .infoWrap ul li::before {
+								content: '';
+								width: 21px;
+								height: 21px;
+								position: absolute;
+								left: 0;
+								top: 2px;
+								background: url(./images/eventImg/event04/ev03_list02.png) no-repeat;
+							}
+						</style>
+						<ul>
+							<li>
+								<p>본 이벤트는 경품 소진 시까지 룰렛 참여권 획득 후, <span class="gBold">반복적으로 참여 가능합니다.</span></p>
+							</li>
+							<li>
+								<p><span class="gBold">MISSION 별로 1일 최대 이용권 지급 횟수는 3회</span>입니다.<br>
+									<em>(1일 최대 룰렛 이용권 지급 개수 : AI역량검사 12개 / 취업진로진단검사 9개 / 취업진단검사 4종 3개)</em></p>
+							</li>
+							<li>
+								<p>경품 소진 시, <span class="gBold">보유한 룰렛 참여권은 소멸</span>됩니다.</p>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</article>
