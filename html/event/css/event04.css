@@ -86,45 +86,45 @@
 .eventWrap .evTicket p { color: #000000; font-size: 28px; } 
 .eventWrap .evTicket p span { color: #ff5a00; } 
 
-.eventWrap .giftInfo { max-width: 500px; margin: 80px auto 0; padding: 60px 30px 25px; position: relative; background: #fff; border: 2px solid #a4e0ff; border-radius: 30px; text-align: center; box-sizing: border-box; } 
-.eventWrap .giftInfo .titWrap { width: 100%; max-width: 300px; position: absolute; top: -30px; left: 50%; transform: translateX(-50%); background: #a4e0ff; border-radius: 50px; } 
-.eventWrap .giftInfo .titWrap::after { content: ''; position: absolute; bottom: -16px; left: 50%; transform: translateX(-50%); border-left: 9px solid transparent; border-right: 9px solid transparent; border-top: 16px solid #a4e0ff; } 
-.eventWrap .giftInfo .titWrap p { display: flex; height: 60px; color: #3c00ff; font-size: 28px; align-items: center; justify-content: center; } 
+.eventWrap .giftInfo { max-width: 400px; margin: 80px auto 0; position: relative; background: #fff; border: 1px solid #000; border-radius: 10px; text-align: center; box-sizing: border-box; box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3); overflow: hidden; } 
+.eventWrap .giftInfo .titWrap { width: 100%; height: 88px; background: #fff1ac; border-bottom: 1px solid #000; } 
+.eventWrap .giftInfo .titWrap p { display: flex; height: 100%; padding-top: 6px; color: #000; font-size: 30px; align-items: center; justify-content: center; justify-content: center; } 
 .eventWrap .giftInfo table { width: 100%; margin-bottom: 30px; background: #fff; } 
-.eventWrap .giftInfo table th { padding: 10px 0; background: #ffd51e; color: #000; font-size: 18px; font-weight: 700; } 
-.eventWrap .giftInfo table td { padding: 10px 0; color: #000; font-size: 16px; } 
-.eventWrap .giftInfo table tbody tr:nth-child(even) { background-color: #f5f5f5; } 
+.eventWrap .giftInfo table th { padding: 16px 0; background: #e2e2e2; color: #000; font-size: 18px; border-bottom: 1px solid #cacaca; } 
+.eventWrap .giftInfo table td { padding: 16px 0; color: #000; font-size: 18px; border-bottom: 1px solid #cacaca; } 
 
 .eventWrap .event03 { background: url(../images/eventImg/event04/ev03_bg.jpg) top center #F6DCC4 no-repeat; } 
 .eventWrap .event03 .innerSection { padding: 160px 0 100px; } 
-.eventWrap .event03 .itemBox { display: flex; padding: 50px 10px 40px 42px; background-position: left bottom 50px !important; box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1); } 
+.eventWrap .event03 .itemBox { display: flex; padding: 50px 50px 10px 42px; background-position: left bottom 50px !important; box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1); align-items: flex-start; } 
 .eventWrap .event03 .itemBox.box01 { background: url(../images/eventImg/event04/ev03_item_bg01.png) #fff no-repeat; } 
 .eventWrap .event03 .itemBox.box02 { background: url(../images/eventImg/event04/ev03_item_bg02.png) #fff no-repeat; } 
 .eventWrap .event03 .itemBox.box03 { background: url(../images/eventImg/event04/ev03_item_bg03.png) #fff no-repeat; } 
 .eventWrap .event03 .itemBox + .itemBox { margin-top: 56px; } 
-.eventWrap .event03 .itemBox .titWrap { width: 260px; margin-right: 26px; } 
-.eventWrap .event03 .itemBox.box01 .titWrap { background: url(../images/eventImg/event04/ev03_item01.png) center bottom no-repeat; } 
-.eventWrap .event03 .itemBox.box02 .titWrap { background: url(../images/eventImg/event04/ev03_item02.png) center bottom no-repeat; } 
-.eventWrap .event03 .itemBox.box03 .titWrap { background: url(../images/eventImg/event04/ev03_item03.png) center bottom no-repeat; } 
+.eventWrap .event03 .itemBox .titWrap { width: 260px; margin-right: 20px; flex-shrink: 0; } 
+.eventWrap .event03 .itemBox.box01 .titWrap { height: 230px; margin-bottom: 30px; background: url(../images/eventImg/event04/ev03_item01.png) center bottom no-repeat; } 
+.eventWrap .event03 .itemBox.box02 .titWrap { height: 236px; margin-bottom: 20px; background: url(../images/eventImg/event04/ev03_item02.png) center bottom no-repeat; } 
+.eventWrap .event03 .itemBox.box03 .titWrap { height: 320px; margin-bottom: 30px; background: url(../images/eventImg/event04/ev03_item03.png) center bottom no-repeat; } 
 .eventWrap .event03 .itemBox .titWrap p { display: flex; width: 145px; height: 34px; margin: 0 auto; padding-top: 4px; background: #000000; color: #fff; font-size: 18px; align-items: center; justify-content: center; } 
 .eventWrap .event03 .itemBox .txtWrap .txt { margin-bottom: 20px; color: #868686; font-size: 22px; letter-spacing: -1px; } 
-.eventWrap .event03 .itemBox .txtWrap .txt strong { display: block; color: #687aff; font-size: 40px; } 
-.eventWrap .event03 .itemBox .infoList { margin-bottom: 30px; } 
+.eventWrap .event03 .itemBox .txtWrap .txt strong { display: block; margin-bottom: 10px; color: #687aff; font-size: 40px; line-height: 1; } 
 .eventWrap .event03 .itemBox .infoList li { display: flex; } 
 .eventWrap .event03 .itemBox .infoList li + li { margin-top: 10px; } 
 .eventWrap .event03 .itemBox .infoList strong { display: inline-flex; width: 158px; height: 36px; margin-right: 15px; padding-top: 4px; background: #ececec; color: #555555; font-size: 18px; align-items: center; justify-content: center; } 
-.eventWrap .event03 .itemBox .infoList p { padding-top: 4px; color: #000; font-size: 22px; } 
+.eventWrap .event03 .itemBox .infoList p { color: #000; font-size: 22px; letter-spacing: -1px; } 
 .eventWrap .event03 .itemBox .infoList p span { color: #687aff; } 
 .eventWrap .event03 .itemBox .infoList p em { font-size: 18px; } 
 .eventWrap .event03 .itemBox .infoList p em span { color: #ff0000; font-size: 16px; } 
-.eventWrap .event03 .itemBox .btnList { display: flex; max-width: 452px; flex-wrap: wrap; gap: 14px; } 
-.eventWrap .event03 .itemBox .btnList li { width: calc(100% / 2 - 7px); } 
-.eventWrap .event03 .itemBox .btnList li a { display: flex; height: 56px; padding-top: 4px; background: #7078ff; color: #fff; font-size: 20px; align-items: center; justify-content: center; border-radius: 30px; border: 1px solid #000; box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 1); box-sizing: border-box; } 
+.eventWrap .event03 .itemBox .txtWrap { position: relative; width: 100%; } 
+.eventWrap .event03 .itemBox .btnList { position: absolute; right: 0; bottom: 0; } 
+.eventWrap .event03 .itemBox .btnList a { display: inline-block; padding: 10px 18px 2px 10px; position: relative; color: #7078ff; font-size: 20px; text-align: center; } 
+.eventWrap .event03 .itemBox .btnList a::before { content: ''; width: 100%; height: 14px; position: absolute; bottom: 0; right: 0; background: url(../images/eventImg/event04/btn_img.png) bottom right no-repeat; } 
+.eventWrap .event03 .itemBox.box03 .btnList { display: flex; margin-top: 30px; position: static; justify-content: space-between; gap: 0 5px; } 
+
 .eventWrap .event03 .infoWrap { margin-top: 110px; padding: 40px 10px; position: relative; background: #fff840; border-radius: 30px; box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1); } 
 .eventWrap .event03 .infoWrap::before { content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: calc(100% - 10px); height: calc(100% - 10px); background: url(../images/eventImg/event04/ev03_list01.png) left 28px top 40px #fff no-repeat; border: 2px dashed #000; border-radius: 30px; box-sizing: border-box; z-index: 1; } 
 .eventWrap .event03 .infoWrap p { color: #000; font-size: 22px; word-break: keep-all; } 
 .eventWrap .event03 .infoWrap p span { color: #ff0000; } 
-.eventWrap .event03 .infoWrap p em { font-size: 18px; } 
+.eventWrap .event03 .infoWrap p em { font-size: 18px; font-weight: 300; } 
 .eventWrap .event03 .infoWrap ul { padding-left: 164px; position: relative; z-index: 2; } 
 .eventWrap .event03 .infoWrap ul li { padding-left: 26px; position: relative; letter-spacing: -1px; } 
 .eventWrap .event03 .infoWrap ul li + li { margin-top: 18px; } 
@@ -154,7 +154,7 @@
 .eventWrap .evFooter .innerSection { padding: 70px 0; } 
 .eventWrap .evFooter h3 { margin-bottom: 10px; color: #fff; font-size: 24px; font-family: 'Noto Sans KR' !important; font-weight: 900; } 
 .eventWrap .evFooter li::before { content: '\00B7'; position: absolute; left: 0; top: 0; color: #fff; } 
-.eventWrap .evFooter li { position: relative; padding-left: 15px; margin-bottom: 6px; color: #fff; font-size: 16px; word-break: keep-all; font-family: 'Noto Sans KR' !important; } 
+.eventWrap .evFooter li { position: relative; padding-left: 15px; margin-bottom: 6px; color: #fff; font-size: 16px; word-break: keep-all; font-family: 'Noto Sans KR' !important; font-weight: 300; } 
 
 .eventWrap .paging { margin: 24px 0; text-align: center; } 
 .eventWrap .paging a { display: inline-block; padding: 4px; color: #000; font-size: 16px; } 
@@ -205,10 +205,11 @@
 
 .eventWrap .event03 .itemBox { display: block; padding: 50px 20px; background: #fff !important; } 
 .eventWrap .event03 .itemBox .titWrap { width: 100%; height: 250px; margin-right: 0; margin-bottom: 20px; } 
-.eventWrap .event03 .itemBox.box03 .titWrap { background-size: 160px; } 
 .eventWrap .event03 .itemBox .txtWrap .txt strong { font-size: 36px; } 
 .eventWrap .event03 .itemBox .txtWrap .txt { font-size: 20px; text-align: center; word-break: keep-all; } 
-.eventWrap .event03 .itemBox .btnList { align-items: center; justify-content: center; margin: 0 auto; } 
+.eventWrap .event03 .itemBox .btnList { position: static; text-align: center; margin-top: 30px; } 
+.eventWrap .event03 .itemBox.box03 .btnList { flex-wrap: wrap; gap: 20px 0; } 
+.eventWrap .event03 .itemBox.box03 .btnList li { width: calc(100% / 2); } 
 .eventWrap .event03 .itemBox .infoList li { display: block; text-align: center; } 
 .eventWrap .event03 .itemBox .infoList strong { margin-right: 0; margin-bottom: 10px; } 
 .eventWrap .event03 .infoWrap { padding: 50px 20px; } 
@@ -252,7 +253,7 @@
 .eventWrap .event01 .infoBox.list02 ul .listTxt p strong { font-size: 18px; } 
 
  .eventWrap .paging { display: none; } 
- .eventWrap .mpaging { display: block; margin-top: 10px; color: #000; text-align: center; } 
+ .eventWrap .mpaging { display: block; margin: 20px 0; color: #000; text-align: center; } 
  .eventWrap .mpaging a { display: inline-block; margin: 0 20px; padding: 4px 16px; background-color: #003281; color: #fff; font-size: 14px; border-radius: 4px; } 
  .eventWrap .mpaging span { color: #ffd51e; font-weight: 700; } 
  .eventWrap .event01 .innerSection { padding: 60px 0 30px; } 
@@ -260,13 +261,13 @@
  .eventWrap .event02 .innerSection { padding: 30px 0 30px; } 
 .eventWrap .evTicket p { font-size: 20px; } 
  .eventWrap #gameContainer { margin-top: 60px; zoom: 0.27; } 
-.eventWrap .giftInfo .titWrap { max-width: 250px; top: -20px; } 
-.eventWrap .giftInfo .titWrap p { height: 36px; font-size: 18px; } 
-.eventWrap .giftInfo { margin: 60px auto 0; padding: 50px 10px 20px; border-radius: 20px; } 
-.eventWrap .giftInfo table th { padding: 6px 0; font-size: 14px; } 
-.eventWrap .giftInfo table td { padding: 6px 0; font-size: 14px; } 
+.eventWrap .giftInfo .titWrap { height: 40px; } 
+.eventWrap .giftInfo .titWrap p { padding-top: 0; font-size: 16px; } 
+.eventWrap .giftInfo { margin: 60px auto 0; } 
+.eventWrap .giftInfo table th { padding: 10px 0; font-size: 14px; } 
+.eventWrap .giftInfo table td { padding: 10px 0; font-size: 14px; } 
 .eventWrap .event03 .innerSection { padding: 30px 0; } 
-.eventWrap .event03 .itemBox .titWrap { height: auto; background-image: none !important; } 
+.eventWrap .event03 .itemBox .titWrap { height: auto !important; margin-bottom: 20px !important; background-image: none !important; } 
 .eventWrap .event03 .itemBox { padding: 20px 10px; border-radius: 10px; } 
 .eventWrap .event03 .itemBox .titWrap p { height: 30px; padding-top: 0; font-size: 14px; } 
 .eventWrap .event03 .itemBox .txtWrap .txt strong { font-size: 16px; } 
@@ -275,8 +276,11 @@
 .eventWrap .event03 .itemBox .infoList p { padding-top: 0; font-size: 14px; } 
 .eventWrap .event03 .itemBox .infoList p em { font-size: 12px; } 
 .eventWrap .event03 .itemBox .infoList p em span { font-size: 12px; } 
+.eventWrap .event03 .itemBox .btnList { margin-top: 10px; } 
+.eventWrap .event03 .itemBox.box03 .btnList { margin-top: 10px; } 
 .eventWrap .event03 .itemBox .btnList li { width: 100%; } 
-.eventWrap .event03 .itemBox .btnList li a { height: 30px; padding-top: 0; font-size: 14px; box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 1); } 
+.eventWrap .event03 .itemBox .btnList li a { padding: 6px 12px 2px 6px; font-size: 14px; } 
+.eventWrap .event03 .itemBox .btnList a::before { height: 10px; } 
 .eventWrap .event03 .infoWrap { margin-top: 30px; padding: 20px 12px 60px; border-radius: 20px; } 
 .eventWrap .event03 .infoWrap::before { width: calc(100% - 4px); height: calc(100% - 4px); border: 1px dashed #000; border-radius: 20px; background-size: 40px; background-position: bottom center; } 
 
@@ -299,5 +303,5 @@
 .eventWrap .ev_pop .lottery_present .gift_end2 span.losing { font-size: 14px; } 
 .eventWrap .ev_pop .lottery_present .gift_end1 { margin-bottom: 6px; } 
 .eventWrap .ev_pop .txt { font-size: 15px; word-break: keep-all; } 
-.eventWrap .event01 .infoBox.list02 ul .listBtn p {padding-top: 0;}
-}
+.eventWrap .event01 .infoBox.list02 ul .listBtn p { padding-top: 0; } 
+ }
