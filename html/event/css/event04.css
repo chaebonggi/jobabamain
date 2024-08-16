@@ -271,7 +271,7 @@
 .eventWrap .event03 .itemBox .titWrap p { height: 30px; padding-top: 0; font-size: 14px; } 
 .eventWrap .event03 .itemBox .txtWrap .txt strong { font-size: 16px; } 
 .eventWrap .event03 .itemBox .txtWrap .txt { font-size: 14px; } 
-.eventWrap .event03 .itemBox .infoList strong { width: 140px; height: 30px; font-size: 14px; } 
+.eventWrap .event03 .itemBox .infoList strong { width: 140px; height: 30px; padding-top: 0; font-size: 14px; } 
 .eventWrap .event03 .itemBox .infoList p { padding-top: 0; font-size: 14px; } 
 .eventWrap .event03 .itemBox .infoList p em { font-size: 12px; } 
 .eventWrap .event03 .itemBox .infoList p em span { font-size: 12px; } 
@@ -299,4 +299,5 @@
 .eventWrap .ev_pop .lottery_present .gift_end2 span.losing { font-size: 14px; } 
 .eventWrap .ev_pop .lottery_present .gift_end1 { margin-bottom: 6px; } 
 .eventWrap .ev_pop .txt { font-size: 15px; word-break: keep-all; } 
+.eventWrap .event01 .infoBox.list02 ul .listBtn p {padding-top: 0;}
 }
