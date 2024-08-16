@@ -133,8 +133,8 @@
 /* 팝업 */
 .eventWrap .shadow { background: rgba(0, 0, 0, 0.5); position: fixed; top: 0; left: 0; z-index: 9999; width: 100%; height: 100vh; display: none; } 
 .eventWrap .ev_pop { position: fixed; background: #fff; top: 50%; left: 50%; transform: translate(-50%,-50%); z-index: 9999; border: 1px solid #000; border-radius: 10px; box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3); overflow: hidden; } 
-.eventWrap .ev_pop.wd400 { max-width: 400px; width: 100%; } 
-.eventWrap .ev_pop.wd650 { max-width: 650px; width: 100%; } 
+.eventWrap .ev_pop.wd400 { max-width: 400px; width: calc(100% - 10px); } 
+.eventWrap .ev_pop.wd650 { max-width: 650px; width: calc(100% - 10px); } 
 .eventWrap .ev_pop .popup_inner { padding: 30px; text-align: center; } 
 .eventWrap .btn_wrap { margin-top: 30px; text-align: center; } 
 .eventWrap .ev_pop .btn_wrap a { font-size: 18px; padding: 7px 20px; } 
@@ -259,7 +259,7 @@
  .eventWrap .event02 { background: #ffeeb8; } 
  .eventWrap .event02 .innerSection { padding: 30px 0 30px; } 
 .eventWrap .evTicket p { font-size: 20px; } 
- .eventWrap #gameContainer { margin-top: 60px; zoom: 0.36; } 
+ .eventWrap #gameContainer { margin-top: 60px; zoom: 0.27; } 
 .eventWrap .giftInfo .titWrap { max-width: 250px; top: -20px; } 
 .eventWrap .giftInfo .titWrap p { height: 36px; font-size: 18px; } 
 .eventWrap .giftInfo { margin: 60px auto 0; padding: 50px 10px 20px; border-radius: 20px; } 
@@ -269,10 +269,10 @@
 .eventWrap .event03 .itemBox .titWrap { height: auto; background-image: none !important; } 
 .eventWrap .event03 .itemBox { padding: 20px 10px; border-radius: 10px; } 
 .eventWrap .event03 .itemBox .titWrap p { height: 30px; padding-top: 0; font-size: 14px; } 
-.eventWrap .event03 .itemBox .txtWrap .txt strong { font-size: 20px; } 
-.eventWrap .event03 .itemBox .txtWrap .txt { font-size: 16px; } 
+.eventWrap .event03 .itemBox .txtWrap .txt strong { font-size: 16px; } 
+.eventWrap .event03 .itemBox .txtWrap .txt { font-size: 14px; } 
 .eventWrap .event03 .itemBox .infoList strong { width: 140px; height: 30px; font-size: 14px; } 
-.eventWrap .event03 .itemBox .infoList p { padding-top: 0; font-size: 16px; } 
+.eventWrap .event03 .itemBox .infoList p { padding-top: 0; font-size: 14px; } 
 .eventWrap .event03 .itemBox .infoList p em { font-size: 12px; } 
 .eventWrap .event03 .itemBox .infoList p em span { font-size: 12px; } 
 .eventWrap .event03 .itemBox .btnList li { width: 100%; } 
@@ -289,4 +289,36 @@
 .eventWrap .evFooter h3 { font-size: 16px; } 
 .eventWrap .evFooter li { padding-left: 10px; font-size: 12px; } 
 .eventWrap .event03 .itemBox + .itemBox { margin-top: 20px; } 
+
+.eventWrap .ev_pop .lottery_present img {
+    margin-left: 30px;
+    margin-bottom: 15px;
+    max-width: 120px;
+}
+.eventWrap .ev_pop .lottery_present .gift_end1 strong {
+    font-size: 18px;
+}
+.eventWrap .ev_pop .lottery_present .gift_end2 {
+    font-size: 14px;
+}
+.eventWrap .btn_wrap {
+    margin-top: 20px;
+}
+.eventWrap .ev_pop .btn_wrap a {
+    font-size: 14px;
+}
+.eventWrap .ev_pop .popup_inner {
+    padding: 20px 10px;
+}
+.eventWrap .ev_pop .lottery_present .gift_end2 span.losing {
+    font-size: 14px;
+}
+.eventWrap .ev_pop .lottery_present .gift_end1 {
+    margin-bottom: 6px;
+}
+.eventWrap .ev_pop .txt {
+    font-size: 15px;
+    word-break: keep-all;
+}
+
 }

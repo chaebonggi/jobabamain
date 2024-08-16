@@ -227,14 +227,14 @@
 						</a>
 						<div class="cursor"></div>
 						<div class="board_on obj">
-							<img src="./images/eventImg/event04/gift1.png">
+							<!-- <img src="./images/eventImg/event04/gift1.png">
 							<img src="./images/eventImg/event04/gift2.png">
 							<img src="./images/eventImg/event04/gift3.png">
 							<img src="./images/eventImg/event04/gift4.png">
 							<img src="./images/eventImg/event04/gift5.png">
 							<img src="./images/eventImg/event04/gift6.png">
 							<img src="./images/eventImg/event04/gift7.png">
-							<img src="./images/eventImg/event04/gift8.png">
+							<img src="./images/eventImg/event04/gift8.png"> -->
 						</div>
 						<div class="gameShadow"></div>
 					</div>
@@ -499,10 +499,10 @@
 
 <script>	
 	$(document).ready(function() {
-		// for (i = 1; i < 7; i++) {
-		// 	var pictures = "./resource/images/eventImg/event08/gift" + i + ".png";
-		// 	$(".board_on").append('<img  src="' + pictures + '" />');
-		// }
+		for (i = 1; i < 9; i++) {
+			var pictures = "./images/eventImg/event04/gift" + i + ".png";
+			$(".board_on").append('<img  src="' + pictures + '" />');
+		}
 		$(".eventWrap .startBtn").on("mousedown", function() {
 			iniGame(Math.floor(Math.random() * 8));
 		});
@@ -524,7 +524,7 @@
 				rotation: rotationPos[gift]
 			}
 		});
-		TweenLite.from($(".board_on"), 1, {
+		TweenLite.from($(".board_on"), 6, {
 			css: {
 				rotation: -3000
 			},
@@ -546,7 +546,7 @@
 		}
 		setTimeout(function() {
 			openPopup("popup_gift");
-		}, 1000);
+		}, 500);
 	}
 	function openPopup(id) {
 		$('.ev_pop').slideUp(0);
