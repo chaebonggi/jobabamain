@@ -211,6 +211,5 @@
 .themaWrap .cont07 .innerSection { padding-bottom: 30px; } 
 }
  @media all and (max-width:480px){
- .themaWrap .contList .jobList li .imgWrap { width: 100%; } 
- .themaWrap .contList .jobList li .imgWrap img { width: 100%; } 
+ .themaWrap .contList .jobList li .imgWrap { width: 100%; text-align: center;} 
  }
