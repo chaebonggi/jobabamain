@@ -1,0 +1,4 @@
+.themaWrap * { font-family: 'GmarketSans','Noto Sans KR' !important; font-weight: 500; line-height: 1.3; } 
+.themaWrap .innerSection { max-width: 1000px; width: calc(100% - 20px); margin: 0 auto; padding: 0; } 
+.gBold { font-weight: 700; } 
+#renewFooter .f_address .f_addr { display: none !important; } 
