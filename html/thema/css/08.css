@@ -187,7 +187,7 @@
 
 .themaWrap .contList .jobList li { width: 100%; max-width: 400px; margin: 0 auto; } 
 .themaWrap .contList .jobList li a { padding: 10px 10px 20px; border-radius: 15px; } 
-.themaWrap .contList .jobList li .txtWrap .tit { min-height: auto; margin-bottom: 10px; font-size: 18px; } 
+.themaWrap .contList .jobList li .txtWrap .tit { min-height: auto; margin-bottom: 15px; font-size: 18px; } 
 .themaWrap .contList .jobList li .txtWrap dt { display: flex; padding-top: 2px; height: 26px; font-size: 14px; } 
 .themaWrap .contList .jobList li .txtWrap dd { padding-top: 0; font-size: 14px; text-align: center; } 
 .themaWrap .banner { margin-top: 20px; } 
@@ -211,5 +211,5 @@
 .themaWrap .cont07 .innerSection { padding-bottom: 30px; } 
 }
  @media all and (max-width:480px){
- .themaWrap .contList .jobList li .imgWrap { width: 100%; text-align: center;} 
+ .themaWrap .contList .jobList li .imgWrap { width: 100%; margin-bottom: 10px; text-align: center;} 
  }
