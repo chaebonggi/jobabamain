@@ -581,7 +581,12 @@
 				</ul>
 			</div>
 		</article>
-
+		<div class="tobBtn">
+			<a href="#">
+				<p>TOP</p>
+			</a>
+		</div>
+		
 	</div>
 	<!--잡아바 js-->
 	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery-1.11.3.js"></script>
@@ -615,6 +620,22 @@
 			initTabSwipers();
             menuScroll();
 		});
+		$(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 500) {
+                $('.themaWrap .tobBtn').fadeIn();
+                } else {
+                $('.themaWrap .tobBtn').fadeOut();
+                }
+            });
+
+            $(".themaWrap .tobBtn").click(function() {
+                $('html, body').animate({
+                scrollTop : 0
+                }, 400);
+                return false;
+            });
+        });
 		function menuScroll() {
             const $menuWrap = $('.tabMenu');
             const $menuBox = $menuWrap.find('.tabSwiper');
