@@ -18,16 +18,16 @@
 .themaWrap .mainVisual .infoList li:nth-child(5) p::after { background: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20240827/main_icon05.png) center no-repeat; } 
 
 .themaWrap .mainVisual .infoList li:nth-child(n+4) { margin-top: -20px; } 
-.themaWrap .menuWrap { width: 100%; height: 190px; position: sticky; top: -1px; background-color: #bdc4ff; border-top: 1px dashed #fff; border-bottom: 1px dashed #fff; box-sizing: border-box; z-index: 100; } 
+.themaWrap .menuWrap { width: 100%; height: 140px; position: sticky; top: -1px; background-color: #bdc4ff; border-top: 1px dashed #fff; border-bottom: 1px dashed #fff; box-sizing: border-box; z-index: 100; } 
 .themaWrap .menuWrap::before { content: ''; width: 50%; height: 100%; position: absolute; top: 0; left: 50%; background-color: #ffb7c1; z-index: -1; } 
 .themaWrap .menuWrap::after { content: ''; width: 100%; height: 10px; position: absolute; bottom: 0; background-color: transparent; } 
-.themaWrap .menuWrap .innerSection { position: relative; width: 100%; } 
-.themaWrap .menuWrap .innerSection::before { content: ''; width: 266px; height: 157px; position: absolute; left: -300px; bottom: 0; background: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20240827/tab_bg01.png) no-repeat; } 
-.themaWrap .menuWrap .innerSection::after { content: ''; width: 139px; height: 148px; position: absolute; right: -160px; bottom: 0; background: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20240827/tab_bg02.png) no-repeat; } 
+.themaWrap .menuWrap .innerSection { position: relative; width: 100%; height: 100%;} 
+.themaWrap .menuWrap .innerSection::before { content: ''; width: 180px; height: 106px; position: absolute; left: -210px; bottom: 0; background: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20240827/tab_bg01.png) no-repeat; background-size: contain;} 
+.themaWrap .menuWrap .innerSection::after { content: ''; width: 94px; height: 100px; position: absolute; right: -128px; bottom: 0; background: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20240827/tab_bg02.png) no-repeat; background-size: contain;} 
 .themaWrap .menuWrap .tabMenu { padding-bottom: 10px; position: relative; overflow: hidden; } 
 
 .themaWrap .menuWrap .tabMenu li { width: auto; } 
-.themaWrap .menuWrap .tabMenu li a { display: flex; width: 200px; height: 190px; color: #fff; font-size: 28px; box-sizing: border-box; align-items: center; justify-content: center; flex-direction: column; text-align: center; border-left: 1px dashed #fff; border-bottom: 1px dashed #fff; } 
+.themaWrap .menuWrap .tabMenu li a { display: flex; width: 200px; height: 140px; color: #fff; font-size: 24px; box-sizing: border-box; align-items: center; justify-content: center; flex-direction: column; text-align: center; border-left: 1px dashed #fff; border-bottom: 1px dashed #fff; } 
 .themaWrap .menuWrap .tabMenu li a span { display: block; line-height: 1.2; } 
 .themaWrap .menuWrap .tabMenu li:last-child a { border-right: 1px dashed #fff; } 
 .themaWrap .menuWrap .tabMenu li:nth-child(1) a { background-color: #7a89ff; } 
@@ -35,13 +35,13 @@
 .themaWrap .menuWrap .tabMenu li:nth-child(3) a { background-color: #50c579; } 
 .themaWrap .menuWrap .tabMenu li:nth-child(4) a { background-color: #3dafff; } 
 .themaWrap .menuWrap .tabMenu li:nth-child(5) a { background-color: #ff8b9b; } 
-.themaWrap .menuWrap .tabMenu li.active a { padding-bottom: 64px; background-color: #fff; background-repeat: no-repeat; } 
-.themaWrap .menuWrap .tabMenu li:nth-child(1).active a { background-image: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20240827/menu_icon01.png); background-position: bottom 10px center; color: #5363e0; } 
-.themaWrap .menuWrap .tabMenu li:nth-child(2).active a { background-image: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20240827/menu_icon02.png); background-position: bottom 10px center; color: #ff7200; } 
-.themaWrap .menuWrap .tabMenu li:nth-child(3).active a { background-image: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20240827/menu_icon03.png); background-position: bottom -10px center; color: #49af6d; } 
-.themaWrap .menuWrap .tabMenu li:nth-child(4).active a { background-image: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20240827/menu_icon04.png); background-position: bottom 20px center; color: #0085ec; } 
-.themaWrap .menuWrap .tabMenu li:nth-child(5).active a { padding-bottom: 40px; background-image: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20240827/menu_icon05.png); background-position: bottom 15px center; color: #ff527b; } 
-.themaWrap .menuWrap .tabMenu li.active a::after { content: ''; width: 100%; height: 10px; position: absolute; bottom: -10px; } 
+.themaWrap .menuWrap .tabMenu li.active a { padding-bottom: 64px; background-color: #fff; background-repeat: no-repeat;} 
+.themaWrap .menuWrap .tabMenu li:nth-child(1).active a { background-image: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20240827/menu_icon01.png); background-position: bottom 5px center; color: #5363e0; background-size: 60px;} 
+.themaWrap .menuWrap .tabMenu li:nth-child(2).active a { background-image: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20240827/menu_icon02.png); background-position: bottom 5px center; color: #ff7200; background-size: 70px;} 
+.themaWrap .menuWrap .tabMenu li:nth-child(3).active a { background-image: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20240827/menu_icon03.png); background-position: bottom -10px center; color: #49af6d; background-size: 42px;} 
+.themaWrap .menuWrap .tabMenu li:nth-child(4).active a { background-image: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20240827/menu_icon04.png); background-position: bottom 20px center; color: #0085ec; background-size: 80px;} 
+.themaWrap .menuWrap .tabMenu li:nth-child(5).active a { padding-bottom: 40px; background-image: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20240827/menu_icon05.png); background-position: bottom 15px center; color: #ff527b; background-size: 80px;} 
+.themaWrap .menuWrap .tabMenu li.active a::after { content: ''; width: 100%; height: 6px; position: absolute; bottom: -6px; } 
 .themaWrap .menuWrap .tabMenu li:nth-child(1).active a::after { background-color: #7a89ff; } 
 .themaWrap .menuWrap .tabMenu li:nth-child(2).active a::after { background-color: #ffa23f; } 
 .themaWrap .menuWrap .tabMenu li:nth-child(3).active a::after { background-color: #50c579; } 
@@ -157,7 +157,7 @@
 .themaWrap .contList .jobList li { width: calc(100% / 2 - 5px); } 
 .themaWrap .contList .jobList li a { padding: 30px 15px; } 
 .themaWrap .contList .jobList li .txtWrap dl { display: block; } 
-.themaWrap .contList .jobList li .txtWrap dt { width: 100%; margin-right: 0; margin-bottom: 10px; } 
+.themaWrap .contList .jobList li .txtWrap dt { width: 100%; max-width: 150px; margin: 0 auto 10px; } 
 .themaWrap .contList .jobList li .txtWrap dd { text-align: center; } 
 .themaWrap .cont05 .topImg h3 { top: 102px; } 
 .themaWrap .cont06 .innerSection { padding: 80px 0; } 
@@ -178,13 +178,13 @@
  .themaWrap .mainVisual .infoList li p::after { height: 30px; margin-top: 5px; background-size: contain !important; } 
  .themaWrap .mainVisual .infoList li:nth-child(n+4) { margin-top: 0; } 
  .themaWrap .menuWrap .tabMenu li a { width: 120px; height: 80px; font-size: 16px; } 
- .themaWrap .menuWrap .tabMenu li.active a { padding-bottom: 20px; background-size: 30px; } 
+ .themaWrap .menuWrap .tabMenu li.active a { padding-bottom: 20px; background-size: 30px !important; } 
  .themaWrap .menuWrap .tabMenu li:nth-child(1).active a { background-position: bottom center; } 
  .themaWrap .menuWrap .tabMenu li:nth-child(2).active a { background-position: bottom center; } 
- .themaWrap .menuWrap .tabMenu li:nth-child(3).active a { background-position: bottom -10px center; background-size: 24px; } 
- .themaWrap .menuWrap .tabMenu li:nth-child(4).active a { background-position: bottom 6px center; background-size: 40px; } 
+ .themaWrap .menuWrap .tabMenu li:nth-child(3).active a { background-position: bottom -10px center; background-size: 24px !important; } 
+ .themaWrap .menuWrap .tabMenu li:nth-child(4).active a { background-position: bottom 6px center; background-size: 40px !important; } 
  .themaWrap .menuWrap .tabMenu li.active a::after { height: 4px; bottom: -4px; } 
- .themaWrap .menuWrap .tabMenu li:nth-child(5).active a { padding-bottom: 20px; background-position: bottom 6px center; background-size: 40px; } 
+ .themaWrap .menuWrap .tabMenu li:nth-child(5).active a { padding-bottom: 20px; background-position: bottom 6px center; background-size: 40px !important; } 
  .themaWrap .menuWrap { height: 80px; } 
 
  .themaWrap .contList .innerSection { padding: 100px 0 30px; } 
@@ -202,14 +202,14 @@
 .themaWrap .banner .txtWrap p { margin-bottom: 6px; font-size: 16px; } 
 .themaWrap .banner .txtWrap span { font-size: 14px; } 
 .themaWrap .banner .linkBtn { width: 100%; margin: 10px auto; } 
-.themaWrap .banner .linkBtn a { width: 100%; max-width: 200px; height: 30px; margin: 0 auto; padding-top: 0; font-size: 16px; } 
+.themaWrap .banner .linkBtn a { width: 100%; max-width: 120px; height: 30px; margin: 0 auto; padding-top: 0; font-size: 16px; } 
 .themaWrap .cont05 .topImg h3 { top: 41px; } 
 .themaWrap .contList .jobList li .txtWrap .txt { font-size: 14px; text-align: center; } 
 .themaWrap .flag { left: 20px; } 
 .themaWrap .cont06 .innerSection { padding: 30px 0; } 
 .themaWrap .cont06 p { font-size: 16px; word-break: keep-all; } 
 .themaWrap .cont06 .linkBtn { margin-top: 20px; } 
-.themaWrap .cont06 .linkBtn a { height: 40px; font-size: 14px; box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 1); } 
+.themaWrap .cont06 .linkBtn a { max-width: 230px; height: 40px; font-size: 14px; box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 1); } 
 .themaWrap .cont07 .titWrap { width: 280px; height: 129px; } 
 .themaWrap .cont07 .titWrap p { padding-top: 15px; font-size: 18px; } 
 .themaWrap .cont07 .linkList { gap: 0 5px; } 
