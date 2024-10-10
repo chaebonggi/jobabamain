@@ -1,3 +1,199 @@
 .themaWrap * { font-family: 'GmarketSans','Noto Sans KR' !important; font-weight: 500; line-height: 1.3; } 
 .themaWrap .innerSection { max-width: 1260px; width: calc(100% - 20px); margin: 0 auto; padding: 0; } 
 .gBold { font-weight: 700; } 
+.themaWrap .mainVisual { background-image: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20241008/main_bg01.png), url(https://chaebonggi.github.io/jobabamain/html/thema/images/20241008/main_bg02.png); background-repeat: no-repeat; background-position: center top, center bottom 50px; background-color: #fff; } 
+.themaWrap .mainVisual .titWrap { padding-top: 50px; text-align: center; } 
+.themaWrap .mainVisual h2 { display: inline-block; } 
+.themaWrap .mainVisual h2 img { width: 100%; } 
+.themaWrap .mainVisual .mainInfo { max-width: 1000px; margin: 430px auto 0; padding: 60px 10px; position: relative; background: #fff; text-align: center; border-radius: 15px; } 
+.themaWrap .mainVisual .mainInfo::after { content: ''; width: 100%; height: 100%; position: absolute; left: 0; top: 0; border: 2px solid #b2c9e1; box-sizing: border-box; border-radius: 15px; } 
+.themaWrap .mainVisual .mainInfo::before { content: ''; width: 1143px; height: 428px; position: absolute; top: -422px; left: 0; background: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20241008/main_item01.png) no-repeat; background-size: contain; } 
+.themaWrap .mainVisual .mainInfo p { display: inline-block; position: relative; color: #000; font-size: 36px; letter-spacing: -1px; } 
+.themaWrap .mainVisual .mainInfo p:nth-child(1) span { color: #ff7800; } 
+.themaWrap .mainVisual .mainInfo p:nth-child(2) span { color: #0060e0; } 
+.themaWrap .mainVisual .mainInfo p::before { content: ''; width: 35px; height: 33px; position: absolute; top: -33px; left: -55px; background: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20241008/main_icon01.png) no-repeat; } 
+.themaWrap .mainVisual .mainInfo p::after { content: ''; width: 34px; height: 34px; position: absolute; bottom: -34px; right: -54px; background: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20241008/main_icon02.png) no-repeat; } 
+.themaWrap .cont01 .innerSection { padding: 50px 0 80px; } 
+.themaWrap .cont01 .mapCont { display: inline-block; max-width: 650px; width: 100%; margin-left: 80px; position: relative; } 
+.themaWrap .cont01 .mapCont::before { content: ''; width: 145px; height: 291px; position: absolute; right: -160px; bottom: 0; background: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20241008/cont01_icon03.png) no-repeat; } 
+.themaWrap .cont01 .mapCont .mapBtn { margin-bottom: 40px; text-align: center; } 
+.themaWrap .cont01 .mapCont .mapBtn .allMap { position: relative; color: #333333; font-size: 30px; text-decoration: underline; text-underline-offset: 4px; border: 0; } 
+.themaWrap .cont01 .mapCont .mapBtn .allMap::before { content: ''; width: 36px; height: 36px; position: absolute; left: -46px; top: -2px; background: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20241008/cont01_icon01.png) center no-repeat; background-size: contain; } 
+.themaWrap .cont01 .mapCont .mapTit { position: absolute; right: -530px; top: 210px; } 
+.themaWrap .cont01 .mapCont .mapTit p { width: 511px; height: 71px; position: relative; background: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20241008/cont01_icon04.png) no-repeat; background-size: contain; color: #003281; font-size: 24px; font-family: 'Noto Sans KR' !important; font-weight: 900; text-align: center; line-height: 71px; letter-spacing: -1px; } 
+.themaWrap .cont01 .mapCont .mapTit p::before { content: ''; width: 80px; height: 117px; position: absolute; left: -90px; bottom: 0; background: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20241008/cont01_icon02.png) no-repeat; } 
+.themaWrap .cont01 .mapItem { position: relative; } 
+.themaWrap .cont01 .mapItem:before { content: ''; max-width: 650px; width: 100%; height: 100%; position: absolute; background: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20241008/cont01_map.png) no-repeat; background-size: contain; z-index: 1; } 
+.themaWrap .cont01 .mapItem .mapTag span { position: absolute; color: #000; font-size: 18px; } 
+.themaWrap .cont01 .mapItem .mapTag span:nth-child(1) { top: 60px; left: 110px; } 
+.themaWrap .cont01 .mapItem .mapTag span:nth-child(2) { top: 260px; right: 30px; } 
+.themaWrap .cont01 .mapItem .mapTag span:nth-child(3) { bottom: 50px; right: 70px; } 
+.themaWrap .cont01 .mapItem .mapTag span:nth-child(4) { bottom: 260px; left: 20px; } 
+.themaWrap .cont01 .mapItem svg { position: relative; z-index: 2; } 
+.themaWrap .cont01 .mapItem .usMap { cursor: pointer; } 
+
+.themaWrap .cont01 .mapItem .usMap .mapArea { transition: all 0.35s; } 
+.themaWrap .cont01 .mapItem .usMap:hover .mapArea { fill: #40D0F9; transition: all 0.35s; } 
+.themaWrap .cont01 .mapItem .usMap:hover .cls-5 { fill: #fff; } 
+.themaWrap .cont01 .etcTxt { margin-top: 30px; color: #585858; font-size: 18px; font-family: 'Noto Sans KR' !important; font-weight: 500; text-align: center; } 
+.themaWrap .svLine { fill: #d9dcdc; opacity: 0.8; } 
+.themaWrap .cls-1 { fill: #ffd9d9; } 
+.themaWrap .cls-2 { fill: #fffcdc; } 
+.themaWrap .cls-3 { fill: #d9dcdc; } 
+.themaWrap .cls-4 { fill: #eaeaea; } 
+.themaWrap .cls-5 { fill: #1c6fbb; } 
+.themaWrap .cls-6 { fill: #caecff; } 
+.themaWrap .cls-7 { fill: #83e1f0; } 
+.themaWrap .tabWrap { margin-top: 70px; padding: 20px 15px 20px 40px; background: #fff; border-radius: 15px; border: 2px solid #c2d9e7; box-shadow: rgba(194, 217, 231, 1) 3px 3px 0; } 
+.themaWrap .tabList > li { padding: 20px 0; border-bottom: 1px solid #dddddd; } 
+.themaWrap .tabList a { display: flex; align-items: center; } 
+.themaWrap .tabList .listImg { margin-right: 26px; border-radius: 15px; overflow: hidden; flex-shrink: 0; } 
+.themaWrap .scrollbar-outer { max-height: 940px; padding-right: 34px; overflow-y: scroll; } 
+
+.themaWrap .scrollbar-outer > .scroll-content.scroll-scrolly_visible { margin: 0; left: 0; } 
+.themaWrap .scrollbar-outer > .scroll-element .scroll-element_track { background: #e0e0e0; } 
+.themaWrap .scrollbar-outer > .scroll-element .scroll-bar { background: #51647a; } 
+.themaWrap .scrollbar-outer > .scroll-element.scroll-y { width: 8px; background: transparent; } 
+.themaWrap .scrollbar-outer > .scroll-element .scroll-element_outer { border-radius: 0; } 
+.themaWrap .scrollbar-outer > .scroll-element.scroll-y .scroll-element_outer { width: 8px; left: 0px; } 
+.themaWrap .tabCont.active { display: block; } 
+.themaWrap .tabCont { display: none; } 
+.themaWrap .tabList .listInfo .tit { margin-bottom: 16px; color: #000; font-size: 26px; word-break: keep-all; } 
+.themaWrap .tabList ul { display: flex; gap: 0 30px; } 
+.themaWrap .tabList ul li:nth-child(1) { flex-shrink: 0; } 
+.themaWrap .tabList ul li { position: relative; word-break: keep-all; } 
+.themaWrap .tabList ul li:nth-child(1)::before,
+.themaWrap .tabList ul li:nth-child(2)::before { content: ''; width: 50px; height: 50px; position: absolute; left: 0; top: 0; background-color: #f5f5f5; background-position: center; background-repeat: no-repeat; border-radius: 50%; } 
+.themaWrap .tabList ul li:nth-child(1)::before { background-image: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20241008/tab_icon01.png); } 
+.themaWrap .tabList ul li:nth-child(2)::before { background-image: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20241008/tab_icon02.png); } 
+.themaWrap .tabList ul li p { padding-left: 60px; color: #585858; font-size: 16px; } 
+.themaWrap .tabList ul li p span { display: block; margin-top: 4px; color: #000; font-size: 22px; } 
+.themaWrap .tabList .linkBtn { width: 160px; height: 60px; margin-left: auto; background: #3795ff; color: #fff; font-size: 18px; font-family: 'Noto Sans KR' !important; font-weight: 500; border-radius: 10px; text-align: center; line-height: 60px; } 
+.themaWrap .tabList .tagList { display: flex; margin-top: 24px; flex-wrap: wrap; gap: 10px; } 
+.themaWrap .tabList .tagList span { display: inline-block; padding: 10px; background: #f5f5f5; color: #626262; font-size: 15px; font-family: 'Noto Sans KR' !important; font-weight: 300; border-radius: 5px; } 
+.themaWrap .cont02 { background: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20241008/cont02_bg.png) center bottom #d5e8f9 no-repeat; } 
+.themaWrap .cont02 .innerSection { padding: 80px 0; } 
+.themaWrap .cont02 .titWrap { text-align: center; } 
+.themaWrap .cont02 .titWrap p { display: inline-block; padding-right: 70px; position: relative; color: #124df9; font-size: 48px; } 
+.themaWrap .cont02 .titWrap p::before { content: ''; width: 60px; height: 94px; position: absolute; right: 0; bottom: 0; background: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20241008/cont02_icon01.png) no-repeat; } 
+.themaWrap .cont02 .banner { display: flex; margin-top: 60px; gap: 0 30px; } 
+.themaWrap .cont02 .banner li { flex: 1; } 
+.themaWrap .cont02 .banner a { display: block; padding: 40px; background-color: #a8dfff; background-image: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20241008/cont02_icon02.png); background-position: right 10px bottom; background-repeat: no-repeat; border-radius: 15px; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; } 
+.themaWrap .cont02 .banner li:nth-child(2) a { background-color: #fffee2; background-image: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20241008/cont02_icon03.png); } 
+.themaWrap .cont02 .banner .txt { color: #000; font-family: 'Noto Sans KR' !important; font-size: 26px; font-weight: 900; letter-spacing: -0.5px; } 
+.themaWrap .cont02 .banner .txt span { display: block; margin-top: 20px; font-family: 'Noto Sans KR' !important; font-size: 20px; font-weight: 500; line-height: 1.5; } 
+.themaWrap .cont02 .banner .moreBtn { display: inline-block; width: 160px; height: 40px; margin-top: 24px; background: #ff7e00; color: #fff; font-family: 'Noto Sans KR' !important; font-size: 18px; font-weight: 500; border-radius: 50px; line-height: 40px; text-align: center; font-weight: 300; } 
+.themaWrap .cont03 { background: #fff; } 
+.themaWrap .cont03 .innerSection { padding: 80px 0 120px; } 
+.themaWrap .cont03 .titWrap { text-align: center; } 
+.themaWrap .cont03 .titWrap span { position: relative; color: #003281; font-size: 32px; } 
+.themaWrap .cont03 .titWrap span::after { content: ''; width: 106px; height: 77px; position: absolute; bottom: -6px; right: -112px; background: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20241008/cont03_iocn01.png) no-repeat; } 
+.themaWrap .cont03 .titWrap span em { color: #f6ad52; } 
+.themaWrap .cont03 .titWrap p { color: #25b12c; font-size: 48px; } 
+.themaWrap .cont03 .linkList { display: flex; margin-top: 50px; justify-content: space-between; } 
+.themaWrap .cont03 .linkList li { width: 100%; } 
+.themaWrap .cont03 .linkList a { display: block; max-width: 360px; padding: 38px 4px; position: relative; background: #fff; border-radius: 15px; border: 2px solid #c2d9e7; box-shadow: rgba(194, 217, 231, 1) 3px 3px 0; text-align: center; } 
+.themaWrap .cont03 .linkList .tit { color: #000; font-size: 28px; font-family: 'Noto Sans KR' !important; font-weight: 900; letter-spacing: -1px; } 
+
+.themaWrap .cont03 .linkList .txt::before { content: ''; display: block; width: 100%; height: 118px; margin: 20px 0; background: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20241008/cont03_iocn02.png) center no-repeat; } 
+.themaWrap .cont03 .linkList li:nth-child(2) .txt::before { background: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20241008/cont03_iocn03.png) center no-repeat; } 
+.themaWrap .cont03 .linkList li:nth-child(3) .txt::before { background: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20241008/cont03_iocn04.png) center no-repeat; } 
+.themaWrap .cont03 .linkList .txt { color: #000; font-size: 20px; font-family: 'Noto Sans KR' !important; font-weight: 500; line-height: 1.5; letter-spacing: -1px; word-break: keep-all; } 
+.themaWrap .cont03 .linkList .linkBtn { width: 168px; height: 46px; position: absolute; left: 50%; bottom: -23px; transform: translateX(-50%); background: #3795ff; color: #fff; font-size: 18px; font-family: 'Noto Sans KR' !important; font-weight: 300; border-radius: 30px; line-height: 46px; } 
+.themaWrap .cont03 .etcWrap { margin-top: 80px; text-align: center; } 
+.themaWrap .cont03 .etcWrap p { display: inline-block; } 
+.themaWrap .cont03 .etcWrap img { width: 100%; } 
+
+@media all and (max-width:1300px){
+ .themaWrap .mainVisual .mainInfo::before { width: 900px; height: 337px; top: -332px; left: 60px; } 
+ .themaWrap .cont01 .mapCont .mapTit { position: static; } 
+ .themaWrap .cont01 .mapCont .mapTit p { margin: 30px auto; } 
+ .themaWrap .cont01 .mapCont { max-width: 100%; margin: 0 auto; } 
+ .themaWrap .cont01 .mapItem { max-width: 650px; margin: 0 auto; } 
+ .themaWrap .cont01 .mapCont::before { right: 0; } 
+ }
+@media all and (max-width:1024px){
+ .themaWrap .mainVisual h2 img { max-width: 750px; } 
+ .themaWrap .mainVisual .mainInfo { margin: 250px auto 0; } 
+ .themaWrap .mainVisual .mainInfo::before { width: 640px; height: 240px; top: -237px; left: 50%; transform: translateX(-50%); } 
+ .themaWrap .mainVisual .mainInfo p { font-size: 30px; word-break: keep-all; } 
+ .themaWrap .tabList a { flex-wrap: wrap; } 
+ .themaWrap .tabList .listInfo { width: calc(100% - 279px); } 
+ .themaWrap .tabList .linkBtn { width: 100%; margin-top: 20px; } 
+ .themaWrap .cont02 .banner { flex-direction: column; gap: 20px 0; } 
+.themaWrap .cont03 .linkList { flex-direction: column; gap: 30px 0; } 
+.themaWrap .cont03 .linkList a { max-width: 500px; margin: 0 auto; } 
+.themaWrap .cont03 .etcWrap img { max-width: 800px; } 
+ }
+@media all and (max-width:860px){
+ .themaWrap .mainVisual h2 img { max-width: 600px; } 
+ .themaWrap .mainVisual .mainInfo { padding: 60px 30px; } 
+ .themaWrap .mainVisual .mainInfo p::before,
+ .themaWrap .mainVisual .mainInfo p::after { content: none; } 
+ .themaWrap .cont01 .mapCont .mapTit p::before { width: 60px; height: 88px; left: -70px; background-size: contain; } 
+ .themaWrap .cont01 .mapCont .mapTit p { width: 430px; height: 60px; font-size: 20px; line-height: 60px; } 
+ .themaWrap .cont01 .mapCont::before { content: none; } 
+ .themaWrap .cont01 .mapItem { max-width: 500px; } 
+ .themaWrap .cont01 .mapItem:before { max-width: 500px; } 
+ .themaWrap .cont01 .mapItem .mapTag span:nth-child(1) { left: 40px; } 
+ .themaWrap .cont01 .mapItem .mapTag span:nth-child(2) { top: 200px; right: 0; } 
+ .themaWrap .cont01 .mapItem .mapTag span:nth-child(3) { bottom: 20px; right: 0; } 
+ .themaWrap .cont01 .mapItem .mapTag span:nth-child(4) { bottom: 210px; left: 0; } 
+ .themaWrap .tabList a { flex-direction: column; } 
+ .themaWrap .tabList .listImg { margin-right: 0; margin-bottom: 20px; } 
+.themaWrap .tabList .listInfo { width: 100%; } 
+.themaWrap .tabList .listInfo .tit { text-align: center; } 
+.themaWrap .scrollbar-outer { max-height: 600px; } 
+.themaWrap .cont01 .etcTxt { margin-top: 20px; font-size: 14px; word-break: keep-all; } 
+ }
+@media all and (max-width:640px){
+ .themaWrap .mainVisual { background-image: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20241008/main_bg01.png); background-repeat: no-repeat; background-position: center top; background-color: #fff; background-size: 640px; } 
+ .themaWrap .mainVisual .mainInfo::before { width: 250px; height: 94px; top: -92px; } 
+ .themaWrap .mainVisual .titWrap { padding-top: 30px; } 
+ .themaWrap .mainVisual .mainInfo { margin: 100px auto 0; padding: 20px 10px; } 
+ .themaWrap .mainVisual .mainInfo p { font-size: 16px; } 
+ .themaWrap .cont01 .mapCont .mapTit { text-align: center; } 
+ .themaWrap .cont01 .mapCont .mapTit p::before { width: 40px; height: 59px; left: 50%; transform: translateX(-50%); bottom: initial; top: -59px; background-size: contain; } 
+ .themaWrap .cont01 .mapCont .mapTit p { display: inline-block; width: auto; height: auto; padding: 10px; background: none; font-size: 14px; line-height: 1.5; border: 2px solid #003281; border-radius: 15px; word-break: keep-all; } 
+ .themaWrap .cont01 .mapCont .mapBtn { margin-bottom: 20px; } 
+ .themaWrap .cont01 .mapCont .mapBtn .allMap { font-size: 18px; } 
+ .themaWrap .cont01 .mapCont .mapBtn .allMap::before { width: 20px; height: 20px; left: -26px; } 
+ .themaWrap .cont01 .mapItem { max-width: 300px; } 
+ .themaWrap .cont01 .mapItem:before { max-width: 300px; } 
+ .themaWrap .cont01 .mapItem .mapTag span { font-size: 12px; } 
+ .themaWrap .cont01 .mapItem .mapTag span:nth-child(1) { top: 14px; } 
+ .themaWrap .cont01 .mapItem .mapTag span:nth-child(2) { top: 116px; right: 4px; } 
+ .themaWrap .cont01 .mapItem .mapTag span:nth-child(3) { right: 15px; } 
+ .themaWrap .cont01 .mapItem .mapTag span:nth-child(4) { bottom: 134px; left: 4px; } 
+ .themaWrap .tabWrap { margin-top: 30px; padding: 20px 10px 20px 10px; } 
+.themaWrap .tabList .listInfo .tit { font-size: 16px; } 
+.themaWrap .tabList ul { display: flex; gap: 10px 0; flex-direction: column; } 
+.themaWrap .tabList ul li:nth-child(1)::before, .themaWrap .tabList ul li:nth-child(2)::before { width: 30px; height: 30px; top: 2px; background-size: 50%; } 
+.themaWrap .tabList ul li p { padding-left: 36px; font-size: 12px; } 
+.themaWrap .tabList ul li p span { font-size: 14px; } 
+.themaWrap .scrollbar-outer { max-height: 400px; padding-right: 15px; } 
+.themaWrap .tabList .tagList { margin-top: 15px; gap: 2px; } 
+.themaWrap .tabList .tagList span { padding: 4px; font-size: 12px; } 
+.themaWrap .tabList .listImg { max-width: 200px; } 
+.themaWrap .tabList .linkBtn { height: 40px; margin-top: 10px; font-size: 14px; border-radius: 10px; line-height: 40px; } 
+.themaWrap .cont01 .innerSection { padding: 50px 0 30px; } 
+.themaWrap .cont02 .innerSection { padding: 30px 0; } 
+.themaWrap .cont02 .titWrap p { padding-right: 38px; font-size: 22px; } 
+.themaWrap .cont02 .titWrap p::before { width: 30px; height: 47px; background-size: contain; } 
+.themaWrap .cont02 .banner { margin-top: 20px; gap: 10px 0; } 
+.themaWrap .cont02 .banner a { padding: 20px; background-size: 30%; } 
+.themaWrap .cont02 .banner .txt { font-size: 16px; } 
+.themaWrap .cont02 .banner .txt span { margin-top: 10px; font-size: 14px; } 
+.themaWrap .cont02 .banner .moreBtn { height: 30px; margin-top: 20px; font-size: 14px; line-height: 30px; } 
+.themaWrap .cont03 .innerSection { padding: 30px 0; } 
+.themaWrap .cont03 .titWrap span { font-size: 16px; } 
+.themaWrap .cont03 .titWrap span::after { width: 45px; height: 33px; bottom: -2px; right: -52px; background-size: contain; } 
+.themaWrap .cont03 .titWrap p { font-size: 22px; } 
+.themaWrap .cont03 .linkList { margin-top: 20px; } 
+.themaWrap .cont03 .linkList a { padding: 20px 10px 30px; } 
+.themaWrap .cont03 .linkList .tit { font-size: 20px; } 
+.themaWrap .cont03 .linkList .txt::before { height: 50px; margin: 15px 0; background-size: contain !important; } 
+.themaWrap .cont03 .linkList .txt { font-size: 14px; } 
+.themaWrap .cont03 .linkList .linkBtn { height: 36px; bottom: -15px; font-size: 14px; line-height: 36px; } 
+.themaWrap .cont03 .etcWrap { margin-top: 40px; } 
+ }
