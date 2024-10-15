@@ -780,7 +780,7 @@
 				</div>
 				<p class="etcTxt">※ 박람회 세부 정보는 추후 변경될 수 있으므로 자세한 내용은 각 시군 문의처로 문의 주시기 바랍니다.</p>
 				<div class="bannerWrap">
-					<a href="javascript:openModal('modal1');">
+					<a href="#">
 						<span class="gBold b_day">2024년</span>
 						<p class="b_txt"><span class="gBold">5070</span> 일자리 박람회</p>
 					</a>
@@ -849,11 +849,11 @@
 		<div class="shadow"></div>
 		<div class="show_cont modal1">
 			<div class="top">
-				<a href="javascript:vold(0);" class="close_btn">닫기</a>
+				<a href="#" class="close_btn">닫기</a>
 			</div>
 			<div class="innerCont">
 				<div class="scrollbar-outer">
-					<img src="./images/20241008/banner_img.jpg" alt="2024년 5070 일자리 박람회">		
+					<img src="https://chaebonggi.github.io/jobabamain/html/thema/images/20241008/banner_img02.jpg" alt="2024년 5070 일자리 박람회">		
 				</div>		
 			</div>
 		</div>
@@ -907,26 +907,19 @@
 				  var tLink = $(this).data('link');
 						$("html, body").animate({ scrollTop: $('#' + tLink).offset().top }, 500);
 				});	
-			});
-			function openModal(modalname) {
-				$(".themaWrap .shadow").show();
-				$(".themaWrap .show_cont").hide();
-				$("." + modalname).show();
-
-			};
-
-			// 외부영역 클릭 시 팝업 닫기
-			// $(document).mouseup(function(e) {
-			// 	var LayerPopup = $(".themaWrap .show_cont");
-			// 	if (LayerPopup.has(e.target).length === 0) {
-			// 		LayerPopup.hide();
-			// 		$(".themaWrap .shadow").hide();
-			// 	}
-			// });
-			$('.themaWrap .close_btn').click(function() {				
-				$('.themaWrap .show_cont').hide();
-				$(".themaWrap .shadow").hide();
-			});
+				$('.themaWrap .bannerWrap a').click(function(e) {		
+					e.preventDefault();		
+					$(".themaWrap .shadow").show();
+					$(".themaWrap .show_cont").show();
+					$('body').addClass("scrollLock");
+				});
+				$('.themaWrap .close_btn').click(function(e) {
+					e.preventDefault();			
+					$('.themaWrap .show_cont').hide();
+					$(".themaWrap .shadow").hide();
+					$('body').removeClass("scrollLock");
+				});
+			});	
 		</script>
 
 </body>
