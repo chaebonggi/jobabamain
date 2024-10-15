@@ -1,4 +1,4 @@
-.themaWrap * { font-family: 'GmarketSans','Noto Sans KR' !important; font-weight: 500; line-height: 1.3; } 
+.themaWrap * { position: relative; font-family: 'GmarketSans','Noto Sans KR' !important; font-weight: 500; line-height: 1.3; } 
 .themaWrap .innerSection { max-width: 1260px; width: calc(100% - 20px); margin: 0 auto; padding: 0; } 
 .gBold { font-weight: 700; } 
 .themaWrap .mainVisual { background-image: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20241008/main_bg01.png), url(https://chaebonggi.github.io/jobabamain/html/thema/images/20241008/main_bg02.png); background-repeat: no-repeat; background-position: center top, center bottom 50px; background-color: #fff; } 
@@ -104,6 +104,19 @@
 .themaWrap .cont03 .etcWrap p { display: inline-block; } 
 .themaWrap .cont03 .etcWrap img { width: 100%; } 
 
+.themaWrap .shadow { display: none; background: rgba(0, 0, 0, 0.5); position: fixed; top: 0; left: 0; z-index: 9998; width: 100%; height: 100vh; } 
+.themaWrap .show_cont { display: none; max-width: 800px; padding: 20px; position: fixed; background: #fff; top: 50%; left: 50%; transform: translate(-50%, -50%); border-radius: 15px; border: 1px solid #333; z-index: 9999; } 
+.themaWrap .show_cont .innerCont img { width: 100%; } 
+.themaWrap .show_cont .scrollbar-outer { max-height: 600px; padding-right: 10px; } 
+.themaWrap .show_cont .top { display: flex; align-items: center; margin-bottom: 10px; } 
+.themaWrap .show_cont .top .close_btn { margin-left: auto; padding-right: 20px; position: relative; color: #000; font-size: 20px; } 
+.themaWrap .show_cont .top .close_btn:after { content: ''; width: 16px; height: 16px; margin-left: 6px; position: absolute; top: 2px; right: 0; background: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20241008/close_btn.png) no-repeat; background-size: contain; } 
+.themaWrap .bannerWrap { margin-top: 70px; } 
+.themaWrap .bannerWrap a { display: block; max-width: 1000px; height: 280px; padding: 40px 50px; margin: 0 auto; background-image: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20241008/banner_bg02.png), url(https://chaebonggi.github.io/jobabamain/html/thema/images/20241008/banner_bg.png); background-color: #5fbdff; background-position: bottom right 20px, left bottom; background-repeat: no-repeat; border-radius: 20px; } 
+.themaWrap .bannerWrap .b_day { display: inline-block; padding: 10px 20px 4px; margin-bottom: 10px; background: #10558a; color: #fff; font-size: 30px; border-radius: 10px; } 
+.themaWrap .bannerWrap .b_txt { color: #061b5b; font-size: 60px; } 
+.themaWrap .bannerWrap .b_txt span { color: #ffe745; } 
+
 @media all and (max-width:1300px){
  .themaWrap .mainVisual .mainInfo::before { width: 900px; height: 337px; top: -332px; left: 60px; } 
  .themaWrap .cont01 .mapCont .mapTit { position: static; } 
@@ -145,6 +158,11 @@
 .themaWrap .tabList .listInfo .tit { text-align: center; } 
 .themaWrap .scrollbar-outer { max-height: 600px; } 
 .themaWrap .cont01 .etcTxt { margin-top: 20px; font-size: 14px; word-break: keep-all; } 
+.themaWrap .bannerWrap a { background-size: auto 120px, cover; } 
+.themaWrap .bannerWrap .b_day { font-size: 24px; } 
+.themaWrap .bannerWrap .b_txt { font-size: 50px; } 
+.themaWrap .show_cont { width: calc(100% - 20px); } 
+.themaWrap .show_cont .scrollbar-outer { height: calc(100vh - 100px); } 
  }
 @media all and (max-width:640px){
  .themaWrap .mainVisual { background-image: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20241008/main_bg01.png); background-repeat: no-repeat; background-position: center top; background-color: #fff; background-size: 640px; } 
@@ -196,4 +214,10 @@
 .themaWrap .cont03 .linkList .txt { font-size: 14px; } 
 .themaWrap .cont03 .linkList .linkBtn { height: 36px; bottom: -15px; font-size: 14px; line-height: 36px; } 
 .themaWrap .cont03 .etcWrap { margin-top: 40px; } 
+.themaWrap .bannerWrap { margin-top: 20px; } 
+.themaWrap .bannerWrap a { height: 170px; padding: 20px; background-size: auto 70px, cover; } 
+.themaWrap .bannerWrap .b_day { padding: 6px 14px 2px; font-size: 18px; } 
+.themaWrap .bannerWrap .b_txt { font-size: 26px; } 
+.themaWrap .show_cont .top .close_btn { padding-right: 18px; font-size: 16px; } 
+.themaWrap .show_cont .top .close_btn:after { width: 14px; height: 14px; } 
  }
