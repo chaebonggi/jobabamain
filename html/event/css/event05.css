@@ -216,7 +216,9 @@
 .eventWrap .cont01 .reviewWrap .viewWrap .comList li { padding: 10px; } 
 .eventWrap .cont01 .reviewWrap .viewWrap .evDate span { font-size: 14px; } 
 .eventWrap .cont01 .reviewWrap .viewWrap .evDate span + span { margin-left: 4px; padding-left: 4px; } 
-
+.eventWrap .cont01 .titWrap p { font-size: 24px; } 
+.eventWrap .cont01 .titWrap { margin-bottom: 20px; } 
+.eventWrap .cont01 .innerSection { padding: 30px 0; } 
  .eventWrap .evFooter .innerSection { padding: 30px 0; } 
  .eventWrap .evFooter h3 { font-size: 16px; } 
  .eventWrap .evFooter li { padding-left: 10px; font-size: 12px; } 
