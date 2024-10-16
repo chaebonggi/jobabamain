@@ -3,20 +3,222 @@
 .eventWrap * { font-family: 'GmarketSans','Noto Sans KR' !important; font-weight: 500; line-height: 1.3; } 
 .eventWrap .gBold { font-weight: 700; } 
 
+.eventWrap .eventMain { background: url(../images/eventImg/event05/main_bg.jpg) top center; } 
+.eventWrap .eventMain .innerSection { padding: 56px 0 110px; } 
+.eventWrap .eventMain .mainVisual { position: relative; text-align: center; } 
+.eventWrap .eventMain .mainVisual::before { content: ''; width: 294px; height: 463px; position: absolute; bottom: -30px; left: -302px; background: url(../images/eventImg/event05/main_item01.png) no-repeat; } 
+.eventWrap .eventMain .mainVisual::after { content: ''; width: 290px; height: 492px; bottom: -12px; right: -330px; position: absolute; background: url(../images/eventImg/event05/main_item02.png) no-repeat; } 
+.eventWrap .eventMain .mainVisual h2 { display: inline-block; padding: 24px 35px; background: rgba(255, 255, 255, 0.5); border: 2px solid #ffffff; box-sizing: border-box; border-radius: 30px; } 
+.eventWrap .eventMain .mainVisual h2 img { width: 100%; } 
+.eventWrap .eventMain .evInfo { margin-top: 150px; position: relative; } 
+.eventWrap .eventMain .evInfo::before,
+.eventWrap .eventMain .evInfo::after { content: ''; width: 100%; height: calc(100% - 20px); position: absolute; background: #fff; border: 3px solid #000; border-radius: 150px; z-index: 1; } 
+.eventWrap .eventMain .evInfo::before { left: -24px; bottom: -20px; z-index: 2; } 
+.eventWrap .eventMain .evInfo::after { right: -36px; bottom: -50px; } 
+.eventWrap .eventMain .evInfo .infoWrap { position: relative; z-index: 10; } 
+.eventWrap .eventMain .evInfo .infoWrap::before { content: ''; width: 254px; height: 120px; position: absolute; top: -20px; left: -160px; background: url(../images/eventImg/event05/main_icon03.png) no-repeat; } 
+.eventWrap .eventMain .evInfo .infoWrap::after { content: ''; width: 275px; height: 129px; position: absolute; top: -20px; right: -180px; background: url(../images/eventImg/event05/main_icon04.png) no-repeat; z-index: 1; } 
+.eventWrap .eventMain .evInfo .infoBox { padding: 66px 10px; position: relative; background: #fff; border: 3px solid #000; border-top: 0; border-radius: 0 0 150px 150px; } 
+.eventWrap .eventMain .evInfo .infoBox::before { content: ''; width: 187px; height: 207px; position: absolute; left: -214px; bottom: 150px; background: url(../images/eventImg/event05/main_icon05.png) no-repeat; } 
+.eventWrap .eventMain .evInfo .tit::before { content: ''; width: 90px; height: 124px; position: absolute; top: -84px; left: 264px; background: url(../images/eventImg/event05/main_icon01.png) no-repeat; background-size: contain; } 
+.eventWrap .eventMain .evInfo .tit::after { content: ''; width: 115px; height: 82px; position: absolute; top: -77px; right: 280px; background: url(../images/eventImg/event05/main_icon02.png) no-repeat; background-size: contain; } 
+.eventWrap .eventMain .evInfo .tit { position: relative; background: #000; border-radius: 150px 150px 0 0; z-index: 10; } 
+.eventWrap .eventMain .evInfo .tit p { padding: 34px 0 30px; color: #ffe035; font-size: 40px; text-align: center; } 
+.eventWrap .eventMain .evList { display: flex; max-width: 770px; margin: 0 auto; flex-wrap: wrap; gap: 46px 0; } 
+.eventWrap .eventMain .evList li { margin: 0 auto; } 
+.eventWrap .eventMain .evList li:nth-child(-n+2) { width: 50%; } 
+.eventWrap .eventMain .evList li > div { text-align: center; } 
+.eventWrap .eventMain .evList li:nth-child(1) > div { margin-right: -100px; } 
+.eventWrap .eventMain .evList li:nth-child(2) > div { margin-left: -150px; } 
+.eventWrap .eventMain .evList li .imgWrap { display: flex; width: 170px; height: 108px; margin: 0 auto 12px; position: relative; border: 2px solid #000; box-sizing: border-box; border-radius: 50px; align-items: center; justify-content: center; } 
+.eventWrap .eventMain .evList li .imgWrap::before { content: '5명'; display: flex; width: 70px; height: 70px; padding-top: 4px; position: absolute; top: -35px; right: -10px; background: url(../images/eventImg/event05/ev_icon_bg.png) no-repeat; align-items: center; justify-content: center; color: #000; font-size: 16px; } 
+.eventWrap .eventMain .evList li:nth-child(2) .imgWrap::before { content: '10명'; } 
+.eventWrap .eventMain .evList li:nth-child(3) .imgWrap::before { content: '20명'; } 
+.eventWrap .eventMain .evList li:nth-child(4) .imgWrap::before { content: '50명'; } 
+.eventWrap .eventMain .evList li:nth-child(5) .imgWrap::before { content: '250명'; } 
+.eventWrap .eventMain .evList p { color: #000; font-size: 22px; } 
+.eventWrap .eventMain .evTip { margin-top: 90px; } 
+.eventWrap .eventMain .evTip .titWrap { margin-bottom: 24px; text-align: center; } 
+.eventWrap .eventMain .evTip .titWrap p { display: inline-block; } 
+.eventWrap .eventMain .evTip img { width: 100%; } 
+.eventWrap .eventMain .tibWrap { padding: 60px 20px; position: relative; background: #fff; border: 2px dashed #000; border-radius: 150px; } 
+.eventWrap .eventMain .tibWrap::before { content: ''; width: 195px; height: 258px; position: absolute; top: -34px; right: -186px; background: url(../images/eventImg/event05/tip_icon02.png) no-repeat; } 
+.eventWrap .eventMain .tibBox { max-width: 740px; margin: 0 auto; } 
+.eventWrap .eventMain .tibBox li { padding-left: 30px; position: relative; } 
+.eventWrap .eventMain .tibBox li + li { margin-top: 34px; } 
+.eventWrap .eventMain .tibBox li::before { position: absolute; top: 0; left: 0; color: #000; font-size: 24px; } 
+.eventWrap .eventMain .tibBox li:nth-child(1)::before { content: '①'; } 
+.eventWrap .eventMain .tibBox li:nth-child(2)::before { content: '②'; } 
+.eventWrap .eventMain .tibBox li:nth-child(3)::before { content: '③'; } 
+.eventWrap .eventMain .tibBox li:nth-child(4)::before { content: '④'; } 
+.eventWrap .eventMain .tibBox li:nth-child(5)::before { content: '⑤ '; } 
+.eventWrap .eventMain .tibBox li:nth-child(6)::before { content: ''; width: 22px; height: 22px; background: url(../images/eventImg/event05/tip_icon01.png) no-repeat; } 
+.eventWrap .eventMain .tibBox li:nth-child(6) p { color: #ff0000; } 
+.eventWrap .eventMain .tibBox li p { color: #000; font-size: 24px; letter-spacing: -1px; word-break: keep-all; } 
+.eventWrap .eventMain .tibBox li p span { display: block; margin-top: 4px; color: #666666; font-size: 18px; } 
+.eventWrap .eventMain .linkWrap { margin-top: 100px; } 
+.eventWrap .eventMain .linkWrap a { display: flex; max-width: 750px; height: 145px; margin: 0 auto; position: relative; background: linear-gradient(to bottom, #f0f4ff, #dfe7f3); border: 5px solid #000; border-radius: 100px; box-shadow: inset 0 -4px 8px #87bfd8, 0 4px 6px rgba(0, 0, 0, 0.5); align-items: center; } 
+.eventWrap .eventMain .linkWrap a::before { content: ''; width: 140px; height: 139px; position: absolute; right: -56px; bottom: -80px; background: url(../images/eventImg/event05/link_icon02.png) no-repeat; background-size: contain; } 
+.eventWrap .eventMain .linkWrap a span { display: block; margin-left: 40px; padding-left: 220px; position: relative; color: #ff0000; font-family: "SBAggro" !important; font-weight: 700; font-size: 38px; } 
+.eventWrap .eventMain .linkWrap a span::before { content: ''; width: 211px; height: 51px; position: absolute; top: -4px; left: 0; background: url(../images/eventImg/event05/link_icon01.png) no-repeat; } 
+.eventWrap .eventMain .linkWrap p { margin-top: 34px; color: #000; font-size: 24px; text-align: center; } 
+.eventWrap .cont01 { position: relative; background: #fff; } 
+.eventWrap .cont01::before { content: ''; width: 233px; height: 478px; position: absolute; top: -380px; left: 80px; background: url(../images/eventImg/event05/cont_icon01.png) no-repeat; } 
+.eventWrap .cont01::after { content: ''; width: 220px; height: 451px; position: absolute; top: -360px; right: 80px; background: url(../images/eventImg/event05/cont_icon02.png) no-repeat; } 
+.eventWrap .cont01 .innerSection { padding: 120px 0 100px; } 
+.eventWrap .cont01 .titWrap { margin-bottom: 60px; } 
+.eventWrap .cont01 .titWrap p { color: #000; font-size: 50px; text-align: center; } 
+.eventWrap .cont01 .imgLink { margin-bottom: 70px; } 
+.eventWrap .cont01 .imgLink .imgWrap { position: relative; border: 1px solid #a6a6a6; } 
+.eventWrap .cont01 .imgLink .imgWrap img { width: 100%; } 
+.eventWrap .cont01 .imgLink .imgWrap a { display: block; width: 24px; height: 24px; position: absolute; top: 20px; right: 20px; background-image: url(../images/eventImg/event05/link_icon.png); background-repeat: no-repeat; background-position: center; background-color: #f3802d; border-radius: 5px; } 
+.eventWrap .cont01 .imgLink li:nth-child(2) .imgWrap a { background-color: #faaf22; } 
+.eventWrap .cont01 .imgLink li:nth-child(3) .imgWrap a { background-color: #4db97f; } 
+.eventWrap .cont01 .imgLink li:nth-child(4) .imgWrap a { background-color: #5cced8; } 
+.eventWrap .cont01 .imgLink li:nth-child(5) .imgWrap a { background-color: #ef7c8d; } 
+.eventWrap .cont01 .imgLink li:nth-child(6) .imgWrap a { background-color: #9486de; } 
+.eventWrap .cont01 .imgLink { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 30px; } 
+.eventWrap .cont01 .imgLink li { width: calc(100% / 3 - 20px); } 
+.eventWrap .cont01 .reviewWrap .wirteForm { display: flex; padding: 35px; margin-bottom: 90px; background: #f5f5f5; border: 1px solid #c9c9c9; border-radius: 20px; flex-wrap: wrap; justify-content: space-between; } 
+.eventWrap .cont01 .reviewWrap .wirteForm .txtWrap { width: 100%; margin-bottom: 20px; } 
+.eventWrap .cont01 .reviewWrap .wirteForm .txtWrap p { color: #000; font-size: 16px; } 
+.eventWrap .cont01 .reviewWrap .wirteForm .txtWrap p + p { margin-top: 4px; } 
+.eventWrap .cont01 .reviewWrap .wirteForm .areaWrap { width: calc(100% - 150px); height: 150px; } 
+.eventWrap .cont01 .reviewWrap .wirteForm .areaWrap textarea { padding: 22px; width: 100%; height: 100%; color: #000; font-size: 16px; font-family: "Noto Sans KR" !important; font-weight: 300; border-radius: 10px; border: 0; resize: none; } 
+.eventWrap .cont01 .reviewWrap .wirteForm .areaWrap textarea:focus { outline: 0; } 
+.eventWrap .cont01 .reviewWrap .wirteForm .areaWrap textarea::placeholder { color: #878787; font-size: 16px; } 
+.eventWrap .cont01 .reviewWrap .wirteForm .evbtn button { width: 130px; height: 100%; background: #ff8a00; color: #fff; font-size: 24px; border-radius: 10px; } 
+.eventWrap .cont01 .reviewWrap .wirteForm .evbtn button:focus { outline: 0; border: 0; } 
+.eventWrap .cont01 .reviewWrap .viewWrap .cntTxt { padding-bottom: 20px; border-bottom: 1px solid #000; } 
+.eventWrap .cont01 .reviewWrap .viewWrap .cntTxt p { color: #000; font-size: 26px; } 
+.eventWrap .cont01 .reviewWrap .viewWrap .cntTxt p span { color: #ff8a00; } 
+.eventWrap .cont01 .reviewWrap .viewWrap .comList { margin-bottom: 40px; } 
+.eventWrap .cont01 .reviewWrap .viewWrap .comList li { padding: 35px; border-bottom: 1px solid #c2c2c2; } 
+.eventWrap .cont01 .reviewWrap .viewWrap .evComment p { color: #000; font-size: 20px; font-family: "Noto Sans KR" !important; font-weight: 500; } 
+.eventWrap .cont01 .reviewWrap .viewWrap .evComment p.tct { text-align: center; } 
+.eventWrap .cont01 .reviewWrap .viewWrap .evDate span { display: inline-block; margin-top: 10px; position: relative; color: #999999; font-size: 16px; font-family: "Noto Sans KR" !important; font-weight: 300; } 
+.eventWrap .cont01 .reviewWrap .viewWrap .evDate span + span { margin-left: 14px; padding-left: 14px; white-space: nowrap; } 
+.eventWrap .cont01 .reviewWrap .viewWrap .evDate span + span::before { content: ''; width: 1px; height: 14px; position: absolute; left: 0; top: 50%; transform: translateY(-50%); background: #999999; } 
+.eventWrap .eventMain .infoTxt { max-width: 880px; padding: 40px 10px; margin: 60px auto 0; background: #f2f2f2; border: 2px dashed #000; border-radius: 80px; } 
+.eventWrap .eventMain .infoTxt li { display: flex; max-width: 750px; margin: 0 auto; } 
+.eventWrap .eventMain .infoTxt li + li { margin-top: 20px; } 
+.eventWrap .eventMain .infoTxt .evTit { width: 158px; height: 45px; margin-right: 10px; background: #ffee3c; box-sizing: border-box; border: 2px solid #000; border-radius: 30px; color: #000; font-size: 22px; line-height: 45px; text-align: center; flex-shrink: 0; } 
+.eventWrap .eventMain .infoTxt .evTxt { padding-top: 8px; color: #000; font-size: 26px; letter-spacing: -1px; word-break: keep-all; } 
+.eventWrap .eventMain .infoTxt .evTxt span { color: #787878; } 
 .eventWrap .evFooter { background: #001d4b; } 
 .eventWrap .evFooter .innerSection { padding: 70px 0; } 
 .eventWrap .evFooter h3 { margin-bottom: 10px; color: #fff; font-size: 24px; font-family: 'Noto Sans KR' !important; font-weight: 900; } 
 .eventWrap .evFooter li::before { content: '\00B7'; position: absolute; left: 0; top: 0; color: #fff; } 
 .eventWrap .evFooter li { position: relative; padding-left: 15px; margin-bottom: 6px; color: #fff; font-size: 16px; word-break: keep-all; font-family: 'Noto Sans KR' !important; font-weight: 300; } 
 
-@media all and (max-width: 860px){
-    
-   .eventWrap .evFooter li br { display: none; } 
-}
-@media all and (max-width: 640px){
+.eventWrap .paging { margin: 24px 0; text-align: center; } 
+.eventWrap .paging a { display: inline-block; color: #6b6b6b; padding: 4px; font-size: 16px; } 
+.eventWrap .paging a + a { margin-left: 16px; } 
+.eventWrap .paging a.current { font-weight: 700; border-bottom: 2px solid #000; color: #000; } 
+.eventWrap .mpaging { display: none; } 
 
-   .eventWrap .evFooter .innerSection { padding: 30px 0; } 
-   .eventWrap .evFooter h3 { font-size: 16px; } 
-   .eventWrap .evFooter li { padding-left: 10px; font-size: 12px; } 
-}
-   
+@media all and (max-width: 1700px){
+ .eventWrap .eventMain .mainVisual::before,
+ .eventWrap .eventMain .mainVisual::after { content: none; } 
+ }
+
+@media all and (max-width: 1400px){
+ .eventWrap .eventMain .evInfo .infoWrap::before,
+ .eventWrap .eventMain .evInfo .infoWrap::after,
+ .eventWrap .eventMain .evInfo .infoBox::before,
+ .eventWrap .eventMain .tibWrap::before,
+ .eventWrap .cont01::before,
+ .eventWrap .cont01::after,
+ .eventWrap .eventMain .evInfo::before,
+ .eventWrap .eventMain .evInfo::after { content: none; } 
+ }
+
+@media all and (max-width: 860px){
+ .eventWrap .eventMain .evInfo .tit { border-radius: 50px 50px 0 0; } 
+.eventWrap .eventMain .evInfo .tit::after { width: 80px; height: 57px; top: -54px; right: 70px; } 
+.eventWrap .eventMain .evInfo .tit::before { width: 60px; height: 83px; top: -56px; left: 70px; } 
+.eventWrap .eventMain .evInfo { margin-top: 110px; } 
+.eventWrap .eventMain .evInfo .tit p { padding: 26px 0 22px; font-size: 32px; } 
+.eventWrap .eventMain .evInfo .infoBox { border-radius: 0 0 50px 50px; } 
+.eventWrap .eventMain .infoTxt { border-radius: 30px; } 
+.eventWrap .eventMain .evList { gap: 46px 20px; } 
+.eventWrap .eventMain .evList li:nth-child(-n+2) { width: initial; } 
+.eventWrap .eventMain .evList li:nth-child(1) > div { margin-right: initial; } 
+.eventWrap .eventMain .evList li:nth-child(2) > div { margin-left: initial; } 
+.eventWrap .eventMain .infoTxt .evTit { width: 130px; height: 40px; font-size: 18px; line-height: 40px; } 
+.eventWrap .eventMain .infoTxt .evTxt { font-size: 22px; } 
+.eventWrap .eventMain .evTip img { max-width: 500px; } 
+.eventWrap .eventMain .tibWrap { border-radius: 50px; } 
+.eventWrap .eventMain .tibBox li p { font-size: 22px; } 
+.eventWrap .eventMain .tibBox li p span { font-size: 16px; } 
+.eventWrap .eventMain .evTip { margin-top: 60px; } 
+.eventWrap .eventMain .linkWrap a span::before { width: 160px; height: 39px; background-size: contain; } 
+.eventWrap .eventMain .linkWrap a span { padding-left: 170px; font-size: 30px; } 
+.eventWrap .eventMain .linkWrap a::before { width: 80px; height: 79px; right: 0; bottom: -20px; } 
+.eventWrap .eventMain .linkWrap a { height: 110px; } 
+.eventWrap .eventMain .linkWrap { margin-top: 60px; } 
+.eventWrap .cont01 .innerSection { padding: 60px 0 50px; } 
+.eventWrap .cont01 .titWrap p { font-size: 40px; } 
+.eventWrap .cont01 .titWrap { margin-bottom: 40px; } 
+.eventWrap .cont01 .imgLink { gap: 20px; } 
+.eventWrap .cont01 .imgLink li { width: calc(100% / 2 - 10px); } 
+
+ .eventWrap .evFooter li br { display: none; } 
+ .eventWrap .paging { display: none; } 
+ .eventWrap .mpaging { display: block; color: #000; text-align: center; } 
+.eventWrap .mpaging a { display: inline-block; margin: 0 20px; background-color: #003281; color: #fff; font-size: 14px; padding: 4px 16px; border-radius: 4px; } 
+.eventWrap .mpaging span { font-weight: 700; } 
+ }
+@media all and (max-width: 640px){
+ .eventWrap .eventMain .innerSection { padding: 30px 0; } 
+ .eventWrap .eventMain .mainVisual h2 { padding: 10px; border-radius: 20px; } 
+.eventWrap .eventMain .evInfo .tit { border-radius: 20px 20px 0 0; } 
+.eventWrap .eventMain .evInfo .tit p { padding: 20px 0 16px; font-size: 20px; } 
+.eventWrap .eventMain .evInfo .tit::before { width: 40px; height: 55px; top: -37px; left: 30px; } 
+.eventWrap .eventMain .evInfo .tit::after { width: 60px; height: 43px; top: -40px; right: 20px; } 
+.eventWrap .eventMain .evInfo { margin-top: 60px; } 
+.eventWrap .eventMain .evList { gap: 30px 4px; } 
+.eventWrap .eventMain .evList li { width: calc(100% / 2 - 2px) !important; } 
+.eventWrap .eventMain .evList li .imgWrap img { height: 100%; object-fit: contain; } 
+.eventWrap .eventMain .evList li .imgWrap { max-width: 170px; width: 100%; height: 80px; padding: 15px; margin: 0 auto 12px; border: 1px solid #000; border-radius: 10px; } 
+.eventWrap .eventMain .evList p { color: #000; font-size: 12px; word-break: keep-all; } 
+.eventWrap .eventMain .evList li .imgWrap::before { width: 45px; height: 45px; padding-top: 4px; top: -20px; right: -10px; font-size: 12px; background-size: contain; } 
+.eventWrap .eventMain .evInfo .infoBox { padding: 40px 10px; border-radius: 0 0 20px 20px; } 
+.eventWrap .eventMain .infoTxt { padding: 20px 10px; margin: 30px auto 0; border-radius: 20px; } 
+.eventWrap .eventMain .infoTxt li { flex-direction: column; } 
+.eventWrap .eventMain .infoTxt .evTit { height: 35px; font-size: 16px; line-height: 35px; margin: 0 auto; } 
+.eventWrap .eventMain .infoTxt .evTxt { font-size: 16px; text-align: center; } 
+.eventWrap .eventMain .evTip img { max-width: 250px; } 
+.eventWrap .eventMain .evTip { margin-top: 30px; } 
+.eventWrap .eventMain .tibWrap { padding: 20px 10px; border-radius: 20px; } 
+.eventWrap .eventMain .tibBox li::before { font-size: 14px; } 
+.eventWrap .eventMain .tibBox li { padding-left: 18px; } 
+.eventWrap .eventMain .tibBox li p { font-size: 14px; } 
+.eventWrap .eventMain .tibBox li p span { font-size: 12px; } 
+.eventWrap .eventMain .tibBox li + li { margin-top: 12px; } 
+.eventWrap .eventMain .tibBox li:nth-child(6)::before { width: 14px; height: 14px; background-size: contain; } 
+.eventWrap .eventMain .linkWrap a span::before { display: block; width: 120px; height: 29px; margin: 0 auto 4px; position: static; } 
+.eventWrap .eventMain .linkWrap a span { margin: 0 auto; padding-left: initial; font-size: 22px; } 
+.eventWrap .eventMain .linkWrap a::before { width: 50px; height: 50px; right: 0; bottom: -34px; } 
+.eventWrap .eventMain .linkWrap p { font-size: 14px; word-break: keep-all; } 
+.eventWrap .eventMain .linkWrap { margin-top: 30px; } 
+.eventWrap .cont01 .imgLink { gap: 10px 0; margin-bottom: 30px; } 
+.eventWrap .cont01 .imgLink li { width: 100%; } 
+.eventWrap .cont01 .reviewWrap .wirteForm { padding: 20px 15px; margin-bottom: 40px; flex-direction: column; } 
+.eventWrap .cont01 .reviewWrap .wirteForm .areaWrap { width: 100%; height: 120px; } 
+.eventWrap .cont01 .reviewWrap .wirteForm .txtWrap p { font-size: 12px; word-break: keep-all; } 
+.eventWrap .cont01 .reviewWrap .wirteForm .areaWrap { margin-bottom: 10px; } 
+.eventWrap .cont01 .reviewWrap .wirteForm .areaWrap textarea { padding: 10px; font-size: 14px; } 
+.eventWrap .cont01 .reviewWrap .wirteForm .areaWrap textarea::placeholder { font-size: 12px; } 
+.eventWrap .cont01 .reviewWrap .wirteForm .evbtn button { width: 100%; padding: 6px 0; font-size: 18px; border-radius: 10px; } 
+.eventWrap .cont01 .reviewWrap .viewWrap .cntTxt p { font-size: 20px; } 
+.eventWrap .cont01 .reviewWrap .viewWrap .evComment p { font-size: 16px; letter-spacing: -1px; } 
+.eventWrap .cont01 .reviewWrap .viewWrap .comList li { padding: 10px; } 
+.eventWrap .cont01 .reviewWrap .viewWrap .evDate span { font-size: 14px; } 
+.eventWrap .cont01 .reviewWrap .viewWrap .evDate span + span { margin-left: 4px; padding-left: 4px; } 
+
+ .eventWrap .evFooter .innerSection { padding: 30px 0; } 
+ .eventWrap .evFooter h3 { font-size: 16px; } 
+ .eventWrap .evFooter li { padding-left: 10px; font-size: 12px; } 
+ }
+ 
