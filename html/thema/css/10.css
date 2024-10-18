@@ -49,8 +49,10 @@ html { overflow: initial; }
 .themaWrap .cls-7 { fill: #83e1f0; } 
 .themaWrap .tabWrap { margin-top: 70px; padding: 20px 15px 20px 40px; background: #fff; border-radius: 15px; border: 2px solid #c2d9e7; box-shadow: rgba(194, 217, 231, 1) 3px 3px 0; } 
 .themaWrap .tabList > li { padding: 20px 0; border-bottom: 1px solid #dddddd; } 
+.themaWrap .tabList > li.jobEnd a { pointer-events: none; } 
+.themaWrap .tabList > li.jobEnd .listImg::before { content: '종료'; display: flex; width: 100%; height: 100%; position: absolute; background: rgba(0, 0, 0, 0.8); color: #fff; font-size: 30px; font-weight: 700; align-items: center; justify-content: center; } 
 .themaWrap .tabList a { display: flex; align-items: center; } 
-.themaWrap .tabList .listImg { margin-right: 26px; border-radius: 15px; overflow: hidden; flex-shrink: 0; } 
+.themaWrap .tabList .listImg { margin-right: 26px; position: relative; border-radius: 15px; overflow: hidden; flex-shrink: 0; } 
 .themaWrap .scrollbar-outer { max-height: 940px; padding-right: 34px; overflow-y: scroll; } 
 
 .themaWrap .scrollbar-outer > .scroll-content.scroll-scrolly_visible { margin: 0; left: 0; } 
@@ -223,4 +225,5 @@ html { overflow: initial; }
 .themaWrap .bannerWrap .b_txt { font-size: 26px; } 
 .themaWrap .show_cont .top .close_btn { padding-right: 18px; font-size: 16px; } 
 .themaWrap .show_cont .top .close_btn:after { width: 14px; height: 14px; } 
+.themaWrap .tabList > li.jobEnd .listImg::before { font-size: 20px; } 
  }
