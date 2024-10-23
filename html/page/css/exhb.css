@@ -434,7 +434,10 @@
 	.exhb_sub .company_info .ci_cpn .li_tit{order: -1}
 
     /* s:2024.10.22 온라인 채용관 css 추가 */
-	.exhb_remain .exhb_job .job_list .item {width: calc(100% / 2 - 15px);} 
+	.exhb_remain .exhb_job .job_list .item {width: calc(100% / 2 - 15px);}
+
+	.exhb_wrap .info_view .info_wrap {flex-direction: column; } 
+	.exhb_wrap .info_view .info_wrap .info_item {width: 100%; } 
 	/* e:2024.10.22 온라인 채용관 css 추가 */ 
 }
 
@@ -538,6 +541,22 @@
 	
 	/* s:2024.10.23 온라인 채용관 css 추가 */
 	.exhb_wrap .exhb_onjob .view_Detail .vTit {margin-bottom: 15px;font-size: 16px;}
+	.exhb_wrap .at_cpn.style02 .at_cpn_list::before,
+	.exhb_wrap .at_cpn.style02 .at_cpn_list::after {content: none; } 
+	.exhb_wrap .info_view .info_wrap {padding: 30px 30px; } 
+	.exhb_wrap .info_view .info_wrap dl {margin-bottom: 15px; } 
+	.exhb_wrap .info_view .info_wrap dl dt {width: 100px;margin-right: 10px;padding: 6px 0;font-size: 13px; } 
+	.exhb_wrap .info_view .info_wrap dl dd {font-size: 13px; } 
+	.exhb_wrap .info_view .info_wrap dl dd.file a {font-size: 13px; } 
+	.exhb_wrap .info_view .info_wrap dl dd.file a span {padding-right: 20px;background-size: 12px; } 
+	.exhb_wrap .des_sub.style02 .src_wrap {flex-direction: column; } 
+	.exhb_wrap .des_sub.style02 .des_select {width: 100px;margin-left: auto;font-size: 13px; } 
+	.exhb_wrap .des_sub.style02 .des_sch {max-width: 100%; } 
+	.exhb_wrap .des_sub.style02 .des_filter .check_list {flex-direction: column; } 
+	.exhb_wrap .des_sub.style02 .des_filter .checkItem:nth-child(1) {border-right: 0;border-bottom: 1px solid #cecece; } 
+	.exhb_wrap .des_sub.style02 .des_filter .checkItem {padding: 20px; } 
+	.exhb_wrap .des_sub.style02 .des_filter .des_result {padding: 20px;flex-direction: column; } 
+	.exhb_wrap .des_sub.style02 .des_filter .keywords_wrap {width: 100%;margin-bottom: 10px; } 
 	/* e:2024.10.23 온라인 채용관 css 추가 */
 }
 /* s:2024.10.22 온라인 채용관 css 추가 */
@@ -566,6 +585,19 @@
     .exhb_wrap .paging {display: none; } 
     .exhb_wrap .mpaging {display: block; margin: 15px 0; color: #000;text-align: center; } 
     .exhb_wrap .mpaging a {display: inline-block;margin: 0 20px;background-color: #003281;color: #fff;font-size: 14px;padding: 4px 16px;border-radius: 4px; } 
+
+	.exhb_wrap .exhb_onjob .view_Detail .detail_box {padding: 15px;}
+	.exhb_wrap .info_view {padding: 30px 0; } 
+	.exhb_wrap .info_view .info_wrap {padding: 20px 20px; } 
+	.exhb_wrap .des_sub.style02 .des_filter .checkItem {padding: 15px; } 
+	.exhb_wrap .des_sub.style02 .des_filter .checkList {gap: 6px; } 
+	.exhb_wrap .des_sub.style02 .des_filter .c_item .lb_tag {height: 25px;padding: 4px 15px;font-size: 12px; } 
+	.exhb_wrap .des_sub.style02 .des_filter .des_result {padding: 15px; } 
+	.exhb_wrap .des_sub.style02 .des_filter .selected_keyword {font-size: 12px; } 
+	.exhb_wrap .des_sub.style02 .des_filter .check_list {max-height: 150px;overflow: scroll; } 
+	.exhb_wrap .exhb_onjob { margin-top: 30px; } 
+	.exhb_wrap .des_sub.style02 .des_sch input[type="submit"] { width: 16px; height: 16px; background-size: contain; } 
+	.exhb_wrap .des_sub.style02 .des_filter .area_btn .btn_reset { font-size: 12px; } 
 }
 /* e:2024.10.22 온라인 채용관 css 추가 */
 
