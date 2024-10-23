@@ -518,7 +518,7 @@
     .exhb_wrap .exhb_cst .ctr_list .item a {padding: 10px;justify-content: center; } 
     .exhb_wrap .exhb_cst .ctr_list .item a p {font-size: 16px; } 
     .exhb_wrap .paging {display: none; } 
-    .exhb_wrap .mpaging {display: block;color: #000;text-align: center; } 
+    .exhb_wrap .mpaging {display: block; margin: 15px 0; color: #000;text-align: center; } 
     .exhb_wrap .mpaging a {display: inline-block;margin: 0 20px;background-color: #003281;color: #fff;font-size: 14px;padding: 4px 16px;border-radius: 4px; } 
 }
 /* e:2024.10.22 온라인 채용관 css 추가 */
