@@ -282,19 +282,20 @@
 .exhb_wrap .innerSection { max-width: 1260px; width: calc(100% - 20px); margin: 0 auto; } 
 .exhb_remain .exhb_job { background: #fff; } 
 .exhb_remain .exhb_job .innerSection { padding: 100px 0 50px; } 
-.exhb_remain .exhb_job .job_list { display: flex; margin-bottom: 50px; flex-wrap: wrap; gap: 30px; } 
+.exhb_remain .exhb_job .job_list { display: flex; padding: 20px; margin-bottom: 50px; flex-wrap: wrap; gap: 30px; border: 1px solid #ddd; border-radius: 10px;} 
 .exhb_remain .exhb_job .job_list .item { width: calc(100% / 3 - 20px); } 
-.exhb_remain .exhb_job .job_list .item.end .img_wrap::before { content: '마감'; display: flex; width: 100%; height: 100%; position: absolute; top: 0; left: 0; background: rgba(0, 0, 0, 0.7); color: #fff; font-size: 40px; font-weight: 700; align-items: center; justify-content: center; } 
-.exhb_remain .exhb_job .job_list a { display: block; } 
+.exhb_remain .exhb_job .job_list .item.end .img_wrap::before { content: ''; display: flex; width: 100%; height: 100%; position: absolute; top: 0; left: 0; background: rgba(0, 0, 0, 0.7); color: #fff; font-size: 40px; font-weight: 700; align-items: center; justify-content: center; } 
+.exhb_remain .exhb_job .job_list a { display: block; position: relative;}
+.exhb_remain .exhb_job .job_list a:hover::before {content: '';width: 100%;height: 100%;position: absolute;top: 0;left: 0;border: 2px solid #4193F7;box-sizing: border-box;border-radius: 15px;z-index: 1; } 
 .exhb_remain .exhb_job .job_list .img_wrap { height: 170px; position: relative; border-radius: 15px; overflow: hidden; } 
 .exhb_remain .exhb_job .job_list .img_wrap img { width: 100%; height: 100%; } 
 .exhb_remain .exhb_job .job_list .txt_wrap { padding: 20px 10px; } 
 .exhb_remain .exhb_job .job_list .txt_wrap .prog { font-size: 14px; font-weight: 500; } 
 .exhb_remain .exhb_job .job_list .txt_wrap .prog.st1 { color: #00a8cd; } 
 .exhb_remain .exhb_job .job_list .txt_wrap .prog.st2 { color: #adadad; } 
-.exhb_remain .exhb_job .job_list .txt_wrap .tit { display: block; margin: 8px 0; color: #000; font-size: 16px; font-weight: 500; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; } 
+.exhb_remain .exhb_job .job_list .txt_wrap .tit { display: block; margin: 8px 0; color: #000; font-size: 18px; font-weight: 500; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; } 
 .exhb_remain .exhb_job .job_list a:hover .txt_wrap .tit { text-decoration: underline; } 
-.exhb_remain .exhb_job .job_list .txt_wrap ul li { display: block; color: #777777; font-size: 14px; font-weight: 300; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; } 
+.exhb_remain .exhb_job .job_list .txt_wrap ul li { display: block; color: #777777; font-size: 16px; font-weight: 300; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; } 
 .exhb_wrap .paging { margin: 24px 0; text-align: center; } 
 .exhb_wrap .paging a { display: inline-block; color: #6b6b6b; padding: 4px; font-size: 16px; } 
 .exhb_wrap .paging a + a { margin-left: 20px; } 
@@ -331,21 +332,22 @@
 .exhb_wrap .exhb_onjob .view_Detail .detail_box table {margin: 0 auto; } 
 .exhb_wrap .des_sub.style02 {background: #fff; } 
 .exhb_wrap .des_sub.style02 .src_wrap {display: flex;margin-bottom: 20px;align-items: center;justify-content: flex-end;gap: 10px; } 
-.exhb_wrap .des_sub.style02 .des_select {display: inline-block;width: 120px;height: 34px;padding: 0 20px 0 10px;background: #fff;vertical-align: middle;border: 0;-webkit-appearance: none;-moz-appearance: none;appearance: none;background: url(../images/exhb/select_arrow02.png) center right 10px no-repeat;background-size: 11px;font-size: 14px; } 
+.exhb_wrap .des_sub.style02 .des_select {display: inline-block;width: 120px;height: 34px;padding: 0 20px 0 10px;background: #fff;vertical-align: middle;border: 0;-webkit-appearance: none;-moz-appearance: none;appearance: none;background: url(../images/exhb/select_arrow02.png) center right 10px no-repeat;background-size: 11px;font-size: 16px; } 
 .exhb_wrap .des_sub.style02 .des_sch input[type="submit"] {background: url(../images/exhb/src_ico.png) center right transparent no-repeat;width: 20px;height: 20px;border: 0;text-indent: -9999px; } 
-.exhb_wrap .des_sub.style02 .des_sch {max-width: 460px;width: 100%;margin: 0;padding: 6px 20px; } 
+.exhb_wrap .des_sub.style02 .des_sch {max-width: 460px;width: 100%;margin: 0;padding: 10px 20px; } 
+.exhb_wrap .des_sch.style02 input[type="text"] {font-size: 16px;}
 .exhb_wrap .des_sub.style02 .des_filter {margin-bottom: 20px; } 
 .exhb_wrap .des_sub.style02 .des_filter .check_list {display: flex;border: 1px solid #cecece;border-radius: 10px 10px 0 0; } 
 .exhb_wrap .des_sub.style02 .des_filter .checkItem {padding: 30px;flex: 1; } 
 .exhb_wrap .des_sub.style02 .des_filter .checkItem:nth-child(1) {flex: 2;border-right: 1px solid #cecece; } 
 .exhb_wrap .des_sub.style02 .des_filter .checkList {display: inline-flex;flex-wrap: wrap;gap: 10px; } 
-.exhb_wrap .des_sub.style02 .des_filter .c_item .lb_tag {display: inline-flex;height: 30px;padding: 10px 20px;color: #666666;font-size: 14px;font-weight: 300;border: 1px solid #dddddd;border-radius: 50px;text-align: center;box-sizing: border-box;align-items: center;justify-content: center; } 
+.exhb_wrap .des_sub.style02 .des_filter .c_item .lb_tag {display: inline-flex;height: 40px;padding: 10px 25px;color: #666666;font-size: 16px;font-weight: 300;border: 1px solid #dddddd;border-radius: 10px;text-align: center;box-sizing: border-box;align-items: center;justify-content: center; } 
 .exhb_wrap .des_sub.style02 .des_filter .c_item .inp_chk:checked + .lb_tag {background: #2aa6c1;color: #fff;border-color: #2aa6c1; } 
 .exhb_wrap .des_sub.style02 .des_filter .des_result {display: flex;padding: 20px 30px;background: #f5f6f8;border: 1px solid #ddd;border-top: 0;border-radius: 0 0 10px 10px; } 
 .exhb_wrap .des_sub.style02 .des_filter .keywords_wrap {width: calc(100% - 100px); } 
-.exhb_wrap .des_sub.style02 .des_filter .keywords {display: inline-flex;flex-wrap: wrap;gap: 4px 10px; } 
+.exhb_wrap .des_sub.style02 .des_filter .keywords {display: inline-flex;flex-wrap: wrap;gap: 4px 20px; } 
 .exhb_wrap .des_sub.style02 .des_filter .selected_keyword {display: inline-flex;color: #6e6e6e;font-size: 14px;font-weight: 300;align-items: center;box-sizing: border-box; } 
-.exhb_wrap .des_sub.style02 .des_filter .selected_keyword .btn_del {width: 8px;height: 8px;margin-left: 6px;background: url(../images/exhb/close_type01_icon.png) no-repeat;border: none; } 
+.exhb_wrap .des_sub.style02 .des_filter .selected_keyword .btn_del {width: 8px;height: 8px;margin-left: 10px;background: url(../images/exhb/close_type01_icon.png) no-repeat;border: none; } 
 .exhb_wrap .des_sub.style02 .des_filter .area_btn {margin-left: auto; } 
 .exhb_wrap .des_sub.style02 .des_filter .area_btn .btn_reset {display: block;padding-right: 14px;position: relative;background: url(../images/exhb/reset_icon.png) center right no-repeat;color: #666666;font-size: 14px; } 
 .exhb_wrap .at_cpn.style02 {background: #f1f6f8; overflow: hidden;} 
@@ -366,6 +368,62 @@
 .exhb_wrap .info_view .info_wrap dl dd.file a {display: block;width: calc(100% - 20px);margin-bottom: 4px;color: #000;font-size: 16px;font-weight: 300;white-space: nowrap;text-overflow: ellipsis;overflow: hidden; } 
 .exhb_wrap .info_view .info_wrap dl dd.file a span {padding-right: 30px;background: url(../images/exhb/file_icon.png) bottom 4px right no-repeat; } 
 /* e:2024.10.22 온라인 채용관 css 추가 */
+
+/* s:2024.10.24 온라인 채용관 팝업 추가 수정 */
+.modal.pop02 .modal-dialog {max-width: 1260px;width: calc(100% - 20px); } 
+.modal.pop02 .modal-header {background: #2a61f9 !important; } 
+.modal.pop02 .modal-header .modal-title {font-size: 28px !important;font-weight: 500 !important; } 
+.modal.pop02 .modal-body {padding: 30px 60px; } 
+.modal.pop02 .modal-header .close {margin-top: 0 !important; } 
+.modal.pop02 hr {margin: 20px 0;border-top: 1px solid #cfcfcf;border-bottom: none; } 
+.modal.pop02 .topTitle {margin-bottom: 40px; } 
+.modal.pop02 .topTitle .tit01 {margin-bottom: 20px;color: #000;font-size: 18px;font-weight: 500; } 
+.modal.pop02 .pTit {color: #333333;font-size: 24px;font-weight: 900; } 
+.modal.pop02 .pTxt {color: #666666;font-size: 18px;font-weight: 300; } 
+.modal.pop02 .pTxt02 {color: #000;font-size: 20px;font-weight: 300; } 
+.modal.pop02 .resumeList {display: flex;margin: 10px 0 20px;padding: 30px 36px;background: #f6f6f6;border: 1px solid #c5c5c5;align-items: flex-start;gap: 10px 50px; } 
+.modal.pop02 .resumeList .rTitWrap {display: flex;width: 390px;align-items: flex-start; } 
+.modal.pop02 .resumeList .rTag {display: inline-block;width: 98px;padding: 4px 0;margin-right: 10px;background: #55bf7f;color: #fff;font-size: 18px; text-align: center;font-weight: 500;flex-shrink: 0; } 
+.modal.pop02 .resumeList .rTit {padding-top: 2px;color: #000;font-size: 18px;font-weight: 500; } 
+.modal.pop02 .resumeList .rBtn {display: block;width: 132px;padding: 4px 0;background: #2a61f9;color: #fff;font-size: 18px;font-weight: 500;border-radius: 50px;text-align: center;flex-shrink: 0; } 
+.modal.pop02 .resumeList .rInfoWrap {padding-top: 2px; } 
+.modal.pop02 .resumeList .rInfoWrap li {color: #000;font-size: 16px;font-weight: 300; } 
+.modal.pop02 .resumeList .rInfoWrap li + li {margin-top: 4px; } 
+.modal.pop02 .resumeWrap {padding: 30px 40px;margin-bottom: 30px;background: #fff;border: 1px solid #c5c5c5; } 
+.modal.pop02 .resumeWrap dl {display: flex;align-items: center; } 
+.modal.pop02 .resumeWrap dl dt {margin-right: 20px;color: #000;font-size: 18px; } 
+.modal.pop02 .resumeWrap dl dd {display: flex;width: calc(100% - 120px);align-items: center; } 
+.modal.pop02 .resumeWrap .rSelect { display: inline-block; max-width: 460px; width: 100%; height: 34px; padding: 0 20px 0 10px; background: #fff; vertical-align: middle; border: 1px solid #cecece; -webkit-appearance: none; -moz-appearance: none; appearance: none; background: url(../images/exhb/select_arrow02.png) center right 10px no-repeat; background-size: 11px; font-size: 16px; cursor: pointer; } 
+.modal.pop02 .resumeWrap .rBtnWrap {display: inline-flex; margin-left: 20px; flex-shrink: 0;}
+.modal.pop02 .resumeWrap .rBtnWrap a + a {margin-left: 20px;}
+.modal.pop02 .resumeWrap .rBtnWrap .rBtn {display: block;padding: 5px 20px;background: #8f8f8f;color: #fff;font-size: 15px;font-weight: 500;border-radius: 5px; } 
+.modal.pop02 .resumeWrap .rBtnWrap .rBtn.b_orange {background: #ff8a00; } 
+.modal.pop02 .fileWrap {margin-bottom: 30px; } 
+.modal.pop02 .fileWrap .fileBtn {margin-bottom: 10px;text-align: right; } 
+.modal.pop02 .fileWrap .fileBtn .fBtn {padding: 4px 10px 4px 30px;background-color: #f9f9f9;background-repeat: no-repeat;background-position: left 10px center;color: #000;font-size: 15px;font-weight: 300;border: 1px solid #c5c5c5;border-radius: 5px; } 
+.modal.pop02 .fileWrap .fileBtn .fBtn.fAdd {background-image: url(../images/exhb/file_icon03.png); } 
+.modal.pop02 .fileWrap .fileBtn .fBtn.fDel {background-image: url(../images/exhb/file_icon04.png); } 
+.modal.pop02 .fileWrap .fileBtn button + button {margin-left: 10px; } 
+.modal.pop02 .fileWrap .fileTit {display: flex;align-items: center; } 
+.modal.pop02 .fileWrap .fileTit .fTag span {margin-left: 40px;padding-left: 24px;color: #000;font-size: 16px;font-weight: 300; } 
+.modal.pop02 .fileWrap .fileTit .fTag span.tIcon01 {background: url(../images/exhb/file_icon01.png) left center no-repeat; } 
+.modal.pop02 .fileWrap .fileTit .fTag span.tIcon02 {background: url(../images/exhb/file_icon02.png) left center no-repeat; } 
+.modal.pop02 .areaWrap .areaBox {width: 100%;height: 150px;margin-top: 20px; } 
+.modal.pop02 .areaWrap textarea {width: 100%;height: 100%;padding: 20px;background: #fff;color: #000;font-size: 15px;font-family: "Noto Sans KR" !important;font-weight: 300;border-radius: 10px;border: 1px solid #c5c5c5;resize: none; } 
+.modal.pop02 .pChkItem {margin: 50px 0 20px;position: relative; } 
+.modal.pop02 .pChkItem input[type="checkbox"] {display: none; } 
+.modal.pop02 .pChkItem input[type="checkbox"] + label::before {content: "";display: inline-block;width: 20px;height: 20px;margin-right: 2px;margin-bottom: 2px;background: #fdfdfd;border: 1px solid #ddd;border-radius: 3px;box-sizing: border-box;vertical-align: middle; } 
+.modal.pop02 .pChkItem input[type="checkbox"]:checked + label::before {content: "\2714";font-size: 12px;line-height: 16px;background: #2a61f9;color: #fff;border-color: #2a61f9;text-align: center;font-weight: 300; } 
+.modal.pop02 .pChkItem .pTxt {margin-top: 4px;padding-left: 26px; } 
+.modal.pop02 .tbWrap {overflow-x: scroll;}
+.modal.pop02 .tbType02 {width: 100%; min-width: 1024px; border: 1px solid #c5c5c5; } 
+.modal.pop02 .tbType02 th {padding: 15px;background: #f1f1f1;color: #000;font-size: 15px;font-weight: 500;border-left: 1px solid #c5c5c5;border-bottom: 1px solid #c5c5c5; } 
+.modal.pop02 .tbType02 td {padding: 15px;color: #666666;font-size: 15px;font-weight: 300;text-align: center;border-left: 1px solid #c5c5c5; } 
+.modal.pop02 .modal-footer .pBtn {max-width: 178px;width: 100%;padding: 5px;color: #fff;font-size: 24px;font-weight: 500;border-radius: 5px; } 
+.modal.pop02 .modal-footer .pBtn.b_blue {background: #2a61f9; } 
+.modal.pop02 .modal-footer .pBtn.b_gray {background: #ababab; } 
+.modal.pop02 .modal-footer button + button {margin-left: 10px; } 
+/* e:2024.10.24 온라인 채용관 팝업 추가 수정 */
 
 @media all and (max-width:1260px){
 	.exhb_main .exhb_header .top{padding-left: 0}
@@ -439,6 +497,10 @@
 	.exhb_wrap .info_view .info_wrap {flex-direction: column; } 
 	.exhb_wrap .info_view .info_wrap .info_item {width: 100%; } 
 	/* e:2024.10.22 온라인 채용관 css 추가 */ 
+
+	/* s:2024.10.24 온라인 채용관 팝업 추가 수정 */
+	.modal.pop02 .modal-body {padding: 20px 20px; } 
+	/* e:2024.10.24 온라인 채용관 팝업 추가 수정 */
 }
 
 /* s:2024.10.22 온라인 채용관 css 추가 */
@@ -558,15 +620,24 @@
 	.exhb_wrap .des_sub.style02 .des_filter .des_result {padding: 20px;flex-direction: column; } 
 	.exhb_wrap .des_sub.style02 .des_filter .keywords_wrap {width: 100%;margin-bottom: 10px; } 
 	/* e:2024.10.23 온라인 채용관 css 추가 */
+
+	/* s:2024.10.24 온라인 채용관 팝업 추가 수정 */
+	.modal.pop02 .resumeList {flex-direction: column; } 
+	.modal.pop02 .resumeList .rTitWrap {width: 100%; } 
+	.modal.pop02 .resumeList .rBtn {margin: 0 auto; } 
+	.modal.pop02 .resumeWrap dl {display: block; } 
+	.modal.pop02 .resumeWrap dl dt {margin-bottom: 10px; } 
+	.modal.pop02 .resumeWrap dl dd {width: 100%; } 
+	/* e:2024.10.24 온라인 채용관 팝업 추가 수정 */
 }
 /* s:2024.10.22 온라인 채용관 css 추가 */
 @media all and (max-width:640px) {
     .exhb_remain .exhb_reheader .tit_wrap {padding: 40px 0; } 
     .exhb_remain .exhb_reheader .tit_wrap h2 {max-width: 300px;height: 62px;padding-top: 8px;font-size: 22px; } 
     .exhb_remain .exhb_reheader .tit_wrap::before {width: 280px;height: 119px; } 
-    .exhb_remain .exhb_job {background: #dbeeff; } 
+    .exhb_remain .exhb_job {background: #fff; } 
     .exhb_remain .exhb_job .innerSection {padding: 30px 0; } 
-    .exhb_remain .exhb_job .job_list .img_wrap {display: none; } 
+    .exhb_remain .exhb_job .job_list a:hover::before {content: none;}
     .exhb_remain .exhb_job .job_list {margin-bottom: 30px;gap: 10px 0; } 
     .exhb_remain .exhb_job .job_list .item {width: 100%; } 
     .exhb_remain .exhb_job .job_list a {background: #fff;border-radius: 15px; } 
@@ -598,6 +669,36 @@
 	.exhb_wrap .exhb_onjob { margin-top: 30px; } 
 	.exhb_wrap .des_sub.style02 .des_sch input[type="submit"] { width: 16px; height: 16px; background-size: contain; } 
 	.exhb_wrap .des_sub.style02 .des_filter .area_btn .btn_reset { font-size: 12px; } 
+
+	/* 팝업 */
+	.modal.pop02 .modal-header .modal-title {font-size: 18px !important; } 
+	.modal.pop02 .modal-header .close {margin-top: -4px !important;font-size: 20px !important; } 
+	.modal.pop02 .modal-body {padding: 10px; } 
+	.modal.pop02 .topTitle {margin-bottom: 20px; } 
+	.modal.pop02 .pTxt {font-size: 14px; } 
+	.modal.pop02 .topTitle .tit01 {margin-bottom: 10px;font-size: 14px; } 
+	.modal.pop02 .pTit {font-size: 18px; } 
+	.modal.pop02 .resumeList {padding: 10px 15px; } 
+	.modal.pop02 .resumeList .rTitWrap {display: block; } 
+	.modal.pop02 .resumeList .rTag {width: 80px;margin-right: 0;font-size: 14px; } 
+	.modal.pop02 .resumeList .rTit {padding-top: 6px;font-size: 16px; } 
+	.modal.pop02 .resumeList .rInfoWrap li {font-size: 12px; } 
+	.modal.pop02 .resumeWrap {padding: 10px 15px;margin-bottom: 20px; } 
+	.modal.pop02 .resumeWrap dl dd {flex-direction: column;gap: 10px; } 
+	.modal.pop02 .resumeWrap .rBtnWrap {margin-left: 0; } 
+	.modal.pop02 .resumeWrap .rBtnWrap .rBtn {padding: 8px 12px;font-size: 14px;border-radius: 5px;text-align: center; } 
+	.modal.pop02 .resumeWrap .rBtnWrap a + a {margin-left: 4px; } 
+	.modal.pop02 .fileWrap .fileTit {display: block;margin-bottom: 10px; } 
+	.modal.pop02 .fileWrap .fileTit .fTag span {display: block;margin-left: 0;padding-left: 16px;font-size: 12px;background-size: 12px !important; } 
+	.modal.pop02 .areaWrap .areaBox {height: 100px;margin-top: 10px; } 
+	.modal.pop02 .areaWrap textarea {padding: 10px;font-size: 14px; } 
+	.modal.pop02 .pTxt02 {font-size: 16px; } 
+	.modal.pop02 .tbType02 th {padding: 10px;font-size: 14px; } 
+	.modal.pop02 .tbType02 td {padding: 10px;font-size: 14px; } 
+	.modal.pop02 .pChkItem {margin: 30px 0 20px; } 
+	.modal-footer {display: flex; } 
+	.modal.pop02 .modal-footer .pBtn {padding: 5px;font-size: 16px; } 
+	.modal.pop02 .fileWrap .fileBtn {text-align: center; } 
 }
 /* e:2024.10.22 온라인 채용관 css 추가 */
 
