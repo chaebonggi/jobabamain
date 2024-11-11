@@ -5,7 +5,7 @@
 
 
     <meta charset="utf-8" />
-    <title>잡학사전</title>
+    <title>관리자 일정관리</title>
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
@@ -21,12 +21,13 @@
     <link rel="stylesheet" href="https://adst.jobaba.net/resource/css/pe-icon-7-stroke.css" type="text/css" />
     <link rel="stylesheet" href="https://adst.jobaba.net/resource/css/custom.css" type="text/css" />
 
-
-    <script type="text/javascript" charset="utf-8" src="https://adst.jobaba.net/resource/js/jquery-2.2.4.js"></script>
+    <!-- lib References -->
+    <script type="text/javascript" charset="utf-8"
+        src="https://adst.jobaba.net/resource/resource/js/jquery-2.2.4.js"></script>
     <script type="text/javascript" charset="utf-8"
         src="https://adst.jobaba.net/resource/js/lib/validation/jquery.validate.js"></script>
 
-
+    <!-- bootstrap References -->
     <script type="text/javascript" charset="utf-8" src="https://adst.jobaba.net/resource/js/bootstrap.min.js"></script>
     <script type="text/javascript" charset="utf-8"
         src="https://adst.jobaba.net/resource/js/modernizr.custom.js"></script>
@@ -34,14 +35,14 @@
         src="https://adst.jobaba.net/resource/js/lib/animsition/animsition.min.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://adst.jobaba.net/resource/js/main.js"></script>
 
-
+    <!-- Page Related Scripts -->
     <script type="text/javascript" charset="utf-8"
         src="https://adst.jobaba.net/resource/js/lib/select2/select2.full.min.js"></script>
     <script type="text/javascript" charset="utf-8"
         src="https://adst.jobaba.net/resource/js/lib/tagsinput/bootstrap-tagsinput.min.js"></script>
     <script type="text/javascript" charset="utf-8"
         src="https://adst.jobaba.net/resource/js/lib/datepicker/bootstrap-datepicker.js"></script>
-
+    <!-- 2017.03.22 language 추가 -->
     <script type="text/javascript" charset="utf-8"
         src="https://adst.jobaba.net/resource/js/lib/timepicker/bootstrap-timepicker.js"></script>
     <script type="text/javascript" charset="utf-8"
@@ -50,7 +51,7 @@
         src="https://adst.jobaba.net/resource/js/lib/daterangepicker/daterangepicker.min.js"></script>
     <script type="text/javascript" charset="utf-8"
         src="https://adst.jobaba.net/resource/js/lib/autosize/jquery.autosize.min.js"></script>
-
+    <!-- 2017.03.27 삭제 -->
     <script type="text/javascript" charset="utf-8"
         src="https://adst.jobaba.net/resource/js/lib/knob/jquery.knob.min.js"></script>
     <script type="text/javascript" charset="utf-8"
@@ -71,7 +72,7 @@
         src="https://adst.jobaba.net/resource/js/lib/chartjs/Chart.min.js"></script>
 
 
-
+    <!-- common References -->
     <script type="text/javascript" charset="utf-8"
         src="https://adst.jobaba.net/resource/js/jquery/jquery.common.js"></script>
     <script type="text/javascript" charset="utf-8"
@@ -80,12 +81,12 @@
         src="https://adst.jobaba.net/resource/upload/js/upload.common.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://adst.jobaba.net/resource/js/common.js"></script>
 
-    
-
-
-
-
-
+    <!-- s:2024.11.11 일정관리 추가 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/locales-all.js"></script>
+    <!-- e:2024.11.11 일정관리 추가 -->
 </head>
 
 <body>
@@ -3122,6 +3123,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                
 
                                 <hr class="map-line">
                                 <div class="table-responsive">
@@ -3374,112 +3376,86 @@
 
                                     </ul>
                                 </div>
-
                                 <hr class="map_line">
 
                                 <div class="row box">
                                     <button type="button" onclick="onRgstLink();return false;"
                                         class="btn btn-primary pull-right">글쓰기</button>
                                 </div>
+                                <!-- s:2024.11.11 일정관리 추가 -->
+                                <style>
+                                    .calendar_wrap {
+                                        background: #fff;
+                                    }
+                                    .calendar_wrap .fc th {
+                                        background-color: #fafafa;
+                                    }
+                                    .calendar_wrap .fc td {
+                                        background-color: #fff;
+                                    }
+                                </style>
+                                <div class="calendar_wrap">
+                                    <div id='calendar'></div>
+                                </div>
+                                <script>
+                                    document.addEventListener('DOMContentLoaded', function() {
+                                    var calendarEl = document.getElementById('calendar');
+                                    var calendar = new FullCalendar.Calendar(calendarEl, {
+                                        initialView : 'dayGridMonth',
+                                        titleFormat : function(date) {
+                                            return date.date.year + '년 ' + (parseInt(date.date.month) + 1) + '월';
+                                        },
+                                        events:[
+                                            {
+                                                title:'경기도 청년 면접수당 (11/2 ~ 11/13)',
+                                                color: '#0000ff',
+                                                start:'2024-11-02',
+                                                end:'2024-11-13',
+                                                url: 'https://apply.jobaba.net/bsns/bsnsDetailView.do?bsnsSeq=3133'
+                                            },
+                                            {
+                                                title:'청년 복지포인트 (11/2 ~ 11/5)',
+                                                color: '#ff7171',
+                                                start:'2024-11-02',
+                                                end:'2024-11-05',
+                                                url: 'https://apply.jobaba.net/bsns/bsnsDetailView.do?bsnsSeq=3133'
+                                            },
+                                            {
+                                                title:'경기 베이비부머 근무자 모집 (11/10 ~ 11/18)',
+                                                color: '#f49038',
+                                                start:'2024-11-10',
+                                                end:'2024-11-18',
+                                                url: 'https://apply.jobaba.net/bsns/bsnsDetailView.do?bsnsSeq=3133'
+                                            },
+                                            {
+                                                title:'커리어 부트캠프 취업 멘토링 (11/25 ~ 11/27)',
+                                                color: '#ff0000',
+                                                start:'2024-11-25',
+                                                end:'2024-11-27',
+                                                url: 'https://apply.jobaba.net/bsns/bsnsDetailView.do?bsnsSeq=3133'
+                                            }
+                                        ],
+                                        locale: 'ko',
+                                        eventClick: function(info) {
+                                            if (info.event.url) {
+                                                window.open(info.event.url, '_blank');
+                                                info.jsEvent.preventDefault();
+                                            }
+                                        }
+                                    });
+                                    calendar.render();
+                                });
+                                </script>
+                                <!-- e:2024.11.11 일정관리 추가 -->
+                                
                             </div>
                         </div>
                     </div>
                 </div><!-- //row -->
-                <!--  -->
-                <style>
-                    .modal_pop { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); display: flex; align-items: center; justify-content: center; visibility: hidden; opacity: 0; transition: visibility 0s, opacity 0.3s; z-index: 999; } 
-                    .modal_pop .popup-content { max-width: 550px; width: 100%; background: #fff; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); position: relative; overflow: hidden; } 
-                    .modal_pop .close-btn { position: absolute; top: 6px; right: 10px; color: #fff; font-size: 20px; cursor: pointer; } 
-                    .modal_pop.active { visibility: visible; opacity: 1; } 
-                    .modal_pop .datepicker { display: block !important; } 
-                    .modal_pop .datepicker table tr th.prev:before { content:"\003C"; font-size: 16px; } 
-                    .modal_pop .datepicker table tr th.next:before { content:"\003E"; font-size: 16px; } 
-                    .modal_pop .pop_top { background: #2a61f9; } 
-                    .modal_pop .pop_top .tit { margin: 0; padding: 10px; color: #fff; font-size: 20px; font-weight: 300; } 
-                    .modal_pop .pop_cont { display: flex; padding: 20px; gap: 20px; } 
-                    .modal_pop .datepicker { width: 300px; border: 1px solid #eee; } 
-                    .modal_pop .datepicker table { width: 100%; } 
-                    .modal_pop .datepicker table tr td.active.active { background-color: #2a61f9; font-size: 20px; } 
-                    .modal_pop .popItem { display: flex; width: 100%; flex-direction: column; } 
-                    .modal_pop .popItem .dateTxt { display: block; width: 100%; height: 40px; padding: 0 10px; line-height: 40px; color: #000; font-size: 16px; border: 1px solid #eee; border-radius: 5px; } 
-                    .modal_pop .popItem .popBtn { margin-top: auto; text-align: center; } 
-                    .modal_pop .popItem .popBtn button { width: 80px; height: 36px; border: 1px solid #eee; border-radius: 10px;}
-                    .modal_pop .popItem .popBtn button + button { margin-left: 5px; } 
-                    .modal_pop .popItem .popBtn button:focus { outline: 0; } 
-                    .modal_pop .popItem .popBtn .btnBlue { background: #2a61f9; color: #fff; } 
-                    .modal_pop .popItem .popBtn .btnGray { background: #F0F0F0; color: #000; } 
-                    .modal_pop .popItem .radioList { margin-top: 30px; padding: 0 20px; } 
-                    .modal_pop .popItem .radioList .radioBox + .radioBox { margin-top: 10px; } 
-                    .modal_pop .popItem .radioList .radioBox input[type="radio"] { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0; } 
-                    .modal_pop .popItem .radioList .radioBox input[type="radio"] + label { display: inline-block; position: relative; padding-left: 30px; color: #000; font-size: 16px; font-weight: 500; cursor: pointer; } 
-                    .modal_pop .popItem .radioList .radioBox input[type="radio"]:checked + label { color: #2A61F9; } 
-                    .modal_pop .popItem .radioList .radioBox input[type="radio"] + label:before { content: ''; position: absolute; left: 0; top: 2px; width: 20px; height: 20px; text-align: center; background: #fff; border: 1px solid #c9cdd2; border-radius: 100%; } 
-                    .modal_pop .popItem .radioList .radioBox input[type="radio"]:checked + label:before { border-color: #2A61F9; } 
-                    .modal_pop .popItem .radioList .radioBox input[type="radio"]:checked + label:after { content: ''; position: absolute; top: 7px; left: 5px; width: 10px; height: 10px; background: #2A61F9; border-radius: 100%; } 
-                    .modal_pop .pob_bottom {padding: 0 20px 10px;}
-                    .modal_pop .pob_bottom p { color: #ff0000; font-size: 12px; letter-spacing: -0.5px;}
-                </style>
-                
-                <div class="modal_pop active" id="popupOverlay">
-                    <div class="popup-content">
-                        <div class="pop_top">
-                            <h3 class="tit">일별 홍보 신청 접수 on/off 설정</h3>
-                            <span class="close-btn" onclick="closePopup()">×</span>
-                        </div>
-                        <div class="pop_cont">
-                            <div>                                
-                                <div id="popDate"></div>                                
-                            </div>
-                            <div class="popItem">
-                                <span id="selectedDate" class="dateTxt"></span>
-                                <div class="radioList">
-                                    <div class="radioBox">
-                                        <input type="radio" name="conts01" id="check01" value="on" checked="">
-                                        <label for="check01">ON</label>
-                                    </div>
-                                    <div class="radioBox">
-                                        <input type="radio" name="conts01" id="check02" value="off">
-                                        <label for="check02">OFF</label>
-                                    </div>
-                                </div>
-                                <div class="popBtn">
-                                    <button type="button" class="btnBlue">저장</button>
-                                    <button type="button" class="btnGray" onclick="closePopup()">취소</button>
-                                </div>
-                            </div>                            
-                        </div>
-                        <div class="pob_bottom">
-                            <p>※ off 처리한 일자는 사용자가 더 이상 사업 홍보 신청을 할 수 없습니다.</p>
-                        </div>
-                        
-                    </div>
-                </div>
-                
-                <script>
-                    $(function() {	
-                        $('#popDate').datepicker({
-                            format: 'yyyy-mm-dd'
-                            ,language: 'ko'
-                        });
-                    });
-                    $('#popDate').on('changeDate', function(e) {
-                        var selectedDate = e.format(0, "yyyy-mm-dd"); 
-                        $('#selectedDate').text('선택일 : ' + selectedDate);
-                    });
-                
-                    function openPopup() {
-                        document.getElementById("popupOverlay").classList.add("active");
-                    }
-                
-                    function closePopup() {
-                        document.getElementById("popupOverlay").classList.remove("active");
-                    }
-                </script>
-                <!--  -->
             </div><!-- //Content -->
         </form>
     </div>
     
 </body>
- 
+
 </html>
