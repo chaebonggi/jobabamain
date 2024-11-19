@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>채용시장 hot issue</title>
+	<!-- 잡아바 css-->
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/import.css" />
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/mobile.css" />
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/fullcalendar.css" />
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/js/css/jquery-ui.css" />
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/bxslider/slick.css" />
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/swiper.min.css" />
+	<!-- <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css" /> -->
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/font-awesome.min.css" />
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/pe-icon-7-stroke.css" />
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/adminDetail.css" />
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/layout.css" />
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/style.css" />
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/kgoon.reset.min.css" />
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/mobile.css" />
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/style.css" />
+	<link type="text/css" rel="stylesheet" href="../etc/css/fonts.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.scrollbar/0.2.11/jquery.scrollbar.css">
+	
+
+
+	<!--추가 css-->
+	<link rel="stylesheet" href="./css/11.css" />
+</head>
+
+<body>
+	<div class="themaWrap">
+		<style>
+			.themaWrap .mainVisual {
+				background: url(./images/20241118/main_bg.jpg) top center no-repeat;
+			}
+			.themaWrap .mainVisual .innerSection {
+				max-width: 1550px;
+				padding: 100px 0;
+			}
+			.themaWrap .mainVisual .titWrap {
+				max-width: 1260px;
+				margin: 0 auto;
+				position: relative;
+				text-align: center;
+			}
+			.themaWrap .mainVisual .titWrap::before {
+				content: '';
+				width: 289px;
+				height: 233px;
+				position: absolute;
+				top: -60px;
+				right: -90px;
+				background: url(./images/20241118/main_item01.png) no-repeat;
+			}
+			.themaWrap .mainVisual .titWrap::after {
+				content: '';
+				width: 321px;
+				height: 267px;
+				position: absolute;
+				bottom: -250px;
+				left: -66px;
+				background: url(./images/20241118/main_item02.png) no-repeat;
+			}
+			.themaWrap .mainVisual h2 {
+				display: inline-block;				
+			}
+			
+			.themaWrap .mainVisual h2 img {
+				width: 100%;
+			}
+			.themaWrap .mainVisual .txtWrap {
+				position: relative;
+				text-align: center;				
+			}
+			.themaWrap .mainVisual .txtWrap::before {
+				content: '';
+				width: 154px;
+				height: 324px;
+				position: absolute;
+				right: 460px;
+				background: url(./images/20241118/main_item03.png) no-repeat;
+				z-index: 2;
+			}
+			.themaWrap .mainVisual .txtWrap::after {
+				content: '';
+				max-width: 950px;
+				width: 100%;
+				height: 100px;
+				position: absolute;
+				left: 50%;
+				bottom: -120px;
+				transform: translateX(-50%);
+				background: #fff227;
+				border-radius: 100px 100px 0 0;
+				z-index: 1;
+			}
+			.themaWrap .mainVisual .txtBox {				
+				display: inline-block;
+				padding-right: 200px;
+			}
+			.themaWrap .mainVisual .txtWrap p {
+				color: #fff;
+				font-size: 28px;
+			}
+		</style>
+		<article class="mainVisual">
+			<div class="innerSection">
+				<div class="titWrap">
+					<h2><img src="./images/20241118/main_tit.png" alt="채용시장 hot issue"></h2>
+				</div>
+				<div class="txtWrap">
+					<div class="txtBox">
+						<img src="./images/20241118/main_txt.png" alt="아는 것이 힘!">
+						<p>일자리 시장 주요 이슈에 대해 살펴보고<br>
+							취업준비 해볼까요? <br>
+							잡아바가 깔끔하게 정리했습니다!</p>
+					</div>					
+				</div>
+				<style>
+					.themaWrap .fcRed {
+						color: #eb233c !important;
+					}
+					.themaWrap .fcGray {
+						color: #7f7f7f !important;
+					}
+					.themaWrap .mainVisual .mainList {
+						margin-top: 90px;
+						padding: 25px;
+						position: relative;
+						background: #4cfdf5;
+						border: 1px dashed #000;
+						border-radius: 50px;
+						z-index: 2;
+					}
+					.themaWrap .mainVisual .listBox {
+						padding: 65px 10px;
+						background: #fff;
+						border-radius: 30px;
+						box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.3);
+					}
+					.themaWrap .mainVisual .mainList .listTit {
+						margin-bottom: 40px;
+						color: #000;
+						font-size: 72px;
+						text-align: center;
+					}
+					.themaWrap .mainVisual .mainList ul {
+						display: flex;
+						max-width: 1150px;
+						margin: 0 auto;
+						justify-content: space-between;
+					}
+					.themaWrap .mainVisual .mainList li {
+						flex: 1;
+					}
+					.themaWrap .mainVisual .mainList li a {
+						display: block;
+					}
+					.themaWrap .mainVisual .mainList li a:hover p::before {
+						border-color: #eb233c;
+						box-shadow: 0px 10px 20px 0px rgba(220, 0, 0, 0.3);
+						transition: all 0.35s;
+					}
+					.themaWrap .mainVisual .mainList li a:hover p {
+						color: #eb233c;
+						transition: all 0.35s;
+					}
+					.themaWrap .mainVisual .mainList li p {
+						color: #494949;
+						font-size: 36px;
+						text-align: center;
+					}
+					.themaWrap .mainVisual .mainList li p::before {
+						content: '';
+						display: block;
+						width: 320px;
+						height: 320px;
+						margin: 0 auto 40px;
+						border: 15px solid #e1e1e1;
+						border-radius: 50%;
+						box-sizing: border-box;
+					}
+					.themaWrap .mainVisual .mainList li:nth-child(1) p::before {
+						background: url(./images/20241118/main_list_icon01.png) center top 10px no-repeat;
+					}
+					.themaWrap .mainVisual .mainList li:nth-child(2) p::before {
+						background: url(./images/20241118/main_list_icon02.png) center bottom -10px no-repeat;
+					}
+					.themaWrap .mainVisual .mainList li:nth-child(3) p::before {
+						background: url(./images/20241118/main_list_icon03.png) center no-repeat;
+					}
+					
+				</style>
+				<div class="mainList">
+					<div class="listBox">
+						<p class="listTit cafeMo">채용시장 <span class="fcRed cafeMo">HOT</span> <span class="fcGray cafeMo">ISSUE</span></p>
+						<ul>
+							<li>
+								<a href="">
+									<p class="gBold">청년 NEET</p>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<p class="gBold">외국인 근로자 현황</p>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<p class="gBold">변화하는 노동시장 환경</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</article>
+
+		<article class="cont01">
+			<style>
+				.themaWrap .contTit {
+					border: 1px dashed #000;
+					border-right: 0;
+					border-left: 0;
+				}
+				.themaWrap .contTit p {
+					padding: 40px 0;
+					color: #000;
+					font-size: 66px;
+					text-align: center;
+				}
+				.themaWrap .cont01 .innerSection {
+					padding: 110px 0 160px;
+				}
+				.themaWrap .cont01 .contTit {
+					background: #eaf0fc;
+				}
+				.themaWrap .cont01 .txtBox {
+					padding: 0 80px;
+					background: url(./images/20241118/cont01_item01.png) right bottom no-repeat;
+				}
+				.themaWrap .cont01 .txtBox .txt01 {
+					margin-bottom: 30px;
+					color: #5d8cea;
+					font-size: 60px;
+				}
+				.themaWrap .cont01 .txtBox .txt02 {
+					margin-bottom: 30px;
+					color: #888888;
+					font-size: 24px;
+					letter-spacing: -0.5px;
+				}
+				.themaWrap .cont01 .txtBox .txt02 span {
+					color: #5d8cea;
+					font-size: 30px;
+				}
+				.themaWrap .cont01 .txtBox .txt03 {
+					color: #000;
+					font-size: 26px;
+					letter-spacing: -0.5px;
+				}
+			</style>
+			<div class="contTit">
+				<p class="cafeMo">'그냥 쉬는' 청년 44만 역대 최대...<br>
+					75%는 "일할 생각 없다"</p>
+			</div>
+			<div class="innerSection">
+				<div class="txtBox">
+					<p class="gBold txt01">청년 니트<span>(NEET)</span>란?</p>
+					<p class="txt02">'<span class="gBold">N</span>ot in <span class="gBold">E</span>ducation, <span class="gBold">E</span>mployment, and <span class="gBold">T</span>raining'의 약자</p>
+					<p class="txt03">학업(Education)도 하지 않고 일(Employment)도 하지 않으며<br>
+						취업을 위한 훈련(Training)도 받지 않는 청년층</p>
+				</div>
+				<div class="chartWrap">
+					<div class="chartList">
+						<div class="chartItem">
+							<div class="titWrap">
+								<p class="gBold">경기도 청년 니트규모</p>
+								<span>단위:천명</span>
+							</div>
+							<div class="imgWrap">
+								<img src="./images/20241118/chart01.png" alt="경기도 청년 니트규모">
+							</div>
+						</div>
+						<div class="chartItem">
+							<div class="titWrap">
+								<p class="gBold">"쉬었음"청년 비중</p>
+								<span>단위 : 천명</span>
+							</div>
+							<div class="imgWrap">
+								<img src="./images/20241118/chart01.png" alt="쉬었음 청년 비중">
+							</div>
+						</div>
+					</div>
+					<div class="chartTxt">
+						<p class="txt01">출처 : 통계청</p>
+						<hr>
+						<p class="txt02">청년 니트 규모는 감소하였으나 ‘쉬었음‘ 청년은 증가 추세</p>
+					</div>
+					
+				</div>
+			</div>
+		</article>
+
+	
+
+		
+
+		
+	</div>
+	<!--잡아바 js-->
+	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery-1.11.3.js"></script>
+	<script type="text/javascript" charset="utf-8"
+		src="https://www.jobaba.net/resource/js/jquery-ui-1.11.4.js"></script>
+	<script type="text/javascript" charset="utf-8"
+		src="https://www.jobaba.net/resource/js/jquery.validate-1.14.0.js"></script>
+	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/common.js"></script>
+	<script type="text/javascript" charset="utf-8"
+		src="https://www.jobaba.net/resource/js/mobile.common.js?v=20190418"></script>
+	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery.common.js"></script>
+	<script type="text/javascript" charset="utf-8"
+		src="https://www.jobaba.net/resource/upload/js/upload.common.js"></script>
+	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main.js"></script>
+	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/default_menu.js"></script>
+	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/swiper.min.js"></script>
+	<!-- <script type="text/javascript" charset="utf-8" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script> -->
+
+	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/bxslider/slick.js"></script>
+	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/bootstrap.min.js"></script>
+	<script type="text/javascript" charset="utf-8"
+		src="https://www.jobaba.net/resource/js/jquery.leanModal.min.js"></script>
+	<script type="text/javascript" charset="utf-8"
+		src="https://www.jobaba.net/resource/js/main/imgLiquid-min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main/script.js"></script>
+	<script type="text/javascript" charset="utf-8"
+		src="https://www.jobaba.net/resource/js/main/jquery.vticker-min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.scrollbar/0.2.11/jquery.scrollbar.js"></script>
+
+		<script>
+			$(document).ready(function(){
+				
+			});	
+		</script>
+
+</body>
+
+</html>
