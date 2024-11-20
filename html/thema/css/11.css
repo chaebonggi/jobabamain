@@ -124,7 +124,7 @@
 .themaWrap .cont03 .contTit { background: #f9ece0; } 
 .themaWrap .cont03 .chartTit .cTit p { color: #ff7800; } 
 .themaWrap .cont03 .subTit { margin: 70px 0 40px; text-align: center; } 
-.themaWrap .cont03 .subTit p { display: inline-block; padding: 4px 60px 0; position: relative; background-image: url(../images/20241118/tit_left.png), url(../images/20241118/tit_right.png); background-position: center left, center right; background-repeat: no-repeat; color: #000; font-size: 36px; line-height: 60px; } 
+.themaWrap .cont03 .subTit p { display: inline-block; padding: 4px 60px 0; position: relative; background-image: url(../images/20241118/tit_left.png), url(../images/20241118/tit_right.png); background-position: center left, center right; background-repeat: no-repeat; color: #000; font-size: 36px; line-height: 60px; word-break: keep-all; } 
 .themaWrap .cont03 .subTit p::before { content: ''; } 
 .themaWrap .cont03 .resultTxt { border: 10px solid #ffe5bf; } 
 .themaWrap .cont03 .txtBox { background: url(../images/20241118/cont03_item01.png) right bottom no-repeat; } 
@@ -356,13 +356,13 @@
  .themaWrap .cont03 .subTit { margin: 30px 0; } 
  .themaWrap .cont03 .subTit p { padding: 4px 30px 0; font-size: 20px; line-height: 30px; background-size: 16px; } 
  .themaWrap .tabWrap { margin-top: 50px; padding: 50px 15px 15px; } 
- .themaWrap .tabWrap .tabItem .stit { margin-bottom: 10px; font-size: 20px; } 
- .themaWrap .tabWrap .tabItem .stxt { margin-bottom: 10px; font-size: 16px; } 
+ .themaWrap .tabWrap .tabItem .stit { margin-bottom: 10px; font-size: 20px; text-align: center; } 
+ .themaWrap .tabWrap .tabItem .stxt { margin-bottom: 10px; font-size: 16px; text-align: center; word-break: keep-all; } 
  .themaWrap .tabWrap .tabItem li { font-size: 14px; word-break: keep-all; } 
  .themaWrap .tabWrap .tabItem li::before { top: 5px; } 
  .themaWrap .tabWrap .tabItem.bg02 { background-size: 100px; background-position: center bottom; } 
  .themaWrap .tabWrap .tabItem.bg01 { background-size: 100px; background-position: center bottom; } 
- .themaWrap .cont03 .resultTxt { padding: 20px 20px 70px; border: 2px solid #ffe5bf; background-size: 60px; } 
+ .themaWrap .cont03 .resultTxt { padding: 20px 20px 70px; border: 2px solid #ffe5bf; background-size: 90px; } 
  .themaWrap .infoWrap .iTit span { margin-bottom: 4px; font-size: 20px; } 
  .themaWrap .infoWrap .iTit { font-size: 16px; } 
  .themaWrap .infoWrap .iTxt { font-size: 16px; } 
@@ -380,4 +380,6 @@
  .themaWrap .jobList .swiper-button-prev,
  .themaWrap .jobList .swiper-button-next { width: 40px; height: 40px; background-size: contain; } 
  .themaWrap .jobList { padding-bottom: 30px; } 
+ .themaWrap .chartTxt .txt03 { font-size: 12px; word-break: keep-all; } 
+.themaWrap .tabWrap .swiper-pagination-bullet { width: 10px; height: 10px; } 
  }
