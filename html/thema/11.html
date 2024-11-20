@@ -32,184 +32,35 @@
 
 <body>
 	<div class="themaWrap">
-		<style>
-			.themaWrap .mainVisual {
-				background: url(./images/20241118/main_bg.jpg) top center no-repeat;
-			}
-			.themaWrap .mainVisual .innerSection {
-				max-width: 1550px;
-				padding: 100px 0;
-			}
-			.themaWrap .mainVisual .titWrap {
-				max-width: 1260px;
-				margin: 0 auto;
-				position: relative;
-				text-align: center;
-			}
-			.themaWrap .mainVisual .titWrap::before {
-				content: '';
-				width: 289px;
-				height: 233px;
-				position: absolute;
-				top: -60px;
-				right: -90px;
-				background: url(./images/20241118/main_item01.png) no-repeat;
-			}
-			.themaWrap .mainVisual .titWrap::after {
-				content: '';
-				width: 321px;
-				height: 267px;
-				position: absolute;
-				bottom: -250px;
-				left: -66px;
-				background: url(./images/20241118/main_item02.png) no-repeat;
-			}
-			.themaWrap .mainVisual h2 {
-				display: inline-block;				
-			}
-			
-			.themaWrap .mainVisual h2 img {
-				width: 100%;
-			}
-			.themaWrap .mainVisual .txtWrap {
-				position: relative;
-				text-align: center;				
-			}
-			.themaWrap .mainVisual .txtWrap::before {
-				content: '';
-				width: 154px;
-				height: 324px;
-				position: absolute;
-				right: 460px;
-				background: url(./images/20241118/main_item03.png) no-repeat;
-				z-index: 2;
-			}
-			.themaWrap .mainVisual .txtWrap::after {
-				content: '';
-				max-width: 950px;
-				width: 100%;
-				height: 100px;
-				position: absolute;
-				left: 50%;
-				bottom: -120px;
-				transform: translateX(-50%);
-				background: #fff227;
-				border-radius: 100px 100px 0 0;
-				z-index: 1;
-			}
-			.themaWrap .mainVisual .txtBox {				
-				display: inline-block;
-				padding-right: 200px;
-			}
-			.themaWrap .mainVisual .txtWrap p {
-				color: #fff;
-				font-size: 28px;
-			}
-		</style>
-		<article class="mainVisual">
+		<article class="mainVisual" id="moveTo04">
 			<div class="innerSection">
 				<div class="titWrap">
 					<h2><img src="./images/20241118/main_tit.png" alt="채용시장 hot issue"></h2>
 				</div>
 				<div class="txtWrap">
-					<div class="txtBox">
+					<div class="tBox">
 						<img src="./images/20241118/main_txt.png" alt="아는 것이 힘!">
 						<p>일자리 시장 주요 이슈에 대해 살펴보고<br>
 							취업준비 해볼까요? <br>
 							잡아바가 깔끔하게 정리했습니다!</p>
 					</div>					
 				</div>
-				<style>
-					.themaWrap .fcRed {
-						color: #eb233c !important;
-					}
-					.themaWrap .fcGray {
-						color: #7f7f7f !important;
-					}
-					.themaWrap .mainVisual .mainList {
-						margin-top: 90px;
-						padding: 25px;
-						position: relative;
-						background: #4cfdf5;
-						border: 1px dashed #000;
-						border-radius: 50px;
-						z-index: 2;
-					}
-					.themaWrap .mainVisual .listBox {
-						padding: 65px 10px;
-						background: #fff;
-						border-radius: 30px;
-						box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.3);
-					}
-					.themaWrap .mainVisual .mainList .listTit {
-						margin-bottom: 40px;
-						color: #000;
-						font-size: 72px;
-						text-align: center;
-					}
-					.themaWrap .mainVisual .mainList ul {
-						display: flex;
-						max-width: 1150px;
-						margin: 0 auto;
-						justify-content: space-between;
-					}
-					.themaWrap .mainVisual .mainList li {
-						flex: 1;
-					}
-					.themaWrap .mainVisual .mainList li a {
-						display: block;
-					}
-					.themaWrap .mainVisual .mainList li a:hover p::before {
-						border-color: #eb233c;
-						box-shadow: 0px 10px 20px 0px rgba(220, 0, 0, 0.3);
-						transition: all 0.35s;
-					}
-					.themaWrap .mainVisual .mainList li a:hover p {
-						color: #eb233c;
-						transition: all 0.35s;
-					}
-					.themaWrap .mainVisual .mainList li p {
-						color: #494949;
-						font-size: 36px;
-						text-align: center;
-					}
-					.themaWrap .mainVisual .mainList li p::before {
-						content: '';
-						display: block;
-						width: 320px;
-						height: 320px;
-						margin: 0 auto 40px;
-						border: 15px solid #e1e1e1;
-						border-radius: 50%;
-						box-sizing: border-box;
-					}
-					.themaWrap .mainVisual .mainList li:nth-child(1) p::before {
-						background: url(./images/20241118/main_list_icon01.png) center top 10px no-repeat;
-					}
-					.themaWrap .mainVisual .mainList li:nth-child(2) p::before {
-						background: url(./images/20241118/main_list_icon02.png) center bottom -10px no-repeat;
-					}
-					.themaWrap .mainVisual .mainList li:nth-child(3) p::before {
-						background: url(./images/20241118/main_list_icon03.png) center no-repeat;
-					}
-					
-				</style>
 				<div class="mainList">
 					<div class="listBox">
 						<p class="listTit cafeMo">채용시장 <span class="fcRed cafeMo">HOT</span> <span class="fcGray cafeMo">ISSUE</span></p>
 						<ul>
 							<li>
-								<a href="">
+								<a href="#moveTo01">
 									<p class="gBold">청년 NEET</p>
 								</a>
 							</li>
 							<li>
-								<a href="">
+								<a href="#moveTo02">
 									<p class="gBold">외국인 근로자 현황</p>
 								</a>
 							</li>
 							<li>
-								<a href="">
+								<a href="#moveTo03">
 									<p class="gBold">변화하는 노동시장 환경</p>
 								</a>
 							</li>
@@ -219,50 +70,29 @@
 			</div>
 		</article>
 
-		<article class="cont01">
-			<style>
-				.themaWrap .contTit {
-					border: 1px dashed #000;
-					border-right: 0;
-					border-left: 0;
-				}
-				.themaWrap .contTit p {
-					padding: 40px 0;
-					color: #000;
-					font-size: 66px;
-					text-align: center;
-				}
-				.themaWrap .cont01 .innerSection {
-					padding: 110px 0 160px;
-				}
-				.themaWrap .cont01 .contTit {
-					background: #eaf0fc;
-				}
-				.themaWrap .cont01 .txtBox {
-					padding: 0 80px;
-					background: url(./images/20241118/cont01_item01.png) right bottom no-repeat;
-				}
-				.themaWrap .cont01 .txtBox .txt01 {
-					margin-bottom: 30px;
-					color: #5d8cea;
-					font-size: 60px;
-				}
-				.themaWrap .cont01 .txtBox .txt02 {
-					margin-bottom: 30px;
-					color: #888888;
-					font-size: 24px;
-					letter-spacing: -0.5px;
-				}
-				.themaWrap .cont01 .txtBox .txt02 span {
-					color: #5d8cea;
-					font-size: 30px;
-				}
-				.themaWrap .cont01 .txtBox .txt03 {
-					color: #000;
-					font-size: 26px;
-					letter-spacing: -0.5px;
-				}
-			</style>
+		<article class="cont01 linkCont" id="moveTo01">
+			<div class="leftMenu">
+				<ul class="menuList">
+					<li class="active">
+						<a href="#moveTo01">
+							<p>청년 NEET</p>
+						</a>
+					</li>
+					<li>
+						<a href="#moveTo02">
+							<p>외국인 근로자<br> 현황</p>
+						</a>
+					</li>
+					<li>
+						<a href="#moveTo03">
+							<p>변화하는<br> 노동시장 환경</p>
+						</a>
+					</li>
+				</ul>
+				<a href="#moveTo04">
+					<p class="gBold">▲ TOP</p>							
+				</a>
+			</div>
 			<div class="contTit">
 				<p class="cafeMo">'그냥 쉬는' 청년 44만 역대 최대...<br>
 					75%는 "일할 생각 없다"</p>
@@ -288,10 +118,9 @@
 						<div class="chartItem">
 							<div class="titWrap">
 								<p class="gBold">"쉬었음"청년 비중</p>
-								<span>단위 : 천명</span>
 							</div>
 							<div class="imgWrap">
-								<img src="./images/20241118/chart01.png" alt="쉬었음 청년 비중">
+								<img src="./images/20241118/chart02.png" alt="쉬었음 청년 비중">
 							</div>
 						</div>
 					</div>
@@ -299,13 +128,490 @@
 						<p class="txt01">출처 : 통계청</p>
 						<hr>
 						<p class="txt02">청년 니트 규모는 감소하였으나 ‘쉬었음‘ 청년은 증가 추세</p>
+					</div>					
+				</div>
+				<div class="chartTit">
+					<div class="cLine">
+						<span></span>
 					</div>
+					<div class="cTit">
+						<p class="gBold">'쉬었음' 청년 설문조사</p>
+					</div>
+					<p class="cTxt"><span class="gBold">‘쉬었음’ 청년</span> : 별다른 활동 없이 막연히 쉬고 있는 청년</p>
+				</div>
+				<div class="chartWrap">
+					<div class="chartList">
+						<div class="chartItem">
+							<div class="titWrap">
+								<p class="gBold">취업 의사가 있나요?</p>
+								<span>단위:천명</span>
+							</div>
+							<div class="imgWrap">
+								<img src="./images/20241118/chart03.png" alt="취업 의사">
+							</div>
+						</div>
+						<div class="chartItem">
+							<div class="titWrap">
+								<p class="gBold">구직활동을 하지 않는 이유</p>
+							</div>
+							<div class="imgWrap">
+								<img src="./images/20241118/chart04.png" alt="구직활동을 하지 않는 이유">
+							</div>
+						</div>
+					</div>
+					<div class="chartTxt">
+						<hr>
+						<p class="txt02">‘쉬었음’ 청년 중 다수가  ‘취업의사 없음’으로 응답</p>
+					</div>					
+				</div>
+				<div class="resultTxt type02">
+					<ul>
+						<li><p>저출산으로 청년 인구가 줄면서 니트 규모는 감소 하는것처럼 보이나,<br>
+							일자리 부족 문제로 <span class="gBold">‘쉬었음’ 인구가 증가하여 청년 취업 문제는<br>
+							오히려 심화되는 것으로 파악됩니다.</span></p></li>
+					</ul>
 					
+				</div>
+				<div class="chartTit">
+					<div class="cLine">
+						<span></span>
+					</div>
+					<div class="cTit">
+						<p class="gBold">경기도 ‘쉬었음’ 청년 일경험 현황</p>
+					</div>					
+				</div>
+				<div class="chartWrap">
+					<div class="chartList">
+						<div class="chartItem">
+							<div class="titWrap">
+								<p class="gBold">퇴직 후 1년 이상 쉬고 있는 청년</p>
+								<span>단위:천명</span>
+							</div>
+							<div class="imgWrap">
+								<img src="./images/20241118/chart05.png" alt="퇴직 후 1년 이상 쉬고 있는 청년">
+							</div>
+						</div>
+						<div class="chartItem">
+							<div class="titWrap">
+								<p class="gBold">일 경험 없는 청년</p>
+								<span>단위:천명</span>
+							</div>
+							<div class="imgWrap">
+								<img src="./images/20241118/chart06.png" alt="일 경험 없는 청년">
+							</div>
+						</div>
+					</div>
+					<div class="chartTxt">
+						<hr>
+						<p class="txt02">일경험 유무와 상관없이 ‘쉬었음’ 청년은 증가하는 추세를 보임</p>
+					</div>					
+				</div>
+				<div class="resultTxt">
+					<ul class="style02">
+						<li><p>근로시간, 보수 등 <span class="gBold">근로조건(환경)이 불만족스러워 일자리를 그만둔 비중이 높고</span><br>
+							조건에 맞는 일자리를 구하지 못해 구직활동을 중단하는 ‘쉬었음’상태가 장기화되고 있습니다.</p></li>
+						<li><p>일자리 미스매치로 인해 <span class="gBold">장기적인 일경험 부족</span>을 겪는 청년들은 노동시장 경쟁력을 잃고<br>
+							장기적인 실업 상태를 겪을 수 있습니다.</p></li>
+					</ul>
+				</div>
+				<div class="linkWrap">
+					<div class="linkTit">
+						<p class="gBold">잡아바와 함께 취업준비 해봅시다!</p>
+					</div>
+					<ul>
+						<li>
+							<a href="https://www.jobaba.net/jobSprt/detail.do?seq=222">
+								<p class="lkTit gBold">청년도전 지원사업</p>
+								<p class="lkTxt">청년 맞춤형프로그램 제공!</p>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.jobaba.net/thema/themeInfo.do?currentPageNo=1&seq=114&viewType=default&indexSel=26&login=false">
+								<p class="lkTit gBold">잡아바 채널톡 상담</p>
+								<p class="lkTxt">취업 척척박사!<br>
+									무엇이든 물어보세요!</p>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.jobaba.net/jobSprt/detail.do?seq=261">
+								<p class="lkTit gBold">국민취업 지원제도</p>
+								<p class="lkTxt">취업지원서비스부터<br>
+									생계지원까지!</p>
+							</a>
+						</li>
+						<li>
+							<a href="https://lms.jobaba.net/gjf/home.do?callback=empty">
+								<p class="lkTit gBold">잡아바 러닝센터</p>
+								<p class="lkTxt">취업교육 자격증 교육<br>
+									모두 무료!</p>
+							</a>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</article>
-
-	
+		
+		<article class="cont02 linkCont" id="moveTo02">
+			<div class="contTit">
+				<p class="cafeMo">'외국인 근로자'  수요·공급 불균형 심각...</p>
+			</div>
+			<div class="innerSection">
+				<div class="chartWrap">
+					<div class="chartList">
+						<div class="chartItem">
+							<div class="titWrap">
+								<p class="gBold">경기도 외국인 고용지표</p>
+								<span>단위:천명</span>
+							</div>
+							<div class="imgWrap">
+								<img src="./images/20241118/chart07.png" alt="경기도 외국인 고용지표">
+							</div>
+						</div>
+						<div class="chartItem">
+							<div class="titWrap">
+								<p class="gBold">외국인 고용보험 가입자 수</p>
+								<span>단위:명</span>
+							</div>
+							<div class="imgWrap">
+								<img src="./images/20241118/chart08.png" alt="외국인 고용보험 가입자 수">
+							</div>
+						</div>
+					</div>
+					<div class="chartTxt">
+						<hr>
+						<p class="txt02">경기도 내 외국인근로자는 점차 증가하여 2023년 최고치를 기록하였습니다.</p>
+					</div>					
+				</div>
+				<div class="chartWrap">
+					<div class="chartList">
+						<div class="chartItem">
+							<div class="titWrap">
+								<p class="gBold">경기도 산업별 미충원인원</p>
+								<span>단위:명</span>
+							</div>
+							<div class="imgWrap">
+								<img src="./images/20241118/chart09.png" alt="경기도 산업별 미충원인원">
+							</div>
+						</div>
+						<div class="chartItem">
+							<div class="titWrap">
+								<p class="gBold">산업별 외국인 노동자 취업자 현황</p>
+								<span>단위:명</span>
+							</div>
+							<div class="imgWrap">
+								<img src="./images/20241118/chart10.png" alt="산업별 외국인 노동자 취업자 현황">
+							</div>
+						</div>
+					</div>				
+				</div>
+				<div class="resultTxt">
+					<ul class="style02">
+						<li><p>경기도의 미충원 일자리의 일부는 외국인 노동자가 채우고 있으나 지난 연말 기준<br>
+							<span class="gBold">2만 7천개 이상의 일자리가 여전히 채워지지 않고 있습니다.</span></p></li>
+						<li><p>외국인 노동자의 활발한 취업활동을 위해 <span class="gBold">체계적인 취업 프로그램 및 인력공급 프로세스가<br>
+							필요</span>한 상황입니다.</p></li>
+					</ul>
+				</div>
+				<div class="linkWrap">
+					<div class="linkTit">
+						<p class="gBold">잡아바와 함께 취업준비 해봅시다!</p>
+					</div>
+					<ul>
+						<li>
+							<a href="https://www.jobaba.net/jobSprt/detail.do?seq=98">
+								<p class="lkTit gBold">K-point E74<br>
+									외국인 숙련기능인력<br>
+									추천 가점</p>
+								<p class="lkTxt">경기도 외국인 추천가점 받고
+									취업경쟁력 키우자!</p>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.jobaba.net/jobSprt/detail.do?seq=764">
+								<p class="lkTit gBold">외국인 계절근로자<br>
+									프로그램</p>
+								<p class="lkTxt">맞춤형 외국인 인력 파견<br>
+									지원사업</p>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.jobaba.net/jobSprt/detail.do?seq=765">
+								<p class="lkTit gBold">외국인근로자 등<br>
+									의료지원사업</p>
+								<p class="lkTxt">입원진료 및 당일 외래 수술 등<br>
+									외국인 근로자 의료비 지원</p>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.jobaba.net/jobSprt/detail.do?seq=766">
+								<p class="lkTit gBold">외국인 근로자<br>
+									권익보호 및 고충상담</p>
+								<p class="lkTxt">외국인 근로자 와 고용사업주간
+									언어소통 및 일자리 관련<br>
+									전반 상담 서비스</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</article>
+		<article class="cont03 linkCont" id="moveTo03">
+			<div class="contTit">
+				<p class="cafeMo">유연 근무제 / AI와 노동시장</p>
+			</div>
+			<div class="innerSection">
+				<div class="chartTit">
+					<div class="cLine">
+						<span></span>
+					</div>
+					<div class="cTit">
+						<p class="gBold">유연 근무제</p>
+					</div>					
+				</div>
+				<div class="subTit">
+					<p class="gBold">유연 근무제 기대효과</p>
+				</div>
+				<div class="tabWrap">					
+					<div class="tabCont">
+						<ul class="slideList">
+							<li class="active"><a href="#none">근로자</a></li>
+							<li><a href="#none">기업</a></li>
+						</ul>
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="tabItem swiper-slide bg01">
+									<p class="gBold stit">근로자</p>
+									<p class="stxt">유연한 근무환경에서 저출생 해법인 일 가정 양립 가능</p>
+									<ul>
+										<li>가족 돌봄 등 부담을 줄일 수 있어 업무 집중도 향상</li>
+										<li>단축 근로시간에 일에 집중하므로 업무효율 상승</li>
+										<li>단축근무와 고용 유지로 경력단절 예방</li>
+										<li>학업 등 자기계발 기회 증진</li>
+										<li>일·생활 균형으로 가족관계 개선</li>
+									</ul>
+								</div>
+								<div class="tabItem swiper-slide bg02">
+									<p class="gBold stit">기업</p>
+									<p class="stxt">경력단절 예방 등 숙련인력 확보와 경쟁력 향상</p>
+									<ul>
+										<li>이직 인력 감소로 장기근속 숙련인력 확보</li>
+										<li>업무몰입도가 높아지면서 생산성 향성</li>
+										<li>직원의 업무 부담과 스트레스 감소로 직무만족도 증가</li>
+										<li>업무 집중도 제고, 고객 서비스의 질 향상으로 기업경쟁력 상승</li>
+										<li>일·생활 균형 지원 기업으로 기업이미지 제고</li>
+									</ul>
+								</div>
+							</div>
+							<div class="swiper-pagination"></div>
+						</div>
+					</div>
+				</div>
+				<div class="subTit">
+					<p class="gBold">경기도형 단축 근무제 - 0.5 & 0.75잡</p>
+				</div>
+				<div class="infoWrap">
+					<div class="item bc01">
+						<div class="infoTit">
+							<div class="infoBox ">
+								<p class="iTit"><span class="gBold">Ⅰ유형</span> 0.75잡</p>
+								<p class="iTxt">주 30시간</p>
+							</div>
+						</div>
+						<ul class="infoList">
+							<li>
+								<div class="listTit">
+									<p>주 <span class="gBold">5일</span>제</p>
+								</div>
+								<p class="listTxt">
+									1일 최대<br>
+									6시간
+								</p>
+							</li>
+							<li>
+								<div class="listTit">
+									<p>주 <span class="gBold">4일</span>제</p>
+								</div>
+								<p class="listTxt">
+									1일 최대<br>
+									8시간
+								</p>
+							</li>
+							<li class="noBg"></li>
+						</ul>
+					</div>
+					<div class="item bc02">
+						<div class="infoTit">
+							<div class="infoBox ">
+								<p class="iTit"><span class="gBold">Ⅱ유형</span> 0.5잡</p>
+								<p class="iTxt">주 20시간</p>
+							</div>
+						</div>
+						<ul class="infoList">
+							<li>
+								<div class="listTit">
+									<p>주 <span class="gBold">5일</span>제</p>
+								</div>
+								<p class="listTxt">
+									1일 최대<br>
+									4시간
+								</p>
+							</li>
+							<li>
+								<div class="listTit">
+									<p>주 <span class="gBold">4일</span>제</p>
+								</div>
+								<p class="listTxt">
+									1일 최대<br>
+									8시간<br>
+									<span>휴무일 1일</span>
+								</p>
+							</li>
+							<li>
+								<div class="listTit">
+									<p>주 <span class="gBold">3일</span>제</p>
+								</div>
+								<p class="listTxt">
+									1일 최대<br>
+									8시간<br>
+									<span>휴무일 2일</span>
+								</p>
+							</li>
+						</ul>
+					</div>
+					<div class="item bc03">
+						<div class="infoTit">
+							<div class="infoBox ">
+								<p class="iTit"><span class="gBold">Ⅲ유형</span> 혼합형</p>
+								<p class="iTxt">주 32~38시간</p>
+							</div>
+						</div>
+						<ul class="infoList">
+							<li>
+								<div class="listTit">
+									<p>주 <span class="gBold">1회</span></p>
+								</div>
+								<p class="listTxt">
+									0.75잡 (주38시간)<br>
+									0.5잡 (주36시간)
+								</p>
+							</li>
+							<li>
+								<div class="listTit">
+									<p>주 <span class="gBold">2회</span></p>
+								</div>
+								<p class="listTxt">
+									0.75잡 (주 36시간)<br>
+									0.5잡 (주 36시간)<br>
+									0.75 & 0.5잡 (주 34시간)
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="resultTxt type02">
+					<ul>
+						<li><p>노동시장에서 <span class="gBold">고령화, 인구감소의 문제</span>를 겪고 있는 우리 사회에서<br>
+							<span class="gBold">근로시간의 유연한 조정</span>을 통해 근로자 기업간 문제를 해소할 수 있도록 지자체 · 기업에서 <br>
+							많은 노력을 하고 있습니다.</span></p></li>
+					</ul>					
+				</div>
+				<div class="chartTit">
+					<div class="cLine">
+						<span></span>
+					</div>
+					<div class="cTit">
+						<p class="gBold">AI와 노동시장</p>
+					</div>					
+				</div>
+				<div class="txtBox">
+					<p class="gBold txt01">생성형 AI는</p>
+					<p class="txt03">우리 일상생활에 이미 밀접한 영향을 미치고 있는데요,<br>
+						AI 확산에 따라 노동시장에도 많은 변화가 일어나고 있습니다.</p>
+				</div>
+				<div class="chartWrap">
+					<div class="chartList">
+						<div class="chartItem">
+							<div class="titWrap">
+								<p class="gBold">학력수준별 AI기술 노출 지수</p>
+							</div>
+							<div class="imgWrap">
+								<img src="./images/20241118/chart11.png" alt="학력수준별 AI기술 노출 지수">
+							</div>
+						</div>
+						<div class="chartItem">
+							<div class="titWrap">
+								<p class="gBold">임금수준별 AI기술 노출 지수</p>
+							</div>
+							<div class="imgWrap">
+								<img src="./images/20241118/chart12.png" alt="임금수준별 AI기술 노출 지수">
+								<p>임금 Percentile</p>
+							</div>
+							
+						</div>
+					</div>
+					<div class="chartTxt">
+						<hr>
+						<p class="txt02">저학력·중간소득 근로자에 영향을 미친 산업용 로봇과 달리, AI는 고학력·고소득 일자리에 더 큰 위협이 되고 있음</p>
+						<p class="txt03">출처 : AI와 노동시장 변화(BOK 이슈노트, 한국은행)</p>
+					</div>					
+				</div>
+				<div class="subTit">
+					<p class="gBold">AI시대, 우리는 무엇을 준비하고 대비해야 할까?</p>
+				</div>
+				<div class="resultTxt type03">
+					<ul class="style02">
+						<li><p>AI에 많이 노출된 일자리일수록 고용과 임금 상승률이 낮아질 것으로 예상됩니다.</p></li>
+						<li><p>한편으로는 <span class="gBold">AI가 대체할 수 없는 사회적기술, 팀워크 능력, 의사소통 능력과 같은<br>
+							soft skill의 중요성이 더욱 높아질 것</span>으로 보입니다.</p></li>
+					</ul>
+				</div>
+				<div class="subTit">
+					<p class="gBold">미래 AI 대표 유망 직업</p>
+				</div>
+			</div>
+			<div class="jobList">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide item ic01">
+							<p class="gBold sTit">인공지능 개발자</p>
+							<p class="sTxt">시스템 및 알고리즘 설계,<br> 개발 및 유지보수</p>
+						</div>
+						<div class="swiper-slide item ic02">
+							<p class="gBold sTit">데이터 과학자</p>
+							<p class="sTxt">데이터 기반 비즈니스 의사결정 지원<br> 및 미래 비즈니스 상황 예측</p>
+						</div>
+						<div class="swiper-slide item ic03">
+							<p class="gBold sTit">로봇 공학자</p>
+							<p class="sTxt">인공지능 로봇 시스템 개발</p>
+						</div>
+						<div class="swiper-slide item ic04">
+							<p class="gBold sTit">의료 인공지능 전문가</p>
+							<p class="sTxt">AI 진단, 치료 및<br> 의료 데이터 분석</p>
+						</div>
+						<div class="swiper-slide item ic05">
+							<p class="gBold sTit">보안 전문가</p>
+							<p class="sTxt">AI 시스템 보안</p>
+						</div>
+						<div class="swiper-slide item ic06">
+							<p class="gBold sTit">인공지능 교육자</p>
+							<p class="sTxt">교육 플랫폼을 통한 AI교육 제공</p>
+						</div>
+						<div class="swiper-slide item ic07">
+							<p class="gBold sTit">인공지능 윤리 컨설턴트</p>
+							<p class="sTxt">인공지능 편향성 최소화 작업<br> 공정성, 안정성 평가 도구 개발</p>
+						</div>
+						<div class="swiper-slide item ic08">
+							<p class="gBold sTit">인공지능 관련<br> 법률 전문가</p>
+							<p class="sTxt">법률정보와 자료를 학습한<br> 인공지능 관리 및 지원</p>
+						</div>
+					</div>
+					<div class="slideBtn">
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+					</div>	
+				</div>								
+			</div>
+		</article>
 
 		
 
@@ -341,7 +647,92 @@
 
 		<script>
 			$(document).ready(function(){
-				
+				var swiper = new Swiper(".jobList .swiper-container", {
+					spaceBetween: 20,
+					slidesPerView: 1,
+					autoplay: false,
+					loop: true,
+					autoplay: {
+						delay: 5000,
+						disableOnInteraction: true,
+					},
+					navigation: {
+						nextEl: ".jobList .swiper-button-next",
+						prevEl: ".jobList .swiper-button-prev",
+					},
+					breakpoints: {
+						1024: {
+							slidesPerView: 4,
+							slidesPerGroup: 4,
+							spaceBetween: 40,
+						},
+						840: {
+							slidesPerView: 3,
+							slidesPerGroup: 3,
+							spaceBetween: 20,
+						},
+						640: {
+							slidesPerView: 2,
+							slidesPerGroup: 2,
+							spaceBetween: 10,
+						},
+					}
+				});
+				var tabSwiper = new Swiper('.tabCont .swiper-container', {
+					loop: false,
+					allowTouchMove: true,
+					slidesPerView: 1,
+					autoplay: {
+						delay: 10000,
+						disableOnInteraction: true,
+					},
+					autoHeight : false,
+					pagination: {
+						el: '.tabWrap .slideList',
+						clickable: 'true',
+						type: 'custom',
+						renderCustom: function (swiper, current) {
+							$('.slideList').children().eq(current - 1).addClass('active').siblings().removeClass('active');
+							$('.slideList').on('click', 'li', function () {
+								swiper.slideToLoop($(this).index(), 500, false)
+							})
+						}
+					},
+				});
+				var pagingSwiper = new Swiper(".tabCont .swiper-container", {
+					pagination: {
+						el: ".tabWrap .swiper-pagination",
+					},
+				});
+				tabSwiper.controller.control = pagingSwiper;
+
+				const menuOffset =  $('.leftMenu').offset();
+				const menu = $('.menuList')
+				const menuHight = menu.outerHeight();
+				const articles = $('.linkCont');
+
+				$(document).scroll(function(){
+					const winScroll = $(this).scrollTop();
+
+					if( winScroll > menuOffset.top) {
+						$('.leftMenu').addClass('fixed');
+					}else {
+						$('.leftMenu').removeClass('fixed');
+					}
+					articles.each(function(){
+						const winTop = $(this).offset().top - menuHight;
+						const winBottom = winTop + $(this).outerHeight();
+						if (winScroll >= winTop && winScroll <= winBottom) {
+							menu.find("a").parent().removeClass('active');
+							menu.find('a[href="#' + $(this).attr('id') + '"]').parent().addClass("active");
+						}
+					});	
+				});
+
+				$('.themaWrap .linkWrap a, .mainList a, .leftMenu a').click(function(e){
+					$("html, body").animate({ scrollTop: $(this.hash).offset().top }, 500);
+					e.preventDefault();
+				});
 			});	
 		</script>
 
