@@ -150,17 +150,9 @@
 .eventWrap .cont02 ul .lTit { margin-bottom: 10px; font-size: 16px; } 
 .eventWrap .cont02 ul .lTxt { font-size: 14px; } 
 .eventWrap .cont02 ul .lTxt span { font-size: 12px; } 
-.eventWrap .cont02 ul li {
-    padding: 15px 0;
-    border: 3px solid #82DA6D;
-}
-.eventWrap .cont02 ul li:nth-child(2) {
-    border-color: #B19BDB;
-}
-.eventWrap .cont02 ul li:nth-child(3) {
-    border-color: #CABAA6;
-}
-
+.eventWrap .cont02 ul li { padding: 15px 0; border: 3px solid #82DA6D; } 
+.eventWrap .cont02 ul li:nth-child(2) { border-color: #B19BDB; } 
+.eventWrap .cont02 ul li:nth-child(3) { border-color: #CABAA6; } 
 }
  @media all and (max-width: 420px){
  .eventWrap .eventMain .infoWrap .imgWrap::before,
