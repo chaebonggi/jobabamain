@@ -19,7 +19,7 @@
 .eventWrap .eventMain .infoWrap .imgWrap p { color: #000; font-size: 20px; } 
 
 .eventWrap .fcRed { color: #ff0000 !important; } 
-.eventWrap .cont01 { background: url(../images/eventImg/event06/cont01_bg.png) center #f4f4f4; } 
+.eventWrap .cont01 { background: url(../images/eventImg/event06/cont01_bg.png) top left #f4f4f4; } 
 .eventWrap .cont01 .innerSection { padding: 120px 0 80px; } 
 .eventWrap .cont01 .evTit { margin-bottom: 56px; color: #000; font-size: 36px; text-align: center; word-break: keep-all; } 
 .eventWrap .cont01 .evTit.type02 { margin-bottom: 20px; } 
@@ -105,7 +105,7 @@
  .eventWrap .evFooter h3 { font-size: 16px; } 
  .eventWrap .evFooter li { padding-left: 10px; font-size: 12px; } 
  .eventWrap .eventMain .mainVisual h2 img { max-width: 300px; } 
- .eventWrap .eventMain .evInfo { width: 100%; height: auto; padding: 15px 10px; border: 3px solid #fff; border-bottom: 0; border-radius: 20px 20px 0 0; } 
+ .eventWrap .eventMain .evInfo { width: 100%; max-width: 400px; height: auto; padding: 15px 10px; border: 3px solid #fff; border-bottom: 0; border-radius: 20px 20px 0 0; } 
 .eventWrap .eventMain .infoWrap .tit p { font-size: 18px; } 
 .eventWrap .eventMain .infoWrap .imgWrap img { max-width: 180px; } 
 .eventWrap .eventMain .infoWrap .imgWrap p { font-size: 12px; } 
@@ -157,4 +157,5 @@
  @media all and (max-width: 420px){
  .eventWrap .eventMain .infoWrap .imgWrap::before,
  .eventWrap .eventMain .infoWrap .imgWrap::after { content: none; } 
+ .eventWrap .eventMain .evInfo {max-width: 320px;}
  }
