@@ -98,7 +98,7 @@
 .themaWrap .cont03 .innerSection { padding: 100px 0; } 
 .themaWrap .cont03 .imgWrap { margin: 0 auto; text-align: center; } 
 .themaWrap .cont03 .imgWrap img { max-width: 650px; width: 100%; } 
-.themaWrap .cont03 p { margin-top: 30px; color: #fff; font-size: 30px; text-align: center; line-height: 1.5; } 
+.themaWrap .cont03 p { margin-top: 30px; color: #fff; font-size: 30px; text-align: center; line-height: 1.5; word-break: keep-all;} 
 .themaWrap .cont04 { background-image: url(../images/20241212/cont04_bg01.png), url(../images/20241212/cont04_bg02.png); background-position: bottom left, bottom right; background-size: 400px; background-repeat: no-repeat; } 
 .themaWrap .cont04 .innerSection { padding: 130px 0 100px; } 
 .themaWrap .cont04 .imgWrap { position: relative; text-align: center; } 
