@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>일자리 지원정책 돌아보기</title>
+	<!-- 잡아바 css-->
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/import.css" />
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/mobile.css" />
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/fullcalendar.css" />
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/js/css/jquery-ui.css" />
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/bxslider/slick.css" />
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/swiper.min.css" />
+	<!-- <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css" /> -->
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/font-awesome.min.css" />
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/pe-icon-7-stroke.css" />
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/adminDetail.css" />
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/layout.css" />
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/style.css" />
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/kgoon.reset.min.css" />
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/mobile.css" />
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/style.css" />
+	<link type="text/css" rel="stylesheet" href="../etc/css/fonts.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.scrollbar/0.2.11/jquery.scrollbar.css">
+	
+
+	<!--추가 css-->
+	<link rel="stylesheet" href="./css/12.css" />
+</head>
+
+<body>
+	<div class="themaWrap">
+		<style>
+			.themaWrap .mainVisual {
+				position: relative;
+				background: url(./images/20241212/main_bg.png) top center #fff no-repeat;
+			}
+			.themaWrap .mainVisual::before {
+				content: '';
+				width: 783px;
+				height: 298px;
+				background: url(./images/20241212/main_bg02.png) no-repeat;
+				position: absolute;
+				top: 0;
+				left: 50%;
+				transform: translateX(-50%);
+				z-index: 2;
+			}
+			.themaWrap .mainVisual .innerSection {
+				padding-top: 108px;
+			}
+			.themaWrap .mainVisual .titWrap {
+				max-width: 860px;
+				margin: 0 auto;
+				padding: 60px 10px;
+				position: relative;
+				background: #000000;
+				border-radius: 60px;
+				text-align: center;
+			}
+			.themaWrap .mainVisual .titWrap::before {
+				content: '';
+				width: 178px;
+				height: 183px;
+				position: absolute;
+				top: -92px;
+				right: 10px;
+				background: url(./images/20241212/main_item01.png) no-repeat;
+				z-index: 3;
+			}
+			.themaWrap .mainVisual .titWrap::after {
+				content: '';
+				width: 96px;
+				height: 66px;
+				position: absolute;
+				bottom: -30px;
+				right: 240px;
+				background: url(./images/20241212/main_item02.png) no-repeat;
+			}
+			.themaWrap .mainVisual .titWrap span {
+				width: 156px;
+				padding: 10px 0;
+				position: absolute;
+				top: -30px;
+				left: 146px;
+				background: #b141ff;
+				color: #fff;
+				font-size: 30px;
+				border-radius: 30px 30px 30px 0;
+			}
+			.themaWrap .mainVisual .titWrap h2 {
+				color: #fff;
+				font-size: 80px;
+			}
+			.themaWrap .mainVisual .titWrap p {
+				margin-top: 10px;
+				color: #fff778;
+				font-size: 22px;
+				line-height: 1.5;
+			}
+			.themaWrap .mainVisual .imgWrap {
+				position: relative;
+				text-align: center;
+			}
+			.themaWrap .mainVisual .imgWrap img {
+				margin-top: -126px;
+				max-width: 1300px;
+				width: 100%;
+			}
+		</style>
+		<article class="mainVisual">
+			<div class="innerSection">
+				<div class="titWrap">
+					<span class="sbBold">2024</span>
+					<h2 class="sbBold">일자리 지원정책<br> 돌아보기</h2>
+					<p class="sbLight">2024년 잡아바에서 가장 인기 있었던 일자리 지원정책은 무엇이었을까요?<br>
+						함께 되짚어보고 25년도 대상자들은 미리미리 준비해봅시다!</p>
+				</div>	
+			</div>
+			<div class="imgWrap">
+				<img src="./images/20241212/recruit.png" alt="recruit">
+			</div>
+		</article>
+		<article class="cont01">
+			<style>
+				.themaWrap .cont01 .innerSection {
+					padding: 90px 0 120px;
+				}
+				.themaWrap .cont01 .jobLink {					
+					display: flex;
+					max-width: 1000px;
+					margin: 0 auto;
+					flex-wrap: wrap;
+					gap: 40px;
+				}
+				.themaWrap .cont01 .jobLink > li {
+					width: calc(100% / 2 - 20px)
+				}
+				.themaWrap .cont01 .jobLink > li:last-child {
+					background: url(./images/20241212/cont01_last_item.png) bottom 50px right 30px no-repeat;
+				}
+				.themaWrap .cont01 .jobLink a:hover {
+					transform: scale(1.05);
+				}
+				.themaWrap .cont01 .jobLink a {
+					display: flex;
+					height: 580px;
+					padding-top: 380px;
+					flex-direction: column;
+					position: relative;					
+					background-repeat: no-repeat;					
+					background-color: #f6f6f6;
+					border-radius: 60px;
+					transition: all 0.35s;
+					overflow: hidden;
+				}
+				.themaWrap .cont01 .jobLink > li:nth-child(1) a {
+					background-image: url(./images/20241212/cont01_item01.png), url(./images/20241212/cont01_item_bg01.png);
+					background-position: top 136px center, top center;
+				}
+				.themaWrap .cont01 .jobLink > li:nth-child(2) a {
+					background-image: url(./images/20241212/cont01_item02.png), url(./images/20241212/cont01_item_bg02.png);
+					background-position: top 136px left calc(50% + 20px), top center;
+				}
+				.themaWrap .cont01 .jobLink > li:nth-child(3) a {
+					background-image: url(./images/20241212/cont01_item03.png), url(./images/20241212/cont01_item_bg03.png);
+					background-position: top 110px right, top center;
+				}
+				.themaWrap .cont01 .jobLink > li:nth-child(4) a {
+					background-image: url(./images/20241212/cont01_item04.png), url(./images/20241212/cont01_item_bg04.png);
+					background-position: top 120px center, top center;
+				}
+				.themaWrap .cont01 .jobLink > li:nth-child(5) a {
+					background-image: url(./images/20241212/cont01_item05.png), url(./images/20241212/cont01_item_bg05.png);
+					background-position: top 120px center, top center;
+				}
+				.themaWrap .cont01 .jobLink > li:nth-child(6) a {
+					background-image: url(./images/20241212/cont01_item06.png), url(./images/20241212/cont01_item_bg06.png);
+					background-position: top 110px right, top center;
+				}
+				.themaWrap .cont01 .jobLink > li:nth-child(7) a {
+					background-image: url(./images/20241212/cont01_item07.png), url(./images/20241212/cont01_item_bg07.png);
+					background-position: top 136px center, top center;
+				}
+				.themaWrap .cont01 .jobLink .cTit {
+					width: 100%;
+					position: absolute;
+					top: 50px;
+					color: #000000;
+					font-size: 32px;
+					text-align: center;
+					letter-spacing: -1px;
+				}
+				.themaWrap .cont01 .jobLink .btnLink {
+					margin-top: auto;
+					padding: 24px 40px;
+					background: #6a6a6a;
+					text-align: right;
+				}
+				.themaWrap .cont01 .jobLink .btnLink p {
+					padding-right: 40px;
+					position: relative;
+					color: #fff;
+					font-size: 18px;
+				}
+				.themaWrap .cont01 .jobLink .btnLink p::after {
+					content: '';
+					width: 23px;
+					height: 23px;
+					position: absolute;
+					top: -2px;
+					right: 0;
+					background: url(./images/20241212/btn_icon.png) no-repeat;
+				}
+				.themaWrap .cont01 .jobLink ul {
+					max-width: 410px;
+					width: 100%;
+					margin: 0 auto;
+				}
+				.themaWrap .cont01 .jobLink ul li {
+					display: flex;
+					min-height: 55px;
+					align-items: flex-start;
+				}
+				.themaWrap .cont01 .jobLink .jTit {
+					width: 90px;
+					padding: 8px 0 5px;
+					margin-right: 10px;
+					background: #6a6a6a;
+					color: #fff;
+					font-size: 16px;
+					border-radius: 30px;
+					flex-shrink: 0;
+					text-align: center
+				}
+				.themaWrap .cont01 .jobLink .jTxt {
+					padding-top: 8px;
+					color: #000000;
+					font-size: 18px;
+					letter-spacing: -0.5px;
+					word-break: keep-all;
+				}
+			</style>
+			<div class="innerSection">
+				<ul class="jobLink">
+					<li><a href="" target="_blank">
+						<p class="cTit gBold">청년면접수당</p>
+						<ul>
+							<li>
+								<p class="jTit">지원내용</p>
+								<p class="jTxt">연간 1인 최대 50만원 면접수당 지급</p>
+							</li>
+							<li>
+								<p class="jTit">지원대상</p>
+								<p class="jTxt">경기도 거주 19세 이상 39세 이하 청년</p>
+							</li>
+						</ul>
+						<div class="btnLink">
+							<p class="gBold">자세히 보기</p>
+						</div>
+					</a></li>
+					<li><a href="" target="_blank">
+						<p class="cTit gBold">경기청년역량강화지원사업</p>
+						<ul>
+							<li>
+								<p class="jTit">지원내용</p>
+								<p class="jTxt">어학시험, 자격시험 응시료 및 수강료 최대 30만원 지원</p>
+							</li>
+							<li>
+								<p class="jTit">지원대상</p>
+								<p class="jTxt">19~39세 경기도 거주 미취업 청년</p>
+							</li>
+						</ul>
+						<div class="btnLink">
+							<p class="gBold">자세히 보기</p>
+						</div>
+					</a></li>
+					<li><a href="" target="_blank">
+						<p class="cTit gBold">이음일자리 사업</p>
+						<ul>
+							<li>
+								<p class="jTit">지원내용</p>
+								<p class="jTxt">중장년 대상 3개월 인건비 지원 및 직무경력 형성 기회제공</p>
+							</li>
+							<li>
+								<p class="jTit">지원대상</p>
+								<p class="jTxt">만 40세 이상 64세 이하 경기도민</p>
+							</li>
+						</ul>
+						<div class="btnLink">
+							<p class="gBold">자세히 보기</p>
+						</div>
+					</a></li>
+					<li><a href="" target="_blank">
+						<p class="cTit gBold">징검다리 일사리사업</p>
+						<ul>
+							<li>
+								<p class="jTit">지원내용</p>
+								<p class="jTxt">취업취약계층 대상 공공 및 민간기업 일배움 기회 제공</p>
+							</li>
+							<li>
+								<p class="jTit">지원대상</p>
+								<p class="jTxt">중위소득 120% 이하 또는<br> 취업취약계층에 해당하는 자</p>
+							</li>
+						</ul>
+						<div class="btnLink">
+							<p class="gBold">자세히 보기</p>
+						</div>
+					</a></li>
+					<li><a href="" target="_blank">
+						<p class="cTit gBold">4060 맞춤형 재취업 지원사업</p>
+						<ul>
+							<li>
+								<p class="jTit">지원내용</p>
+								<p class="jTxt">중장년 대상적합 기술융합형<br> 직업훈련 제공</p>
+							</li>
+							<li>
+								<p class="jTit">지원대상</p>
+								<p class="jTxt">40~64세 경기도민 미취업자</p>
+							</li>
+						</ul>
+						<div class="btnLink">
+							<p class="gBold">자세히 보기</p>
+						</div>
+					</a></li>
+					<li><a href="" target="_blank">
+						<p class="cTit gBold">청년 복지포인트 사업</p>
+						<ul>
+							<li>
+								<p class="jTit">지원내용</p>
+								<p class="jTxt">도내 중소, 중견기업 재직자 대상<br> 최대 120만원 복지포인트 제공</p>
+							</li>
+							<li>
+								<p class="jTit">지원대상</p>
+								<p class="jTxt">만19세 이상 ~ 39세 이하 경기도 거주자</p>
+							</li>
+						</ul>
+						<div class="btnLink">
+							<p class="gBold">자세히 보기</p>
+						</div>
+					</a></li>
+					<li><a href="" target="_blank">
+						<p class="cTit gBold">경기도기술학교 무료교육</p>
+						<ul>
+							<li>
+								<p class="jTit">지원내용</p>
+								<p class="jTxt">스마트기계&3D프린팅, 전기설비제어, 특수용접 등 취업전문교육과정 무료 제공</p>
+							</li>
+							<li>
+								<p class="jTit">지원대상</p>
+								<p class="jTxt">만 15세 이상 경기도민</p>
+							</li>
+						</ul>
+						<div class="btnLink">
+							<p class="gBold">자세히 보기</p>
+						</div>
+					</a></li>
+					<li></li>
+				</ul>
+			</div>
+		</article>
+		<article class="cont02">
+			<style>
+				.themaWrap .cont02 {
+					background: #f2f2f2;
+				}
+				.themaWrap .cont02 .titWrap {
+					padding: 80px 0 60px;
+					background: #ff6840;
+					text-align: center;
+				}
+				.themaWrap .cont02 .titWrap p {
+					display: inline-block;
+					position: relative;
+					color: #fff;
+					font-size: 72px;
+				}
+				.themaWrap .cont02 .titWrap p::after {
+					content: '';
+					width: 39px;
+					height: 41px;
+					position: absolute;
+					top: -26px;
+					right: -46px;
+					background: url(./images/20241212/cont02_icon.png) no-repeat;
+				}
+				.themaWrap .cont02 .titWrap p span {
+					color: #fffc00;
+					font-weight: 300;
+				}
+			</style>
+			<div class="titWrap">
+				<p class="gBold"><span>feat.</span> 2025 달라지는 정책</p>
+			</div>
+			<div class="innerSection">
+				<style>
+					.themaWrap .cont02 .itemWrap {
+						position: relative;
+						background: #fff;
+						box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.1);
+					}
+					.themaWrap .cont02 .itemWrap + .itemWrap {
+						margin-top: 80px;
+					}
+					.themaWrap .cont02 .itemWrap .item {
+						max-width: 1000px;
+						margin: 40px auto 0;
+						padding: 40px 10px;
+						background: #f1f4f5;
+						border-radius: 50px;
+					}
+					.themaWrap .cont02 .itemWrap .iTag {
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						width: 84px;
+						height: 120px;
+						position: absolute;
+						top: 0;
+						left: 60px;
+						background: #63b5aa;
+						
+					}
+					.themaWrap .cont02 .itemWrap .iTag p {
+						writing-mode: tb;
+						color: #fff;
+						font-size: 24px;
+					}
+					.themaWrap .cont02 .itemWrap .itemTit {
+						padding-top: 60px;
+						text-align: center;
+					}
+					.themaWrap .cont02 .itemWrap .itemTit p {
+						display: inline-block;
+						position: relative;
+						color: #000;
+						font-size: 50px;
+						text-align: center;
+					}
+					.themaWrap .cont02 .itemWrap .itemTit p::before {
+						content: '';
+						display: block;
+						width: 80px;
+						height: 113px;
+						margin: 0 auto 20px;
+						background: url(./images/20241212/cont02_tit01.png) no-repeat;
+						background-size: contain;
+					}
+					.themaWrap .cont02 .item .tit {
+						text-align: center;
+					}
+					.themaWrap .cont02 .item .tit p {
+						display: inline-block;
+						color: #000;
+						font-size: 30px;
+					}
+					.themaWrap .cont02 .item .tit p::before {
+						content: '';
+						display: block;
+						margin: 0 auto 10px;
+						background-size: contain !important;
+					}
+					.themaWrap .cont02 .item .tit p.icon01::before {
+						width: 65px;
+						height: 63px;
+						background: url(./images/20241212/cont02_icon01.png) no-repeat;
+					}
+					.themaWrap .cont02 .item .tit p.icon02::before {
+						width: 75px;
+						height: 62px;
+						background: url(./images/20241212/cont02_icon02.png) no-repeat;
+					}
+					.themaWrap .cont02 .item .tit p.icon03::before {
+						width: 70px;
+    					height: 68px;
+						background: url(./images/20241212/cont02_icon03.png) no-repeat;
+					}
+					.themaWrap .cont02 .itList {
+						display: flex;
+						max-width: 900px;
+						margin: 30px auto 0;
+						gap: 0 20px;
+					}
+					.themaWrap .cont02 .itList > li {
+						width: 100%;
+						height: 100%;
+						background: #fff;
+						border: 1px solid #b2b2b2;
+						border-radius: 20px;
+					}
+					.themaWrap .cont02 .itList .lTit {						
+						padding: 24px 10px 20px;
+						position: relative;
+						background: #63b5aa;
+						text-align: center;
+						border-radius: 18px 18px 0 0;
+					}
+					.themaWrap .cont02 .itList .lTit.new::before {
+						content: '신설';
+						width: 40px;
+						height: 40px;
+						padding-top: 12px;
+						position: absolute;
+						top: -20px;
+						right: 10px;
+						background: url(./images/20241212/item_tag.png) no-repeat;
+						background-size: contain;
+						color: #fff;
+						font-size: 14px;
+					}
+					.themaWrap .cont02 .itList .lTit p {
+						color: #fff;
+						font-size: 20px;
+					}
+					.themaWrap .cont02 .itList.ty01 .txtBox {
+						min-height: 130px;
+					}
+					.themaWrap .cont02 .itList.ty02 .txtBox {
+						min-height: 142px;
+					}
+					.themaWrap .cont02 .itList .txtBox {
+						display: flex;
+						padding: 30px 0;
+						text-align: center;
+						flex-direction: column;
+						align-items: center;
+						justify-content: center;
+					}
+					.themaWrap .cont02 .itList .lTxt02 {
+						margin-bottom: 10px;
+						color: #000;
+						font-size: 20px;
+					}
+					.themaWrap .cont02 .itList .lTxt {
+						color: #000;
+						font-size: 18px;
+						line-height: 1.5;
+					}
+					.themaWrap .cont02 .itList .lTxt span {
+						color: #36a193;
+					}
+				
+				</style>
+				<div class="itemWrap">
+					<div class="iTag">
+						<p class="gBold">청년</p>
+					</div>
+					<div class="itemTit">
+						<p class="gBold">청년 지원정책</p>
+					</div>
+					<div class="item">
+						<div class="tit">
+							<p class="gBold icon01">대학생 장학금 대폭 확대</p>
+						</div>
+						<ul class="itList ty01">
+							<li>
+								<div class="lTit"><p class="gBold">국가 장학금 대상 확대</p></div>
+								<div class="txtBox">
+									<p class="gBold lTxt02">대상자 확대</p>
+									<p class="lTxt">100만명 <span class="gBold">→ 150만명</span></p>
+								</div>
+							</li>
+							<li>
+								<div class="lTit new"><p class="gBold">주거안정장학금</p></div>
+								<div class="txtBox">
+									<p class="lTxt"><span class="gBold">4만 2천명</span>의 대학생에게<br>
+										<span class="gBold">연 240만원의 장학금</span> 지급</p>
+								</div>
+							</li>
+							<li>
+								<div class="lTit new"><p class="gBold">대통령 장학금</p></div>
+								<div class="txtBox">									
+									<p class="lTxt"><span class="gBold">최우수 석·박사생 대상<br> 장학금 지원</span></p>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="item">
+						<div class="tit">
+							<p class="gBold icon02">자산형성, 주거 도약 지원</p>
+						</div>
+						<ul class="itList ty02">
+							<li>
+								<div class="lTit"><p class="gBold">청년도약계좌</p></div>
+								<div class="txtBox">
+									<p class="gBold lTxt02">매칭금액 확대</p>
+									<p class="lTxt">40~70만원 <span class="gBold">→ 70만원</span></p>
+								</div>
+							</li>
+							<li>
+								<div class="lTit"><p class="gBold">청년월세 한시지원</p></div>
+								<div class="txtBox">
+									<p class="gBold lTxt02">기간 연장</p>
+									<p class="lTxt">12개월 <span class="gBold">→ 24개월</span></p>
+								</div>
+							</li>
+							<li>
+								<div class="lTit new"><p class="gBold">청년 주택 드림대출</p></div>
+								<div class="txtBox">									
+									<p class="lTxt"><span class="gBold">신규 주택 청약 시<br>
+										최대 분양가의 80%까지<br>
+										최저 2.2% 금리 대출 지원</span></p>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="item">
+						<style>
+							.themaWrap .cont02 .itList.ty03 {
+								flex-wrap: wrap;
+								gap: 40px 20px;
+							}
+							.themaWrap .cont02 .itList.ty03 li {
+								width: calc(100% / 2 - 10px);
+							}
+							.themaWrap .cont02 .itList.ty03 .txtBox {
+								min-height: 125px;
+							}
+						</style>
+						<div class="tit">
+							<p class="gBold icon03">취업지원</p>
+						</div>
+						<ul class="itList ty03">
+							<li>
+								<div class="lTit"><p class="gBold">구직단념청년 취업지원</p></div>
+								<div class="txtBox">
+									<p class="gBold lTxt02">대상자 확대</p>
+									<p class="lTxt">9천명 <span class="gBold">→ 1만 2천명</span></p>
+								</div>
+							</li>
+							<li>
+								<div class="lTit new"><p class="gBold">빈 일자리 채움 패키지</p></div>
+								<div class="txtBox">
+									<p class="lTxt">최대 <span class="gBold">960만원 지원금 지급</span> 및<br>
+										취업준비, 성공, 근속까지 지원</p>
+								</div>
+							</li>
+							<li>
+								<div class="lTit new"><p class="gBold">미취업 졸업생 지원</p></div>
+								<div class="txtBox">									
+									<p class="lTxt"><span class="gBold">채용, 박람회 참여, 자격증 교육 등의<br>
+										대학 졸업생 특화 프로그램</span></p>
+								</div>
+							</li>
+							<li>
+								<div class="lTit"><p class="gBold">청년 일경험 지원</p></div>
+								<div class="txtBox">
+									<p class="gBold lTxt02">대상자 확대</p>
+									<p class="lTxt">4.8만명 <span class="gBold">→ 5.8만명</span></p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="itemWrap type02">
+					<style>
+						.themaWrap .cont02 .itemWrap.type02 .iTag {
+							background: #7f57c8;
+						}
+						.themaWrap .cont02 .itemWrap.type02 .itemTit p::before {
+								width: 65px;
+								height: 113px;
+								background: url(./images/20241212/cont02_tit02.png) no-repeat;
+								background-size: contain;
+							}
+							.themaWrap .cont02 .itemWrap.type02 .itList .lTit {
+								background: #7f57c8;
+							}
+					</style>
+					<div class="iTag">
+						<p class="gBold">일가정</p>
+					</div>
+					<div class="itemTit">
+						<p class="gBold">일가정 양립 지원정책</p>
+					</div>
+					<div class="item">
+						<div class="tit">
+							<p class="gBold icon01">출산 · 육아 지원정책</p>
+						</div>
+						<ul class="itList ty01">
+							<li>
+								<div class="lTit"><p class="gBold">국가 장학금 대상 확대</p></div>
+								<div class="txtBox">
+									<p class="gBold lTxt02">대상자 확대</p>
+									<p class="lTxt">100만명 <span class="gBold">→ 150만명</span></p>
+								</div>
+							</li>
+							<li>
+								<div class="lTit new"><p class="gBold">주거안정장학금</p></div>
+								<div class="txtBox">
+									<p class="lTxt"><span class="gBold">4만 2천명</span>의 대학생에게<br>
+										<span class="gBold">연 240만원의 장학금</span> 지급</p>
+								</div>
+							</li>
+							<li>
+								<div class="lTit new"><p class="gBold">대통령 장학금</p></div>
+								<div class="txtBox">									
+									<p class="lTxt"><span class="gBold">최우수 석·박사생 대상<br> 장학금 지원</span></p>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="item">
+						<div class="tit">
+							<p class="gBold icon02">자산형성, 주거 도약 지원</p>
+						</div>
+						<ul class="itList ty02">
+							<li>
+								<div class="lTit"><p class="gBold">청년도약계좌</p></div>
+								<div class="txtBox">
+									<p class="gBold lTxt02">매칭금액 확대</p>
+									<p class="lTxt">40~70만원 <span class="gBold">→ 70만원</span></p>
+								</div>
+							</li>
+							<li>
+								<div class="lTit"><p class="gBold">청년월세 한시지원</p></div>
+								<div class="txtBox">
+									<p class="gBold lTxt02">기간 연장</p>
+									<p class="lTxt">12개월 <span class="gBold">→ 24개월</span></p>
+								</div>
+							</li>
+							<li>
+								<div class="lTit new"><p class="gBold">청년 주택 드림대출</p></div>
+								<div class="txtBox">									
+									<p class="lTxt"><span class="gBold">신규 주택 청약 시<br>
+										최대 분양가의 80%까지<br>
+										최저 2.2% 금리 대출 지원</span></p>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="item">
+						<div class="tit">
+							<p class="gBold icon03">취업지원</p>
+						</div>
+						<ul class="itList ty03">
+							<li>
+								<div class="lTit"><p class="gBold">구직단념청년 취업지원</p></div>
+								<div class="txtBox">
+									<p class="gBold lTxt02">대상자 확대</p>
+									<p class="lTxt">9천명 <span class="gBold">→ 1만 2천명</span></p>
+								</div>
+							</li>
+							<li>
+								<div class="lTit new"><p class="gBold">빈 일자리 채움 패키지</p></div>
+								<div class="txtBox">
+									<p class="lTxt">최대 <span class="gBold">960만원 지원금 지급</span> 및<br>
+										취업준비, 성공, 근속까지 지원</p>
+								</div>
+							</li>
+							<li>
+								<div class="lTit new"><p class="gBold">미취업 졸업생 지원</p></div>
+								<div class="txtBox">									
+									<p class="lTxt"><span class="gBold">채용, 박람회 참여, 자격증 교육 등의<br>
+										대학 졸업생 특화 프로그램</span></p>
+								</div>
+							</li>
+							<li>
+								<div class="lTit"><p class="gBold">청년 일경험 지원</p></div>
+								<div class="txtBox">
+									<p class="gBold lTxt02">대상자 확대</p>
+									<p class="lTxt">4.8만명 <span class="gBold">→ 5.8만명</span></p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</article>
+		
+
+		
+
+		
+	</div>
+	<!--잡아바 js-->
+	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery-1.11.3.js"></script>
+	<script type="text/javascript" charset="utf-8"
+		src="https://www.jobaba.net/resource/js/jquery-ui-1.11.4.js"></script>
+	<script type="text/javascript" charset="utf-8"
+		src="https://www.jobaba.net/resource/js/jquery.validate-1.14.0.js"></script>
+	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/common.js"></script>
+	<script type="text/javascript" charset="utf-8"
+		src="https://www.jobaba.net/resource/js/mobile.common.js?v=20190418"></script>
+	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery.common.js"></script>
+	<script type="text/javascript" charset="utf-8"
+		src="https://www.jobaba.net/resource/upload/js/upload.common.js"></script>
+	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main.js"></script>
+	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/default_menu.js"></script>
+	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/swiper.min.js"></script>
+	<!-- <script type="text/javascript" charset="utf-8" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script> -->
+
+	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/bxslider/slick.js"></script>
+	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/bootstrap.min.js"></script>
+	<script type="text/javascript" charset="utf-8"
+		src="https://www.jobaba.net/resource/js/jquery.leanModal.min.js"></script>
+	<script type="text/javascript" charset="utf-8"
+		src="https://www.jobaba.net/resource/js/main/imgLiquid-min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main/script.js"></script>
+	<script type="text/javascript" charset="utf-8"
+		src="https://www.jobaba.net/resource/js/main/jquery.vticker-min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.scrollbar/0.2.11/jquery.scrollbar.js"></script>
+
+		
+		<script>
+			$(document).ready(function(){
+				
+			});	
+		</script>
+
+</body>
+
+</html>
