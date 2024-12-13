@@ -5,12 +5,12 @@
 .sbBold { font-family: 'SBAggro' !important; font-weight: 700; } 
 .sbLight { font-family: 'SBAggro' !important; font-weight: 300; } 
 
-.themaWrap .mainVisual { position: relative; background: url(../images/20241212/main_bg.png) top center #fff no-repeat; } 
-.themaWrap .mainVisual::before { content: ''; width: 783px; height: 298px; background: url(../images/20241212/main_bg02.png) no-repeat; position: absolute; top: 0; left: 50%; transform: translateX(-50%); z-index: 2; } 
+.themaWrap .mainVisual { position: relative; background: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20241212/main_bg.png) top center #fff no-repeat; } 
+.themaWrap .mainVisual::before { content: ''; width: 783px; height: 298px; background: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20241212/main_bg02.png) no-repeat; position: absolute; top: 0; left: 50%; transform: translateX(-50%); z-index: 2; } 
 .themaWrap .mainVisual .innerSection { padding-top: 108px; } 
 .themaWrap .mainVisual .titWrap { max-width: 860px; margin: 0 auto; padding: 60px 10px; position: relative; background: #000000; border-radius: 60px; text-align: center; z-index: 2; } 
-.themaWrap .mainVisual .titWrap::before { content: ''; width: 178px; height: 183px; position: absolute; top: -92px; right: 10px; background: url(../images/20241212/main_item01.png) no-repeat; z-index: 3; background-size: contain; } 
-.themaWrap .mainVisual .titWrap::after { content: ''; width: 96px; height: 66px; position: absolute; bottom: -30px; right: 240px; background: url(../images/20241212/main_item02.png) no-repeat; } 
+.themaWrap .mainVisual .titWrap::before { content: ''; width: 178px; height: 183px; position: absolute; top: -92px; right: 10px; background: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20241212/main_item01.png) no-repeat; z-index: 3; background-size: contain; } 
+.themaWrap .mainVisual .titWrap::after { content: ''; width: 96px; height: 66px; position: absolute; bottom: -30px; right: 240px; background: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20241212/main_item02.png) no-repeat; } 
 .themaWrap .mainVisual .titWrap span { width: 156px; padding: 10px 0; position: absolute; top: -30px; left: 146px; background: #b141ff; color: #fff; font-size: 30px; border-radius: 30px 30px 30px 0; } 
 .themaWrap .mainVisual .titWrap h2 { color: #fff; font-size: 80px; } 
 .themaWrap .mainVisual .titWrap p { margin-top: 10px; color: #fff778; font-size: 22px; line-height: 1.5; letter-spacing: -1px; } 
@@ -19,20 +19,20 @@
 .themaWrap .cont01 .innerSection { padding: 90px 0 120px; } 
 .themaWrap .cont01 .jobLink { display: flex; max-width: 1000px; margin: 0 auto; flex-wrap: wrap; gap: 40px; } 
 .themaWrap .cont01 .jobLink > li { width: calc(100% / 2 - 20px) } 
-.themaWrap .cont01 .jobLink > li:last-child { background: url(../images/20241212/cont01_last_item.png) bottom right 30px no-repeat; } 
+.themaWrap .cont01 .jobLink > li:last-child { background: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20241212/cont01_last_item.png) bottom right 30px no-repeat; } 
 .themaWrap .cont01 .jobLink a:hover { transform: scale(1.05); box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2) } 
 .themaWrap .cont01 .jobLink a { display: flex; height: 500px; padding: 380px 10px 0; flex-direction: column; position: relative; background-repeat: no-repeat; background-color: #f6f6f6; border-radius: 60px; transition: all 0.35s; overflow: hidden; } 
-.themaWrap .cont01 .jobLink > li:nth-child(1) a { background-image: url(../images/20241212/cont01_item01.png), url(../images/20241212/cont01_item_bg01.png); background-position: top 136px center, top center; } 
-.themaWrap .cont01 .jobLink > li:nth-child(2) a { background-image: url(../images/20241212/cont01_item02.png), url(../images/20241212/cont01_item_bg02.png); background-position: top 136px left calc(50% + 20px), top center; } 
-.themaWrap .cont01 .jobLink > li:nth-child(3) a { background-image: url(../images/20241212/cont01_item03.png), url(../images/20241212/cont01_item_bg03.png); background-position: top 110px right -80px, top center; } 
-.themaWrap .cont01 .jobLink > li:nth-child(4) a { background-image: url(../images/20241212/cont01_item04.png), url(../images/20241212/cont01_item_bg04.png); background-position: top 120px center, top center; } 
-.themaWrap .cont01 .jobLink > li:nth-child(5) a { background-image: url(../images/20241212/cont01_item05.png), url(../images/20241212/cont01_item_bg05.png); background-position: top 120px center, top center; } 
-.themaWrap .cont01 .jobLink > li:nth-child(6) a { background-image: url(../images/20241212/cont01_item06.png), url(../images/20241212/cont01_item_bg06.png); background-position: top 110px right, top center; } 
-.themaWrap .cont01 .jobLink > li:nth-child(7) a { background-image: url(../images/20241212/cont01_item07.png), url(../images/20241212/cont01_item_bg07.png); background-position: top 136px center, top center; } 
+.themaWrap .cont01 .jobLink > li:nth-child(1) a { background-image: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20241212/cont01_item01.png), url(https://chaebonggi.github.io/jobabamain/html/thema/images/20241212/cont01_item_bg01.png); background-position: top 136px center, top center; } 
+.themaWrap .cont01 .jobLink > li:nth-child(2) a { background-image: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20241212/cont01_item02.png), url(https://chaebonggi.github.io/jobabamain/html/thema/images/20241212/cont01_item_bg02.png); background-position: top 136px left calc(50% + 20px), top center; } 
+.themaWrap .cont01 .jobLink > li:nth-child(3) a { background-image: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20241212/cont01_item03.png), url(https://chaebonggi.github.io/jobabamain/html/thema/images/20241212/cont01_item_bg03.png); background-position: top 110px right -80px, top center; } 
+.themaWrap .cont01 .jobLink > li:nth-child(4) a { background-image: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20241212/cont01_item04.png), url(https://chaebonggi.github.io/jobabamain/html/thema/images/20241212/cont01_item_bg04.png); background-position: top 120px center, top center; } 
+.themaWrap .cont01 .jobLink > li:nth-child(5) a { background-image: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20241212/cont01_item05.png), url(https://chaebonggi.github.io/jobabamain/html/thema/images/20241212/cont01_item_bg05.png); background-position: top 120px center, top center; } 
+.themaWrap .cont01 .jobLink > li:nth-child(6) a { background-image: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20241212/cont01_item06.png), url(https://chaebonggi.github.io/jobabamain/html/thema/images/20241212/cont01_item_bg06.png); background-position: top 110px right, top center; } 
+.themaWrap .cont01 .jobLink > li:nth-child(7) a { background-image: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20241212/cont01_item07.png), url(https://chaebonggi.github.io/jobabamain/html/thema/images/20241212/cont01_item_bg07.png); background-position: top 136px center, top center; } 
 .themaWrap .cont01 .jobLink .cTit { width: 100%; padding: 0 20px; position: absolute; top: 50px; left: 0; color: #000000; font-size: 32px; text-align: center; letter-spacing: -1px; } 
 .themaWrap .cont01 .jobLink .btnLink { margin-top: auto; padding: 24px 40px; background: #6a6a6a; text-align: right; } 
 .themaWrap .cont01 .jobLink .btnLink p { padding-right: 40px; position: relative; color: #fff; font-size: 18px; } 
-.themaWrap .cont01 .jobLink .btnLink p::after { content: ''; width: 23px; height: 23px; position: absolute; top: -2px; right: 0; background: url(../images/20241212/btn_icon.png) no-repeat; } 
+.themaWrap .cont01 .jobLink .btnLink p::after { content: ''; width: 23px; height: 23px; position: absolute; top: -2px; right: 0; background: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20241212/btn_icon.png) no-repeat; } 
 .themaWrap .cont01 .jobLink ul { max-width: 410px; width: 100%; margin: 0 auto; } 
 .themaWrap .cont01 .jobLink ul li { display: flex; min-height: 55px; align-items: flex-start; } 
 .themaWrap .cont01 .jobLink .jTit { width: 90px; padding: 8px 0 5px; margin-right: 10px; background: #6a6a6a; color: #fff; font-size: 16px; border-radius: 30px; flex-shrink: 0; text-align: center } 
@@ -42,7 +42,7 @@
 .themaWrap .cont02 .innerSection { padding-bottom: 100px; } 
 .themaWrap .cont02 .titWrap { padding: 80px 0 60px; background: #ff6840; text-align: center; } 
 .themaWrap .cont02 .titWrap p { display: inline-block; position: relative; color: #fff; font-size: 72px; } 
-.themaWrap .cont02 .titWrap p::after { content: ''; width: 39px; height: 41px; position: absolute; top: -26px; right: -46px; background: url(../images/20241212/cont02_icon.png) no-repeat; } 
+.themaWrap .cont02 .titWrap p::after { content: ''; width: 39px; height: 41px; position: absolute; top: -26px; right: -46px; background: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20241212/cont02_icon.png) no-repeat; } 
 .themaWrap .cont02 .titWrap p span { color: #fffc00; font-weight: 300; } 
 .themaWrap .cont02 .itemWrap { position: relative; padding: 0 10px 80px; background: #fff; box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.1); } 
 .themaWrap .cont02 .itemWrap + .itemWrap { margin-top: 80px; } 
@@ -51,32 +51,32 @@
 .themaWrap .cont02 .itemWrap .iTag p { writing-mode: tb; color: #fff; font-size: 24px; } 
 .themaWrap .cont02 .itemWrap .itemTit { padding-top: 60px; text-align: center; } 
 .themaWrap .cont02 .itemWrap .itemTit p { display: inline-block; position: relative; color: #000; font-size: 50px; text-align: center; } 
-.themaWrap .cont02 .itemWrap .itemTit p::before { content: ''; display: block; width: 80px; height: 113px; margin: 0 auto 20px; background: url(../images/20241212/cont02_tit01.png) no-repeat; background-size: contain; } 
+.themaWrap .cont02 .itemWrap .itemTit p::before { content: ''; display: block; width: 80px; height: 113px; margin: 0 auto 20px; background: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20241212/cont02_tit01.png) no-repeat; background-size: contain; } 
 .themaWrap .cont02 .item .tit { text-align: center; } 
 .themaWrap .cont02 .item .tit p { display: inline-block; color: #000; font-size: 30px; } 
 .themaWrap .cont02 .item .tit p::before { content: ''; display: block; margin: 0 auto 10px; background-size: contain !important; } 
-.themaWrap .cont02 .item .tit p.icon01::before { width: 65px; height: 63px; background: url(../images/20241212/cont02_icon01.png) no-repeat; } 
-.themaWrap .cont02 .item .tit p.icon02::before { width: 75px; height: 62px; background: url(../images/20241212/cont02_icon02.png) no-repeat; } 
-.themaWrap .cont02 .item .tit p.icon03::before { width: 70px; height: 68px; background: url(../images/20241212/cont02_icon03.png) no-repeat; } 
+.themaWrap .cont02 .item .tit p.icon01::before { width: 65px; height: 63px; background: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20241212/cont02_icon01.png) no-repeat; } 
+.themaWrap .cont02 .item .tit p.icon02::before { width: 75px; height: 62px; background: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20241212/cont02_icon02.png) no-repeat; } 
+.themaWrap .cont02 .item .tit p.icon03::before { width: 70px; height: 68px; background: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20241212/cont02_icon03.png) no-repeat; } 
 .themaWrap .cont02 .itList { display: flex; max-width: 900px; margin: 30px auto 0; gap: 0 20px; } 
 .themaWrap .cont02 .itList > li { width: 100%; height: 100%; background: #fff; border: 1px solid #b2b2b2; border-radius: 20px; } 
 .themaWrap .cont02 .itList .lTit { padding: 24px 10px 20px; position: relative; background: #63b5aa; text-align: center; border-radius: 18px 18px 0 0; } 
-.themaWrap .cont02 .itList .lTit.new::before { content: '신설'; width: 40px; height: 40px; padding-top: 12px; position: absolute; top: -20px; right: 10px; background: url(../images/20241212/item_tag.png) no-repeat; background-size: contain; color: #fff; font-size: 14px; } 
-.themaWrap .cont02 .itList .lTit p { color: #fff; font-size: 20px; } 
+.themaWrap .cont02 .itList .lTit.new::before { content: '신설'; width: 40px; height: 40px; padding-top: 12px; position: absolute; top: -20px; right: 10px; background: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20241212/item_tag.png) no-repeat; background-size: contain; color: #fff; font-size: 14px; } 
+.themaWrap .cont02 .itList .lTit p { color: #fff; font-size: 26px; } 
 .themaWrap .cont02 .itList.ty01 .txtBox { min-height: 130px; } 
 .themaWrap .cont02 .itList.ty02 .txtBox { min-height: 142px; } 
 .themaWrap .cont02 .itList .txtBox { display: flex; text-align: center; flex-direction: column; align-items: center; justify-content: center; } 
-.themaWrap .cont02 .itList .lTxt02 { margin-bottom: 10px; color: #000; font-size: 20px; } 
-.themaWrap .cont02 .itList .lTxt { color: #000; font-size: 20px; line-height: 1.5; } 
-.themaWrap .cont02 .itList .lTxt span { color: #36a193; } 
+.themaWrap .cont02 .itList .lTxt02 { margin-bottom: 10px; color: #000; font-size: 24px;} 
+.themaWrap .cont02 .itList .lTxt { color: #000; font-size: 20px; line-height: 1.5; letter-spacing: -1px;} 
+.themaWrap .cont02 .itList .lTxt span { color: #36a193; font-size: 24px; letter-spacing: -1.2px;} 
 .themaWrap .cont02 .itList.ty03 { flex-wrap: wrap; gap: 40px 20px; } 
 .themaWrap .cont02 .itList.ty03 > li { width: calc(100% / 2 - 10px); } 
 .themaWrap .cont02 .itList.ty03 .txtBox { min-height: 125px; } 
 .themaWrap .cont02 .itemWrap.type02 .iTag { background: #7f57c8; } 
-.themaWrap .cont02 .itemWrap.type02 .itemTit p::before { width: 65px; height: 113px; background: url(../images/20241212/cont02_tit02.png) no-repeat; background-size: contain; } 
+.themaWrap .cont02 .itemWrap.type02 .itemTit p::before { width: 65px; height: 113px; background: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20241212/cont02_tit02.png) no-repeat; background-size: contain; } 
 .themaWrap .cont02 .itemWrap.type02 .itList .lTit { background: #7f57c8; } 
-.themaWrap .cont02 .item .tit p.icon04::before { width: 53px; height: 63px; background: url(../images/20241212/cont02_icon04.png) no-repeat; } 
-.themaWrap .cont02 .item .tit p.icon05::before { width: 53px; height: 59px; background: url(../images/20241212/cont02_icon05.png) no-repeat; } 
+.themaWrap .cont02 .item .tit p.icon04::before { width: 53px; height: 63px; background: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20241212/cont02_icon04.png) no-repeat; } 
+.themaWrap .cont02 .item .tit p.icon05::before { width: 53px; height: 59px; background: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20241212/cont02_icon05.png) no-repeat; } 
 .themaWrap .cont02 .itemWrap.type02 .itList .lTxt span { color: #7f57c8; } 
 .themaWrap .cont02 .iLine { width: 100%; margin: 20px 0; border: none; border-top: 1px dashed #b3b3b3; } 
 .themaWrap .cont02 .itList .lTxt.tag01::before { content: '현행'; display: block; width: 68px; padding: 6px 0 2px; margin: 10px auto; background: #dddddd; color: #000; font-size: 16px; } 
@@ -85,7 +85,7 @@
 .themaWrap .cont02 .itList.ty04 .txtBox { min-height: 245px; } 
 .themaWrap .cont02 .itList.ty05 .txtBox { min-height: 230px; } 
 .themaWrap .cont02 .itemWrap.type03 .iTag { background: #b67c4e; } 
-.themaWrap .cont02 .itemWrap.type03 .itemTit p::before { width: 65px; height: 101px; background: url(../images/20241212/cont02_tit03.png) no-repeat; background-size: contain; } 
+.themaWrap .cont02 .itemWrap.type03 .itemTit p::before { width: 65px; height: 101px; background: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20241212/cont02_tit03.png) no-repeat; background-size: contain; } 
 .themaWrap .cont02 .itemWrap.type03 .itList .lTit { background: #b67c4e; } 
 .themaWrap .cont02 .itemWrap.type03 .itList .lTxt span { color: #b67c4e; } 
 .themaWrap .cont02 .itemWrap.type03 .txtBox { max-width: 310px; margin: 0 auto; align-items: flex-start; text-align: left; } 
@@ -94,15 +94,15 @@
 .themaWrap .cont02 .itemWrap.type03 .itList ul li::before { content: ''; width: 4px; height: 4px; position: absolute; left: 0; top: 6px; background: #b67c4e; border-radius: 50%; } 
 .themaWrap .cont02 .itemWrap.type03 .itList ul li + li { margin-top: 6px; } 
 .themaWrap .cont02 .itemWrap.type03 .itList li:nth-child(n+3) .txtBox { min-height: 200px; } 
-.themaWrap .cont03 { background: url(../images/20241212/cont03_bg.png) center #3075dc; background-size: cover; } 
+.themaWrap .cont03 { background: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20241212/cont03_bg.png) center #3075dc; background-size: cover; } 
 .themaWrap .cont03 .innerSection { padding: 100px 0; } 
 .themaWrap .cont03 .imgWrap { margin: 0 auto; text-align: center; } 
 .themaWrap .cont03 .imgWrap img { max-width: 650px; width: 100%; } 
 .themaWrap .cont03 p { margin-top: 30px; color: #fff; font-size: 30px; text-align: center; line-height: 1.5; word-break: keep-all;} 
-.themaWrap .cont04 { background-image: url(../images/20241212/cont04_bg01.png), url(../images/20241212/cont04_bg02.png); background-position: bottom left, bottom right; background-size: 400px; background-repeat: no-repeat; } 
+.themaWrap .cont04 { background-image: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20241212/cont04_bg01.png), url(https://chaebonggi.github.io/jobabamain/html/thema/images/20241212/cont04_bg02.png); background-position: bottom left, bottom right; background-size: 400px; background-repeat: no-repeat; } 
 .themaWrap .cont04 .innerSection { padding: 130px 0 100px; } 
 .themaWrap .cont04 .imgWrap { position: relative; text-align: center; } 
-.themaWrap .cont04 .imgWrap::before { content: ''; width: 90px; height: 187px; position: absolute; top: -210px; left: 50%; transform: translateX(-50%); background: url(../images/20241212/cont04_item.png) no-repeat; background-size: contain; } 
+.themaWrap .cont04 .imgWrap::before { content: ''; width: 90px; height: 187px; position: absolute; top: -210px; left: 50%; transform: translateX(-50%); background: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20241212/cont04_item.png) no-repeat; background-size: contain; } 
 
 
 @media all and (max-width:1024px){
@@ -112,7 +112,7 @@
  .themaWrap .mainVisual .titWrap span { width: 130px; padding: 6px 0; top: -20px; left: 108px; font-size: 24px; } 
  .themaWrap .mainVisual .titWrap::before { width: 120px; height: 123px; top: -56px; } 
  .themaWrap .mainVisual { position: relative; background: none; } 
- .themaWrap .mainVisual::after { content: ''; width: 100%; height: 200px; position: absolute; top: 0; background: url(../images/20241212/main_bg03.png) top center #ff6840 no-repeat; background-size: cover; z-index: 1; } 
+ .themaWrap .mainVisual::after { content: ''; width: 100%; height: 200px; position: absolute; top: 0; background: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20241212/main_bg03.png) top center #ff6840 no-repeat; background-size: cover; z-index: 1; } 
  .themaWrap .mainVisual .titWrap p { font-size: 18px; } 
  .themaWrap .cont02 .titWrap { padding: 60px 0 40px; } 
  .themaWrap .cont02 .titWrap p { font-size: 50px; } 
@@ -126,6 +126,7 @@
  .themaWrap .cont01 .jobLink .cTit { font-size: 30px; } 
  .themaWrap .cont01 .jobLink a { padding: 360px 10px 0; } 
  .themaWrap .cont04 { background-size: 400px; } 
+ .themaWrap .cont02 .itList .lTit p {font-size: 24px;}
  }
 
  @media all and (max-width:860px){
@@ -137,7 +138,7 @@
 .themaWrap .cont01 .jobLink > li:nth-child(4) a { background-position: top 120px center,top -20px center; background-size: 200px, auto; } 
 .themaWrap .cont01 .jobLink > li:nth-child(5) a { background-position: top 120px center,top -20px center; background-size: 200px, auto; } 
 .themaWrap .cont01 .jobLink > li:nth-child(6) a { background-position: top 110px center, top -20px center; background-size: 250px, auto; } 
-.themaWrap .cont01 .jobLink > li:nth-child(7) a { background-image: url(../images/20241212/cont01_item07_02.png), url(../images/20241212/cont01_item_bg07.png); background-position: top 136px center, top center; background-size: 150px, auto; } 
+.themaWrap .cont01 .jobLink > li:nth-child(7) a { background-image: url(https://chaebonggi.github.io/jobabamain/html/thema/images/20241212/cont01_item07_02.png), url(https://chaebonggi.github.io/jobabamain/html/thema/images/20241212/cont01_item_bg07.png); background-position: top 136px center, top center; background-size: 150px, auto; } 
 .themaWrap .cont01 .jobLink .jTit { margin-right: 0; margin: 0 auto; } 
 .themaWrap .cont01 .jobLink ul li { display: block; min-height: auto; text-align: center; } 
 .themaWrap .cont01 .jobLink ul li + li { margin-top: 10px; } 
@@ -219,4 +220,5 @@
  .themaWrap .cont04 .imgWrap img { max-width: 120px; } 
  .themaWrap .cont04 .imgWrap::before { width: 40px; height: 83px; top: -88px; } 
  .themaWrap .cont04 .innerSection { padding: 36px 0 30px; } 
+ .themaWrap .cont02 .itList .lTxt span {font-size: 16px;}
  }
