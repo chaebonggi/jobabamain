@@ -1,37 +1,87 @@
 
 /* css reset */
-* {margin:0;padding:0;border:0;box-sizing:border-box;}
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, button, cite, code,del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-    font-family:'Noto Sans KR', sans-serif; font-weight: 400; background:none;}
-table, tr, td, th {border-collapse:collapse;border-spacing:0px;}
-ol, ul, li{list-style:none;}
-hr,legend {display:none;}
-caption {width:0;height:0;font-size:0;overflow:hidden;}
-sup {vertical-align:text-top;}
-sub {vertical-align:text-bottom;}
-strong, b {font-weight:bold;}
-select, button {cursor:pointer;}
-input,textarea,select { font-size:inherit; font-weight:inherit;font-family:'Noto Sans KR', sans-serif !important;}
-
-label {cursor:pointer;}
+* { margin:0; padding:0; border:0; box-sizing:border-box; } 
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, button, cite, code,del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { font-family:'Noto Sans KR', sans-serif; font-weight: 400; background:none; } 
+table, tr, td, th { border-collapse:collapse; border-spacing:0px; } 
+ol, ul, li { list-style:none; } 
+hr,legend { display:none; } 
+caption { width:0; height:0; font-size:0; overflow:hidden; } 
+sup { vertical-align:text-top; } 
+sub { vertical-align:text-bottom; } 
+strong, b { font-weight:bold; } 
+select, button { cursor:pointer; } 
+input,textarea,select { font-size:inherit; font-weight:inherit; font-family:'Noto Sans KR', sans-serif !important; } 
+a, a:hover, a:active { color: #3e332e; text-decoration: none; } 
+label { cursor:pointer; } 
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display:block;}
-blockquote, q {quotes:none;}
-blockquote:before, blockquote:after,q:before, q:after {content:'';content:none;}
-button {cursor: pointer;}
-select { border-radius:0; /* 아이폰 사파리 보더 없애기 */ -webkit-appearance:none; /* 화살표 없애기 for chrome*/ -moz-appearance:none; /* 화살표 없애기 for firefox*/ appearance:none /* 화살표 없애기 공통*/ ;border: 1px solid #eee;background: url(../images/select_arrow.png) no-repeat right 10px center #fff;font-size: 15px;min-width: 80px;padding:6px  12px;box-sizing: border-box;padding-right: 30px}
-select::-ms-expand{ display:none /* 화살표 없애기 for IE10, 11*/ }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display:block; } 
+blockquote, q { quotes:none; } 
+blockquote:before, blockquote:after,q:before, q:after { content:''; content:none; } 
+button { cursor: pointer; } 
+select { border-radius:0; /* 아이폰 사파리 보더 없애기 */ -webkit-appearance:none; /* 화살표 없애기 for chrome*/ -moz-appearance:none; /* 화살표 없애기 for firefox*/ appearance:none /* 화살표 없애기 공통*/; border: 1px solid #eee; background: url(../../images/job/select_arrow.png) no-repeat right 10px center #fff; font-size: 15px; min-width: 80px; padding:6px 12px; box-sizing: border-box; padding-right: 30px } 
+select::-ms-expand { display:none /* 화살표 없애기 for IE10, 11*/ } 
 
-.w200 {
-    width: 200px !important;
-}
-.w400 {
-    width: 400px !important;
-}
-.w620 {
-    width: 620px !important;
-}
-.lineBtm {
-    border-bottom: 1px solid #c6d0d4;
-}
+.blind { position: absolute; clip: rect(0 0 0 0); width: 1px; height: 1px; margin: -1px; overflow: hidden; } 
+
+.w50p { width: 50% !important; } 
+.w200 { width: 200px !important; } 
+.w400 { width: 400px !important; } 
+.w620 { width: 620px !important; } 
+
+.mt10 { margin-top: 10px; } 
+.mt20 { margin-top: 20px; } 
+.mt50 { margin-top: 50px; } 
+
+.fs14 { font-size: 14px; } 
+
+.tct { text-align: center; } 
+.trt { text-align: right; } 
+.lineBtm { border-bottom: 1px solid #c6d0d4; } 
+
+.fc_blue { color: #2a61f9; } 
+.fc_red { color: #ff0000; } 
+.fc_gray { color: #999999; } 
+.fw_bold { font-weight: bold; } 
+
+.btnWrap button + button { margin-left: 10px; } 
+
+.btn_blue { background: #2a61f9 !important; color: #fff !important; border-color: #2a61f9 !important; } 
+
+.btn_type01 { padding: 7px 20px; background: #f3f3f3; color: #000; font-size: 16px; border: 1px solid #dddddd; border-radius: 30px; } 
+.btn_type01.active { color: #fff; background: #2a61f9; border-color: #2a61f9; } 
+.btn_type02 { padding: 6px 20px; background: #fff; color: #000; font-size: 16px; border: 1px solid #000; border-radius: 30px; } 
+.btn_type02.active { color: #2a61f9; border-color: #2a61f9; } 
+.btn_blue02 { background: #fff !important; color: #2a61f9 !important; border-color: #2a61f9 !important; } 
+.btn_type03 { min-width: 170px; padding: 12px 0; background: #fff; color: #000; font-size: 24px; border: 1px solid #000; border-radius: 10px; text-align: center; } 
+.btn_type04 { min-width: 130px; padding: 6px 10px; background: #fff; color: #000; font-size: 14px; border: 1px solid #ddd; border-radius: 5px; } 
+
+.check_type01 input[type="checkbox"]:checked::after { content: ''; position: absolute; top: 50%; left: 50%; width: 8px; height: 8px; border-radius: 50%; background: #000; transform: translate(-50%, -50%); } 
+.check_type01 input[type="checkbox"] { position: relative; width: 16px; height: 16px; background: #fff; border: 1px solid #000; border-radius: 50%; vertical-align: middle; cursor: pointer; outline: none !important; -webkit-appearance: none; -webkit-box-sizing: border-box; } 
+
+.radioBox { display: flex; flex-wrap: wrap; line-height: 1; gap: 20px 30px; } 
+.radio_type01 { position: relative; } 
+.radio_type01 input[type="radio"]:checked { background: url(../../images/job/check01_icon.png) center #3067FF no-repeat; border-color: #3067FF; } 
+.radio_type01 input[type="radio"] { width: 18px; height: 18px; position: absolute; top: 0; left: 0; background: #fff; border: 1px solid #c5c5c5; vertical-align: middle; cursor: pointer; outline: none !important; -webkit-appearance: none; -webkit-box-sizing: border-box; } 
+.radio_type01 label { padding-left: 26px; font-size: 16px; } 
+.radio_type02 { position: relative; } 
+.radio_type02 input[type="radio"]:checked { border-color: #3067FF; } 
+.radio_type02 input[type="radio"]:checked::before { content: ''; width: .5em; height: .5em; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #3067FF; border-radius: 50%; } 
+.radio_type02 input[type="radio"] { width: 18px; height: 18px; position: absolute; top: 0; left: 0; background: #fff; border: 1px solid #000; border-radius: 50%; vertical-align: middle; cursor: pointer; outline: none !important; -webkit-appearance: none; -webkit-box-sizing: border-box; } 
+.radio_type02 label { padding-left: 26px; font-size: 16px; } 
+
+.comSel { width: 100%; height: 40px; padding: 0 18px; border: 1px solid #dddddd; color: #000; font-size: 14px; font-weight: 300; box-sizing: border-box; -webkit-appearance: none; -moz-appearance: none; appearance: none; } 
+
+.list_type01 li { position: relative; } 
+.list_type01 li::before { content: ''; width: 3px; height: 3px; position: absolute; top: 10px; left: 0; background: #000; border-radius: 50%; } 
+.list_type01 li { padding-left: 10px; } 
+.list_type01 li + li { margin-top: 10px; } 
+
+.fileIcon { display: inline-block; width: 16px; height: 14px; margin-right: 6px; background: url(../../images/job/file_icon.png) center no-repeat; vertical-align: middle; } 
+.comInput { width: 100%; height: 40px; padding: 0 18px; background: #fff; border: 1px solid #dddddd; color: #000; font-size: 14px; font-weight: 300; box-sizing: border-box; } 
+.comInput::placeholder { color: #999999; } 
+.comInput[readonly] { background: #f3f3f3; } 
+.comBox { display: flex; gap: 10px; } 
+.comBox + .comBox,
+.comWrap + .comBox { margin-top: 10px; } 
+.comBox .comItem { flex: 1; } 

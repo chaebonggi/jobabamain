@@ -18,318 +18,110 @@
         <img src="./images/job/header.jpg" alt="">
     </header>
     <style>
-        #header, #footer {
-            max-width: 1260px;
-            margin: 0 auto;
-        }
-        #header img, #footer img {
-            display: block;;
-            width: 100%;
-        }
-        .blind {
-            position: absolute;
-            clip: rect(0 0 0 0);
-            width: 1px;
-            height: 1px;
-            margin: -1px;
-            overflow: hidden;
-        }
-        .jobResume .innerSection {
-            max-width: 1260px;
-            width: calc(100% - 20px);
-            margin: 0 auto;
-        }
-        .jobResume .userInfo .comInput,
-        .jobResume .profileInfo .comInput {
-            height: 48px;
-            font-size: 18px;
-        }
-        .jobResume .comInput {
-            width: 100%;
-            height: 40px;
-            padding: 0 18px;
-            background: #fff;
-            border: 1px solid #dddddd;
-            color: #000;
-            font-size: 14px;
-            font-weight: 300;
-            box-sizing: border-box;
-        }
-        .jobResume .comInput::placeholder {
-            color: #999999;
-        }
-        .jobResume .comInput[readonly] {
-            background: #f3f3f3;
-        }      
-        .jobResume .resumeWrap {
-            padding: 46px 70px;
-            background: #f4f6f7;
-        }
-        .jobResume .resumeWrap .item + .item {
-            margin-top: 46px;
-        }
-        .jobResume .itemTit {
-            display: flex;           
-            margin-bottom: 18px;
-            flex-wrap: wrap;
-            align-items: flex-end;
-            gap: 10px;
-        }
-        .jobResume .itemTit p {
-            color: #000;
-            font-size: 20px;
-            font-weight: 700;
-        }
-        .jobResume .itemBox {
-            padding: 30px 30px;
-            background: #fff;
-            outline: 1px solid #c9c9c9;
-        }
-        .jobResume .comBox {
-            display: flex;
-            gap: 10px;
-        }
-        .jobResume .comBox + .comBox {
-            margin-top: 10px;
-        }
-        .jobResume .comBox .comItem {
-            flex: 1;
-        }
-        .jobResume .userProfile {
-            display: flex;
-            padding-bottom: 50px;
-        }
-        .jobResume .userProfile .profileCont {
-            width: 100px;
-            height: 100px;
-            margin-right: 28px;
-            position: relative;
-            flex-shrink: 0;
-        }
-        .jobResume .userProfile .profileImg {
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;
-            overflow: hidden;
-            box-sizing: border-box;
-        }
-        .jobResume .userProfile .userImg img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        .jobResume .userProfile .profileInfo {
-            width: 100%;
-        }
-        .jobResume .userProfile .pfBtn {
-            width: 36px;
-            height: 36px;
-            background: url(./images/job/profile_btn.png) center #424242 no-repeat;
-            border-radius: 50%;
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            z-index: 1;
-        }
-        .jobResume .userProfile .pfTit {
-            margin-bottom: 20px;
-            color: #000;
-            font-size: 24px;
-            font-weight: bold;
-        }
-        .jobResume .srcWrap {
-            width: 100%;
-            padding: 0 30px 0 56px;
-            position: relative;
-            background: #fff;
-            border: 1px solid #dddddd;
-        }
-        .jobResume .srcWrap .scrBtn {
-            width: 21px;
-            height: 20px;
-            position: absolute;
-            top: 50%;
-            left: 24px;
-            transform: translateY(-50%);
-            background: url(./images/job/search_icon.png) center transparent no-repeat;
-            background-size: contain;
-            border: none;
-        }
-        .jobResume .srcWrap .scrInput {
-            width: 100%;
-            height: 50px;
-        }
-        .jobResume .srcWrap .scrInput:focus {
-            border: 0;
-            outline: 0;
-        }
-        .mt20 {
-            margin-top: 20px;
-        }
-        .mt50 {
-            margin-top: 50px;
-        }
-        .tct {
-            text-align: center;
-        }
-        .btnWrap button + button {
-            margin-left: 10px;
-        }
-        .fileIcon {
-            display: inline-block;
-            width: 16px;
-            height: 14px;
-            margin-right: 6px;
-            background: url(.//images/job/file_icon.png) center no-repeat;
-            vertical-align: middle;
-        }
-        .btn_type01 {
-            padding: 6px 20px;
-            background: #f3f3f3;
-            color: #000;
-            font-size: 16px;
-            border: 1px solid #dddddd;
-            border-radius: 30px;
-        }
-        .btn_type01.active {
-            color: #fff;
-            background: #2a61f9;
-            border-color: #2a61f9;
-        }
-        .btn_type02 {
-            padding: 6px 20px;
-            background: #fff;
-            color: #000;
-            font-size: 16px;
-            border: 1px solid #000;
-            border-radius: 30px;
-        }
-        .btn_type02.active {
-            color: #2a61f9;
-            border-color: #2a61f9;
-        }        
-        .btn_blue {
-            background: #2a61f9 !important;
-            color: #fff !important;                            
-            border-color: #2a61f9 !important;
-        }
-        .btn_blue02 {
-            background: #fff !important;
-            color: #2a61f9 !important;                            
-            border-color: #2a61f9 !important;
-        }
-        .btn_type03 {
-            min-width: 170px;
-            padding: 16px 0;
-            background: #fff;
-            color: #000;
-            font-size: 24px;
-            border: 1px solid #000;
-            border-radius: 10px;
-            text-align: center;
-        }
-        .btn_type04 {
-            min-width: 130px;
-            padding: 6px 10px;
-            background: #fff;
-            color: #000;
-            font-size: 14px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-        .fc_blue {
-            color: #2a61f9;
-        }
-        .fc_gray {
-            color: #999999;
-        }
-        .fw_bold {
-            font-weight: bold;
-        }
-        .fs14 {
-            font-size: 14px;
-        }
+        #header, #footer { max-width: 1260px; margin: 0 auto; } 
+        #header img, #footer img { display: block;; width: 100%; } 
         
-        .jobResume .kwBox {
-            margin-top: 30px;
+        .jobResume .innerSection { max-width: 1260px; width: calc(100% - 20px); margin: 0 auto; } 
+        .jobResume .userInfo .comInput,
+        .jobResume .profileInfo .comInput { height: 48px; font-size: 18px; } 
+        .jobResume .resumeWrap { padding: 46px 70px; background: #f4f6f7; } 
+        .jobResume .resumeWrap .item + .item { margin-top: 46px; } 
+        .jobResume .itemTit { display: flex; margin-bottom: 18px; flex-wrap: wrap; align-items: flex-end; gap: 10px; } 
+        .jobResume .itemTit p { color: #000; font-size: 20px; font-weight: 700; } 
+        .jobResume .itemBox { padding: 30px 30px; background: #fff; outline: 1px solid #c9c9c9; } 
+        .jobResume .comWrap { display: flex; margin-top: 10px; align-items: center; gap: 10px}        
+        .jobResume .userProfile { display: flex; padding-bottom: 50px; } 
+        .jobResume .userProfile .profileCont { width: 100px; height: 100px; margin-right: 28px; position: relative; flex-shrink: 0; } 
+        .jobResume .userProfile .profileImg { width: 100%; height: 100%; border-radius: 50%; overflow: hidden; box-sizing: border-box; } 
+        .jobResume .userProfile .userImg img { width: 100%; height: 100%; object-fit: cover; } 
+        .jobResume .userProfile .profileInfo { width: 100%; } 
+        .jobResume .userProfile .pfBtn { width: 36px; height: 36px; background: url(./images/job/profile_btn.png) center #424242 no-repeat; border-radius: 50%; position: absolute; bottom: 0; right: 0; z-index: 1; } 
+        .jobResume .userProfile .pfTit { margin-bottom: 20px; color: #000; font-size: 24px; font-weight: bold; } 
+        .jobResume .srcWrap { width: 100%; padding: 0 30px 0 56px; position: relative; background: #fff; border: 1px solid #dddddd; } 
+        .jobResume .srcWrap .scrBtn { width: 21px; height: 20px; position: absolute; top: 50%; left: 24px; transform: translateY(-50%); background: url(./images/job/search_icon.png) center transparent no-repeat; background-size: contain; border: none; } 
+        .jobResume .srcWrap .scrInput { width: 100%; height: 50px; } 
+        .jobResume .srcWrap .scrInput:focus { border: 0; outline: 0; } 
+        .jobResume .kwBox { margin-top: 30px; } 
+        .jobResume .kwTit { margin-bottom: 15px; color: #000; font-size: 18px; font-weight: 400; } 
+        .jobResume .keyList { display: flex; flex-wrap: wrap; gap: 8px; } 
+        .jobResume .addBtn { width: 45px; height: 40px; background: url(./images/job/add_icon.png) center #f3f3f3 no-repeat; border: 1px solid #ddd; border-radius: 5px; flex-shrink: 0; box-sizing: border-box; } 
+        .jobResume .addCont { display: flex; align-items: flex-start; gap: 20px; } 
+
+        .jobResume.ckBox { display: flex; flex-wrap: wrap; line-height: 1; gap: 20px 30px; } 
+        .jobResume .txtBox { padding: 30px; border: 1px solid #ddd; } 
+        .jobResume .txtBox .list_type01 li::before { background: #999999; } 
+        .jobResume .txtBox .list_type01 li { color: #999999; font-size: 14px; } 
+        .jobResume .areaBox { margin-top: 10px; } 
+        .jobResume .areaBox textarea::placeholder { color: #999999; } 
+        .jobResume .areaBox textarea { width: 100%; height: 100px; padding: 10px 18px; color: #000; font-size: 14px; border: 1px solid #ddd; box-sizing: border-box; } 
+        .jobResume .expCont .expWrap { display: flex; margin-top: 30px; padding-top: 30px; border-top: 1px solid #ddd; } 
+        .jobResume .expWrap .exItem { width: 100%; } 
+        .jobResume .delBtn { width: 40px; height: 40px; background: url(./images/job/del_icon.png) center #fff no-repeat; flex-shrink: 0; } 
+        .jobResume .inpCont { width: 100%; } 
+        .jobResume .inpCont .inpItem + .inpItem { margin-top: 10px; } 
+        .jobResume .inpCont .inpItem { display: flex; } 
+        .jobResume .inpCont .inpWrap { width: 100%; } 
+        .jobResume .acadWrapItem { display: flex; width: 100%; } 
+        .jobResume .acadWrapItem + .acadWrapItem { margin-top: 10px; } 
+        .jobResume .acadList .acadCont { display: flex; flex-wrap: wrap; gap: 10px; } 
+        .jobResume .acadList .comItem { width: calc(100% / 4 - 8px); } 
+
+        @media screen and (max-width: 1024px){
+            .jobResume .resumeWrap { padding: 30px 30px; } 
+            .jobResume .userInfo .comBox { flex-wrap: wrap; } 
+            .jobResume .userInfo .comBox .comItem { width: calc(50% - 5px); flex: initial; } 
+            .jobResume .userInfo .w400,
+            .jobResume .userInfo .w620 { width: 100% !important; } 
         }
-        .jobResume .kwTit {
-            margin-bottom: 15px;
-            color: #000;
-            font-size: 18px;
-            font-weight: 400;
+        @media screen and (max-width: 768px) { 
+            .jobResume .userInfo .comBox .comItem { width: 100%; } 
+            .jobResume .acadList .comItem { width: calc(100% / 2 - 5px); } 
+            .jobResume .w50p { width: 100% !important; } 
+            .jobResume .ckBox { flex-shrink: 0; } 
         }
-        .jobResume .keyList {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
+        @media screen and (max-width: 640px){
+            .jobResume .resumeWrap { padding: 30px 15px; } 
+            .jobResume .userProfile { display: flex; padding-bottom: 20px; flex-direction: column; align-items: center; } 
+            .jobResume .userProfile .profileCont { width: 80px; height: 80px; margin-right: 0; margin-bottom: 20px; } 
+            .jobResume .userProfile .pfBtn { width: 30px; height: 30px; } 
+            .jobResume .userProfile .pfTit { margin-bottom: 10px; font-size: 18px; } 
+            .jobResume .userInfo .comInput, .jobResume .profileInfo .comInput { height: 32px; font-size: 12px; } 
+            .jobResume .comInput { height: 32px; padding: 0 12px; font-size: 12px; } 
+            .jobResume .resumeWrap .item + .item { margin-top: 20px; } 
+            .jobResume .itemTit { margin-bottom: 12px; } 
+            .jobResume .itemTit p { font-size: 16px; } 
+            .jobResume .itemBox { padding: 15px 15px; } 
+            .jobResume .srcWrap { padding: 0 10px 0 26px; } 
+            .jobResume .srcWrap .scrInput { height: 32px; font-size: 12px; } 
+            .jobResume .srcWrap .scrBtn { width: 14px; height: 13px; left: 8px; } 
+            .jobResume input::placeholder { font-size: 12px; } 
+            .jobResume .kwBox { margin-top: 20px; } 
+            .jobResume .kwTit { margin-bottom: 10px; font-size: 14px; } 
+            .jobResume .keyList { gap: 4px; } 
+            .jobResume .btn_type01,
+            .jobResume .btn_type02 { padding: 3px 12px; font-size: 12px; } 
+            .jobResume .txtBox { padding: 10px; } 
+            .list_type01 li::before { top: 8px; } 
+            .jobResume .txtBox .list_type01 li { font-size: 12px; } 
+            .jobResume .btnWrap { display: flex; } 
+            .jobResume .btnWrap button { min-width: initial; flex: 1; } 
+            .jobResume .btn_type04 { font-size: 12px; } 
+            .jobResume .addCont { display: block; } 
+            .jobResume .addBtn { width: 30px; height: 30px; } 
+            .jobResume .delBtn { width: 32px; height: 32px; } 
+            .jobResume .comSel { height: 32px; padding: 0 12px; font-size: 12px; background-size: 10px; background-position: center right 4px; } 
+            .jobResume .check_type01 label { font-size: 12px; } 
+            .jobResume .check_type01 input[type="checkbox"] { width: 12px; height: 12px; } 
+            .jobResume .btnWrap.mt50 { margin-top: 30px; } 
+            .jobResume .btn_type03 { padding: 8px 0; font-size: 16px; } 
+            .jobResume .areaBox textarea { padding: 10px; font-size: 12px; } 
         }
-        .jobResume .addBtn {
-            width: 45px;
-            background: #f3f3f3;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            flex-shrink: 0;
-        }
-        .jobResume .addBtn::before {
-            content: '+';
-            color: #000;
-            font-size: 30px;
-            font-weight: 100;
-            line-height: 30px;
-        }
-        .jobResume .addCont {
-            display: flex;
-            align-items: flex-start;
-            gap: 20px;
-        }
-        .list_type01 li {
-            position: relative;
-        }
-        .list_type01 li::before {
-            content: '';
-            width: 3px;
-            height: 3px;
-            position: absolute;
-            top: 10px;
-            left: 0;
-            background: #000;
-            border-radius: 50%;
-        }
-        .list_type01 li {
-            padding-left: 10px;
-        }
-        .list_type01 li + li {
-            margin-top: 10px;
-        }
-        .jobResume .txtBox {
-            padding: 30px;
-            border: 1px solid #ddd;
-        }
-        .jobResume .txtBox .list_type01 li::before {
-            background: #999999;
-        }
-        .jobResume .txtBox .list_type01 li {                            
-            color: #999999;
-            font-size: 14px;
-        }
-        .jobResume .areaBox {
-            margin-top: 10px;
-        }
-        .jobResume .areaBox textarea::placeholder {
-            color: #999999;
-        }
-        .jobResume .areaBox textarea {
-            width: 100%;
-            height: 100px;
-            padding: 10px 18px;
-            color: #000;
-            font-size: 14px;
-            border: 1px solid #ddd;
-            box-sizing: border-box;
+
+        @media screen and (max-width: 420px){
+            .jobResume .comWrap { flex-direction: column; align-items: flex-start; } 
         }
     </style>
-    <article class="jobResume">
+    <article class="jobResume mt50">
         <div class="innerSection">
             <div class="resumeWrap">
                 <div class="item lineBtm">
@@ -451,58 +243,113 @@
                             <button type="button" class="btn_type04 btn_blue02">경력 불러오기</button>
                             <button type="button" class="btn_type04">직접입력</button>
                         </div>
-                        <style>
-                            .jobResume .expCont {
-                                margin-top: 30px;
-                                padding-top: 30px;
-                                border-top: 1px solid #ddd;
-                            }
-                            .jobResume .delBtn {
-                                width: 40px;
-                                height: 40px;
-                                background: url(./images/job/del_icon.png) center #fff no-repeat;
-                            }
-                        </style>
                         <div class="expCont">
                             <div class="expWrap">
-                                <div class="comBox">
-                                    <span class="comItem">
-                                        <label for="text_A" class="blind">회사명</label>
-                                        <input id="text_A" class="comInput" type="text" value="" placeholder="회사명 입력">
-                                    </span>
+                                <div class="exItem">
+                                    <div class="comBox">
+                                        <span class="comItem">
+                                            <label for="text_A" class="blind">회사명</label>
+                                            <input id="text_A" class="comInput" type="text" value="" placeholder="회사명 입력">
+                                        </span>
+                                    </div>
+                                    <div class="comWrap">
+                                        <div class="comBox w50p">
+                                            <span class="comItem">
+                                                <label for="text_B" class="blind">부서명</label>
+                                                <input id="text_B" class="comInput" type="text" value="" placeholder="부서 입력">
+                                            </span>
+                                            <span class="comItem">
+                                                <label for="text_C" class="blind">직책</label>
+                                                <input id="text_C" class="comInput" type="text" value="" placeholder="직책 입력">
+                                            </span> 
+                                        </div>
+                                        <div class="ckBox">
+                                            <span class="check_type01">
+                                                <input type="checkbox" class="inpChk" id="ckTyep01">
+                                                <label for="ckTyep01"><span>재직중</span></label>
+                                            </span>
+                                        </div>
+                                       
+                                    </div>
+                                    
+                                    <div class="comBox">
+                                        <span class="comItem">
+                                            <label for="text_B" class="blind">입사년일</label>
+                                            <input id="text_B" class="comInput" type="text" value="" placeholder="입사년월 YYYY.MM">
+                                        </span>
+                                        <span class="comItem">
+                                            <label for="text_C" class="blind">퇴사년월</label>
+                                            <input id="text_C" class="comInput" type="text" value="" placeholder="퇴사년월 YYYY.MM">
+                                        </span>
+                                    </div>                                
+                                    <div class="areaBox">
+                                        <textarea name="" id="" placeholder="담당업무"></textarea>
+                                    </div>                                
+                                    <div class="btnWrap mt20">
+                                        <button type="button" class="btn_type04 btn_blue02"><i class="fileIcon"></i>경력증명서 업로드</button>
+                                    </div>
                                 </div>
-                                <div class="comBox">
-                                    <span class="comItem">
-                                        <label for="text_B" class="blind">부서명</label>
-                                        <input id="text_B" class="comInput" type="text" value="" placeholder="부서 입력">
-                                    </span>
-                                    <span class="comItem">
-                                        <label for="text_C" class="blind">직책</label>
-                                        <input id="text_C" class="comInput" type="text" value="" placeholder="직책 입력">
-                                    </span>                                        
-                                    <span>
-                                        체크박스
-                                    </span>
-                                </div>
-                                <div class="comBox">
-                                    <span class="comItem">
-                                        <label for="text_B" class="blind">입사년일</label>
-                                        <input id="text_B" class="comInput" type="text" value="" placeholder="입사년월 YYYY.MM">
-                                    </span>
-                                    <span class="comItem">
-                                        <label for="text_C" class="blind">퇴사년월</label>
-                                        <input id="text_C" class="comInput" type="text" value="" placeholder="퇴사년월 YYYY.MM">
-                                    </span>
-                                </div>                                
-                                <div class="areaBox">
-                                    <textarea name="" id="" placeholder="담당업무"></textarea>
-                                </div>                                
-                                <div class="btnWrap mt20">
-                                    <button type="button" class="btn_type04 btn_blue02"><i class="fileIcon"></i>경력증명서 업로드</button>
-                                </div>
+                                <button type="button" class="delBtn"><span class="blind">삭제</span></button>
                             </div>
-                            <button type="button" class="delBtn"><span class="blind">삭제</span></button>
                         </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="itemTit">
+                        <p>학력</p>
+                    </div>
+                    <div class="itemBox">
+                        <div class="addCont">
+                            <button type="button" class="addBtn"><span class="blind">직무추가</span></button>
+                            <div class="academicWrap">
+                                <div class="acadWrapItem">
+                                    <div class="acadCont">
+                                        <div class="comBox">
+                                            <span class="comItem">
+                                                <label for="text_01" class="blind">학교명</label>
+                                                <input id="text_01" class="comInput" type="text" value="" placeholder="학교명 입력">
+                                            </span>
+                                        </div>
+                                        <div class="acadList mt10">
+                                            <div class="acadCont">
+                                                <span class="comItem">
+                                                    <select name="text_02" id="text_02" class="comSel">		                    
+                                                        <option value="0">학교구분</option>
+                                                    </select>
+                                                </span>
+                                                <span class="comItem">
+                                                    <label for="text_03" class="blind">전공</label>
+                                                    <input id="text_03" class="comInput" type="text" value="" placeholder="전공 입력">
+                                                </span>
+                                                <span class="comItem">
+                                                    <label for="text_04" class="blind">학점</label>
+                                                    <input id="text_04" class="comInput" type="text" value="" placeholder="학점 입력">
+                                                </span>
+                                                <span class="comItem">
+                                                    <select name="text_05" id="text_05" class="comSel">		                    
+                                                        <option value="0">학점총점</option>
+                                                    </select>
+                                                </span>
+                                                <span class="comItem">
+                                                    <label for="text_06" class="blind">입학년월</label>
+                                                    <input id="text_06" class="comInput" type="text" value="" placeholder="입학년월  YYYY.MM">
+                                                </span>
+                                                <span class="comItem">
+                                                    <label for="text_07" class="blind">졸업년월</label>
+                                                    <input id="text_07" class="comInput" type="text" value="" placeholder="졸업년월  YYYY.MM">
+                                                </span>
+                                                <span class="comItem">
+                                                    <select name="text_08" id="text_09" class="comSel">		                    
+                                                        <option value="0">졸업상태</option>
+                                                    </select>
+                                                </span>
+                                            </div>                                        
+                                        </div>
+                                    </div>
+                                    <button type="button" class="delBtn"><span class="blind">삭제</span></button>
+                                </div> 
+                            </div>
+                        </div>                    
                     </div>
                 </div>
                 <div class="item">
@@ -526,7 +373,24 @@
                     <div class="itemBox">
                         <div class="addCont">
                             <button type="button" class="addBtn"><span class="blind">외국어 추가</span></button>
-                            <div class="">
+                            <div class="inpCont">
+                                <div class="inpItem">
+                                    <div class="inpWrap w50p">
+                                        <div class="comBox">
+                                            <span class="comItem">
+                                                <select name="language_01" id="language_01" class="comSel">		                    
+                                                    <option value="0">언어</option>
+                                                </select>
+                                            </span>
+                                            <span class="comItem">
+                                                <select name="language_02" id="language_02" class="comSel">		                    
+                                                    <option value="0">수준</option>
+                                                </select>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="delBtn"><span class="blind">삭제</span></button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -538,7 +402,29 @@
                     <div class="itemBox">
                         <div class="addCont">
                             <button type="button" class="addBtn"><span class="blind">자격증 추가</span></button>
-                            <div class="">
+                            <div class="inpCont">
+                                <div class="inpItem">
+                                    <div class="inpWrap">
+                                        <div class="comBox">
+                                            <span class="comItem">
+                                                <label for="license_01" class="blind">자격증</label>
+                                                <input id="license_01" class="comInput" type="text" value="" placeholder="자격증 입력">
+                                            </span>
+                                        </div>                                                  
+                                    </div>
+                                    <button type="button" class="delBtn"><span class="blind">삭제</span></button>
+                                </div>
+                                <div class="inpItem">
+                                    <div class="inpWrap">
+                                        <div class="comBox">
+                                            <span class="comItem">
+                                                <label for="license_01" class="blind">자격증</label>
+                                                <input id="license_01" class="comInput" type="text" value="" placeholder="자격증 입력">
+                                            </span>
+                                        </div>                                                  
+                                    </div>
+                                    <button type="button" class="delBtn"><span class="blind">삭제</span></button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -550,7 +436,18 @@
                     <div class="itemBox">
                         <div class="addCont">
                             <button type="button" class="addBtn"><span class="blind">수상이력 추가</span></button>
-                            <div class="">
+                            <div class="inpCont">
+                                <div class="inpItem">
+                                    <div class="inpWrap">
+                                        <div class="comBox">
+                                            <span class="comItem">
+                                                <label for="award_01" class="blind">수상이력</label>
+                                                <input id="award_01" class="comInput" type="text" value="" placeholder="특허, 공모전, 논문 등 이력 입력">
+                                            </span>
+                                        </div>                                                  
+                                    </div>
+                                    <button type="button" class="delBtn"><span class="blind">삭제</span></button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -560,9 +457,23 @@
                         <p>포트폴리오 및 문서</p>
                     </div>
                     <div class="itemBox">
-                        <div class="addCont">
+                        <div class="btnWrap">
+                            <button type="button" class="btn_type04 btn_blue02"><i class="fileIcon"></i>경력증명서 업로드</button>
+                        </div>
+                        <div class="addCont mt20">
                             <button type="button" class="addBtn"><span class="blind">포트폴리오 및 문서 추가</span></button>
-                            <div class="">
+                            <div class="inpCont">
+                                <div class="inpItem">
+                                    <div class="inpWrap">
+                                        <div class="comBox">
+                                            <span class="comItem">
+                                                <label for="award_01" class="blind">포트폴리오</label>
+                                                <input id="award_01" class="comInput" type="text" value="" placeholder="포트폴리오 URL 입력">
+                                            </span>
+                                        </div>                                                  
+                                    </div>
+                                    <button type="button" class="delBtn"><span class="blind">삭제</span></button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -578,7 +489,7 @@
 
     <!-- 푸터 -->
 	<footer id="footer">
-        <img src="./images/job/footer.jpg" alt="">
+        <img src="./images/job/footer.jpg" alt="" class="mt50">
     </footer>
 	
 

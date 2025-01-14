@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>공고등록</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/job/common.css" />
+
+    
+
+</head>
+<body>
+    <header id="header">
+        <img src="./images/job/header.jpg" alt="">
+    </header>
+    <style>
+        #header, #footer { max-width: 1260px; margin: 0 auto; } 
+        #header img, #footer img { display: block;; width: 100%; } 
+        
+        .jobPosting .innerSection { max-width: 1260px; width: calc(100% - 20px); margin: 0 auto; } 
+        .jobPosting .containWrap { display: flex; align-items: flex-start; } 
+        .jobPosting .categoryWrap { width: 260px; margin-right: 20px; padding: 50px 25px; border: 1px solid #c9c9c9; box-sizing: border-box; flex-shrink: 0; } 
+        .jobPosting .categoryWrap .tit { padding-left: 20px; color: #000; font-size: 22px; font-weight: 700; } 
+        .jobPosting .categoryWrap .btnWrap button { width: 100%; font-size: 16px; font-weight: 700; } 
+        .jobPosting .categoryWrap .categoryList { padding-left: 20px; } 
+        .jobPosting .categoryWrap .categoryList li { padding-left: 26px; position: relative; color: #666666; font-size: 16px; } 
+        .jobPosting .categoryWrap .categoryList li + li { margin-top: 15px; } 
+        .jobPosting .categoryWrap .categoryList li.active { color: #000; font-weight: 700; } 
+        .jobPosting .categoryWrap .categoryList li.active::before { background: #3067ff; color: #fff; } 
+        .jobPosting .categoryWrap .categoryList li::before { display: flex; width: 18px; height: 18px; position: absolute; top: 4px; left: 0; background: #d5d5d5; color: #000; font-size: 10px; border-radius: 50%; align-items: center; justify-content: center; line-height: 1; } 
+        .jobPosting .categoryWrap .categoryList li:nth-child(1)::before { content: '1'; } 
+        .jobPosting .categoryWrap .categoryList li:nth-child(2)::before { content: '2'; } 
+        .jobPosting .categoryWrap .categoryList li:nth-child(3)::before { content: '3'; } 
+        .jobPosting .categoryWrap .categoryList li:nth-child(4)::before { content: '4'; } 
+        .jobPosting .categoryWrap .categoryList li:nth-child(5)::before { content: '5'; } 
+
+        .jobPosting .contensWrap { width: 100%; padding: 50px 30px; border: 1px solid #c9c9c9; } 
+        .jobPosting.ckBox { display: flex; flex-wrap: wrap; line-height: 1; gap: 20px 30px; } 
+        .jobPosting .postingCont .postTit { color: #000; font-size: 22px; font-weight: 700; } 
+        .jobPosting .postingCont .postItem { margin-top: 36px; } 
+        .jobPosting .postingCont .tit { margin-bottom: 16px; color: #000; font-size: 18px; font-weight: 500; } 
+        .jobPosting .addCont { display: flex; align-items: flex-start; gap: 20px; } 
+        .jobPosting .addBtn { width: 45px; height: 40px; background: url(./images/job/add_icon.png) center #f3f3f3 no-repeat; border: 1px solid #ddd; border-radius: 5px; flex-shrink: 0; box-sizing: border-box; } 
+        .jobPosting .keyList { display: flex; flex-wrap: wrap; gap: 8px; } 
+        .jobPosting .btnCont { display: flex; align-items: center; } 
+        .jobPosting .btnCont .btnWrap { margin-left: auto; } 
+        .jobPosting .listBtn { display: block; color: #000; font-size: 18px; } 
+        .jobPosting .listBtn:hover { color: #2a61f9; } 
+        input[type='date'],
+        input[type='time'] { width: 100%; height: 40px; padding-left: 36px; position: relative; color: #999999; font-size: 14px; border: 1px solid #ddd; } 
+        .custBox.date input[type='date'] { background: url(./images/job/calender_icon.png) left 10px center #fff no-repeat; } 
+        .custBox.time input[type='time'] { background: url(./images/job/time_icon.png) left 10px center #fff no-repeat; } 
+        input[type="date"]::-webkit-clear-button,
+        input[type="date"]::-webkit-inner-spin-button,
+        input[type="time"]::-webkit-clear-button,
+        input[type="time"]::-webkit-inner-spin-button { display: none; } 
+        input[type='date']::-webkit-calendar-picker-indicator,
+        input[type='time']::-webkit-calendar-picker-indicator { position:absolute; left: 0; top: 0; width: 100%; height: 100%; background: transparent; color: transparent; } 
+        input[type='date']::before,
+        input[type='time']::before { content: attr(data-placeholder); width: 100%; color: #999999; font-size: 14px; } 
+        input[type='date']:valid::before,
+        input[type='time']:valid::before { display: none; } 
+        input[data-placeholder]::before { height: inherit; padding-left: 36px; position: absolute; left: 0px; top: -1px; line-height: 40px; box-sizing: border-box; } 
+        .custBox.date input[data-placeholder]::before { background: url(./images/job/calender_icon.png) left 10px center #fff no-repeat; } 
+        .custBox.time input[data-placeholder]::before { background: url(./images/job/time_icon.png) left 10px center #fff no-repeat; } 
+        .jobPosting .custWrap { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; } 
+        .jobPosting .custItem { display: flex; width: calc(100% / 2 - 15px); gap: 10px; } 
+        .jobPosting .custItem .custBox { flex: 1; } 
+    </style>
+    <article class="jobPosting mt50">
+        <div class="innerSection">
+            <div class="containWrap">
+                <div class="categoryWrap">
+                    <p class="tit">공고등록</p>
+                    <div class="btnWrap mt20">
+                        <button type="button" class="btn_type04 btn_blue02">공고 불러오기</button>
+                    </div>
+                    <ul class="categoryList mt20">
+                        <li class="active">공고 작성</li>
+                        <li>채용 담당자 설정</li>
+                        <li>채용 전형 구성</li>
+                        <li>추가 설정</li>
+                    </ul>
+                </div>
+                <div class="contensWrap">
+                    <div class="postingCont">
+                        <p class="postTit">공고 작성</p>
+                        <div class="postItem">
+                            <p class="tit">공고제목<span class="fc_red">*</span></p>
+                            <div class="comBox">
+                                <span class="comItem">
+                                    <label for="text_A" class="blind">공고제목</label>
+                                    <input id="text_A" class="comInput" type="text" value="" placeholder="공고명 입력">
+                                </span>
+                            </div>
+                        </div>
+                        <div class="postItem">
+                            <p class="tit">직무<span class="fc_red">*</span></p>
+                            <div class="addCont">
+                                <button type="button" class="addBtn"><span class="blind">직무추가</span></button>
+                                <div class="keyList">
+                                    <button type="button" class="btn_type01">IT · 인터넷 &gt; 프로젝트 관리 <span>X</span></button>
+                                    <button type="button" class="btn_type01">IT · 인터넷 &gt; 서비스 기획 <span>X</span></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="postItem">
+                            <p class="tit">고용형태<span class="fc_red">*</span></p>
+                            <div class="radioBox">
+                                <span class="radio_type01">
+                                    <input type="radio" id="ckTyepA01" name="radioTypeA">
+                                    <label for="ckTyepA01"><span>정규직</span></label>
+                                </span>
+                                <span class="radio_type01">
+                                    <input type="radio" id="ckTyepA02" name="radioTypeA">
+                                    <label for="ckTyepA02"><span>계약직</span></label>
+                                </span>
+                                <span class="radio_type01">
+                                    <input type="radio" id="ckTyepA03" name="radioTypeA">
+                                    <label for="ckTyepA03"><span>인턴직</span></label>
+                                </span>
+                                <span class="radio_type01">
+                                    <input type="radio" id="ckTyepA04" name="radioTypeA">
+                                    <label for="ckTyepA04"><span>프리랜서</span></label>
+                                </span>
+                                <span class="radio_type01">
+                                    <input type="radio" id="ckTyepA05" name="radioTypeA">
+                                    <label for="ckTyepA05"><span>기타/아르바이트</span></label>
+                                </span>
+                            </div>                            
+                        </div>
+                        <div class="postItem">
+                            <p class="tit">학력<span class="fc_red">*</span></p>
+                            <div class="radioBox">
+                                <span class="radio_type01">
+                                    <input type="radio" id="ckTyepB01" name="radioTypeB">
+                                    <label for="ckTyepB01"><span>학력무관</span></label>
+                                </span>
+                                <span class="radio_type01">
+                                    <input type="radio" id="ckTyepB02" name="radioTypeB">
+                                    <label for="ckTyepB02"><span>초졸이하</span></label>
+                                </span>
+                                <span class="radio_type01">
+                                    <input type="radio" id="ckTyepB03" name="radioTypeB">
+                                    <label for="ckTyepB03"><span>중졸</span></label>
+                                </span>
+                                <span class="radio_type01">
+                                    <input type="radio" id="ckTyepB04" name="radioTypeB">
+                                    <label for="ckTyepB04"><span>고졸</span></label>
+                                </span>
+                                <span class="radio_type01">
+                                    <input type="radio" id="ckTyepB05" name="radioTypeB">
+                                    <label for="ckTyepB05"><span>대졸(2~3년)</span></label>
+                                </span>
+                                <span class="radio_type01">
+                                    <input type="radio" id="ckTyepB06" name="radioTypeB">
+                                    <label for="ckTyepB06"><span>대졸(4년)</span></label>
+                                </span>
+                                <span class="radio_type01">
+                                    <input type="radio" id="ckTyepB07" name="radioTypeB">
+                                    <label for="ckTyepB07"><span>석사</span></label>
+                                </span>
+                                <span class="radio_type01">
+                                    <input type="radio" id="ckTyepB08" name="radioTypeB">
+                                    <label for="ckTyepB08"><span>박사</span></label>
+                                </span>
+                            </div>                            
+                        </div>
+                        <div class="postItem">
+                            <p class="tit">채용기간<span class="fc_red">*</span></p>
+                            <div class="custWrap">
+                                <div class="custItem">
+                                    <span class="custBox date"><input type="date" data-placeholder="시작일" required></span>
+                                    <span class="custBox time"><input type="time" data-placeholder="시간선택" required></span>
+                                </div>
+                                <span>~</span>
+                                <div class="custItem">
+                                    <span class="custBox date"><input type="date" data-placeholder="종료일" required></span>
+                                    <span class="custBox time"><input type="time" data-placeholder="시간선택" required></span>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="postItem">
+                            <p class="tit">근무지역<span class="fc_red">*</span></p>
+                            <div class="addCont">
+                                <button type="button" class="addBtn"><span class="blind">근무지역 추가</span></button>
+                                <div class="keyList">
+                                    <button type="button" class="btn_type01">부천시 <span>X</span></button>
+                                    <button type="button" class="btn_type01">고양시 <span>X</span></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="postItem">
+                            <p class="tit">채용인원<span class="fc_red">*</span></p>
+                            <div class="comBox w50p">
+                                <span class="comItem">
+                                    <label for="text_A" class="blind">채용인원</label>
+                                    <input id="text_A" class="comInput" type="text" value="" placeholder="채용인원 입력">
+                                </span>
+                            </div>
+                        </div>
+                        <div class="postItem">
+                            <p class="tit">급여<span class="fc_red">*</span></p>
+                            <div class="comBox w50p">
+                                <span class="comItem">
+                                    <select name="language_01" id="language_01" class="comSel">		                    
+                                        <option value="0">급여조건 선택</option>
+                                    </select>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="postItem">
+                            <p class="tit">상세내용<span class="fc_red">*</span></p>
+                            <div class="radioBox">
+                                <span class="radio_type02">
+                                    <input type="radio" id="ckTyepC01" name="radioTypeC">
+                                    <label for="ckTyepC01"><span>템플릿 사용안함</span></label>
+                                </span>
+                                <span class="radio_type02">
+                                    <input type="radio" id="ckTyepC02" name="radioTypeC">
+                                    <label for="ckTyepC02"><span>A형</span></label>
+                                </span>
+                                <span class="radio_type02">
+                                    <input type="radio" id="ckTyepC03" name="radioTypeC">
+                                    <label for="ckTyepC03"><span>B형</span></label>
+                                </span>
+                                <span class="radio_type02">
+                                    <input type="radio" id="ckTyepC04" name="radioTypeC">
+                                    <label for="ckTyepC04"><span>C형</span></label>
+                                </span>
+                                <span class="radio_type02">
+                                    <input type="radio" id="ckTyepC05" name="radioTypeC">
+                                    <label for="ckTyepC05"><span>D형</span></label>
+                                </span>
+                            </div> 
+                            <div class="mt20">
+                                상세내용 에디터
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btnCont mt50">
+                        <a href="#" class="listBtn">&lt; 목록보기</a>
+                        <div class="btnWrap">                        
+                            <button type="button" class="btn_type03">임시 저장</button>
+                            <button type="button" class="btn_type03 btn_blue">공고 등록</button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </article>
+    
+
+    <!-- 푸터 -->
+	<footer id="footer">
+        <img src="./images/job/footer.jpg" alt="" class="mt50">
+    </footer>
+	
+
+
+	
+</body>
+</html>
