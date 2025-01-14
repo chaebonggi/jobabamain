@@ -188,7 +188,7 @@
                         </div>
                         <div class="kwBox">
                             <p class="kwTit">선택 키워드</p>                         
-                            <div class="keyList">
+                            <div class="keyList delKeyBtn">
                                 <button type="button" class="btn_type01">공공 <span>X</span></button>
                                 <button type="button" class="btn_type01">사업기획 <span>X</span></button>
                                 <button type="button" class="btn_type01">서비스기획 <span>X</span></button>
@@ -199,7 +199,7 @@
                         </div>
                         <div class="kwBox">
                             <p class="kwTit"><span class="fc_blue fw_bold">AI 추천!</span> <span class="fc_gray fs14">나와 같은 직무 사람들이 선택한 키워드</span></p>                         
-                            <div class="keyList">
+                            <div class="keyList activeBtn">
                                 <button type="button" class="btn_type01 active">PMO</button>
                                 <button type="button" class="btn_type01">SQL</button>
                                 <button type="button" class="btn_type01">스토리보드</button>
@@ -209,8 +209,8 @@
                         </div>
                         <div class="kwBox">
                             <p class="kwTit"><span class="fc_blue fw_bold">공공기업에 취업을 희망</span>한다면 아래 키워드를 반드시 선택해주세요.</p>                         
-                            <div class="keyList">
-                                <button type="button" class="btn_type02 active">공공</button>
+                            <div class="keyList activeBtn">
+                                <button type="button" class="btn_type02">공공</button>
                             </div>
                         </div>
                     </div>
@@ -222,7 +222,7 @@
                     <div class="itemBox">
                         <div class="addCont">
                             <button type="button" class="addBtn"><span class="blind">직무추가</span></button>
-                            <div class="keyList">
+                            <div class="keyList delKeyBtn">
                                 <button type="button" class="btn_type01">IT · 인터넷 > 프로젝트 관리 <span>X</span></button>
                                 <button type="button" class="btn_type01">IT · 인터넷 > 서비스 기획 <span>X</span></button>
                             </div>
@@ -360,7 +360,7 @@
                     <div class="itemBox">
                         <div class="addCont">
                             <button type="button" class="addBtn"><span class="blind">희망근무지 추가</span></button>
-                            <div class="keyList">
+                            <div class="keyList delKeyBtn">
                                 <button type="button" class="btn_type01">부천시 <span>X</span></button>
                                 <button type="button" class="btn_type01">수원시 <span>X</span></button>
                             </div>
@@ -486,7 +486,18 @@
             </div>
         </div>
     </article>
-    
+    <script>
+        document.querySelectorAll('.keyList.delKeyBtn button').forEach(button => {
+            button.addEventListener('click', function () {
+                this.remove();
+            });
+        });
+        document.querySelectorAll('.keyList.activeBtn button').forEach(button => {
+            button.addEventListener('click', function () {
+                this.classList.toggle('active');
+            });
+        });
+    </script>
 
     <!-- 푸터 -->
 	<footer id="footer">

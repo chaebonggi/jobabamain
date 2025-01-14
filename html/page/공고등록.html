@@ -116,7 +116,7 @@
             input[type='date'], input[type='time'] { height: 34px; font-size: 12px; } 
             input[type='date']::before,
             input[type='time']::before { font-size: 12px; } 
-            input[data-placeholder]::before { line-height: 32px; border: 1px solid #ddd;} 
+            input[data-placeholder]::before { line-height: 32px; border-top: 1px solid #ddd;} 
             .custBox.date input[type='date'], .custBox.time input[type='time'], .custBox.date input[data-placeholder]::before,
             .custBox.time input[data-placeholder]::before {background-size: 14px;}
             
@@ -155,7 +155,7 @@
                             <p class="tit">직무<span class="fc_red">*</span></p>
                             <div class="addCont">
                                 <button type="button" class="addBtn"><span class="blind">직무추가</span></button>
-                                <div class="keyList">
+                                <div class="keyList delKeyBtn">
                                     <button type="button" class="btn_type01">IT · 인터넷 &gt; 프로젝트 관리 <span>X</span></button>
                                     <button type="button" class="btn_type01">IT · 인터넷 &gt; 서비스 기획 <span>X</span></button>
                                 </div>
@@ -242,7 +242,7 @@
                             <p class="tit">근무지역<span class="fc_red">*</span></p>
                             <div class="addCont">
                                 <button type="button" class="addBtn"><span class="blind">근무지역 추가</span></button>
-                                <div class="keyList">
+                                <div class="keyList delKeyBtn">
                                     <button type="button" class="btn_type01">부천시 <span>X</span></button>
                                     <button type="button" class="btn_type01">고양시 <span>X</span></button>
                                 </div>
@@ -308,7 +308,13 @@
             </div>
         </div>
     </article>
-    
+    <script>
+        document.querySelectorAll('.keyList.delKeyBtn button').forEach(button => {
+            button.addEventListener('click', function () {
+                this.remove();
+            });
+        });
+    </script>
 
     <!-- 푸터 -->
 	<footer id="footer">
