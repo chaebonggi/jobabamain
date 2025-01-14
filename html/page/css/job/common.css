@@ -56,8 +56,13 @@ select::-ms-expand { display:none /* 화살표 없애기 for IE10, 11*/ }
 .btn_type03 { min-width: 170px; padding: 12px 0; background: #fff; color: #000; font-size: 24px; border: 1px solid #000; border-radius: 10px; text-align: center; } 
 .btn_type04 { min-width: 130px; padding: 6px 10px; background: #fff; color: #000; font-size: 14px; border: 1px solid #ddd; border-radius: 5px; } 
 
+.checkBox { display: flex; flex-wrap: wrap; line-height: 1; gap: 20px 30px; }
 .check_type01 input[type="checkbox"]:checked::after { content: ''; position: absolute; top: 50%; left: 50%; width: 8px; height: 8px; border-radius: 50%; background: #000; transform: translate(-50%, -50%); } 
 .check_type01 input[type="checkbox"] { position: relative; width: 16px; height: 16px; background: #fff; border: 1px solid #000; border-radius: 50%; vertical-align: middle; cursor: pointer; outline: none !important; -webkit-appearance: none; -webkit-box-sizing: border-box; } 
+.check_type02 { position: relative; } 
+.check_type02 input[type="checkbox"]:checked { background: url(../../images/job/check01_icon.png) center #3067FF no-repeat; border-color: #3067FF; } 
+.check_type02 input[type="checkbox"] { width: 18px; height: 18px; position: absolute; top: 0; left: 0; background: #fff; border: 1px solid #c5c5c5; vertical-align: middle; cursor: pointer; outline: none !important; -webkit-appearance: none; -webkit-box-sizing: border-box; } 
+.check_type02 label { padding-left: 26px; font-size: 16px; } 
 
 .radioBox { display: flex; flex-wrap: wrap; line-height: 1; gap: 20px 30px; } 
 .radio_type01 { position: relative; } 
