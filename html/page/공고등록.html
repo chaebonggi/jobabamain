@@ -48,7 +48,7 @@
         .jobPosting .keyList { display: flex; flex-wrap: wrap; gap: 8px; } 
         .jobPosting .btnCont { display: flex; align-items: center; } 
         .jobPosting .btnCont .btnWrap { margin-left: auto; } 
-        .jobPosting .listBtn { display: block; color: #000; font-size: 18px; } 
+        .jobPosting .listBtn { display: inline-block; color: #000; font-size: 18px; } 
         .jobPosting .listBtn:hover { color: #2a61f9; } 
         input[type='date'],
         input[type='time'] { width: 100%; height: 40px; padding-left: 36px; position: relative; color: #999999; font-size: 14px; border: 1px solid #ddd; } 
@@ -70,6 +70,55 @@
         .jobPosting .custWrap { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; } 
         .jobPosting .custItem { display: flex; width: calc(100% / 2 - 15px); gap: 10px; } 
         .jobPosting .custItem .custBox { flex: 1; } 
+
+        @media screen and (max-width: 1024px){
+            .jobPosting .custWrap { flex-direction: column; } 
+            .jobPosting .custItem { width: 100%; } 
+            .jobPosting .btnCont { display: block; } 
+            .jobPosting .btnCont .btnWrap { margin-top: 30px; text-align: right; } 
+        }
+        @media screen and (max-width: 768px){
+            .jobPosting .containWrap { display: block; } 
+            .jobPosting .categoryWrap { width: 100%; margin-right: 0; margin-bottom: 20px; } 
+        }
+        @media screen and (max-width: 640px){
+            .jobPosting .categoryWrap { padding: 15px; margin-bottom: 10px; } 
+            .jobPosting .categoryWrap .tit { padding-left: 0; font-size: 18px; } 
+            .jobPosting .categoryWrap .btnWrap.mt20 { margin-top: 10px; } 
+            .jobPosting .categoryWrap .btnWrap button { font-size: 12px; } 
+            .jobPosting .categoryWrap .categoryList { padding-left: 10px; } 
+            .jobPosting .categoryWrap .categoryList li + li { margin-top: 8px; } 
+            .jobPosting .categoryWrap .categoryList li::before { width: 14px; height: 14px; } 
+            .jobPosting .categoryWrap .categoryList li { padding-left: 20px; font-size: 14px; } 
+            .jobPosting .contensWrap { padding: 15px; } 
+            .jobPosting .postingCont .postTit { font-size: 18px; } 
+            .jobPosting .postingCont .tit { margin-bottom: 12px; font-size: 16px; } 
+            .jobPosting .postingCont .postItem { margin-top: 20px; } 
+            .comInput { height: 32px; padding: 0 12px; font-size: 12px; } 
+            .jobPosting input::placeholder { font-size: 12px; } 
+            .jobPosting .addCont { display: block; } 
+            .jobPosting .addBtn { width: 30px; height: 30px; background-size: 9px; } 
+            .jobPosting .btn_type01, .jobResume .btn_type02 { padding: 3px 12px; font-size: 12px; } 
+            .jobPosting .keyList { gap: 4px; } 
+            .radioBox { gap: 8px 16px; } 
+            .radio_type01 input[type="radio"] { width: 12px; height: 13px; top: 4px;}
+            .radio_type01 label { padding-left: 16px; font-size: 12px; } 
+            .jobPosting .comSel { height: 32px; padding: 0 12px; font-size: 12px; background-size: 10px; background-position: center right 4px; } 
+            .comBox.w50p { width: 100% !important; } 
+
+            .jobPosting .btnWrap { display: flex; } 
+            .jobPosting .btnWrap button { min-width: initial; flex: 1; } 
+            .jobPosting .btn_type03 { padding: 8px 0; font-size: 16px; } 
+            .jobPosting .listBtn { font-size: 14px; } 
+            .radio_type02 input[type="radio"] { width: 12px; height: 12px; top: 4px; } 
+            .radio_type02 label { padding-left: 18px; font-size: 12px; } 
+            input[type='date'], input[type='time'] { height: 32px; font-size: 12px; } 
+            input[type='date']::before,
+            input[type='time']::before { font-size: 12px; } 
+            input[data-placeholder]::before { line-height: 32px; } 
+        }
+
+        
     </style>
     <article class="jobPosting mt50">
         <div class="innerSection">
