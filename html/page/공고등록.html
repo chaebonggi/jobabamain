@@ -113,10 +113,14 @@
             .jobPosting .listBtn { font-size: 14px; } 
             .radio_type02 input[type="radio"] { width: 12px; height: 12px; top: 4px; } 
             .radio_type02 label { padding-left: 18px; font-size: 12px; } 
-            input[type='date'], input[type='time'] { height: 32px; font-size: 12px; } 
+            input[type='date'], input[type='time'] { height: 34px; font-size: 12px; } 
             input[type='date']::before,
             input[type='time']::before { font-size: 12px; } 
-            input[data-placeholder]::before { line-height: 30px; } 
+            input[data-placeholder]::before { line-height: 32px; border: 1px solid red;} 
+            .custBox.date input[data-placeholder]::before,
+            .custBox.time input[data-placeholder]::before {
+                background-size: 14px;
+            }
             
         }
 
